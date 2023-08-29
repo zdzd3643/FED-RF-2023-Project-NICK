@@ -12,8 +12,8 @@
 }
 /* 1-1.로고박스 */
 .header__logo img{
-    margin-top: 15px;
-    width: 106px;
+    margin-top: 10px;
+    width: 116px;
 }
 /* 1-1-2. GNB메뉴 */
 .gnb ul{
@@ -22,13 +22,12 @@
     /* 진행방향정렬 */
     justify-content:flex-start;
     margin-top: 0px;
-
 }
 /* GNB메뉴 상위메뉴a */
 .gnb ul>li>a{
     font-size: 2rem;
     display: block;
-    padding: 28px 30px;
+    padding: 11px 30px;
     /* 줄바꿈방지 */
     white-space: nowrap;
 }
@@ -52,7 +51,7 @@
 }
 /* 탑메뉴 a */
 .top-menu a{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 /************* 2. 메인영역 : .group-part *************/
