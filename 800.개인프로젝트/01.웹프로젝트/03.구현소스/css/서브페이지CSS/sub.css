@@ -1,10 +1,10 @@
 @charset "utf-8";
-/* 도깨비 PJ : 메인페이지 CSS - main.css */
+/* GS PJ : 메인페이지 CSS - main.css */
 
 /* 리셋,공통,외부 CSS 합치기(merging) */
-@import url(./reset.css);
-@import url(./core.css);
-@import url(./common.css);
+@import url(./reset_sub.css);
+@import url(./core_sub.css);
+@import url(./common_sub.css);
 
 
 
@@ -21,36 +21,37 @@ body > div > * {
         파트박스가 늘어날 경우 높이값에 제한을 받게됨!
         확장형은 반드시 파트박스에 높이값을 설정한다! */
 
-/************* 2. 캐릭터소개 *************/
-#banner {
-    background-color: lightgreen;
-}
-.banner .partbox {
-    height: 530px;
+/* 공통 사항 */
+.header,main,footer{
+    font-size: 2rem;
 }
 
 /************* 3. 메인영역 : .group-part *************/
+/* 본문영역 최소높이 셋팅! */
 #main {
-    /* 본문영역 최소높이 셋팅! */
-    min-height: 800px;
+min-height: 800px;
 }
-/* 방송편성소개파트 */
+/* 2-1. 로고 배너영역 */
 .main .group-part-01 .partbox {
-    height: 455px;
+    height: 300px;
 }
-/* 미리보기파트 */
+/* 2-2. 이벤트 배너영역 */
 .main .group-part-02 .partbox {
-    height: 298px;
+    height: 350px;
 }
-/* 현장포토파트 */
+/* 2-3. 행사 배너영역 */
 .main .group-part-03 .partbox {
     height: 300px;
 }
-/* 대표이미지파트 */
+/* 3-1. 상품 검색영역 */
 .main .group-part-04 .partbox {
-    height: 542px;
+    height: 250px;
 }
-/* 최신동영상파트 */
+/* 3-2. 소셜영역 */
 .main .group-part-05 .partbox {
-    height: 376px;
+    height: 350px;
+}
+/* 3-3. 고객센터영역 */
+.main .group-part-06 .partbox {
+    height: 350px;
 }
