@@ -5,7 +5,7 @@
 
 /************* 1. 상단영역 *************/
 #header {
-    /* background-color: lightblue; */
+    background-color: lightblue;
 }
 .header .partbox {
     height: 90px;
@@ -91,7 +91,7 @@
 
 /************* 2. 메인영역 : .group-part *************/
 #main {
-    /* background-color: lightgoldenrodyellow; */
+    background-color: lightgoldenrodyellow;
 }
 
 /************* 3. 하단영역 *************/
