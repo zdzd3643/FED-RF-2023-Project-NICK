@@ -23,6 +23,9 @@
     justify-content:flex-start;
     margin-top: 12px;
 }
+.gnb ul>li{
+    position: relative;
+}
 /* GNB메뉴 상위메뉴a */
 .gnb ul>li>a{
     font-size: 2rem;
@@ -39,8 +42,9 @@
     opacity: 1;
 }
 .sub-menu{
-    /* 플렉스박스 */
-    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     white-space: nowrap;
     margin-top: 20px;
     /* 넘치는 요소 숨기기 */
@@ -50,8 +54,17 @@
     /* 트랜지션 */
     transition: 0.4s ease-in-out;
 }
+.sub-menu ol{
+    /* 플렉스박스 */
+    display: flex;
+    
+}
 .sub-menu li{
     text-align: center;
+    flex-shrink: 0;
+}
+.sub-menu li+li{
+    margin-left: 15px;
 }
 .sub-menu a {
     width: 100%;

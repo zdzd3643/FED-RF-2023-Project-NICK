@@ -32,8 +32,8 @@ body > div > * {
 min-height: 800px;
 }
 /* 2-1. 로고 배너영역 */
-.main .group-part-01 .partbox {
-    height: 300px;
+.logo-banner img {
+   width: 100%;
 }
 /* 2-2. 이벤트 배너영역 */
 .main .group-part-02 .partbox {
