@@ -23,6 +23,9 @@
 .gnb ul>li{
     position: relative;
 }
+.gnb ul>li{
+    position: relative;
+}
 /* GNB메뉴 상위메뉴a */
 .gnb ul>li>a{
     font-size: 2rem;
@@ -42,6 +45,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     white-space: nowrap;
     margin-top: 20px;
     /* 넘치는 요소 숨기기 */
@@ -57,6 +63,10 @@
 }
 .sub-menu li{
     text-align: center;
+    flex-shrink: 0;
+}
+.sub-menu li+li{
+    margin-left: 15px;
     flex-shrink: 0;
 }
 .sub-menu li+li{
