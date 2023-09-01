@@ -114,8 +114,8 @@ ol::after,
 .gnb > ul > li > a {
     display: block;
 
-    font-size: min(19px, 1.7vw);
-    padding: 0 min(32px, 1.4vw);
+    font-size: min(2.2rem, 1.5vw);
+    padding: 0 min(0px, 1.4vw);
     /* line-height: 80px; */
 }
 /* 가상요소로 밑줄만들기 -> 공동클래스로 독립! */
@@ -222,7 +222,7 @@ ol::after,
 /* 서브오버시 효과 */
 .sub-menu a:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 .top-menu li {
     float: left;
