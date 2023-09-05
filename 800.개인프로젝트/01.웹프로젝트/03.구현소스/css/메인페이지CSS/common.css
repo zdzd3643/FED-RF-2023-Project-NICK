@@ -114,6 +114,10 @@
 }
 
 /************* 2. 메인영역 : .group-part *************/
+.event-list{
+    font-size: 1.3vw;
+    white-space: nowrap;
+}
 
 /************* 3. 하단영역 *************/
 #footer {

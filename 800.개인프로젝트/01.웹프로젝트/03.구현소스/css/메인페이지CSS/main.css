@@ -40,9 +40,15 @@ min-height: 800px;
     width: 100%;
     height: 100%;
 }
+/* 2-3. 우딜 이미지 */
 .ud img {
     width: 100%;
     height: 100%;
+}
+/* 2-4. 아이콘 이미지 */
+.icon img {
+    width: 5%;
+    margin: 0 auto;
 }
 .main .group-part-01 .partbox {
     height: 100%;
