@@ -44,6 +44,7 @@ min-height: 800px;
 .ud img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 /* 2-4. 아이콘 이미지 */
 .icon img {
@@ -54,7 +55,7 @@ min-height: 800px;
     height: 100%;
 }
 .main .group-part-02 .partbox {
-    height: 350px;
+    height: 450px;
 }
 /* 2-3. 행사 배너영역 */
 .main .group-part-03 .partbox {
