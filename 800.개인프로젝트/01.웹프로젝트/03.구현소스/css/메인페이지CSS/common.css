@@ -67,7 +67,6 @@
 .gnb ul>li:hover .sub-menu{
     opacity: 1;
     display: block;
-    transition: 0.2s ease-in-out;
 
 }
 
@@ -86,6 +85,8 @@
     border-radius: 20px;
     box-shadow: inset 0 0 5px lightblue;
     z-index: 1;
+    transition: 0.2s ease-in-out;
+
     
 }
 
@@ -104,6 +105,7 @@
     /* 트랜지션 */
     transition: 0.15s ease-in-out;
     color: rgb(255, 255, 255)
+    
 }
 /* 서브오버시 효과 */
 .sub-menu a:hover {
@@ -130,6 +132,40 @@
     background-color: hsla(214, 100%, 78%, 0.541);
     color: #000;
 }
+.grid{
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: repeat(5,3fr);
+    grid-column-gap: min(1vw,10px);
+    grid-row-gap: min(46.5vw,-30px);
+    align-content: space-evenly;
+    align-items: center;
+}
+.grid img{
+    padding: 6px;
+    margin-top: 0px;
+    transform: translateX(-5px) translateY(37px);
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    vertical-align: middle;
+}
+    /* 그리드 각 박스 공통 */
+    .grid>div{
+        position: relative;
+        /* 부모자격 */
+        aspect-ratio: 280/400;
+    }
+    /* 설명박스 */
+    .grid>div aside{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        background-color: #fff;
+        font-size: min(1.2vw,12px);
+    }
 
 /************* 3. 하단영역 *************/
 #footer {
