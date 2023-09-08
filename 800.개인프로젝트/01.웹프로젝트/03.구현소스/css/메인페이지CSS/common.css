@@ -143,22 +143,24 @@
 }
 .grid img{
     padding: 6px;
-    margin-top: 0px;
-    transform: translateX(-5px) translateY(37px);
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-    vertical-align: middle;
+    width: 60%;
 }
     /* 그리드 각 박스 공통 */
     .grid>div{
         position: relative;
         /* 부모자격 */
-        aspect-ratio: 280/400;
+        display: table;
+        aspect-ratio: 280/400;        
+        text-align: center;
+    }
+    .grid>div>div{
+        display: table-cell;
+        vertical-align: middle;
     }
     /* 설명박스 */
     .grid>div aside{
         position: absolute;
+        left: 0;
         bottom: 0;
         width: 100%;
         text-align: center;
