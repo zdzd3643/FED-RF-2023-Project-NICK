@@ -132,14 +132,16 @@
     background-color: hsla(214, 100%, 78%, 0.541);
     color: #000;
 }
+.product{
+    width: 100%;
+    height: 100%;
+}
 .grid{
     display: grid;
     max-width: 1300px;
-    grid-template-columns: repeat(5,3fr);
+    grid-template-columns: repeat(6,3fr);
     grid-column-gap: min(1vw,10px);
     grid-row-gap: min(46.5vw,-30px);
-    align-content: space-evenly;
-    align-items: center;
 }
 .grid img{
     padding: 6px;
@@ -150,7 +152,7 @@
         position: relative;
         /* 부모자격 */
         display: table;
-        aspect-ratio: 280/400;        
+        aspect-ratio: 4/3;        
         text-align: center;
     }
     .grid>div>div{

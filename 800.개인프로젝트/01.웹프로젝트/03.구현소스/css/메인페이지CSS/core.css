@@ -49,7 +49,7 @@ body{
     /* 보더/패딩 포함박스 */
     box-sizing: border-box;
     /* 내부패딩 */
-    padding: 15px;
+    padding: 5px;
     /* 임시 보이게 보더 */
     border: 2px dotted blue;
     /* 높이값이 속박스에 있을 경우 

@@ -1,286 +1,292 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GS25 사이트 소개</title>
-    <!-- 메인CSS -->
-    <link rel="stylesheet" href="./css/메인페이지CSS/main.css">
-</head>
-<body>
-    <!-- 1. 상단영역 -->
-    <div id="header">
-        <header class ="header inbox">
-            <!-- 파트박스 3개 -->
-            <div class="partbox col-2">
-            <!-- 1-1-1. 메인로고 -->
-            <h1 class="header__logo">
-                <img src="../01.자료수집/gs25_누끼파일.png" alt="GS25로고">
-            </h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GS25 사이트 소개</title>
+        <!-- 메인CSS -->
+        <link rel="stylesheet" href="./css/메인페이지CSS/main.css" />
+        <!-- 메인JS -->
+        <script src="./js/main.js"></script>
+        <!-- 부드러운 스크롤 JS -->
+        <script src="./js/smoothScroll.js"></script>
+        <!-- 점포검색 JS -->
+        <script src="./js/search.js"></script>
+    </head>
+    <body>
+        <!-- 1. 상단영역 -->
+        <div id="header">
+            <header class="header inbox">
+                <!-- 파트박스 3개 -->
+                <div class="partbox col-2">
+                    <!-- 1-1-1. 메인로고 -->
+                    <h1 class="header__logo">
+                        <img src="../01.자료수집/gs25_누끼파일.png" alt="GS25로고" />
+                    </h1>
+                </div>
+                <div class="partbox col-8">
+                    <!-- 1-1-2. GNB메뉴 -->
+                    <nav class="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">GS25소개</a>
+                            </li>
+                            <li>
+                                <a href="#">상품</a>
+                                <!-- 서브메뉴 -->
+                                <div class="sub-menu">
+                                    <ol>
+                                        <li><a href="#">간편식</a></li>
+                                        <li><a href="#">가공식품</a></li>
+                                        <li><a href="#">F&B</a></li>
+                                        <li><a href="#">생활용품</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">행사</a>
+                                <div class="sub-menu">
+                                    <ol>
+                                        <li>
+                                            <a href="#">1+1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2+1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">신상품</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">POP카드 할인</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">이벤트</a>
+                                <div class="sub-menu">
+                                    <ol>
+                                        <li>
+                                            <a href="#">진행중 이벤트</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">당첨자 발표</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">고객만족평가</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">지난 이벤트</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">서비스</a>
+                                <div class="sub-menu">
+                                    <ol>
+                                        <li>
+                                            <a href="#">멤버십</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">GS Pay</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">우리동네 GS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">매장 검색</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">생활서비스</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                            </li>
+                            <li>
+                                <a href="#">창업안내</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="partbox col-2">
+                    <!-- 1-1-3. 탑메뉴 -->
+                    <nav class="top-menu">
+                        <ul>
+                            <li>
+                                <a href="#">로그인</a>
+                            </li>
+                            <li>
+                                <a href="#">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                            </li>
+                            <li>
+                                <a href="#">LANGUAGE</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
         </div>
-            <div class="partbox col-8">
-            <!-- 1-1-2. GNB메뉴 -->
-            <nav class="gnb">
-                <ul>
-                    <li>
-                        <a href="#">GS25소개</a>
-                    </li>
-                    <li>
-                        <a href="#">상품</a>
-                        <!-- 서브메뉴 -->
-                        <div class="sub-menu">
-                            <ol>
-                                <li><a href="#">간편식</a></li>
-                                <li><a href="#">가공식품</a></li>
-                                <li><a href="#">F&B</a></li>
-                                <li><a href="#">생활용품</a></li>
-                                <li><a href="#">기타</a></li>
-                            </ol>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">행사</a>
-                        <div class="sub-menu">
-                            <ol>
-                                <li>
-                                    <a href="#">1+1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2+1</a>
-                                </li>
-                                <li>
-                                    <a href="#">신상품</a>
-                                </li>
-                                <li>
-                                    <a href="#">POP카드 할인</a>
-                                </li>
-                            </ol>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">이벤트</a>
-                        <div class="sub-menu">
-                            <ol>
-                                <li>
-                                    <a href="#">진행중 이벤트</a>
-                                </li>
-                                <li>
-                                    <a href="#">당첨자 발표</a>
-                                </li>
-                                <li>
-                                    <a href="#">고객만족평가</a>
-                                </li>
-                                <li>
-                                    <a href="#">지난 이벤트</a>
-                                </li>
-                            </ol>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">서비스</a>
-                        <div class="sub-menu">
-                            <ol>
-                                <li>
-                                    <a href="#">멤버십</a>
-                                </li>
-                                <li>
-                                    <a href="#">GS Pay</a>
-                                </li>
-                                <li>
-                                    <a href="#">우리동네 GS</a>
-                                </li>
-                                <li>
-                                    <a href="#">매장 검색</a>
-                                </li>
-                                <li>
-                                    <a href="#">생활서비스</a>
-                                </li>
-                            </ol>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">고객센터</a>
-                    </li>
-                    <li>
-                        <a href="#">창업안내</a>
-                    </li>
-                </ul>
-            </nav>
-            </div>
-            <div class="partbox col-2">
-            <!-- 1-1-3. 탑메뉴 -->
-            <nav class="top-menu">
-                <ul>
-                    <li>
-                        <a href="#">로그인</a>
-                    </li>
-                    <li>
-                        <a href="#">회원가입</a>
-                    </li>
-                    <li>
-                        <a href="#">고객센터</a>
-                    </li>
-                    <li>
-                        <a href="#">LANGUAGE</a>
-                    </li>
-                </ul>
-            </nav>
-            </div>
-        </header>
-    </div>
-    <!-- 2. 메인영역 -->
-    <div id="main">
-        <main class="main inbox">
-            <!-- 파트그룹박스 6개 -->
+        <!-- 2. 메인영역 -->
+        <div id="main">
+            <main class="main inbox">
+                <!-- 파트그룹박스 6개 -->
                 <!-- 2-1. 로고 배너영역 -->
-                <div class="group-part group-part-01">          
+                <div class="group-part group-part-01">
                     <!-- 파트박스 1개 -->
                     <div class="partbox col-12 logo-banner">
-                        <img src="../01.자료수집/GS25소개.png" alt="로고 배너">
+                        <img src="../01.자료수집/GS25소개.png" alt="로고 배너" />
                     </div>
                 </div>
                 <!-- 2-2. 이벤트 배너영역 -->
                 <div class="group-part group-part-02">
                     <!-- 파트박스 3개 -->
                     <div class="partbox col-2 event-list">
-                        9월 이벤트 모아보기<br><br>
-                        아침/저녁 갓생타임<br><br>
-                        GS25 2023 한가위<br><br>
-                        GS Pay로 결제하고<br>간식메이커 득템! <br><br>
-                        쓰다보면 완성되는<br>GS BINGO! <br><br>
-                    </div>           
+                        9월 이벤트 모아보기<br /><br />
+                        아침/저녁 갓생타임<br /><br />
+                        GS25 2023 한가위<br /><br />
+                        GS Pay로 결제하고<br />간식메이커 득템! <br /><br />
+                        쓰다보면 완성되는<br />GS BINGO! <br /><br />
+                    </div>
                     <div class="partbox col-7 event-banner">
-                        <img src="../01.자료수집/이벤트배너.png" alt="이벤트 배너">
+                        <img src="../01.자료수집/이벤트배너.png" alt="이벤트 배너" />
                     </div>
                     <div class="partbox col-3 ud">
-                        <img src="../01.자료수집/우딜이미지.jpg" alt="우딜 이미지">
+                        <img src="../01.자료수집/우딜이미지.jpg" alt="우딜 이미지" />
                     </div>
                 </div>
                 <!-- 2-3. 행사 배너영역 -->
                 <div class="group-part group-part-03">
                     <!-- 파트박스 2개 -->
                     <div class="partbox col-2">
-                        1+1<br>
-                        2+1<br>
-                        신상품<br>
-                        인기상품<br>
-                        PB상품<br>
-
-                    </div>           
-                    <div class="partbox col-2">
-                        <img src="../01.자료수집/행사상품예시.png" alt="1+1 행사상품">
-                    </div>           
-                    <div class="partbox col-2">
-                        <img src="../01.자료수집/신상품예시.png" alt="신상품">
-                    </div>           
-                    <div class="partbox col-2">
-                        <img src="../01.자료수집/인기상품예시.png" alt="인기상품">
-                    </div>           
-                    <div class="partbox col-2">
-                        <img src="../01.자료수집/인기상품예시.png" alt="인기상품">
-                    </div>           
-                    <div class="partbox col-2">
-                        <img src="../01.자료수집/인기상품예시.png" alt="인기상품">
-                    </div>           
+                        1+1<br />
+                        2+1<br />
+                        신상품<br />
+                        인기상품<br />
+                        PB상품<br />
+                    </div>
+                    <div class="product">
+                        <div class="partbox col-2">
+                            <img src="../01.자료수집/행사상품예시.png" alt="1+1 행사상품" />
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../01.자료수집/신상품예시.png" alt="신상품" />
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../01.자료수집/인기상품예시.png" alt="인기상품" />
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../01.자료수집/인기상품예시.png" alt="인기상품" />
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../01.자료수집/인기상품예시.png" alt="인기상품" />
+                        </div>
+                    </div>
                 </div>
                 <!-- 2-4. 상품 검색영역 -->
                 <div class="group-part group-part-04">
                     <!-- 파트박스 2개 -->
-                    <div class="partbox col-4"></div>           
-                        <div class="partbox col-8">
-                            <div class="grid">                            
-                                <div>
-                                    <div>
-                                        <img src="../01.자료수집/도시락 아이콘.png" alt="도시락">
-
-                                    </div>
+                    <section class="partbox col-4">
+                        <div class="jserch-box"></div>
+                    </section>
+                    <div class="partbox col-8">
+                        <section class="grid">
+                            <div>
+                                <img src="../01.자료수집/도시락 아이콘.png" alt="도시락" />
                                 <aside><h2>도시락</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/라면.png" alt="라면"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/라면.png" alt="라면" />
                                 <aside><h2>라면</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/빵떡디저트.png" alt="디저트"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/빵떡디저트.png" alt="디저트" />
                                 <aside><h2>빵·떡·디저트</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/스낵비스켓.png" alt="스낵"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/스낵비스켓.png" alt="스낵" />
                                 <aside><h2>스낵·비스켓</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/젤리캔디껌.png" alt="젤리"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/젤리캔디껌.png" alt="젤리" />
                                 <aside><h2>젤리·캔디·껌</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/탄산음료.png" alt="탄산음료"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/탄산음료.png" alt="탄산음료" />
                                 <aside><h2>탄산음료</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/과즙이온음료.png" alt="과즙이온음료"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/과즙이온음료.png" alt="과즙이온음료" />
                                 <aside><h2>과즙이온음료</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/커피.png" alt="커피"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/커피.png" alt="커피" />
                                 <aside><h2>커피</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/유제품.png" alt="유제품"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/유제품.png" alt="유제품" />
                                 <aside><h2>유제품</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/아이스크림.png" alt="아이스크림"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/아이스크림.png" alt="아이스크림" />
                                 <aside><h2>아이스크림</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/생활용품.png" alt="생활용품"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/생활용품.png" alt="생활용품" />
                                 <aside><h2>생활용품</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/뷰티용품.png" alt="뷰티용품"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/뷰티용품.png" alt="뷰티용품" />
                                 <aside><h2>뷰티용품</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/건강의료용품.png" alt="건강의료용품"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/건강의료용품.png" alt="건강의료용품" />
                                 <aside><h2>건강의료용품</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/일회용품.png" alt="일회용품"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/일회용품.png" alt="일회용품" />
                                 <aside><h2>일회용품</h2></aside>
-                                </div>
-                                <div>
-                                <div><img src="../01.자료수집/반려용품.png" alt="반려용품"></div>
+                            </div>
+                            <div>
+                                <img src="../01.자료수집/반려용품.png" alt="반려용품" />
                                 <aside><h2>반려용품</h2></aside>
-                                </div>
-                            
-                        </div></div>                    
-                </div>                    
+                            </div>
+                        </section>
+                    </div>
+                </div>
                 <!-- 2-5. 소셜영역 -->
                 <div class="group-part group-part-05">
                     <h1>소셜 영역</h1>
                     <!-- 파트박스 2개 -->
-                    <div class="partbox col-6"></div>           
                     <div class="partbox col-6"></div>
-                </div>                    
+                    <div class="partbox col-6"></div>
+                </div>
                 <!-- 2-6. 고객센터영역 -->
                 <div class="group-part group-part-06">
                     <h1>고객센터 영역</h1>
                     <!-- 파트박스 2개 -->
-                    <div class="partbox col-6"></div>           
                     <div class="partbox col-6"></div>
-                </div>                    
-         </main>
-    </div> 
-    <!-- 3. 하단영역 -->
-    <div id="footer">
-        <footer class="footer inbox">
-            <!-- 파트박스 5개 -->
-            <div class="partbox col-9"></div>
-            <div class="partbox col-3"></div>
-            <div class="partbox col-5"></div>
-            <div class="partbox col-4"></div>
-            <div class="partbox col-3"></div>
-        </footer>
-    </div> 
-</body>
+                    <div class="partbox col-6"></div>
+                </div>
+            </main>
+        </div>
+        <!-- 3. 하단영역 -->
+        <div id="footer">
+            <footer class="footer inbox">
+                <!-- 파트박스 5개 -->
+                <div class="partbox col-9"></div>
+                <div class="partbox col-3"></div>
+                <div class="partbox col-5"></div>
+                <div class="partbox col-4"></div>
+                <div class="partbox col-3"></div>
+            </footer>
+        </div>
+    </body>
 </html>
