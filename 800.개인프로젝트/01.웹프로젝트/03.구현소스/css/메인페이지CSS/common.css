@@ -171,6 +171,35 @@
         font-size: min(1.2vw,12px);
     }
 
+    .jsearchBarWrap {
+    position: relative;
+    margin: 0;
+    padding: 35.7% 0;
+    }
+
+    #jsearchBar {
+    position: absolute;
+    display: flex;
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    outline: 3px solid skyblue;
+    border-radius: 20px;
+    font-size: 20px;
+    }
+
+    .searchIcon{
+    position: absolute;
+    cursor: pointer;
+    width: 8%;
+    left: 90%;
+    top: 53%;
+    height: 0%;
+    }
+
+    .searchIcon img{
+        width: 100%;
+    }
 /************* 3. 하단영역 *************/
 #footer {
     background-color: lightpink;

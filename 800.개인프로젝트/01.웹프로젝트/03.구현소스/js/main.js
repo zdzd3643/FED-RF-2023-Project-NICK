@@ -15,7 +15,19 @@ function loadFn(){
     // 부드러운 스크롤 적용 /////////////////
     startSS();
 
-     
+const jsearch = qs('#jsearchBar');
+
+    console.log("요소확인:",jsearch);
+
+const Data = qs('.jsearch.value');
+
+    console.log("입력된값:",Data)
+
+var validatFn = function (txt) {
+
+
+};
+
 }; ///////////////// loadFn ///////////////////
 ///////////////////////////////////////////////
 

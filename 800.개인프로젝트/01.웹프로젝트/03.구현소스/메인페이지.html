@@ -193,9 +193,22 @@
                 <!-- 2-4. 상품 검색영역 -->
                 <div class="group-part group-part-04">
                     <!-- 파트박스 2개 -->
-                    <section class="partbox col-4">
-                        <div class="jserch-box"></div>
-                    </section>
+                    <div class="partbox col-4">
+                        <section class="jserchBox">
+                            <div class="jsearchBarWrap">
+                                <input
+                                type="text"
+                                id="jsearchBar"
+                                placeholder="원하는 상품을 검색해보세요."
+                                maxlength="3"
+                                onkeypress="if(event.keyCode==13)jsearchBar"
+                                />
+                                <div class="searchIcon">
+                                    <img src="../01.자료수집/써치아이콘.png" alt="써치아이콘">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                     <div class="partbox col-8">
                         <section class="grid">
                             <div>
