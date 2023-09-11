@@ -23,10 +23,28 @@ const Data = qs('.jsearch.value');
 
     console.log("입력된값:",Data)
 
-var validatFn = function (txt) {
-
-
-};
-
 }; ///////////////// loadFn ///////////////////
 ///////////////////////////////////////////////
+
+var 나야나 = document.getElementById('mv').src;
+
+console.log("내꺼얌:",나야나);
+
+document.getElementById('mv').src = "https://www.youtube.com/embed/cjH6sAgIb_k";
+
+function 바꿔(먹이){
+
+    console.log('영상바꿔',먹이);
+    
+    document.getElementById('mv').src = "https://www.youtube.com/embed/"+먹이+"?autoplay=1";
+}
+//////////////////////// 바꿔 함수 /////////////////////////    
+
+
+function 커짐(){
+    
+    console.log('커지냐');
+
+    document.getElementsByClassName('tv').item(0).classList.toggle('on');
+}
+//////////////////// 커짐 함수 //////////////////////////////
