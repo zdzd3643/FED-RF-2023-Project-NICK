@@ -32,42 +32,27 @@ body > div > * {
 min-height: 800px;
 }
 /* 2-1. 로고 배너영역 */
-.logo-banner{
-    margin-left: 12%;
-}
-.logo-banner>img{
-    padding: 5px;
-}
 .logo-banner img {
-   cursor: pointer;
+    width: 100%;
+    cursor: pointer;
 }
 /* 2-2. 이벤트 배너영역 */
 .event-banner img {
     width: 100%;
     cursor: pointer;
 }
-/* 2-3. 우딜 이미지 */
-.ud{
-    position: relative;
-    width: 100%;
-}
-.ud>img{
-    position: absolute;
-    justify-content: center;
-    transform: translate(25%,5%);
-    cursor: pointer;
-}
+
 /* 2-4. 아이콘 이미지 */
 .icon img {
     width: 100%;
     margin: 0 auto;
 }
-.main .group-part-01 .partbox {
+/* .main .group-part-01 .partbox {
     height: 100%;
-}
-.main .group-part-02 .partbox {
+} */
+/* .main .group-part-02 .partbox {
     height: 450px;
-}
+} */
 /* 2-3. 행사 배너영역 */
 .main .group-part-03 .partbox {
     height: 300px;

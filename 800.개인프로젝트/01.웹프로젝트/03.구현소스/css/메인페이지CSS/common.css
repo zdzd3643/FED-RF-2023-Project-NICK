@@ -131,6 +131,51 @@
     background-color: hsla(214, 100%, 78%, 0.541);
     color: #000;
 }
+
+#slide {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+#slide li {
+    flex-shrink: 0;
+}
+
+#slide li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.abtn {
+    position: absolute;
+}
+.indicate{
+    display: flex;
+    position: absolute;
+}
+.indicate li {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.indicate li img{
+    position: absolute;
+}
+.indicate li img:last-child{
+    opacity: 0;
+}
+.indicate li.on img:last-child{
+    opacity: 1;
+}
+/* 2-3. 우딜 이미지 */
+.ud{
+    padding-left: 16%;
+}
+.ud>img{
+    width: 82%;
+}
 .product{
     width: 100%;
     height: 100%;
