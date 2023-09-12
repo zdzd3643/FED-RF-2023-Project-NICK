@@ -34,17 +34,20 @@ min-height: 800px;
 /* 2-1. 로고 배너영역 */
 .logo-banner img {
    width: 100%;
+   cursor: pointer;
 }
 /* 2-2. 이벤트 배너영역 */
 .event-banner img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 /* 2-3. 우딜 이미지 */
 .ud img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 /* 2-4. 아이콘 이미지 */
 .icon img {
@@ -66,7 +69,7 @@ min-height: 800px;
 } */
 /* 3-2. 소셜영역 */
 .main .group-part-05 .partbox {
-    height: 350px;
+    height: 400px;
 }
 /* 3-3. 고객센터영역 */
 .main .group-part-06 .partbox {

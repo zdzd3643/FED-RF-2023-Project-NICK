@@ -5,12 +5,11 @@
 
 /************* 1. 상단영역 *************/
 .header .partbox {
-    height: 90px;
+    height: 100%;
 }
 /* 1-1.로고박스 */
 .header__logo img{
-    margin-top: 10px;
-    width: 116px;
+    width: 70%;
 }
 /* 1-1-3. 탑메뉴 */
 .top-menu ul{
@@ -136,6 +135,9 @@
     width: 100%;
     height: 100%;
 }
+.product img{
+    cursor: pointer;
+}
 .grid{
     display: grid;
     max-width: 1300px;
@@ -146,6 +148,7 @@
 .grid img{
     padding: 6px;
     width: 60%;
+    cursor: pointer;
 }
     /* 그리드 각 박스 공통 */
     .grid>div{
@@ -208,9 +211,10 @@
 
     .tv{
         position: relative;
-        top: 10%;
+        top: 17%;
         width: 76%;
-        height: 79.9%;
+        height: 68.9%;
+        cursor: pointer;
     }
     .screen{
         width: 100%;
@@ -228,7 +232,6 @@
     .box-btn{
         /* display: none; */
         position: absolute;
-        top: -20px;
         right: 0;
         width: 130px;
         height: 68px;
@@ -242,12 +245,27 @@
         background-color: #fff;
         border: none;
         overflow: hidden;
+        cursor: pointer;
     }
     .box-btn button img{
         width: 113%;
         height: 105%;
         transform: translate(-5%,-2%);
         border-radius: 8px;
+    }
+    .more{
+        display: flex;
+        transform: translate(0,270px);
+        padding-left: 379px;
+    }
+    .more>h3{
+        font-size: 15px;
+        font-weight: normal;
+        color: #555;
+    }
+    .more img{
+        width: 20px;
+        height: 20px;
     }
 
     
