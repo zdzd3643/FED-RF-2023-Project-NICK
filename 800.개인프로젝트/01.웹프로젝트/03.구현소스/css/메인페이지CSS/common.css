@@ -281,6 +281,19 @@
         width: 10%;
         height: 15%;
     }
+    .instit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .instit>h3{
+        font-size: 40px;
+        padding-left: 10px;
+    }
+    .instit img{
+        width: 10%;
+        height: 15%;
+    }
 
     
 /************* 3. 하단영역 *************/

@@ -39,14 +39,17 @@ min-height: 800px;
 /* 2-2. 이벤트 배너영역 */
 .event-banner img {
     width: 100%;
-    height: 100%;
     cursor: pointer;
 }
 /* 2-3. 우딜 이미지 */
-.ud img {
+.ud{
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+.ud>img{
+    position: absolute;
+    justify-content: center;
+    transform: translate(25%,5%);
     cursor: pointer;
 }
 /* 2-4. 아이콘 이미지 */
