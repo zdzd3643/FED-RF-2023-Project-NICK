@@ -211,7 +211,8 @@
 
     .tv{
         position: relative;
-        top: 17%;
+        top: 3%;
+        left: 0.6%;
         width: 76%;
         height: 68.9%;
         cursor: pointer;
@@ -266,6 +267,19 @@
     .more img{
         width: 20px;
         height: 20px;
+    }
+    .ytit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ytit>h3{
+        font-size: 40px;
+        padding-left: 10px;
+    }
+    .ytit img{
+        width: 10%;
+        height: 15%;
     }
 
     
