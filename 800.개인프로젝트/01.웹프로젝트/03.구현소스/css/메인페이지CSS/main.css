@@ -32,8 +32,13 @@ body > div > * {
 min-height: 800px;
 }
 /* 2-1. 로고 배너영역 */
+.logo-banner{
+    margin-left: 12%;
+}
+.logo-banner>img{
+    padding: 5px;
+}
 .logo-banner img {
-   width: 100%;
    cursor: pointer;
 }
 /* 2-2. 이벤트 배너영역 */
