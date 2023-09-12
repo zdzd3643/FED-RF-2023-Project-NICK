@@ -185,16 +185,18 @@
     border: none;
     outline: 3px solid skyblue;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 23px;
+    margin-top: -6%;
+    text-align: center;
     }
 
     .searchIcon{
     position: absolute;
     cursor: pointer;
-    width: 8%;
+    width: 7%;
+    height: 5%;
     left: 90%;
-    top: 53%;
-    height: 0%;
+    top: 46%;
     }
     .searchIcon img{
         width: 100%;
