@@ -274,8 +274,8 @@
         position: relative;
         top: 3%;
         left: 0.6%;
-        width: 76%;
-        height: 68.9%;
+        width: 75%;
+        height: 68.5%;
         cursor: pointer;
     }
     .screen{
@@ -283,7 +283,6 @@
         height: 100%;
         position: absolute;
         border-radius: 15px;
-        background-color: skyblue;
         overflow: hidden;
     }
     #mv{
@@ -318,7 +317,7 @@
     .more{
         display: flex;
         transform: translate(0,270px);
-        padding-left: 379px;
+        padding-left: 373px;
     }
     .more>h3{
         font-size: 15px;
