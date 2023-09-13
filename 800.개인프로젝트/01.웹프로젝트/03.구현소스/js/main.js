@@ -13,7 +13,7 @@ const addEvt =
 window.addEventListener('DOMContentLoaded',loadFn);
 
 let clickSts = 0;
-const TIME_SLIDE = 400;
+const TIME_SLIDE = 0;
 
 /****************************************** 
     함수명: loadFn
@@ -30,7 +30,97 @@ function loadFn(){
     const slide = qs('#slide');
     const indicate = qsa('.indicate li');
     
+    console.log('대상',abtn,slide,indicate);
 
+    slide.querySelectorAll('li').forEach((ele,idx)=>ele.setAttribute('data-seq',idx));
+
+    abtn.forEach(ele=>addEvt(ele,'click',goSlide));
+
+    function goSlide(){
+        if(clickSts) return;
+        clickSts=1;
+        setTimeout(() => clickSts=0, TIME_SLIDE);
+
+        stsI = 0;
+
+        if(stsI) clearAuto();
+
+        console.log('나야나!',this,this.classList.contains('ab2'));
+
+        let isRight = this.classList.contains('ab2');
+
+        let eachOne = slide.querySelectorAll('li');
+
+        if(isRight){
+            rigthSlide();
+        }
+        else{
+            slide.insertBefore(
+                eachOne[eachOne.length-1], eachOne[0]);
+            slide.style.left = '-100%';
+            slide.style.transition = 'none';
+
+            setTimeout(() => {
+                slide.style.left = '0';
+
+                slide.style.transition = 
+                    TIME_SLIDE+'ms ease-in-out';
+            }, 0);
+        } ////////// else //////////
+
+        chgIndicate(isRight);
+
+        clearAuto();
+
+    } ////////////// goSlide 함수 //////////////
+
+    function chgIndicate(isRight){
+        let nowSeq =
+        slide.querySelectorAll('li')[isRight?1:0].getAttribute('data-seq');
+
+        console.log('현재슬라이드 순번:',nowSeq);
+        
+        indicate.forEach((ele,idx)=>{
+            if(idx==nowSeq) ele.classList.add('on');
+            else ele.classList.remove('on');
+        }); ////////// forEach //////////
+
+    } //////// chgIndicat 함수 ///////////////
+
+    function rigthSlide(){
+        slide.style.left = '-100%';
+        slide.style.transition =
+            TIME_SLIDE+'ms ease-in-out';
+
+        setTimeout(() => {
+            slide.appendChild(
+                slide.querySelectorAll('li')[0]);
+            slide.style.left = '0';
+            slide.style.transition = 'none';
+        }, TIME_SLIDE);
+    } ////////// rightSlide 함수 ///////////
+
+    let autoI;
+
+    let autoT;
+
+    function slideAuto(){
+        autoI = setInterval(() => {
+            rigthSlide();
+            chgIndicate(1);
+        }, 3000);
+    } //////////// slideAuto 함수 ///////////
+
+    slideAuto();
+
+    function clearAuto(){
+        console.log('멈춤!');
+
+        clearInterval(autoI);
+        clearTimeout(autoT);
+
+        autoT = setTimeout(slideAuto,3000);
+    } ///////// clearAuto 함수 //////////////
 
 }; ///////////////// loadFn ///////////////////
 ///////////////////////////////////////////////
