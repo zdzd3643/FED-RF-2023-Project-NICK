@@ -36,11 +36,6 @@ min-height: 800px;
     width: 100%;
     cursor: pointer;
 }
-/* 2-2. 이벤트 배너영역 */
-.event-banner img {
-    width: 100%;
-    cursor: pointer;
-}
 
 /* 2-4. 아이콘 이미지 */
 .icon img {
