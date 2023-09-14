@@ -30,7 +30,7 @@ function loadFn(){
     const slide = qs('#slide');
     const indicate = qsa('.indicate li');
     
-    console.log('대상',abtn,slide,indicate);
+    // console.log('대상',abtn,slide,indicate);
 
     slide.querySelectorAll('li').forEach((ele,idx)=>ele.setAttribute('data-seq',idx));
 
