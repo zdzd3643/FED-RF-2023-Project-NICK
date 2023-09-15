@@ -32,8 +32,16 @@ body > div > * {
 min-height: 800px;
 }
 /* 2-1. 로고 배너영역 */
+.samgime{
+    width: 100%;
+    transform: translateY(11%);
+}
+.samgime img{
+    width: 100%;
+}
 .logo-banner img {
     width: 100%;
+    top: 50%;
     cursor: pointer;
 }
 .container{
@@ -68,9 +76,9 @@ min-height: 800px;
     height: 450px;
 } */
 /* 2-3. 행사 배너영역 */
-.main .group-part-03 .partbox {
+/* .main .group-part-03 .partbox {
     height: 300px;
-}
+} */
 /* .main .group-part-04 .partbox {
     height: 250px;
 } */
