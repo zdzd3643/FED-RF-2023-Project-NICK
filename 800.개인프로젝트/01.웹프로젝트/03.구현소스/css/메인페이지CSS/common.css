@@ -234,13 +234,14 @@
         font-size: min(1.2vw,12px);
     }
 
-    .jsearchBarWrap {
+    /**************** 제품 검색 창 ****************/
+    .psearchBarWrap {
     position: relative;
     margin: 0;
     padding: 35.7% 0;
     }
 
-    #jsearchBar {
+    #psearchBar {
     position: absolute;
     display: flex;
     padding: 15px 0;
@@ -253,7 +254,7 @@
     text-align: center;
     }
 
-    .searchIcon{
+    .psearchIcon{
     position: absolute;
     cursor: pointer;
     width: 7%;
@@ -261,10 +262,10 @@
     left: 90%;
     top: 46%;
     }
-    .searchIcon img{
+    .psearchIcon img{
         width: 100%;
     }
-    /* 유튜브 */
+    /*********************** 유튜브 ***********************/
     .tv.on{
         transform: scale(1.5);
     }
@@ -327,6 +328,7 @@
         width: 20px;
         height: 20px;
     }
+     /*********************** 인스타 ***********************/
     .ytit{
         display: flex;
         justify-content: center;
@@ -404,6 +406,57 @@
     }
     .insindicate li.on img:last-child{
         opacity: 1;
+    }
+    /**************** 점포 검색 창 ****************/
+    .jsearchBarWrap {
+        position: relative;
+        margin: 0;
+        padding: 26.7% 0;
+    }
+    
+    #jsearchBar {
+        position: absolute;
+        display: flex;
+        padding: 15px 0;
+        width: 60%;
+        border: none;
+        outline: 3px solid skyblue;
+        border-radius: 20px;
+        font-size: 20px;
+        margin-top: -6%;
+        text-align: center;
+    }
+    
+    .jsearchIcon{
+        position: absolute;
+        cursor: pointer;
+        width: 3.5%;
+        height: 3.5%;
+        left: 55%;
+        top: 43%;
+    }
+    .jsearchIcon img{
+        width: 100%;
+    }
+    .jumpo{
+        position: relative;
+        top: -50%;
+        left: 57%;
+        width: 42%;
+        height: 60%;
+        transform: translateY(-50%);
+    }
+    .jumpo img{
+        position: absolute;
+        width: 100%;
+    }
+    /**************** 고객 상담센터 ****************/
+    .Service-ct>h2{
+        font-size: 4rem;
+        font-weight: normal;
+        text-align: center;
+        width: 60%;
+        top: 50%;
     }
     
 /************* 3. 하단영역 *************/
