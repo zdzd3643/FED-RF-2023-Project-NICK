@@ -108,30 +108,51 @@ min-height: 800px;
 .indicate li.on img:last-child{
     opacity: 1;
 }
-
+.ins-banner{
+    position: relative;
+}
+.slide > .slide2 {
+    left: 0;
+    display: flex;
+    width: 100%;
+}
+.slide2 > ol {
+    width: 100%;
+}
+.abtn{
+    position: absolute;
+}
+.ab1{
+    left: 40%;
+    width: 2%;
+}
+.ab2{
+    right: 40%;
+    width: 2%;
+}
+.abtn img{
+    width: 100%;
+    height: 100%;
+}
+.instit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instit>h3{
+    font-size: 40px;
+    padding-left: 10px;
+}
+.instit img{
+    width: 10%;
+    height: 15%;
+}
 /* 2-4. 아이콘 이미지 */
 .icon img {
     width: 100%;
     margin: 0 auto;
 }
-/* .main .group-part-01 .partbox {
-    height: 100%;
-} */
-/* .main .group-part-02 .partbox {
-    height: 450px;
-} */
-/* 2-3. 행사 배너영역 */
-/* .main .group-part-03 .partbox {
-    height: 300px;
-} */
-/* .main .group-part-04 .partbox {
-    height: 250px;
-} */
 /* 3-2. 소셜영역 */
 .main .group-part-05 .partbox {
     height: 400px;
-}
-/* 3-3. 고객센터영역 */
-.main .group-part-06 .partbox {
-    height: 350px;
 }

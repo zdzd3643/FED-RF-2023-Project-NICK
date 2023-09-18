@@ -291,91 +291,12 @@
         width: 10%;
         height: 15%;
     }
-    .instit{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .instit>h3{
-        font-size: 40px;
-        padding-left: 10px;
-    }
-    .instit img{
-        width: 10%;
-        height: 15%;
-    }
-    .ins-banner{
-        position: relative;
-        width: 100%;
-        height: calc(100% - 63px);
-        overflow: hidden;
-    }
-    #insslide{
-        position: relative;
-        left: 0;
-        display: flex;
-        width: 100%;
-    }
-    #insslide>li {
-        flex-shrink: 0;
-        flex-basis: 100%;
-
-    }
     
-    #insslide>li>ol{
-        display: flex;
-        width: 100%;
-    }
-    #insslide>li>ol>li{
-        flex-shrink: 0;
-        width: 50%;
-    }
-    #insslide>li>ol>li>img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        cursor: pointer;
-    }
-    .insabtn {
-        position: absolute;
-    }
-    .iab1{
-        left: 65%;
-        width: 1%;
-    }
-    .iab2{
-        right: 19%;
-        width: 1%;
-    }
-    .insabtn img{
-        width: 100%;
-        height: 100%;
-    }
-    .insindicate{
-        display: flex;
-        position: absolute;
-        left: 75%;
-        transform: translateX(-75%);
-    }
-    .insindicate li {
-        width: 16px;
-        height: 16px;
-        cursor: pointer;
-    }
-    .insindicate li img{
-        position: absolute;
-    }
-    .insindicate li img:last-child{
-        opacity: 0;
-    }
-    .insindicate li.on img:last-child{
-        opacity: 1;
-    }
     /**************** 점포 검색 창 ****************/
     .jsearchBarWrap {
         position: relative;
         margin: 0;
-        padding: 26.7% 0;
+        padding: 22% 0;
     }
     
     #jsearchBar {
@@ -386,7 +307,7 @@
         border: none;
         outline: 3px solid skyblue;
         border-radius: 20px;
-        font-size: 20px;
+        font-size: 100%;
         margin-top: -6%;
         text-align: center;
     }
@@ -403,56 +324,58 @@
         width: 100%;
     }
     .jumpo{
-        position: relative;
-        top: -50%;
-        left: 57%;
-        width: 42%;
-        height: 60%;
-        transform: translateY(-50%);
+        position: absolute;
+        top: 15%;
+        left: 60%;
+        width: 40%;
+        height: 0%;
     }
     .jumpo img{
         position: absolute;
         width: 100%;
     }
     /**************** 고객 상담센터 ****************/
-    .Service-ct{
+    .sct{
         position: relative;
-        width: 100%;
-        height: 100%;
+        padding: 22% 0;
     }
-    .Service-ct h2{
+    .sct h2{
         position: absolute;
-        font-size: 4rem;
-        font-weight: normal;
-        text-align: center;
-        width: 60%;
-        transform: translateY(180%);
-    }
-    .Service-ct h3{
-        position: absolute;
-        font-size: 4rem;
-        font-weight: normal;
-        text-align: center;
-        width: 60%;
-        transform: translateY(325%);
-        color: darkblue;
-    }
-    .Service-ct h4{
-        position: absolute;
-        font-size: 2rem;
         font-weight: normal;
         text-align: center;
         width: 40%;
-        transform: translate(150%,225%);
-    }
-    .tellicon{
-        position: relative;
-        top: 44.5%;
+        top: calc(40% - 50px/2);
         left: 5%;
-        width: 8%;
+        font-size: 150%;
+        white-space: nowrap;
+    }
+    .sct h3{
+        position: absolute;
+        font-weight: normal;
+        text-align: center;
+        width: 40%;
+        top: calc(60% - 50px/2);
+        left: 5%;
+        font-size: 150%;
+        color: darkblue;
+        white-space: nowrap;
+    }
+    .sct h4{
+        position: absolute;
+        font-weight: normal;
+        text-align: center;
+        top: calc(50% - 50px/2);
+        left: 60%;
+        width: 40%;
+        white-space: nowrap;
+    }
+    .sct .tellicon{
+        position: absolute;
+        top: calc(54% - 50px/2);
+        left: 5%;
+        width: 7%;
     }
     .tellicon img{
-        position: absolute;
         width: 100%;
     }
 /************* 3. 하단영역 *************/

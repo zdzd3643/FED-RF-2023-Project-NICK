@@ -26,7 +26,7 @@ function loadFn() {
   startSS();
 
   slideFn(qs('.slide-wrap-box'));
-//   slideFn(qs('.ins-banner'));
+  slideFn(qs('.ins-banner'));
 
 
   ////// 슬라이드 공용 함수 ////////////
@@ -36,8 +36,6 @@ function loadFn() {
     const abtn = tgEle.querySelectorAll(".abtn");
     const slide = tgEle.querySelector('.slide');
     const indicate = tgEle.querySelectorAll(".indicate li");
-
-    console.log('대상',abtn,slide,indicate);
 
     slide
       .querySelectorAll("li")
