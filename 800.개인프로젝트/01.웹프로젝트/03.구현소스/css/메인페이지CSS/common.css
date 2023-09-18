@@ -484,7 +484,7 @@
     }
     .tellicon{
         position: relative;
-        top: 43%;
+        top: 44.5%;
         left: 5%;
         width: 8%;
     }
@@ -499,10 +499,10 @@
 /* 3-2.회사주소 */
 .link-site{
     font-size: 80%;
+    white-space: nowrap;
 }
 .co-info address{
-    color: #000;
-    font-size: 1.6rem;
+    font-size: 60%;
     font-style: normal;
 }
 /* 3-3.SNS박스 */
@@ -512,13 +512,15 @@
     top: 50%;
 }
 .sns-full h2{
-    font-weight: normal;
-    font-size: 2.5rem;
-    width: 25%;
+    font-weight: lighter;
+    font-size: 100%;
+    margin-left: 22%;
+    width: 22%;
     text-align: center;
+    white-space: nowrap;
 }
 .sns-full .sns-arrow{
-    width: 5%;
+    width: 4%;
 }
 .sns-arrow img{
     width: 100%;
@@ -531,13 +533,35 @@
     gap: 0 15px;
 }
 .sns-box a{
-    font-size: 3rem;
+    font-size: 110%;
 }
 .sns-logo{
-    width: 30%;
+    width: 20%;
+    transform: translateX(110%);
 }
 .sns-logo img{
     width: 100%;
+}
+.site-btn ol{
+    display: flex;
+    padding: 10px 0;
+}
+.site-btn li{
+    transform: translateX(110%);
+}
+.site-btn ol>li>a{
+    font-size: 100%;
+    display: block;
+    white-space: nowrap;
+}
+.site-btn ol>li:hover>a{
+    color: skyblue;
+}
+.site-btn ol>li>a::after{
+    content: "∧";
+    display: inline-block;
+    transform: scale(0.7, 0.5);
+    margin-left: 3px;
 }
 /* 각 sns별 오버시 아이콘색(글자색)넣기 */
 .fa-square-facebook:hover{
