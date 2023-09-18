@@ -497,20 +497,19 @@
     background-color: lightpink;
 } */
 /* 3-2.회사주소 */
+.link-site{
+    font-size: 80%;
+}
 .co-info address{
     color: #000;
     font-size: 1.6rem;
     font-style: normal;
-}
-.footer .partbox {
-    height: 100px;
 }
 /* 3-3.SNS박스 */
 .sns-full{
     display: flex;
     align-items: center;
     top: 50%;
-    transform: translateY(25%);
 }
 .sns-full h2{
     font-weight: normal;
