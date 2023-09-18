@@ -51,17 +51,62 @@ min-height: 800px;
     width: 100%;
 }
 /* 2-2. 이벤트 배너영역 */
-#slide{
+.slide-box{
     overflow: hidden;
 }
-.container>#slide {
-    position: absolute;
-    float: left;
-    box-sizing: border-box;
+.slide {
+    position: relative;
+    left: 0;
+    display: flex;
+    width: 100%;
 }
-#slide img{
+
+.slide li {
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+
+.slide li img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.abtn {
+    position: absolute;
+}
+.ab1{
+    left: 40%;
+    width: 1.5%;
+}
+.ab2{
+    right: 40%;
+    width: 1.5%;
+}
+.abtn img{
+    width: 100%;
+    height: 100%;
+}
+.indicate{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicate li {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.indicate li img{
+    position: absolute;
+}
+.indicate li img:last-child{
+    opacity: 0;
+}
+.indicate li.on img:last-child{
+    opacity: 1;
 }
 
 /* 2-4. 아이콘 이미지 */
