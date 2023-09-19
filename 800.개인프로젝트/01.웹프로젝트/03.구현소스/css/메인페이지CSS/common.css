@@ -4,6 +4,9 @@
 /* 공유기능 요소 셋팅 */
 
 /************* 1. 상단영역 *************/
+#header{
+    border-bottom: 2px solid skyblue;
+}
 .header__logo{
     transform: translateY(10%);
     width: 80%;
@@ -34,7 +37,7 @@
 .gnb {
     position: sticky;
     max-width: 1043px;
-    outline: 3px dotted yellow;
+    /* outline: 3px dotted yellow; */
 }
 .gnb>ul{
     /* 플렉스박스 */
@@ -125,12 +128,42 @@
 }
 
 /************* 2. 메인영역 : .group-part *************/
+/*********************** 이벤트배너 ***********************/
 .event-list{
     font-size: 2rem;
     text-align: center;
     white-space: nowrap;
-    background-color: hsla(214, 100%, 78%, 0.541);
-    color: #000;
+    background-color: #fff;
+}
+.event-list > ol > li{
+    margin-left: -3%;
+    padding: 7%;
+    border-bottom: 2px solid #83838383;
+    color: #fff;
+}
+.event-list > ol > li > a{
+    color: #222;
+}
+/*********************** 행사제품 배너 ***********************/
+.product-list{
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+}
+.product-list > ol > li{
+    padding: 7.5%;
+    border-bottom: 2px solid #83838383;
+}
+.col-2 > h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.col-2 > h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
 }
 
 /* 2-3. 우딜 이미지 */
@@ -140,11 +173,14 @@
 .ud>img{
     width: 82%;
 }
+/* 그리드 제품 */
 .product{
     width: 100%;
     height: 100%;
 }
 .product img{
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 .grid{
@@ -215,22 +251,19 @@
         width: 100%;
     }
     /*********************** 유튜브 ***********************/
-    .tv.on{
-        transform: scale(1.5);
-    }
-
     .tv{
         position: relative;
         top: 3%;
         left: 0.6%;
         width: 75%;
-        height: 68.5%;
+        height: 100%;
         cursor: pointer;
     }
     .screen{
-        width: 100%;
-        height: 100%;
         position: absolute;
+        outline: 2px solid skyblue;
+        width: 104%;
+        height: 88%;
         border-radius: 15px;
         overflow: hidden;
     }
@@ -241,43 +274,59 @@
     }
     .box-btn{
         /* display: none; */
-        position: absolute;
-        right: 0;
-        width: 130px;
-        height: 68px;
-        transform: translateX(110%);
+        width: 26%;
+        height: 68%;
+        transform: translateX(407%);
     }
     .box-btn button{
         width: 100%;
-        height: 107%;
+        height: 100%;
         border-radius: 8px;
-        outline: 2px solid skyblue; 
         background-color: #fff;
         border: none;
-        overflow: hidden;
         cursor: pointer;
     }
     .box-btn button img{
+        outline: 2px solid skyblue;
         width: 113%;
         height: 105%;
-        transform: translate(-5%,-2%);
+        transform: translate(-5%, 2%);
         border-radius: 8px;
     }
     .more{
+        position: absolute;
         display: flex;
-        transform: translate(0,270px);
-        padding-left: 373px;
+        padding-left: 82%;
+        margin-top: -7%;
     }
     .more>h3{
-        font-size: 15px;
+        font-size: 75%;
         font-weight: normal;
         color: #555;
+        white-space: nowrap;
     }
     .more img{
         width: 20px;
         height: 20px;
     }
      /*********************** 인스타 ***********************/
+    .more2{
+        display: flex;
+        padding-left: 84%;
+        cursor: pointer;
+        align-items: center;
+    }
+    .more2>h3{
+        font-size: 75%;
+        font-weight: normal;
+        color: #555;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .more2 img{
+        width: 20%;
+        height: 20%;
+    }
     .ytit{
         display: flex;
         justify-content: center;
@@ -308,7 +357,7 @@
         outline: 3px solid skyblue;
         border-radius: 20px;
         font-size: 100%;
-        margin-top: -6%;
+        margin-top: -4%;
         text-align: center;
     }
     
@@ -318,14 +367,14 @@
         width: 3.5%;
         height: 3.5%;
         left: 55%;
-        top: 43%;
+        top: 45%;
     }
     .jsearchIcon img{
         width: 100%;
     }
     .jumpo{
         position: absolute;
-        top: 3%;
+        top: 7%;
         left: 63%;
         width: 34%;
         height: 0%;
@@ -386,6 +435,7 @@
 .link-site{
     font-size: 80%;
     white-space: nowrap;
+    cursor: pointer;
 }
 .co-info address{
     font-size: 60%;
@@ -428,8 +478,6 @@
 .sns-logo img{
     width: 100%;
 }
-.site-btn{
-}
 .site-btn>ul{
     display: flex;
     padding: 10px 15px;
@@ -460,14 +508,18 @@
     color: #fff;
     border-radius: 30px;
 }
+.sbtn{
+    outline: 2px solid #555;
+}
 .smenu{
     position: absolute;
     display: none;
-    margin-top: -440px;
+    margin-top: -448px;
+    outline: 1px solid #555;
 }
 .smenu>ol>li{
     background-color: #fff;
-    outline: 2px dashed rgb(170, 225, 247);
+    border-bottom: 1px solid #555;
 }
 .site-btn ul > li:hover .smenu {
     display: block;
@@ -483,14 +535,18 @@
     transform: scale(0.7, 0.5);
     margin-left: 3px;
 }
+.sbtn2{
+    outline: 1px solid #555;
+}
 .smenu2{
     position: absolute;
     display: none;
     margin-top: -608px;
+    outline: 1px solid #555;
 }
 .smenu2>ol>li{
     background-color: #fff;
-    outline: 2px dashed rgb(170, 225, 247);
+    border-bottom: 1px solid #555;
 }
 .site-btn ul > li:hover .smenu2 {
     display: block;
