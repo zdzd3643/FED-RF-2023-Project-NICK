@@ -5,7 +5,7 @@
 
 /************* 1. 상단영역 *************/
 #header{
-    background-color: #eef5faf6;
+    background-color: #e7f4fcf6;
     font-family: 'Dongle';
 }
 .header__logo{
@@ -22,7 +22,7 @@
     display: flex;
     /* 진행방향정렬 */
     justify-content: flex-start;   
-    padding: 0;
+    gap: 0 3%;
     /* 줄바꿈방지 */
     white-space: nowrap;
 }
@@ -46,7 +46,7 @@
     /* 진행방향정렬 */
     justify-content:center;
     white-space: nowrap;
-    gap: 0 10px;
+    gap: 0 2%;
 }
 .gnb ul>li{
     position: relative;
@@ -64,10 +64,6 @@
     /* 줄바꿈방지 */
     white-space: nowrap;
 }
-/* GNB 상위li 오버시 a */
-.gnb ul>li:hover>a{
-    color: #015acf;
-}
 .gnb ul>li:hover .sub-menu{
     opacity: 1;
     display: block;
@@ -79,17 +75,15 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px 10px;
-    /* 박스글로우 */
-    box-shadow: inset 0 0 5px lightblue;
+    padding: 10px 15px;
     /* 넘치는 요소 숨기기 */
     overflow: hidden;
     /* 트랜지션 */
-    background-color: #0278fe77;
+    background-color: #4a9dfc;
     border-radius: 20px;
-    box-shadow: inset 0 0 5px lightblue;
     z-index: 1;
     transition: 0.2s ease-in-out;
+    margin-top: -20%;
 
     
 }
@@ -467,7 +461,7 @@
 .sns-full h2{
     font-weight: lighter;
     font-size: min(3rem, 3vw);
-    margin-left: 11%;
+    margin-left: 6%;
     width: 22%;
     text-align: center;
     white-space: nowrap;
@@ -492,7 +486,7 @@
 }
 .sns-logo{
     width: min(20%);
-    transform: translateX(50%);
+    transform: translateX(30%);
 }
 .sns-logo img{
     width: 100%;
@@ -536,7 +530,7 @@
 .smenu{
     position: absolute;
     display: none;
-    margin-top: min(-49rem, 2vw);
+    margin-top: min(-49.2rem, 2vw);
     outline: 1px solid #555;
     font-family: 'Dongle';
 }
@@ -549,7 +543,7 @@
 }
 .smenu>ol>li>a {
     display: block;
-    padding: 10px 15.5px;
+    padding: 10px 16.8px;
     text-align: center;
 }
 .site-btn ul>li.sbtn2>a::after{
@@ -578,7 +572,7 @@
 }
 .smenu2>ol>li>a {
     display: block;
-    padding: 10px 21.5px;
+    padding: 10px 21.8px;
     text-align: center;
 }
 /* 각 sns별 오버시 아이콘색(글자색)넣기 */
@@ -593,4 +587,7 @@
 }
 .fa-square-youtube:hover{
     color: orangered;
+}
+#footer{
+    background-color: #e7f4fcf6;
 }
