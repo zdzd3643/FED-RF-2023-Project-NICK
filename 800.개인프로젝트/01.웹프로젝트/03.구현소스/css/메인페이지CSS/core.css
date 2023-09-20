@@ -6,18 +6,6 @@
 /* 웹폰트 CDN */
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+Han+Sans&family=Dongle:wght@700&family=Gamja+Flower&family=Gugi&family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR:wght@500&family=Single+Day&display=swap");
 
-/* 파트별 글씨체  */
-    /* 
-    1. 탑메뉴 
-
-    2. gnb메뉴
-
-    3. 메인영역
- 
-    4. 하단영역
-    */
-
-
 /* 전체 글자크기 적용 */
 html{
     font-size: 10px;

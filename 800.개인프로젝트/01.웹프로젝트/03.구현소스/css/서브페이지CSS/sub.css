@@ -25,19 +25,20 @@ body > div > * {
 .header,main,footer{
     font-size: 2rem;
 }
-
+/************* 3. 메인영역 : .group-part *************/
+/* 본문영역 최소높이 셋팅! */
+#main {
+    min-height: 800px;
+    }
+.group-part.group-part-02 {
+    padding-top: 3%;
+    border-top: 2px solid skyblue;
+    padding-bottom: 3%;
+}
 /************* 3. 메인영역 : .group-part *************/
 /* 본문영역 최소높이 셋팅! */
 #main {
 min-height: 800px;
-}
-/* 2-1. 로고 배너영역 */
-.main .group-part-01 .partbox {
-    height: 300px;
-}
-/* 2-2. 이벤트 배너영역 */
-.main .group-part-02 .partbox {
-    height: 350px;
 }
 /* 2-3. 행사 배너영역 */
 .main .group-part-03 .partbox {
