@@ -5,7 +5,8 @@
 
 /************* 1. 상단영역 *************/
 #header{
-    border-bottom: 2px solid skyblue;
+    background-color: #eef5faf6;
+    font-family: 'Dongle';
 }
 .header__logo{
     transform: translateY(10%);
@@ -20,7 +21,7 @@
     /* 플렉스박스 */
     display: flex;
     /* 진행방향정렬 */
-    justify-content: flex-end;   
+    justify-content: flex-start;   
     padding: 0;
     /* 줄바꿈방지 */
     white-space: nowrap;
@@ -30,8 +31,8 @@
     margin-left: 10px;
 }
 /* 탑메뉴 a */
-.top-menu a{
-    font-size: 1rem;
+.top-menu > ul > li >a{
+    font-size: min(2rem, 1vw);
 }
 /* 1-1-2. GNB메뉴 */
 .gnb {
@@ -43,9 +44,9 @@
     /* 플렉스박스 */
     display: flex;
     /* 진행방향정렬 */
-    justify-content:flex-start;
-    margin-top: 5px;
+    justify-content:center;
     white-space: nowrap;
+    gap: 0 10px;
 }
 .gnb ul>li{
     position: relative;
@@ -58,7 +59,7 @@
 /* GNB메뉴 상위메뉴a */
 .gnb ul>li>a{
     display: block;
-    font-size: min(2.7rem, 3vw);
+    font-size: min(4rem, 3vw);
     padding: min(30px, 1vw);
     /* 줄바꿈방지 */
     white-space: nowrap;
@@ -102,7 +103,7 @@
     display: block;
     padding: 0;
     line-height: 40px;
-    font-size: min(2.2rem, 2.5vw);
+    font-size: min(3rem, 2.5vw);
     /* 반투명 */
     opacity: 0.5;
     /* 트랜지션 */
@@ -130,14 +131,14 @@
 /************* 2. 메인영역 : .group-part *************/
 /*********************** 이벤트배너 ***********************/
 .event-list{
-    font-size: 2rem;
+    font-size: min(3rem, 2vw);
     text-align: center;
     white-space: nowrap;
-    background-color: #fff;
+    font-family: 'Dongle';
 }
 .event-list > ol > li{
     margin-left: -3%;
-    padding: 7%;
+    padding: 4%;
     border-bottom: 2px solid #83838383;
     color: #fff;
 }
@@ -146,24 +147,28 @@
 }
 /*********************** 행사제품 배너 ***********************/
 .product-list{
-    font-size: 2rem;
+    font-size: min(3rem, 2vw);
     text-align: center;
     white-space: nowrap;
+    font-family: 'Dongle';
 }
 .product-list > ol > li{
-    padding: 7.5%;
+    padding: 4%;
     border-bottom: 2px solid #83838383;
 }
 .col-2 > h2 {
     text-align: center;
     font-weight: normal;
-    font-size: 15px;
+    font-size: min(2.5rem, 1.8vw);
+    font-family: 'Dongle';
+    white-space: nowrap;
 }
 
 .col-2 > h3 {
     text-align: center;
     font-weight: normal;
-    font-size: 15px;
+    font-size: min(2.5rem, 1.8vw);
+    font-family: 'Dongle';
 }
 
 /* 2-3. 우딜 이미지 */
@@ -189,6 +194,7 @@
     grid-template-columns: repeat(6,3fr);
     grid-column-gap: min(1vw,10px);
     grid-row-gap: min(46.5vw,-30px);
+    font-family: 'Dongle';
 }
 .grid img{
     padding: 6px;
@@ -216,7 +222,7 @@
         text-align: center;
         color: #000;
         background-color: #fff;
-        font-size: min(1.2vw,12px);
+        font-size: min(1.2vw,20px);
     }
 
     /**************** 제품 검색 창 ****************/
@@ -234,7 +240,7 @@
     border: none;
     outline: 3px solid skyblue;
     border-radius: 20px;
-    font-size: 23px;
+    font-size: min(2rem, 1.6vw);
     margin-top: -6%;
     text-align: center;
     }
@@ -262,7 +268,7 @@
     .screen{
         position: absolute;
         outline: 2px solid skyblue;
-        width: 104%;
+        width: 103%;
         height: 88%;
         border-radius: 15px;
         overflow: hidden;
@@ -296,28 +302,32 @@
     .more{
         position: absolute;
         display: flex;
-        padding-left: 82%;
+        padding-left: 78%;
         margin-top: -7%;
     }
     .more>h3{
-        font-size: 75%;
+        margin-top: -7%;
+        font-size: min(3rem, 2vw);
         font-weight: normal;
         color: #555;
         white-space: nowrap;
+        font-family: 'Dongle';
     }
     .more img{
-        width: 20px;
-        height: 20px;
+        width: 25%;
+        height: 15%;
     }
      /*********************** 인스타 ***********************/
     .more2{
         display: flex;
-        padding-left: 84%;
+        padding-left: 80%;
         cursor: pointer;
         align-items: center;
+        margin-top: -1%;
     }
     .more2>h3{
-        font-size: 75%;
+        font-size: min(3rem, 1.7vw);
+        font-family: 'Dongle';
         font-weight: normal;
         color: #555;
         white-space: nowrap;
@@ -331,10 +341,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2%;
     }
     .ytit>h3{
-        font-size: 40px;
+        font-size: min(3vw,100px);
         padding-left: 10px;
+        font-family: 'Dongle';
     }
     .ytit img{
         width: 10%;
@@ -356,7 +368,7 @@
         border: none;
         outline: 3px solid skyblue;
         border-radius: 20px;
-        font-size: 100%;
+        font-size: min(2rem, 1vw);
         margin-top: -4%;
         text-align: center;
     }
@@ -393,53 +405,58 @@
         font-weight: normal;
         text-align: center;
         width: 40%;
-        top: calc(40% - 50px/2);
+        top: calc(30% - 50px/2);
         left: 5%;
-        font-size: 150%;
+        font-size: min(6rem, 5vw);
         white-space: nowrap;
+        font-family: 'Dongle'
     }
     .sct h3{
         position: absolute;
-        font-weight: normal;
         text-align: center;
         width: 40%;
-        top: calc(60% - 50px/2);
+        top: calc(55% - 50px/2);
         left: 5%;
-        font-size: 150%;
+        font-size: min(6rem, 5vw);
         color: darkblue;
         white-space: nowrap;
+        font-family: 'Dongle'
     }
     .sct h4{
+        font-family: 'Noto Sans KR', sans-serif;
         position: absolute;
         font-weight: normal;
         text-align: center;
         top: calc(50% - 50px/2);
-        left: 60%;
+        left: 55%;
         width: 40%;
         white-space: nowrap;
+        font-size: min(2rem, 1.6vw);
     }
     .sct .tellicon{
         position: absolute;
-        top: calc(54% - 50px/2);
-        left: 5%;
+        top: calc(60% - 50px/2);
+        left: 3%;
         width: 7%;
     }
     .tellicon img{
         width: 100%;
     }
 /************* 3. 하단영역 *************/
-/* #footer {
-    background-color: lightpink;
-} */
 /* 3-2.회사주소 */
-.link-site{
-    font-size: 80%;
+.link-site > h2{
+    font-size: min(1.3rem, 1vw);
+    font-weight: normal;
     white-space: nowrap;
     cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .co-info address{
-    font-size: 60%;
+    font-size: min(1.2rem, 1vw);
+    white-space: nowrap;
     font-style: normal;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 3%;
 }
 /* 3-3.SNS박스 */
 .sns-full{
@@ -449,11 +466,13 @@
 }
 .sns-full h2{
     font-weight: lighter;
-    font-size: 100%;
-    margin-left: 22%;
+    font-size: min(3rem, 3vw);
+    margin-left: 11%;
     width: 22%;
     text-align: center;
     white-space: nowrap;
+    margin-top: -1%;
+    font-family: 'Dongle';
 }
 .sns-full .sns-arrow{
     width: 4%;
@@ -462,36 +481,38 @@
     width: 100%;
 }
 .sns-box{
-    margin-left: auto;
+    margin-left: 1vw;
 }
 .sns-box ol{
     display: flex;
     gap: 0 15px;
 }
 .sns-box a{
-    font-size: 110%;
+    font-size: min(2.5rem, 1vw);
 }
 .sns-logo{
-    width: 20%;
-    transform: translateX(110%);
+    width: min(20%);
+    transform: translateX(50%);
 }
 .sns-logo img{
     width: 100%;
 }
 .site-btn>ul{
+    padding-top: 5%;
     display: flex;
-    padding: 10px 15px;
-    gap: 0px 55px;
+    margin-left: min(2vw);
+    gap: min(3vw);
+    font-size: min(2.1rem, 1.6vw);
 }
 .site-btn>li{
     position: relative;
     transform: translateX(150%);
 }
 .site-btn ul>li>a{
-    font-size: 100%;
     display: block;
     text-align: center;
-    padding: 0 23px;
+    padding-left: min(1vw);
+    padding-right: min(1vw);
     white-space: nowrap;
 }
 .site-btn ul>li:hover>a{
@@ -510,12 +531,14 @@
 }
 .sbtn{
     outline: 2px solid #555;
+    font-family: 'Dongle';
 }
 .smenu{
     position: absolute;
     display: none;
-    margin-top: -448px;
+    margin-top: min(-49rem, 2vw);
     outline: 1px solid #555;
+    font-family: 'Dongle';
 }
 .smenu>ol>li{
     background-color: #fff;
@@ -526,7 +549,7 @@
 }
 .smenu>ol>li>a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 15.5px;
     text-align: center;
 }
 .site-btn ul>li.sbtn2>a::after{
@@ -537,12 +560,14 @@
 }
 .sbtn2{
     outline: 1px solid #555;
+    font-family: 'Dongle';
 }
 .smenu2{
     position: absolute;
     display: none;
-    margin-top: -608px;
+    margin-top: min(-65.3rem, 2vw);
     outline: 1px solid #555;
+    font-family: 'Dongle';
 }
 .smenu2>ol>li{
     background-color: #fff;
@@ -553,7 +578,7 @@
 }
 .smenu2>ol>li>a {
     display: block;
-    padding: 10px 19px;
+    padding: 10px 21.5px;
     text-align: center;
 }
 /* 각 sns별 오버시 아이콘색(글자색)넣기 */
