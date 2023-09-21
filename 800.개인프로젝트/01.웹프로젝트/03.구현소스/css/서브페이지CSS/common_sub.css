@@ -129,8 +129,8 @@
 }
 /************* 2. 메인영역 : .group-part *************/
 .mtxt{
-    font-size: min(5rem, 3vw);
-    font-family: 'Dongle';
+    font-size: min(3.7rem, 3vw);
+    font-family: 'GmarketSansMedium';
     text-align: center;
     padding: 1.5% 0;
 }
@@ -138,9 +138,9 @@
     display: flex;
     gap: 0 5rem;
     justify-content: center;
-    font-size: min(4.5rem, 3vw);
-    font-family: 'Dongle';
-    background-color: #376ce0;
+    font-size: min(3rem, 3vw);
+    font-family: 'twayair';
+    background-color: #3a7fcd;
     box-shadow: 0 0 10px rgb(35, 35, 54);
     box-sizing: border-box;
     border-radius: 20px;
@@ -154,13 +154,14 @@
 
 /*********************** 이벤트배너 ***********************/
 .sList{
-    font-size: min(3rem, 2vw);
+    font-size: min(2.5rem, 2vw);
     text-align: center;
     white-space: nowrap;
-    font-family: 'Cafe24Ssurround';
+    font-family: 'twayair';
+    width: 90%;
 }
 .sList > ol > li{
-    padding: 13%;
+    padding: 18%;
     border-bottom: 2px solid #83838383;
     color: #fff;
     cursor: pointer;
@@ -178,10 +179,10 @@
 }
 .sctg > ul{
     display: flex;
-    gap: 0 5rem;
-    margin-left: 19%;
-    font-size: min(3rem, 3vw);
-    font-family: 'Dongle';
+    gap: 0 3rem;
+    margin-left: 17%;
+    font-size: min(2rem, 3vw);
+    font-family: 'twayair';
 }
 .sctg > ul > li {
     padding: 10px;
@@ -191,7 +192,7 @@
 /*********************** 제품검색 창 ***********************/
 .sub-searchBarWrap {
     position: relative;
-    padding: 2% 19%;
+    padding: 2% 17%;
     align-items: center;    
 }
     #sub-searchBar {
@@ -212,7 +213,7 @@
     cursor: pointer;
     width: 2.5%;
     height: 2.5%;
-    left: 50%;
+    left: 48.5%;
     top: 27%;
     }
     .sub-searchIcon img{

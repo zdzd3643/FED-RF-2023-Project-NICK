@@ -208,7 +208,7 @@
     .mGrid>div aside h2 {
         height: 30px;
         margin-top: -30%;
-        font-size: min(1.2vw, 20px);
+        font-size: min(1.2vw, 1.8rem);
     }
     .mGrid>div aside h3 {
         margin-top: 10%;
@@ -236,8 +236,8 @@
     display: grid;
     max-width: 1300px;
     grid-template-columns: repeat(6,3fr);
-    grid-column-gap: min(1vw,14px);
-    grid-row-gap: min(46.5vw,18px);
+    grid-column-gap: min(1vw,23px);
+    grid-row-gap: min(46.5vw,14px);
     font-family: 'Dongle';
 }
 .grid img{
@@ -265,12 +265,12 @@
     .grid>div aside{
         position: absolute;
         left: 0;
-        bottom: 3%;
+        bottom: 1%;
         width: 100%;
         text-align: center;
         color: #000;
         background-color: #fff;
-        font-size: min(1.5vw,35px);
+        font-size: min(1.6vw,35px);
         border-radius: 20px;
     }
 
@@ -515,13 +515,13 @@
 }
 .sns-full h2{
     font-weight: lighter;
-    font-size: min(3rem, 3vw);
+    font-size: min(1.8rem, 2vw);
     margin-left: 6%;
     width: 22%;
     text-align: center;
     white-space: nowrap;
     margin-top: -1%;
-    font-family: 'Dongle';
+    font-family: 'GmarketSansMedium';
 }
 .sns-full .sns-arrow{
     width: 4%;
