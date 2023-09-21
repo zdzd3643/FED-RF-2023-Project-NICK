@@ -124,6 +124,95 @@ function loadFn() {
       autoT = setTimeout(slideAuto, 3000);
     } ///////// clearAuto 함수 //////////////
   } ///////////// slideFn 함수 ////////////////
+
+    // [추가기능: 링크 클릭시 페이지새창이동]
+  // 대상: .gnb ul li a
+  const link = qsa('.gnb ul li a');
+
+  link.forEach(ele=>{
+      addEvt(ele,'click',linkFn);
+  }); /////////////// forEach //////////////
+
+  // 실행함수 만들기
+  function linkFn(e){
+    let atxt = this.innerText;
+
+    e.preventDefault();
+
+    let url;
+
+    switch(atxt){
+      case "행사":
+        url = "https://zdzd3643.github.io/FED-RF-2023-Project-NICK/800.개인프로젝트/01.웹프로젝트/03.구현소스/서브페이지.html";
+        break;
+      case "상품":
+        url = "https://zdzd3643.github.io/FED-RF-2023-Project-NICK/800.개인프로젝트/01.웹프로젝트/03.구현소스/서브페이지.html";
+        break;
+      case "이벤트":
+        url = "https://zdzd3643.github.io/FED-RF-2023-Project-NICK/800.개인프로젝트/01.웹프로젝트/03.구현소스/서브페이지.html";
+        break;
+      case "서비스":
+        url = "https://zdzd3643.github.io/FED-RF-2023-Project-NICK/800.개인프로젝트/01.웹프로젝트/03.구현소스/서브페이지.html";
+        break;
+      case "고객센터":
+        url = "https://zdzd3643.github.io/FED-RF-2023-Project-NICK/800.개인프로젝트/01.웹프로젝트/03.구현소스/서브페이지.html";
+        break;
+      case "창업안내":
+        url = "https://zdzd3643.github.io/FED-RF-2023-Project-NICK/800.개인프로젝트/01.웹프로젝트/03.구현소스/서브페이지.html";
+        break;
+    } /////////// switch case //////////
+    console.log('할당url',url);
+
+    window.open(url);
+  } /////////// linkFn 함수 //////////
+
+  const ylink = qsa('.more h3');
+
+  ylink.forEach(ele=>{
+      addEvt(ele,'click',ylinkFn);
+  }); /////////////// forEach //////////////
+
+  // 실행함수 만들기
+  function ylinkFn(e){
+    let ytxt = this.innerText;
+
+    e.preventDefault();
+
+    let url;
+
+    switch(ytxt){
+      case "유튜브 더보기":
+        url = "https://www.youtube.com/@official_GS25";
+        break;
+    } /////////// switch case //////////
+    console.log('할당url',url);
+
+    window.open(url);
+  } /////////// ylinkFn 함수 //////////
+
+  const ilink = qsa('.more2 h3');
+
+  ilink.forEach(ele=>{
+      addEvt(ele,'click',ilinkFn);
+  }); /////////////// forEach //////////////
+
+  // 실행함수 만들기
+  function ilinkFn(e){
+    let itxt = this.innerText;
+
+    e.preventDefault();
+
+    let url;
+
+    switch(itxt){
+      case "인스타 더보기":
+        url = "https://www.instagram.com/gs25_official/";
+        break;
+    } /////////// switch case //////////
+    console.log('할당url',url);
+
+    window.open(url);
+  } /////////// ylinkFn 함수 //////////
 } ///////////////// loadFn ///////////////////
 ///////////////////////////////////////////////
 

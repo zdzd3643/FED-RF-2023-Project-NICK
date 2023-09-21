@@ -6,7 +6,7 @@
 /************* 1. 상단영역 *************/
 #header{
     background-color: #e7f4fcf6;
-    font-family: 'Dongle';
+    font-family: 'twayair';
 }
 .header__logo{
     transform: translateY(10%);
@@ -33,7 +33,9 @@
 }
 /* 탑메뉴 a */
 .top-menu > ul > li >a{
-    font-size: min(2rem, 1vw);
+    font-size: min(1rem, 1vw);
+    font-weight: lighter;
+    color: #333
 }
 /* 1-1-2. GNB메뉴 */
 .gnb {
@@ -52,6 +54,7 @@
 .gnb ul>li{
     position: relative;
     float: left;
+    margin-top: 2%;
 }
 .gnb>ul>li:hover::after{
     display: block;
@@ -60,10 +63,11 @@
 /* GNB메뉴 상위메뉴a */
 .gnb ul>li>a{
     display: block;
-    font-size: min(4rem, 3vw);
+    font-size: min(2.5rem, 2vw);
     padding: min(30px, 1vw);
     /* 줄바꿈방지 */
     white-space: nowrap;
+    color: #2d2c2c
 }
 .gnb ul>li:hover .sub-menu{
     opacity: 1;
@@ -80,11 +84,12 @@
     /* 넘치는 요소 숨기기 */
     overflow: hidden;
     /* 트랜지션 */
-    background-color: #4a9dfc;
+    background-color: #3a7fcd;
+    box-shadow: 0 0 6px rgb(15, 15, 132);
     border-radius: 20px;
     z-index: 1;
     transition: 0.2s ease-in-out;
-    margin-top: -20%;
+    margin-top: -2%;
 
     
 }
@@ -98,7 +103,7 @@
     display: block;
     padding: 0;
     line-height: 40px;
-    font-size: min(3rem, 2.5vw);
+    font-size: min(1.8rem, 2vw);
     /* 반투명 */
     opacity: 0.5;
     /* 트랜지션 */
@@ -126,14 +131,14 @@
 /************* 2. 메인영역 : .group-part *************/
 /*********************** 이벤트배너 ***********************/
 .event-list{
-    font-size: min(3rem, 2vw);
+    font-size: min(2rem, 2vw);
     text-align: center;
     white-space: nowrap;
-    font-family: 'Dongle';
+    font-family: 'twayair';
 }
 .event-list > ol > li{
     margin-left: -3%;
-    padding: 4%;
+    padding: 10%;
     border-bottom: 2px solid #83838383;
     color: #fff;
 }
@@ -142,13 +147,13 @@
 }
 /*********************** 행사제품 배너 ***********************/
 .product-list{
-    font-size: min(3rem, 2vw);
+    font-size: min(2rem, 2vw);
     text-align: center;
     white-space: nowrap;
-    font-family: 'Dongle';
+    font-family: 'twayair';
 }
 .product-list > ol > li{
-    padding: 4%;
+    padding: 10%;
     border-bottom: 2px solid #83838383;
 }
 .product{
@@ -166,7 +171,6 @@
     grid-template-columns: repeat(5,3fr);
     grid-column-gap: min(2vw,20px);
     grid-row-gap: min(46.5vw,-30px);
-    font-family: 'Dongle';
     margin-left: 5%;
 }
 .mGrid img{
@@ -183,7 +187,7 @@
     border-radius: 10px;
     box-shadow: 0 0 6px rgb(25, 25, 99);
     box-sizing: border-box;
-    margin-top: 3%;
+    font-family: 'twayair';
     cursor: pointer;    
 }
     .mGrid>div>div{
@@ -202,10 +206,14 @@
         background-color: #fff;
     }
     .mGrid>div aside h2 {
-        font-size: min(1.5vw, 22px);
+        height: 30px;
+        margin-top: -30%;
+        font-size: min(1.2vw, 20px);
     }
     .mGrid>div aside h3 {
-        font-size: min(2vw, 35px);
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: min(2vw, 2.2rem);
     }
 /* 2-3. 우딜 이미지 */
 .ud{

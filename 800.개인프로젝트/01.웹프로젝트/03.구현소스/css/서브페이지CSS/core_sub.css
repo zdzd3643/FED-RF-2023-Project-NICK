@@ -6,17 +6,24 @@
 /* 웹폰트 CDN */
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+Han+Sans&family=Dongle:wght@700&family=Gamja+Flower&family=Gugi&family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR:wght@500&family=Single+Day&display=swap");
 
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 전체 글자크기 적용 */
 html{
     font-size: 10px;
     /* rem 단위를 위한 계산편의성 셋팅 + 전체글자크기 제어 */
 }
-
-/* 전체 공통 글자체적용 */
-body{
-    font-family: 'Jua';
-}
-
 /* 공통 레이아웃 클래스 */
 /* 속박스 */
 .inbox {

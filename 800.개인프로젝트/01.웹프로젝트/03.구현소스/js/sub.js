@@ -36,26 +36,4 @@ function loadFn() {
     
     };
   }); /////////////// grid 교체 함수 //////////
-
-  // [추가기능: 링크 클릭시 페이지새창이동]
-  // 대상: .gnb ul li a
-  const link = qsa('.gnb ul li a');
-
-  link.forEach(ele=>{
-    addEvt(ele,'click',linkFn);
-  }); /////////////// forEach //////////////
-
-  // 실행함수 만들기
-  function linkFn(e){
-    let atxt = this.innerText;
-
-    e.preventDefault();
-
-    let url;
-
-    switch(atxt){
-      case "행사페이지":
-        url
-    }
-  }
 } ///////////////// loadFn 함수 ////////////////////
