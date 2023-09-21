@@ -270,7 +270,7 @@
         text-align: center;
         color: #000;
         background-color: #fff;
-        font-size: min(1.6vw,35px);
+        font-size: min(1.6vw,27px);
         border-radius: 20px;
     }
 
@@ -598,7 +598,7 @@
 }
 .smenu>ol>li>a {
     display: block;
-    padding: 10px 16.8px;
+    padding: 10.1px 14px;
     text-align: center;
 }
 .site-btn ul>li.sbtn2>a::after{
@@ -627,7 +627,7 @@
 }
 .smenu2>ol>li>a {
     display: block;
-    padding: 10px 21.8px;
+    padding: 10px 19.5px;
     text-align: center;
 }
 /* 각 sns별 오버시 아이콘색(글자색)넣기 */
