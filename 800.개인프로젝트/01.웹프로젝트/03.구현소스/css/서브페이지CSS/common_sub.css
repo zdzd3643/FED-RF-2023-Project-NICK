@@ -158,9 +158,13 @@
     padding: 13%;
     border-bottom: 2px solid #83838383;
     color: #fff;
+    cursor: pointer;
 }
 .sList > ol > li > a{
     color: #222;
+}
+.sList > ol > li:hover {
+    background-color: #87CEEB;
 }
 /********************** 카테고리 분류 **********************/
 .sctg{
@@ -235,6 +239,7 @@
     grid-column-gap: min(1vw,10px);
     grid-row-gap: min(46.5vw,-30px);
     font-family: 'Dongle';
+    border-collapse: collapse;
 }
 .grid img{
     margin-top: 5%;
