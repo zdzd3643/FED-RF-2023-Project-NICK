@@ -151,21 +151,62 @@
     padding: 4%;
     border-bottom: 2px solid #83838383;
 }
-.col-2 > h2 {
-    text-align: center;
-    font-weight: normal;
-    font-size: min(2.5rem, 1.8vw);
-    font-family: 'Dongle';
-    white-space: nowrap;
+.product{
+    width: 100%;
+    height: 100%;
 }
-
-.col-2 > h3 {
-    text-align: center;
-    font-weight: normal;
-    font-size: min(2.5rem, 1.8vw);
-    font-family: 'Dongle';
+.product img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
+.mGrid{
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: repeat(5,3fr);
+    grid-column-gap: min(2vw,20px);
+    grid-row-gap: min(46.5vw,-30px);
+    font-family: 'Dongle';
+    margin-left: 5%;
+}
+.mGrid img{
+    margin-top: 10%;
+    width: 100%;
+}
+/* 그리드 각 박스 공통 */
+.mGrid>div{
+    position: relative;
+    /* 부모자격 */
+    display: table;
+    aspect-ratio: 4.4/7.2;        
+    outline: 3px solid skyblue;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(25, 25, 99);
+    box-sizing: border-box;
+    margin-top: 3%;
+    cursor: pointer;    
+}
+    .mGrid>div>div{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    /* 설명박스 */
 
+    .mGrid>div aside {
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        width: 90%;
+        text-align: center;
+        color: #000;
+        background-color: #fff;
+    }
+    .mGrid>div aside h2 {
+        font-size: min(1.5vw, 22px);
+    }
+    .mGrid>div aside h3 {
+        font-size: min(2vw, 35px);
+    }
 /* 2-3. 우딜 이미지 */
 .ud{
     padding-left: 16%;
@@ -187,11 +228,12 @@
     display: grid;
     max-width: 1300px;
     grid-template-columns: repeat(6,3fr);
-    grid-column-gap: min(1vw,10px);
-    grid-row-gap: min(46.5vw,-30px);
+    grid-column-gap: min(1vw,14px);
+    grid-row-gap: min(46.5vw,18px);
     font-family: 'Dongle';
 }
 .grid img{
+    margin-top: 5%;
     padding: 6px;
     width: 60%;
     cursor: pointer;
@@ -199,10 +241,13 @@
     /* 그리드 각 박스 공통 */
     .grid>div{
         position: relative;
-        /* 부모자격 */
         display: table;
-        aspect-ratio: 4/3;        
+        aspect-ratio: 3.3/3;
         text-align: center;
+        outline: 3px solid skyblue;
+        border-radius: 17px;
+        box-shadow: 0 0 6px rgb(25, 25, 99);
+        box-sizing: border-box;
     }
     .grid>div>div{
         display: table-cell;
@@ -212,26 +257,27 @@
     .grid>div aside{
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 3%;
         width: 100%;
         text-align: center;
         color: #000;
         background-color: #fff;
-        font-size: min(1.2vw,20px);
+        font-size: min(1.5vw,35px);
+        border-radius: 20px;
     }
 
     /**************** 제품 검색 창 ****************/
     .psearchBarWrap {
     position: relative;
     margin: 0;
-    padding: 35.7% 0;
+    padding: 44.7% 0;
     }
 
     #psearchBar {
     position: absolute;
     display: flex;
     padding: 15px 0;
-    width: 100%;
+    width: 90%;
     border: none;
     outline: 3px solid skyblue;
     border-radius: 20px;
@@ -245,8 +291,8 @@
     cursor: pointer;
     width: 7%;
     height: 5%;
-    left: 90%;
-    top: 46%;
+    left: 80%;
+    top: 46.5%;
     }
     .psearchIcon img{
         width: 100%;

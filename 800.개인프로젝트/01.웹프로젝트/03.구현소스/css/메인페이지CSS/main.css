@@ -37,7 +37,9 @@ min-height: 800px;
     padding-bottom: 3%;
 }
 .group-part.group-part-03 {
-    padding-bottom: 3%;
+    padding-top: 2%;
+    border-top: 2px solid skyblue;
+    padding-bottom: 2%;
     /* border-top: 1px solid #555; */
 }
 .group-part.group-part-04 {
@@ -51,7 +53,7 @@ min-height: 800px;
     padding-bottom: 3%;
 }
 .group-part.group-part-06 {
-    /* border-top: 1px solid #555; */
+    border-top: 2px solid skyblue;
     padding-bottom: 2%;
 }
 /* 2-1. 로고 배너영역 */    

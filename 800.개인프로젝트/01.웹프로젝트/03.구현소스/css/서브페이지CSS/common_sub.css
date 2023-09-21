@@ -129,9 +129,154 @@
     text-align: center;
     padding: 1.5% 0;
 }
-.sbn{
-    
+.sbn > ul{
+    display: flex;
+    gap: 0 5rem;
+    justify-content: center;
+    font-size: min(4.5rem, 3vw);
+    font-family: 'Dongle';
+    background-color: #376ce0;
+    box-shadow: 0 0 10px rgb(35, 35, 54);
+    box-sizing: border-box;
+    border-radius: 20px;
 }
+.sbn > ul > li {
+    padding: 10px;
+}
+.sbn > ul > li > a {
+    color: #fff;
+}
+
+/*********************** 이벤트배너 ***********************/
+.sList{
+    font-size: min(3rem, 2vw);
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Dongle';
+}
+.sList > ol > li{
+    padding: 13%;
+    border-bottom: 2px solid #83838383;
+    color: #fff;
+}
+.sList > ol > li > a{
+    color: #222;
+}
+/********************** 카테고리 분류 **********************/
+.sctg{
+    padding: 1% 0;
+    border-radius: 20px;
+}
+.sctg > ul{
+    display: flex;
+    gap: 0 5rem;
+    margin-left: 19%;
+    font-size: min(3rem, 3vw);
+    font-family: 'Dongle';
+}
+.sctg > ul > li {
+    padding: 10px;
+    outline: 3px solid rgba(75, 78, 80, 0.562);
+    border-radius: 20px;
+}
+/*********************** 제품검색 창 ***********************/
+.sub-searchBarWrap {
+    position: relative;
+    padding: 2% 19%;
+    align-items: center;    
+}
+    #sub-searchBar {
+    position: absolute;
+    display: flex;
+    padding: 10px 0;
+    width: 35%;
+    border: none;
+    outline: 3px solid skyblue;
+    border-radius: 20px;
+    font-size: min(2rem, 1.6vw);
+    text-align: center;
+    margin-top: -1%;
+    }
+
+    .sub-searchIcon{
+    position: absolute;
+    cursor: pointer;
+    width: 2.5%;
+    height: 2.5%;
+    left: 50%;
+    top: 27%;
+    }
+    .sub-searchIcon img{
+        width: 100%;
+    }
+    .stxt{
+        text-align: center;
+        font-family: 'Dongle';
+        font-size: min(2.2rem, 1.6vw);
+        width: 65%;
+        margin-left: 65%;
+        margin-bottom: -2%;
+        white-space: nowrap;
+    }
+/*********************** 그리드 제품 ***********************/
+.product{
+    width: 100%;
+    height: 100%;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: repeat(5,3fr);
+    grid-column-gap: min(1vw,10px);
+    grid-row-gap: min(46.5vw,-30px);
+    font-family: 'Dongle';
+}
+.grid img{
+    margin-top: 5%;
+    padding: 10px;
+    width: 80%;
+}
+/* 그리드 각 박스 공통 */
+.grid>div{
+    position: relative;
+    /* 부모자격 */
+    display: table;
+    aspect-ratio: 4.4/6;        
+    text-align: center;
+    outline: 3px solid skyblue;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(25, 25, 99);
+    box-sizing: border-box;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    }
+    .grid>div>div{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    /* 설명박스 */
+
+    .grid>div aside {
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        width: 90%;
+        text-align: center;
+        color: #000;
+        background-color: #fff;
+    }
+    .grid>div aside h2 {
+        font-size: min(1.5vw, 22px);
+    }
+    .grid>div aside h3 {
+        font-size: min(2vw, 35px);
+    }
 /************* 3. 하단영역 *************/
 /* 3-2.회사주소 */
 .link-site > h2{
