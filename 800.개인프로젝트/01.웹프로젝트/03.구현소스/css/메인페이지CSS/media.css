@@ -5,23 +5,16 @@
 @media screen and (max-width: 1328px) {
     /* 그리드 */
     .mGrid{
-      display: grid;
+      display: none;
       max-width: 1300px;
       grid-template-columns: repeat(5,3fr);
       grid-column-gap: min(2vw,20px);
       grid-row-gap: min(46.5vw,-30px);
       margin-left: 5%;
-      width: 90%;
   }
-  .grid{
-    display: grid;
-    max-width: 1300px;
-    grid-template-columns: repeat(5,3fr);
-    grid-column-gap: min(1vw,23px);
-    grid-row-gap: min(46.5vw,14px);
-    font-family: 'Dongle';
-    width: 90%;
-}
+  .mGrid.on{
+      display: grid;
+  }
 #psearchBar {
   position: absolute;
   display: flex;
@@ -56,13 +49,15 @@
 }
   /* 그리드 */
   .mGrid{
-    display: grid;
+    display: none;
     max-width: 1300px;
-    grid-template-columns: repeat(5 ,3fr);
+    grid-template-columns: repeat(5,3fr);
     grid-column-gap: min(2vw,20px);
     grid-row-gap: min(46.5vw,-30px);
     margin-left: 5%;
-    width: 90%;
+}
+.mGrid.on{
+    display: grid;
 }
 .mGrid>div{
   position: relative;
@@ -80,14 +75,6 @@
   height: 20px;
   margin-top: -27%;
   font-size: min(1.2vw, 1.8rem);
-}
-.grid{
-  display: grid;
-  max-width: 1300px;
-  grid-template-columns: repeat(4,3fr);
-  grid-column-gap: min(1vw,23px);
-  grid-row-gap: min(46.5vw,14px);
-  font-family: 'Dongle';
 }
 #psearchBar {
 position: absolute;
