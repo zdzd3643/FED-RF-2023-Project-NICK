@@ -29,11 +29,16 @@ function loadFn() {
 
   console.log("대상:",slist,sgrid);
 
-  slist.forEach((ele) => {
+  slist.forEach((ele,idx) => {
     console.log("ele,너는누구?", ele);
 
     ele.onclick = () => {
-    
-    };
-  }); /////////////// grid 교체 함수 //////////
+      event.preventDefault();
+      sgrid[idx].classList.add('on');
+      sgrid.forEach((el,i)=>{
+        if(i!=idx)
+        el.classList.remove('on');
+      }); ////// forEach ////
+    }; ////// click (grid 교체 함수) ////////////
+  }); /////////// forEach //////////
 } ///////////////// loadFn 함수 ////////////////////
