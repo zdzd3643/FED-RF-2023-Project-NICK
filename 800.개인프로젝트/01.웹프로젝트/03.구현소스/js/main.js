@@ -213,6 +213,26 @@ function loadFn() {
 
     window.open(url);
   } /////////// ylinkFn 함수 //////////
+
+  // grid 교체 함수 ///////////////////
+
+  const plist = qsa(".product-list ol li")
+  const mgrid = qsa(".mGrid");
+
+  console.log("대상:",plist,mgrid);
+
+  plist.forEach((ele,idx) => {
+    console.log("ele,너는누구?", ele);
+
+    ele.onclick = () => {
+      event.preventDefault();
+      mgrid[idx].classList.add('on');
+      mgrid.forEach((el,i)=>{
+        if(i!=idx)
+        el.classList.remove('on');
+      }); ////// forEach ////
+    }; ////// click (grid 교체 함수) ////////////
+  }); /////////// forEach //////////
 } ///////////////// loadFn ///////////////////
 ///////////////////////////////////////////////
 

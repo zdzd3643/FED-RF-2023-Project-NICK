@@ -159,6 +159,7 @@
     white-space: nowrap;
     font-family: 'twayair';
     width: 90%;
+    margin-top: 15%;
 }
 .sList > ol > li{
     padding: 18%;
@@ -246,6 +247,8 @@
     grid-row-gap: min(46.5vw,-30px);
     font-family: 'Dongle';
     border-collapse: collapse;
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 .grid.on{
     display: grid;
