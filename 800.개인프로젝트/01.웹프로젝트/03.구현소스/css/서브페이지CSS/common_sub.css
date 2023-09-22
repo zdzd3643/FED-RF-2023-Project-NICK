@@ -239,13 +239,16 @@
     cursor: pointer;
 }
 .grid{
-    display: grid;
+    display: none;
     max-width: 1300px;
     grid-template-columns: repeat(5,3fr);
     grid-column-gap: min(1vw,10px);
     grid-row-gap: min(46.5vw,-30px);
     font-family: 'Dongle';
     border-collapse: collapse;
+}
+.grid.on{
+    display: grid;
 }
 .grid img{
     margin-top: 5%;
