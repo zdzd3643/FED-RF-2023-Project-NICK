@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* GS PJ : 메인페이지 CSS - main.css */
+
+/* 리셋,공통,외부 CSS 합치기(merging) */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+
+
+
+/* 공사중표시 */
+/* body * {
+    outline: 2px dashed #ccc;
+}
+body > div > * {
+    outline-color: red;
+} */
+
+/* 개별영역 박스 -> 확장형 박스
+        -> 개별영역 중앙속박스에 높이값을 주면
+        파트박스가 늘어날 경우 높이값에 제한을 받게됨!
+        확장형은 반드시 파트박스에 높이값을 설정한다! */
+
+/* 공통 사항 */
+.header,main,footer{
+    font-size: 2rem;
+}
+
+/************* 3. 메인영역 : .group-part *************/
+/* 본문영역 최소높이 셋팅! */
+#main {
+min-height: 800px;
+}
+.group-part.group-part-02 {
+    padding-top: 3%;
+    border-top: 2px solid skyblue;
+    padding-bottom: 3%;
+}
+.group-part.group-part-03 {
+    padding-top: 2%;
+    border-top: 2px solid skyblue;
+    padding-bottom: 2%;
+    /* border-top: 1px solid #555; */
+}
+.group-part.group-part-04 {
+    padding-top: 3%;
+    border-top: 2px solid skyblue;
+    padding-bottom: 3%;
+}
+.group-part.group-part-05 {
+    padding-top: 3%;
+    border-top: 2px solid skyblue;
+    padding-bottom: 3%;
+}
+.group-part.group-part-06 {
+    border-top: 2px solid skyblue;
+    padding-bottom: 2%;
+}
+/* 2-1. 로고 배너영역 */    
+.samgime{
+    width: 120%;
+    transform: translate(-11%,0%);
+}
+.samgime img{
+    width: 100%;
+}
+.logo-banner img {
+    width: 100%;
+    top: 50%;
+    cursor: pointer;
+}
+/* 2-2. 이벤트 배너영역 */
+.container{
+    position: relative;
+}
+.event-banner{
+    width: 100%;
+}
+.slide-box{
+    overflow: hidden;
+}
+.slide {
+    position: relative;
+    left: 0;
+    display: flex;
+    width: 100%;
+}
+
+.slide li {
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+
+.slide li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.abtn {
+    position: absolute;
+}
+.ab1{
+    left: 40%;
+    width: 1.5%;
+}
+.ab2{
+    right: 40%;
+    width: 1.5%;
+}
+.abtn img{
+    width: 100%;
+    height: 100%;
+}
+.indicate{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicate li {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.indicate li img{
+    position: absolute;
+}
+.indicate li img:last-child{
+    opacity: 0;
+}
+.indicate li.on img:last-child{
+    opacity: 1;
+}
+.ins-banner{
+    position: relative;
+}
+.slide > .slide2 {
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding-left: 1.3%;
+}
+.slide2 > ol > li {
+    width: 95%;
+}
+.slide2 > ol {
+    width: 100%;
+}
+.abtn{
+    position: absolute;
+}
+.ab1{
+    left: 40%;
+    width: 2%;
+}
+.ab2{
+    right: 40%;
+    width: 2%;
+}
+.abtn img{
+    width: 100%;
+    height: 100%;
+}
+.instit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.instit>h3{
+    font-size: min(3vw,100px);
+    padding-left: 10px;
+    font-family: 'Dongle';
+}
+.instit img{
+    width: 10%;
+    height: 15%;
+}
+/* 2-4. 아이콘 이미지 */
+.icon img {
+    width: 100%;
+    margin: 0 auto;
+}
