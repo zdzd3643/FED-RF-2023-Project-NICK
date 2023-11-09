@@ -12,9 +12,33 @@ body{
     background-image: linear-gradient(181deg, rgba(0,0,0,0.9) 10%, transparent 100%);
     height: 100px;
     z-index: 1;
+    vertical-align: center;
+}
+
+.site-header .gicon{
+    width: 30px;
+    transform: translate(50px,50px);
+}
+.site-header .gicon img{
+    width: 100%;
+}
+
+.site-header .TBham{
+    width: 30px;
+    transform: translate(-50px,-50px);
+    float: right;
+}
+
+.site-header .TBham img{
+    width: 100%;
 }
 
 .site-header .TBlogo{
+    display: flex;
+    padding-left: 33%;
+    width: 50%;
+    transform: translateY(0%);
+};
+.site-header .TBlogo img{
     width: 100%;
-    right: 10px;
 }
