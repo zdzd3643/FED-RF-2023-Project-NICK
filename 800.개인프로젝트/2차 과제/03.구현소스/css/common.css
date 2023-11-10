@@ -7,36 +7,35 @@ body{
     background-color: #000;
 }
 /************* 1. 상단영역 *************/
-.site-header{
+#top-area{
     width: 100%;
     background-image: linear-gradient(181deg, rgba(0,0,0,0.9) 10%, transparent 100%);
     height: 100px;
     z-index: 1;
     vertical-align: center;
 }
-.TBlogo{
-    padding-left: 33%;
-    width: 5%;
-};
-.TBlogo img{
+.site-header .gicon{
+    width: 35px;
+}
+.site-header .gicon img{
     width: 100%;
-};
-.gicon{
-    width: 5px;
-    transform: translate(50px,50px);
 }
-.gicon img{
-    width: 50px;
-}
-.TBham{
+.site-header .TBham{
     width: 30px;
     transform: translate(-50px,-50px);
     float: right;
 }
 
-.TBham img{
+.site-header .TBham img{
     width: 100%;
 }
+.site-header .TBlogo{
+    padding-left: 33%;
+    width: 5%;
+};
+.site-header .TBlogo img{
+    width: 100%;
+};
 
 /********************** 상단영역 끝  ************************/
 
@@ -45,6 +44,6 @@ body{
     margin-left: 5%;
 }
 #main-area .mv-area{
-    width: 1600px;
-    height: 900px;
+    width: 1920px;
+    height: 1080px;
 }
