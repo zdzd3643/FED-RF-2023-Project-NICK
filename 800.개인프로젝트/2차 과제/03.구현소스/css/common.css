@@ -14,31 +14,37 @@ body{
     z-index: 1;
     vertical-align: center;
 }
-
-.site-header .gicon{
-    width: 30px;
+.TBlogo{
+    padding-left: 33%;
+    width: 5%;
+};
+.TBlogo img{
+    width: 100%;
+};
+.gicon{
+    width: 5px;
     transform: translate(50px,50px);
 }
-.site-header .gicon img{
-    width: 100%;
+.gicon img{
+    width: 50px;
 }
-
-.site-header .TBham{
+.TBham{
     width: 30px;
     transform: translate(-50px,-50px);
     float: right;
 }
 
-.site-header .TBham img{
+.TBham img{
     width: 100%;
 }
 
-.site-header .TBlogo{
-    display: flex;
-    padding-left: 33%;
-    width: 50%;
-    transform: translateY(0%);
-};
-.site-header .TBlogo img{
-    width: 100%;
+/********************** 상단영역 끝  ************************/
+
+/*********************** 2. 메인영역 ***********************/
+#main-area{
+    margin-left: 5%;
+}
+#main-area .mv-area{
+    width: 1600px;
+    height: 900px;
 }
