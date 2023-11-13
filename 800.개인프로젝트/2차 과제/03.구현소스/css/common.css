@@ -7,7 +7,7 @@ body{
     background-color: #000;
 }
 /************* 1. 상단영역 *************/
-#top-area{
+#top-area .site-header{
     width: 100%;
     background-image: linear-gradient(181deg, rgba(0,0,0,0.9) 10%, transparent 100%);
     height: 100px;
@@ -15,7 +15,8 @@ body{
     vertical-align: center;
 }
 .site-header .gicon{
-    width: 35px;
+    width: 33px;
+    transform: translate(43px,43px);
 }
 .site-header .gicon img{
     width: 100%;
@@ -30,8 +31,8 @@ body{
     width: 100%;
 }
 .site-header .TBlogo{
-    padding-left: 33%;
-    width: 5%;
+    width: 100%;
+    transform: translateX(33%);
 };
 .site-header .TBlogo img{
     width: 100%;
@@ -41,7 +42,8 @@ body{
 
 /*********************** 2. 메인영역 ***********************/
 #main-area{
-    margin-left: 5%;
+    width: 100%;
+    transform: translateX(4%);
 }
 #main-area .mv-area{
     width: 1920px;
