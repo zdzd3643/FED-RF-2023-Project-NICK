@@ -13,18 +13,8 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- JS 영역 -->
-    <!-- 부드러운 스크롤 -->
-    <script
-    src="./js/smoothScroll23.js"
-    data-plugins="transform-es2015-modules-umd"
-    type="text/babel"
-  ></script>
-    <!-- 돔 영역 -->
-    <script
-    src="./js/dom.js"
-    data-plugins="transform-es2015-modules-umd"
-    type="text/babel"
-    ></script>
+    <!-- 메인 JS 영역 -->
+    <script type="module" src="./js/main.js"></script>
     <!-- 공통CSS -->
     <link rel="stylesheet" href="./css/main.css">
 
@@ -49,18 +39,32 @@
     </div>
     <!-- 2. 메인영역 -->
     <div id="main-area">
-        <div class="mv-area">
-            <div class="somi-mv">
-                <video src="./images/SOMI_MV.mp4"
-                id="mv"
-                loop="loop"
-                autoplay="autoplay">
-                </video>
-            </div>
-            <div class="Pbtn">
-                <button>NowPlaying</button>
-            </div>
-        </div>
+        <main class="#main-area site-body">
+            <!-- 2-1. 뮤비 파트 -->
+            <section class="mv-area">
+                <div class="somi-mv">
+                    <video src="./images/SOMI_MV.mp4"
+                    id="mv"
+                    loop="loop"
+                    allow="autoplay">
+                    </video>
+                </div>
+                <div class="Pbtn">
+                    <button>NowPlaying</button>
+                </div>
+                <div class="arrow">
+                    
+                </div>
+            </section>
+            <!-- 2-2. 소개 파트 -->
+            <section class="intro-area"></section>
+            <!-- 2-3. 아티스트 파트 -->
+            <section class="ats-area"></section>
+            <!-- 2-4. 앨범 파트 -->
+            <section class="album-area"></section>
+            <!-- 2-5. 오디션 파트 -->
+            <section class="aud-area"></section>
+        </main>
     </div>
     <!-- 3. 하단영역 -->
     <div id="footer-area"></div>
