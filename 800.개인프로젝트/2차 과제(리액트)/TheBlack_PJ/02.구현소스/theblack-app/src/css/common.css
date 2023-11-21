@@ -145,3 +145,17 @@ body{
     overflow: hidden;
     background-color: bisque;
 }
+
+/********************** 메인영역 끝  ************************/
+
+/*********************** 3. 하단영역 ***********************/
+
+.info address{
+    text-align: center;
+    font-style: inherit;
+    white-space: nowrap;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    
+}
