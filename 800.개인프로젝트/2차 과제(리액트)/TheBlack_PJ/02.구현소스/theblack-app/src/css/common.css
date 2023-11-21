@@ -59,6 +59,14 @@ body{
     height: 100vh;
 }
 /********** 2-1.MV-area **********/
+.somi-mv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+}
 .somi-mv::after {
     content: '';
     display: block;
@@ -74,6 +82,24 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.arrow{
+    position: relative;
+    margin-top: 50vh;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+.lar{
+    position: absolute;
+    padding-left: 2%;    
+}
+.rar{
+    position: absolute;
+    padding-left: 95%;
+}
+.fa-solid{
+    color:#fff;
 }
 .Pbtn a{
     position: absolute;
@@ -91,32 +117,7 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-.somi-mv{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: -9;
-}
-.arrow{
-    margin-top: 25%;
-}
-.lar{
-    padding-left: 2%;
-    font-size: 50px;
-    left: 0;
-    height: 0;
-}
-.rar{
-    left: 0;
-    height: 0;
-    padding-left: 95%;
-    font-size: 50px;
-}
-.fa-solid{
-    color:#fff
-}
+
 /********** 2-1.intro-area **********/
 .intro-area{
     width: 100%;

@@ -1,5 +1,9 @@
 // 메인 페이지 컨텐츠 컴포넌트
 
+// 폰트어썸 불러오기
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 export function Main(){
 
 return (
@@ -9,28 +13,30 @@ return (
     {/* 2-1. 뮤비 파트 */}
     <section className="mv-area">
         <div className="somi-mv">
-            <video src="./images/SOMI_MV.mp4"
+            <video 
+            src="./images/SOMI_MV.mp4"
             id="mv"
             loop="loop"
-            autoPlay="autoplay">
-            </video>
+            muted="muted"
+            autoPlay="autoplay"
+            ></video>
         </div>
         <div className="Pbtn">
             <a href="#">NowPlaying</a>
         </div>
-        <div className="Pbtn2">
-        </div>
+        <div className="Pbtn2"></div>
         {/* 동영상 넘기기 버튼 */}
+        {/* 폰트어썸 아이콘 */}
         <div className="arrow">
-            <div className="lar">
-                <a href="#" className="fa-solid fa-chevron-left">
-                </a>
-            </div>
-            <div className="rar">
-                <a href="#" className="fa-solid fa-chevron-right">
-                </a>
-            </div>
-        </div>
+          <div className="lar">
+            <FontAwesomeIcon 
+              icon={faChevronLeft} />
+          </div>
+          <div className="rar">
+            <FontAwesomeIcon 
+              icon={faChevronRight} />
+          </div>
+        </div>     
     </section>
     {/* 2-2. 소개 파트 */}
     <section className="intro-area"></section>
