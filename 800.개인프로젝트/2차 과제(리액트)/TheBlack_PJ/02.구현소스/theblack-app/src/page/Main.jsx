@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 
 // 폰트어썸 불러오기
 import { SwiperVid } from "../plugin/SwiperVid";
+import { Banner } from "../modules/Banner";
 
 export function Main(){
 
@@ -14,7 +15,7 @@ return (
   <main className="site-body">
     {/* 2-1. 뮤비 파트 */}
     <section className="movie-area">
-    <SwiperVid />
+    <Banner />
     </section>
     {/* 2-2. 소개 파트 */}
     <section className="intro-area"></section>

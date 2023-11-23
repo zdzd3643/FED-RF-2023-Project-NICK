@@ -10,8 +10,13 @@ import { useEffect } from "react";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
+// 폰트어썸 불러오기
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 // 배너 컴포넌트 //
-export function Banner(props){
+export function Banner(){
+
 
     // 1. 변수설정
     // (1) 애니이징
@@ -23,16 +28,17 @@ export function Banner(props){
 
     const goSlide = (e) => {
       const tg = e.target;
+      console.log(tg);
 
     // 2. 대상선정
     // (1) 슬라이드
-    const sldBox = $(tg).siblings(".slide");
+    const sldBox = $(tg).siblings(".ats-area");
     // (2) 슬라이드 블릿
     const indic = $(tg).siblings('.indic').find('li');
     // console.log('블릿:',indic);
     // (3) 슬라이드 개수
     const sCnt = sldBox.find('li').length;
-    // console.log('슬라이드개수:',sCnt);
+    console.log('슬라이드개수:',sCnt);
 
     // 3. 이벤트 설정 및 기능구현
     // 3-1. 이동버튼 클릭시
@@ -45,14 +51,14 @@ export function Banner(props){
 
       // 1. 오른쪽버튼 여부
       let isR = $(tg).is('.rar');
-      console.log('버튼클릭!',isR);
+      console.log('버튼클릭!', isR);
 
       // 2. 버튼별분기
       // 2-1. 오른쪽버튼
       if(isR){
           // 슬라이드가 왼쪽으로 이동함
           // left값이 -100%
-          sldBox.animate({left:"-100%"},A_ES,
+          sldBox.animate({ left: "-100%" }, A_ES,
           () => { // 콜백함수(애니후)
               // 맨앞li 맨뒤로 이동
               sldBox.append(sldBox.find('li').first())
@@ -61,7 +67,7 @@ export function Banner(props){
           });
           // 슬라이드 순번 증가(끝번호보다 크면 0)
           sNum++;
-          if(sNum>=sCnt) sNum = 0;
+          if(sNum>=sCnt) sNum=0;
       } ////////// if ///////////
 
       // 2-2. 왼쪽버튼
@@ -87,15 +93,20 @@ export function Banner(props){
     } ////////// goSlide함수 ////////////
 
       // 선택데이터
-  const selData = mvData[props.category];
+      const selData = mvData;
 
       // 리스트만들기 함수 ///////////
       const makeList = (data) => {
-        // console.log(data);
+        console.log(data);
         return data.map((v, i) => (
-          <li key={i}>
+          <li>
             {/* 배너동영상 */}
-            <img src={v.vsrc} alt="영상주소" />
+            <video src={v.vsrc} alt="영상주소" 
+            id="mv"
+            loop="loop"
+            muted="muted"
+            autoPlay="autoplay"
+            />
             {/* 배너 정보 */}
               <h2>{v.tit}</h2>
           </li>
@@ -105,34 +116,26 @@ export function Banner(props){
       ///////////////////////////////////
       // 코드리턴 ///////////////////////
       return(
-        <div className="ats-movie">
+        <section className="ats-movie">
           {/* 이동슬라이드 */}
-          <ul className="mv-area">{makeList(selData)}
-          </ul>
-          <video 
-              id="mv"
-              loop="loop"
-              muted="muted"
-              autoPlay="autoplay"
-              ></video>
+          <ul className="ats-area">{makeList(selData)}</ul>
           <div className="Pbtn">
               <a href="#">NowPlaying</a>
           </div>
-          
           {/* 동영상 넘기기 버튼 */}
           {/* 폰트어썸 아이콘 */}
           <div className="arrow">
-            <button className="lar"
-            onClick={goSlide}>
+            <div className="lar"
+             onClick={goSlide}>
               <FontAwesomeIcon 
                 icon={faChevronLeft} />
-            </button>
-            <button className="rar"
+            </div>
+            <div className="rar"
             onClick={goSlide}>
               <FontAwesomeIcon 
                 icon={faChevronRight} />
-            </button>
+            </div>
           </div>     
-      </div>
+      </section>
       ); ///////// return //////////
 } /////////// Banner 컴포넌트 //////////
