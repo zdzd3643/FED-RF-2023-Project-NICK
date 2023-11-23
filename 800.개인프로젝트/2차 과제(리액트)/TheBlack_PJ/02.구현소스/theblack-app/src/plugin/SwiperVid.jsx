@@ -25,7 +25,7 @@ import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons
 
 export function SwiperVid(){
 
-  const selData = mvData;
+const selData = mvData
 
   return(
     <>
@@ -35,7 +35,7 @@ export function SwiperVid(){
       className="mySwiper">
         {
           selData.map((v,i)=>
-          <SwiperSlide key={i}>
+          <SwiperSlide >
             <section className="ats-area">
               <div className="ats-mv">
                 <video 
@@ -51,7 +51,7 @@ export function SwiperVid(){
               <div className="Pbtn2">{v.tit}</div>
               {/* 동영상 넘기기 버튼 */}
               {/* 폰트어썸 아이콘 */}
-              <div className="arrow">
+              {/* <div className="arrow">
                 <div className="lar">
                   <FontAwesomeIcon 
                     icon={faChevronLeft} />
@@ -60,7 +60,7 @@ export function SwiperVid(){
                   <FontAwesomeIcon 
                     icon={faChevronRight} />
                 </div>
-              </div>
+              </div> */}
             </div>     
         </section>
 
