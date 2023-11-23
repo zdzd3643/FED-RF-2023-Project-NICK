@@ -5,15 +5,11 @@ import { TopArea } from './layout/TopArea';
 import { MainArea } from './layout/MainArea';
 import { FooterArea } from './layout/FooterArea';
 
-// 제이쿼리
-import $ from 'jquery';
-import 'jquery-ui-dist/jquery-ui';
-
 // 페이지 공통 CSS
 import './css/common.css';
 
 // 최상위 Root 컴포넌트 ///////
-function App(){
+export default function App(){
   
   // 리턴코드 ////////////////////
   return(

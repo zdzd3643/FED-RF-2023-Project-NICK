@@ -1,8 +1,10 @@
 // 메인 페이지 컨텐츠 컴포넌트
 
+import React from "react";
+import ReactDOM from "react-dom";
+
 // 폰트어썸 불러오기
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { SwiperVid } from "../plugin/SwiperVid";
 
 export function Main(){
 
@@ -11,32 +13,8 @@ return (
 <div id="main-area">
   <main className="site-body">
     {/* 2-1. 뮤비 파트 */}
-    <section className="mv-area">
-        <div className="somi-mv">
-            <video 
-            src="./images/SOMI_MV.mp4"
-            id="mv"
-            loop="loop"
-            muted="muted"
-            autoPlay="autoplay"
-            ></video>
-        </div>
-        <div className="Pbtn">
-            <a href="#">NowPlaying</a>
-        </div>
-        <div className="Pbtn2"></div>
-        {/* 동영상 넘기기 버튼 */}
-        {/* 폰트어썸 아이콘 */}
-        <div className="arrow">
-          <div className="lar">
-            <FontAwesomeIcon 
-              icon={faChevronLeft} />
-          </div>
-          <div className="rar">
-            <FontAwesomeIcon 
-              icon={faChevronRight} />
-          </div>
-        </div>     
+    <section className="movie-area">
+    <SwiperVid />
     </section>
     {/* 2-2. 소개 파트 */}
     <section className="intro-area"></section>
