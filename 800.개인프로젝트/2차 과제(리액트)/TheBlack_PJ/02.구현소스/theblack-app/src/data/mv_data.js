@@ -1,5 +1,6 @@
 // 뮤비 데이터
 export const mvData = [
+
       {
       ats:'SOMI',
       vsrc:"./images/SOMI_MV.mp4",

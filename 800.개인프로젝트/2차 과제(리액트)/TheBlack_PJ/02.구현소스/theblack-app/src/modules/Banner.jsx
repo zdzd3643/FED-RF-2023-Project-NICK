@@ -6,19 +6,23 @@ import { mvData } from "../data/mv_data";
 import "../css/common.css";
 
 import { useEffect } from "react";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
-// 폰트어썸 불러오기
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+// // 폰트어썸 불러오기
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 
 // 배너 컴포넌트 //
 export function Banner(){
 
 
     // 1. 변수설정
+    // (0) 애니시간
+    const A_TM = 300;
     // (1) 애니이징
     const A_ES = "easeInOutQuint";
     // (2) 광클상태변수(1-불허용,0-허용)
@@ -28,7 +32,7 @@ export function Banner(){
 
     const goSlide = (e) => {
       const tg = e.target;
-      console.log(tg);
+      // console.log(tg);
 
     // 2. 대상선정
     // (1) 슬라이드
@@ -39,7 +43,7 @@ export function Banner(){
     // console.log('블릿:',indic);
     // (3) 슬라이드 개수
     const sCnt = sldBox.find('li').length;
-    console.log('슬라이드개수:',sCnt);
+    // console.log('슬라이드개수:', sCnt);
 
     // 3. 이벤트 설정 및 기능구현
     // 3-1. 이동버튼 클릭시
@@ -47,19 +51,19 @@ export function Banner(){
       // 0. 광클금지 //////////
       if(cSts) return;
       cSts=1; // 잠금
-      setTimeout(()=>cSts=0);
+      setTimeout(()=>cSts=0,A_TM);
       ///////////////////////////
 
       // 1. 오른쪽버튼 여부
       let isR = $(tg).parent().is('.rar');
-      console.log('버튼클릭!', isR);
+      // console.log('버튼클릭!', isR);
 
       // 2. 버튼별분기
       // 2-1. 오른쪽버튼
       if(isR){
           // 슬라이드가 왼쪽으로 이동함
           // left값이 -100%
-          sldBox.animate({ left: "-100%" }, A_ES,
+          sldBox.animate({ left: "-100%" }, A_TM, A_ES,
           () => { // 콜백함수(애니후)
               // 맨앞li 맨뒤로 이동
               sldBox.append(sldBox.find('li').first())
@@ -78,14 +82,14 @@ export function Banner(){
           // left값 -100%
           .css({left:'-100%'})
           // left값을 0으로 애니메이션
-          .animate({left:'0'},A_ES);
+          .animate({left:'0'},A_TM, A_ES);
 
           // 슬라이드순번 감소(0보다 작으면 끝번호)
           sNum--;
           if(sNum<0) sNum = sCnt-1;
       } ////////// else ///////////
 
-      console.log('슬순번:',sNum);
+      // console.log('슬라이드 순번:',sNum);
 
       // 블릿해당순번 클래스'on'넣기(다른li는 제거)
       indic.eq(sNum).addClass('on')
@@ -109,37 +113,36 @@ export function Banner(){
             autoPlay="autoplay"
             />
             {/* 배너 정보 */}
-            <div className="tit">
+            <div className="mtit">
               <h2>{v.tit}</h2>
             </div>
           </li>
         ));
       }; ////////// makeList 함수 //////
-      
+
       ///////////////////////////////////
       // 코드리턴 ///////////////////////
       return(
 
-
         <section className="ats-movie">
           {/* 이동슬라이드 */}
           <ul className="ats-area">{makeList(selData)}</ul>
-          <div className="Pbtn">
-              <a href="#">NowPlaying</a>
-          </div>
           {
             selData.length > 1 && (
               <>
               {/* 동영상 넘기기 버튼 */}
               {/* 폰트어썸 아이콘 */}
                 <div className="arrow lar"
-                onClick={goSlide}><FontAwesomeIcon icon={faChevronLeft} /></div>
+                onClick={goSlide}>
+                  <img src="./images/white-arrow.png" alt="" />
+                </div>
                 <div className="arrow rar"
-                onClick={goSlide}><FontAwesomeIcon icon={faChevronRight}/></div>
+                onClick={goSlide}>
+                  <img src="./images/white-arrow.png" alt="" />
+                </div>
                 <ol className="indic">
                   {selData.map((v, i) => (
-                <li className={i == 0 ? "on" : ""} key={i}></li>
-                    ))}
+                <li className={i == 0 ? "on" : ""} key={i}></li>))}
                   </ol>
               </>
               )

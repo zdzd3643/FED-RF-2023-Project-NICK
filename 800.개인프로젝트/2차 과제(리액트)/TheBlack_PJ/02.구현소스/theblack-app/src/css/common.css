@@ -20,9 +20,9 @@ body{
     position: relative;
 }
 .gicon{
-    padding-top: 20px;
+    padding-top: 3vh;
     position: absolute;
-    padding-left: 2%;
+    left: 3vw;
     width: 35px;
     cursor: pointer;
 }
@@ -30,16 +30,17 @@ body{
     width: 100%;
 }
 .TBham{
-    padding-top: 20px;
+    padding-top: 3vh;
     position: absolute;
-    padding-left: 96.5%;
+    right: 3vw;
     width: 35px;
     cursor: pointer;
 }
 .TBlogo{
-    padding-top: 20px;
+    padding-top: 2vh;
     position: absolute;
-    left: 40%;
+    transform: translateX(-50%);
+    left: 50%;
     cursor: pointer;
     vertical-align: center;
 };
@@ -85,36 +86,29 @@ body{
     opacity: 0.2;
     z-index: 99;
 }
-.h2{
-    position: absolute;
-    left: 45vw;
-    bottom: 15%;
-    width: 5px;
-    height: 5px;
-    font-size: 50px;
-    font-weight: normal;
-    color:#fff;
-}
-.ats-movie .arrow{
+.arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
+    width: 100px;
     height: 40px;
-    bottom: 50vh;
-    border-radius: 50%;
     font-size: 60px;
-    padding: 0;
-    box-sizing: content-box;
-    line-height: 40px;
-    color: #fff;
     cursor: pointer;
+    color: #fff;
 }
 .lar{
-    left: 5vw; 
+    rotate: 90deg;
+    left: 4vw;
 }
 .rar{
-    right: 5vw;
+    rotate: 270deg;
+    right: 4vw;
+}
+.lar img{
+    width: 100%;
+}
+.rar img{
+    width: 100%;
 }
 #mv{
     width: 100%;
@@ -123,29 +117,18 @@ body{
 }
 .mtit{
     position: absolute;
-    font-size: 50px;
-    left: 0;
-    height: 0;
-    bottom: 0;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
     color: #fff;
     text-align: center;
-    width: 50%;
-    
-}
-.Pbtn a{
-    position: absolute;
-    left: 45vw;
-    bottom: 15%;
-    width: 5px;
-    height: 5px;
-    font-size: 50px;
-    font-weight: normal;
-    color:#fff;
+    font-size: 35px;
+    font-family: 'twayair';
 }
 /* 블릿 */
 .indic{
     position: absolute;
-    left: 51%;
+    left: 50%;
     bottom: 3vh;
     transform: translateX(-50%);
     display: flex;
