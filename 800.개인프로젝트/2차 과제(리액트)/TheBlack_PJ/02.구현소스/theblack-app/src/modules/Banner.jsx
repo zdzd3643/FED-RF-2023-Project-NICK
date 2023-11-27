@@ -28,7 +28,7 @@ export function Banner(){
 
     const goSlide = (e) => {
       const tg = e.target;
-      // console.log(tg);
+      console.log(tg);
 
     // 2. 대상선정
     // (1) 슬라이드
@@ -36,7 +36,11 @@ export function Banner(){
     // console.log("현재슬라이드:",sldBox);
     // (2) 슬라이드 블릿
     const indic = $(tg).parent().siblings('.indic').find('li');
+<<<<<<< HEAD
     console.log('블릿:',indic);
+=======
+    // console.log('블릿:',indic);
+>>>>>>> 8ed223c049f041476996ed0bf2ad63c98b3ca9e4
     // (3) 슬라이드 개수
     const sCnt = sldBox.find('li').length;
     console.log('슬라이드개수:',sCnt);
@@ -115,7 +119,11 @@ export function Banner(){
           </li>
         ));
       }; ////////// makeList 함수 //////
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> 8ed223c049f041476996ed0bf2ad63c98b3ca9e4
       ///////////////////////////////////
       // 코드리턴 ///////////////////////
       return(
@@ -132,10 +140,21 @@ export function Banner(){
               <>
               {/* 동영상 넘기기 버튼 */}
               {/* 폰트어썸 아이콘 */}
+<<<<<<< HEAD
                 <div className="arrow lar"
                 onClick={goSlide}><FontAwesomeIcon icon={faChevronLeft} /></div>
                 <div className="arrow rar"
                 onClick={goSlide}><FontAwesomeIcon icon={faChevronRight}/></div>
+=======
+                <div className="arrow lar">
+                  <FontAwesomeIcon icon={faChevronLeft}
+                onClick={goSlide} /> 
+                </div>
+                <div className="arrow rar">
+                  <FontAwesomeIcon icon={faChevronRight}
+                onClick={goSlide}/>
+                </div>
+>>>>>>> 8ed223c049f041476996ed0bf2ad63c98b3ca9e4
                 <ol className="indic">
                   {selData.map((v, i) => (
                 <li className={i == 0 ? "on" : ""} key={i}></li>
