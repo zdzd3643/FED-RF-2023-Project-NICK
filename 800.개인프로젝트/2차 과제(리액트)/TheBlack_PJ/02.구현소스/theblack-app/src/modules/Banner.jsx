@@ -28,11 +28,12 @@ export function Banner(){
 
     const goSlide = (e) => {
       const tg = e.target;
-      console.log(tg);
+      // console.log(tg);
 
     // 2. 대상선정
     // (1) 슬라이드
     const sldBox = $(tg).siblings(".ats-area");
+    // console.log("현재슬라이드:",sldBox);
     // (2) 슬라이드 블릿
     const indic = $(tg).siblings('.indic').find('li');
     // console.log('블릿:',indic);
@@ -81,7 +82,7 @@ export function Banner(){
 
           // 슬라이드순번 감소(0보다 작으면 끝번호)
           sNum--;
-          if(sNum<0) sNum=sCnt-1;
+          if(sNum<0) sNum = sCnt-1;
       } ////////// else ///////////
 
       console.log('슬순번:',sNum);
@@ -97,9 +98,9 @@ export function Banner(){
 
       // 리스트만들기 함수 ///////////
       const makeList = (data) => {
-        console.log(data);
+        // console.log(data);
         return data.map((v, i) => (
-          <li>
+          <li key={i}>
             {/* 배너동영상 */}
             <video src={v.vsrc} alt="영상주소" 
             id="mv"
@@ -108,34 +109,44 @@ export function Banner(){
             autoPlay="autoplay"
             />
             {/* 배너 정보 */}
+            <div className="tit">
               <h2>{v.tit}</h2>
+            </div>
           </li>
         ));
       }; ////////// makeList 함수 //////
+
+      const lbtn = <FontAwesomeIcon icon={faChevronLeft} /> 
+      const rbtn = <FontAwesomeIcon icon={faChevronRight}/> 
       
       ///////////////////////////////////
       // 코드리턴 ///////////////////////
       return(
+
+
         <section className="ats-movie">
           {/* 이동슬라이드 */}
           <ul className="ats-area">{makeList(selData)}</ul>
           <div className="Pbtn">
               <a href="#">NowPlaying</a>
           </div>
-          {/* 동영상 넘기기 버튼 */}
-          {/* 폰트어썸 아이콘 */}
-          <div className="arrow">
-            <div className="lar"
-             onClick={goSlide}>
-              <FontAwesomeIcon 
-                icon={faChevronLeft} />
-            </div>
-            <div className="rar"
-            onClick={goSlide}>
-              <FontAwesomeIcon 
-                icon={faChevronRight} />
-            </div>
-          </div>     
+          {
+            selData.length > 1 && (
+              <>
+              {/* 동영상 넘기기 버튼 */}
+              {/* 폰트어썸 아이콘 */}
+                <div className="arrow lar"
+                onClick={goSlide}>{lbtn}</div>
+                <div className="arrow rar"
+                onClick={goSlide}>{rbtn}</div>
+                <ol className="indic">
+                  {selData.map((v, i) => (
+                <li className={i == 0 ? "on" : ""} key={i}></li>
+                    ))}
+                  </ol>
+              </>
+              )
+              }
       </section>
       ); ///////// return //////////
 } /////////// Banner 컴포넌트 //////////

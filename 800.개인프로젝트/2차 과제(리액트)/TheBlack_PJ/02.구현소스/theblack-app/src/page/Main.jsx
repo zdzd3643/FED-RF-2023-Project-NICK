@@ -1,14 +1,31 @@
 // 메인 페이지 컨텐츠 컴포넌트
 
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
+
+// 자동스크롤 JS 불러오기
+import { wheelFn, initSet } from "../func/smoothScroll23";
 
 // 폰트어썸 불러오기
 import { SwiperVid } from "../plugin/SwiperVid";
 import { Banner } from "../modules/Banner";
 
-export function Main(){
+// 제이쿼리
+import $ from 'jquery';
 
+export function Main(){
+ useEffect(() => {
+
+  // 스크롤바 없애기
+  $('html,body').css({overflow:'hidden'});
+
+  // 자동스크롤 호출
+  window.addEventListener('wheel',wheelFn);
+
+  // 초기화 함수 호출
+  initSet();
+
+ }, []); ////////// useEffect ////////////
 return (
   <>
 <div id="main-area">

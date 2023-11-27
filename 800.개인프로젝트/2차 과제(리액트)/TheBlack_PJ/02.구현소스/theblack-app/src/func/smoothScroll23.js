@@ -9,7 +9,7 @@ require('jquery-ui-dist/jquery-ui');
 require('jquery-ui-touch-punch/jquery.ui.touch-punch');
 
 
-export function autoScroll() {
+// export function autoScroll() 
   /****************************************** 
     대상 변수할당하기
   ******************************************/
@@ -131,57 +131,7 @@ export function autoScroll() {
         // 애니메이션 후 actPage함수를 호출!
       ); ///// animate //////
 
-      // 해당 선택메뉴에 on 넣기
-      addOn();
-
   } ///////////////// movePg ////////////////
-
-
-  /////////////////////////////////////////////
-  // GNB 메뉴 + 사이드 인디케이터 클릭 이동기능 //
-  /////////////////////////////////////////////
-  $('.gnb li, .indic li').click(function(){
-    // 1. 순번변수
-    let idx = $(this).index();
-    // console.log('나야나~!',idx);
-
-    // 2. 순번을 페이지번호에 할당(일치시킴!)
-    pno = idx;
-
-    // 3. 페이지 이동
-    movePg();
-
-  }); ///// click //////////
-  
-  /////////////////////////////////////////////////////
-  // GNB + 사이드 인티케이터 해당 페이지에 'on'넣기 함수//
-  /////////////////////////////////////////////////////
-  // 메뉴클릭시 + 마우스휠 이동시에도 모두 이 함수 호출!
-  const addOn = () => {
-    // 클릭된 메뉴에 class 'on' 넣기
-    gnb.eq(pno).addClass('on')
-    .siblings().removeClass('on');
-    
-    indic.eq(pno).addClass('on')
-    .siblings().removeClass('on');
-  }; //////////// addOn함수 ////////////
-
-  /******************************************** 
-        [ 페이지 등장액션 요소 적용하기 ]
-        1. 이벤트 적용시점 : 페이지도착후(애니후콜백) 
-        2. 이벤트 대상 : 각 페이지 동일
-            (1) .page .imgc - 이미지파트
-            (2) .page .txtc h2 a - 타이틀파트
-        3. 변경내용 :
-            [스타일시트 아래 항목 변경]
-            ((변경값))
-            transform: rotate(45deg);
-            opacity: 0;
-            transition: 1s 1s; -> 타이틀만 지연시간
-            ((고정값))
-            transform-origin: left top;
-            display: inline-block; -> a요소만
-    ********************************************/
 
 
   /*************************************** 
@@ -211,15 +161,12 @@ export function autoScroll() {
 
  } /////////// initSet 함수 ///////////////
 
- // 최초호출!
- initSet();
-
- /***************************************** 
+  /***************************************** 
   함수명: actPage
   기능: 페이지 도착후 등장 애니메이션
  *****************************************/
 function actPage(){
-  console.log('액숀~!!!', pno);
+  // console.log('액숀~!!!', pno);
 
   // pno가 0 또는 4가 아니면 작동!
   if(pno != 0 || pno != 4){
@@ -236,18 +183,10 @@ function actPage(){
 
 } ///////// actPage 함수 //////////////////
 
-// 메인 페이지 상단로고 클릭시 맨위로 이동하기!
-$('#logo a').click(e=>{
-  e.preventDefault();
-  pno = 0;
-  movePg();
-}); //////// click ////////
+ // 최초호출!
+ initSet();
 
+//  사용할 함수 내보내기
+export { wheelFn, initSet }
 
-
-
-
-
-
-
-} ///////////// autoScroll 함수 //////////
+// } ///////////// autoScroll 함수 ////////// 
