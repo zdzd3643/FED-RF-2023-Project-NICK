@@ -1,0 +1,91 @@
+/* TheBlack PJ 배너모듈 CSS - banner.css */
+
+/* 리셋, 코아 CSS 불러오기 */
+@import url(./common.css);
+
+/********** 2-1.MV-area **********/
+.ats-movie{
+    position: relative;
+    overflow: hidden;
+}
+.ats-area{
+    position: relative;
+    left: 0;
+    display: flex;
+}
+.ats-area li{
+    position: relative;
+    /* 부모자격 */
+    width: 100%;
+    flex-shrink: 0;
+    /* 강제축소옵션 해제 */
+}
+.ats-area li::after {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.2;
+    z-index: 99;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 40px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #fff;
+}
+.lar{
+    rotate: 90deg;
+    left: 4vw;
+}
+.rar{
+    rotate: 270deg;
+    right: 4vw;
+}
+.lar img{
+    width: 100%;
+}
+.rar img{
+    width: 100%;
+}
+#mv{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mtit{
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'twayair';
+}
+/* 블릿 */
+.indic{
+    position: absolute;
+    left: 50%;
+    bottom: 3vh;
+    transform: translateX(-50%);
+    display: flex;
+}
+.indic li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 5px;
+    cursor: pointer;
+    text-shadow: 0 0 2px #000;
+}
+.indic li.on{
+    background-color: rgba(255, 255, 255, 0.9);
+}

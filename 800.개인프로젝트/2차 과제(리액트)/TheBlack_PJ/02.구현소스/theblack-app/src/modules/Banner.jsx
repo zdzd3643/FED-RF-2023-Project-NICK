@@ -3,7 +3,7 @@
 // 배너데이터
 import { mvData } from "../data/mv_data";
 
-import "../css/common.css";
+import "../css/banner.css";
 
 import { useEffect } from "react";
 
