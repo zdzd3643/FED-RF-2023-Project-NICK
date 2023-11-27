@@ -32,11 +32,11 @@ export function Banner(){
 
     // 2. 대상선정
     // (1) 슬라이드
-    const sldBox = $(tg).siblings(".ats-area");
+    const sldBox = $(tg).parent().siblings(".ats-area");
     // console.log("현재슬라이드:",sldBox);
     // (2) 슬라이드 블릿
-    const indic = $(tg).siblings('.indic').find('li');
-    // console.log('블릿:',indic);
+    const indic = $(tg).parent().siblings('.indic').find('li');
+    console.log('블릿:',indic);
     // (3) 슬라이드 개수
     const sCnt = sldBox.find('li').length;
     console.log('슬라이드개수:',sCnt);
@@ -51,7 +51,7 @@ export function Banner(){
       ///////////////////////////
 
       // 1. 오른쪽버튼 여부
-      let isR = $(tg).is('.rar');
+      let isR = $(tg).parent().is('.rar');
       console.log('버튼클릭!', isR);
 
       // 2. 버튼별분기
@@ -115,9 +115,6 @@ export function Banner(){
           </li>
         ));
       }; ////////// makeList 함수 //////
-
-      const lbtn = <FontAwesomeIcon icon={faChevronLeft} /> 
-      const rbtn = <FontAwesomeIcon icon={faChevronRight}/> 
       
       ///////////////////////////////////
       // 코드리턴 ///////////////////////
@@ -136,9 +133,9 @@ export function Banner(){
               {/* 동영상 넘기기 버튼 */}
               {/* 폰트어썸 아이콘 */}
                 <div className="arrow lar"
-                onClick={goSlide}>{lbtn}</div>
+                onClick={goSlide}><FontAwesomeIcon icon={faChevronLeft} /></div>
                 <div className="arrow rar"
-                onClick={goSlide}>{rbtn}</div>
+                onClick={goSlide}><FontAwesomeIcon icon={faChevronRight}/></div>
                 <ol className="indic">
                   {selData.map((v, i) => (
                 <li className={i == 0 ? "on" : ""} key={i}></li>
