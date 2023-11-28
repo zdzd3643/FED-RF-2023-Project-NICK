@@ -1,7 +1,8 @@
 /* TheBlack PJ 배너모듈 CSS - banner.css */
 
 /* 리셋, 코아 CSS 불러오기 */
-@import url(./common.css);
+@import url(./reset.css);
+@import url(./core.css);
 
 /********** 2-1.MV-area **********/
 .ats-movie{
@@ -66,7 +67,7 @@
     transform: translateX(-50%);
     color: #fff;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'twayair';
 }
 /* 블릿 */

@@ -1,4 +1,4 @@
-// TheBlck 뮤비 배너 컴포넌트
+// TheBlack 뮤비 배너 컴포넌트
 
 // 배너데이터
 import { mvData } from "../data/mv_data";
@@ -18,7 +18,6 @@ import "jquery-ui-dist/jquery-ui";
 
 // 배너 컴포넌트 //
 export function Banner(){
-
 
     // 1. 변수설정
     // (0) 애니시간

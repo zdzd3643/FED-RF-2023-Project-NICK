@@ -26,24 +26,21 @@ export function Main(){
   initSet();
 
  }, []); ////////// useEffect ////////////
+
 return (
-  <>
-<div id="main-area">
-  <main className="site-body">
-    {/* 2-1. 뮤비 파트 */}
-    <section className="movie-area">
-    <Banner />
-    </section>
-    {/* 2-2. 소개 파트 */}
-    <section className="intro-area"></section>
-    {/* 2-3. 아티스트 파트 */}
-    <section className="ats-area"></section>
-    {/* 2-4. 앨범 파트 */}
-    <section className="album-area"></section>
-    {/* 2-5. 오디션 파트 */}
-    <section className="aud-area"></section>
-  </main>
-</div>
-</>
+    <main id="main-area" className="site-body">
+        {/* 2-1. 뮤비 파트 */}
+        <section className="movie-area">
+        <Banner />
+        </section>
+        {/* 2-2. 소개 파트 */}
+        <section className="intro-area"></section>
+        {/* 2-3. 아티스트 파트 */}
+        <section className="ats-area"></section>
+        {/* 2-4. 앨범 파트 */}
+        <section className="album-area"></section>
+        {/* 2-5. 오디션 파트 */}
+        <section className="aud-area"></section>
+    </main>
 );
 } ///////// Main 컴포넌트 /////////////

@@ -1,24 +1,25 @@
 // TheBlck 햄버거 GNB 컴포넌트
 
 import { useContext } from "react";
-import { pCon } from "./PilotContext";
+import { bCon } from "./TbContext";
 
-export function GnbHam() {
+export function GnbHam(){
+
     //  컨텍스트 사용
-    const myCon = useContext(pCon);
+    const myCon = useContext(bCon);
 
     // 메뉴 이동 처리함수 ///
-    const goGnb = (txt) => {
+    const goPage = (txt) => {
         myCon.chgPgName(txt);
         // GNB 박스 숨기기
         document.querySelector(".ham").click();
-    }; ///////////// goGnb ////////////
+    }; ///////////// goPage ////////////
 
     // 코드 리턴 /////////////
     return (
         <>
-            <div className="GnbBox">
-                <nav className="Glist">
+            <div className="gbox">
+                <nav className="glist">
                     <dl>
                         <dt>
                             <a href="#">Home</a>
@@ -32,25 +33,25 @@ export function GnbHam() {
                     <dl>
                         <dt>
                             <a href="#">Artist</a>
-                            <dd>
-                            <a href="#">TaeYang</a>
-                            </dd>
-                            <dd>
-                            <a href="#">Jeon Somi</a>
-                            </dd>
-                            <dd>
-                            <a href="#">Zion.T</a>
-                            </dd>
-                            <dd>
-                            <a href="#">Bryan Chase</a>
-                            </dd>
-                            <dd>
-                            <a href="#">Park Bo Gum</a>
-                            </dd>
-                            <dd>
-                            <a href="#">Lee Jong Won</a>
-                            </dd>
                         </dt>
+                        <dd>
+                            <a href="#">TaeYang</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Jeon Somi</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Zion.T</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Bryan Chase</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Park Bo Gum</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Lee Jong Won</a>
+                        </dd>
                     </dl>
                     <dl>
                         <dt>
@@ -62,7 +63,6 @@ export function GnbHam() {
                             <a href="#">Audition</a>
                         </dt>
                     </dl>
- 
                 </nav>
             </div>
         </>

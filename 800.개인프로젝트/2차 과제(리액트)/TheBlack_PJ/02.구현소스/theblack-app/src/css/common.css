@@ -4,24 +4,22 @@
 @import url(./reset.css);
 @import url(./core.css);
 
-/************* 0. 전체화면 *************/
-body{
-    background-color: #000;
-}
 /************* 1. 상단영역 *************/
 #top-area{
     position: fixed;
     width: 100%;
     height: 80px;
-    z-index: 9999;
+    z-index: 999;
 }
 
+/* 상단영역 속박스 */
 .site-header{
     position: relative;
+    /* 부모자격 */
 }
 .gicon{
-    padding-top: 3vh;
     position: absolute;
+    top: 3vh;
     left: 3vw;
     width: 35px;
     cursor: pointer;
@@ -29,35 +27,130 @@ body{
 .gicon img{
     width: 100%;
 }
-.TBham{
-    padding-top: 3vh;
-    position: absolute;
-    right: 3vw;
-    width: 35px;
-    cursor: pointer;
-}
 .TBlogo{
-    padding-top: 2vh;
     position: absolute;
+    top: 3vh;
     transform: translateX(-50%);
     left: 50%;
     cursor: pointer;
     vertical-align: center;
-};
+    width: 350px;
+}
 .TBlogo img{
     width: 100%;
     height: 100%;
-};
-
-/* 햄버거 박스 */
-.GnbBox{
-    position: relative;
-    width: 25%;
-    height: 100%;
 }
 
+.TBham{
+    position: absolute;
+    top: 3vh;
+    right: 3vw;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 999999;
+}
+.TBham span{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 4px #777;
+    /* 트랜지션 */
+    transition: all .2s ease-out;
+}
 
+/* 1번막대 */
+.TBham span:nth-child(1){
+    top: 0;
+}
 
+/* 2번막대 */
+.TBham span:nth-child(2){
+    top: 13px;
+}
+
+/* 3번막대 */
+.TBham span:nth-child(3){
+    top: 26px;
+}
+
+/* .ham에 class="on"을 주면 span막대 변경하기 */
+
+/* 1번막대 : 중앙이동+시계방향45도회전 */
+.TBham.on span:nth-child(1) {
+    top: 10px;
+    transform: rotate(45deg);
+    box-shadow: none;
+}
+
+/* 2번막대 : left위치 중앙이동+width는0 */
+.TBham.on span:nth-child(2) {
+    width: 0;
+    left: 5vw;
+}
+
+/* 3번막대 : 중앙이동+반시계방향45도회전 */
+.TBham.on span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg);
+    box-shadow: none;
+}
+
+/* 햄버거 박스 */
+.gbox{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    display: none;
+    /* 처음에 안보임 */
+}
+.gbox::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 310px;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+/* 메뉴중앙박스 */
+.glist{
+    position: absolute;
+    top: 6vh;
+    right: -30px;
+    display: block;
+    font-family: NG;
+    z-index: 1;
+}
+.glist a{
+    color: #fff;
+}
+/* 메뉴별박스 */
+.glist dl{
+    width: 300px;
+}
+/* 상위메뉴 */
+.glist dt{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    
+}
+/* 하위메뉴 */
+.glist dd{
+    font-size: 2.1rem;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    
+}
 
 /********************** 상단영역 끝  ************************/
 
@@ -65,12 +158,7 @@ body{
 
 #main-area{
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
 }
-
 /********** 2-1.intro-area **********/
 .intro-area{
     width: 100%;
@@ -103,13 +191,17 @@ body{
 /********************** 메인영역 끝  ************************/
 
 /*********************** 3. 하단영역 ***********************/
-
-.info address{
+#footer-area{
+    position: relative;
+    background-color: #333;
+    bottom: 0;
+}
+#footer-area address{
+    position: relative;
     text-align: center;
     font-style: inherit;
     white-space: nowrap;
-    background-color: #333;
     color: #fff;
-    font-size: 15px;
-    
+    font-size: 12px;
+    font-family: UB;
 }

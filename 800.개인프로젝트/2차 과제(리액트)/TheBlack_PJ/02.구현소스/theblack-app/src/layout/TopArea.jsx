@@ -1,13 +1,13 @@
 // theblack PJ 상단영역 공통 컴포넌트 
 
 import '../css/common.css'
+import { GnbHam } from '../modules/HamGnb'
 
 
 export function TopArea(){
   return(
     <>
-    <div id="top-area">
-        <header className="top-area site-header">
+    <header id="top-area" className="site-header">
             {/* 1-1. 언어 아이콘 */}
             <div className="gicon">
                 <img src="https://theblacklabel.com/wp-content/themes/TBL_theme/assets/images/global.png" alt="아이콘"/>
@@ -18,10 +18,11 @@ export function TopArea(){
             </div>
             {/* 1-3. 더블랙 햄버거 */}
             <div className="TBham">
-                <img src="https://theblacklabel.com/wp-content/themes/TBL_theme/assets/images/menu.png" alt="햄버거버튼"/>
+                <span></span> <span></span> <span></span>
             </div>
-        </header>
-    </div>
+            {/* GNB 컴포넌트 */}
+            <GnbHam />
+    </header>
     </>
   )
 } /////////////// TopArea 컴포넌트 ///////////////
