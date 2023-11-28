@@ -14,7 +14,9 @@ export function TopArea(){
             </div>
             {/* 1-2. 더블랙 메인로고 */}
             <div className="TBlogo">
+                <a href="#">
                 <img src="./images/더블랙로고.png" alt="더블랙 로고"/>
+                </a>
             </div>
             {/* 1-3. 더블랙 햄버거 */}
             <div className="TBham">

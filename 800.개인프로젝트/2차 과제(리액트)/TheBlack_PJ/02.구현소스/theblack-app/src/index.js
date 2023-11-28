@@ -30,7 +30,6 @@ export default function App(){
       // e.target과 e.currentTarget은 다르다!
       // 후자가 햄버거 버튼 자신임!
       // console.log(e.currentTarget)
-
     }); ////////// click ///////////
 
     // 랜더링구역 한번만 실행 : 욥션 []

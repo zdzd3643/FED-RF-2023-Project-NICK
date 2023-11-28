@@ -168,12 +168,11 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
 function actPage(){
   // console.log('액숀~!!!', pno);
 
-  // pno가 0 또는 4가 아니면 작동!
-  if(pno != 0 || pno != 4){
+  // pno가 0 또는 5가 아니면 작동!
+  if(pno != 0 || pno != 5){
     // 대상: 해당순번 .page 아래 .imgc 와 .txtc a
-    $('.page').eq(pno).find('.imgc,.txtc a')
+    $('#main-area').eq(pno).find('.intTit')
     .css({
-      transform: 'rotate(0deg)',
       opacity: 1
     }); ///////// css /////////
   } ///////// if //////////////
@@ -183,10 +182,21 @@ function actPage(){
 
 } ///////// actPage 함수 //////////////////
 
+// 이벤트 설정함수 /////////
+function evtFn(){
+
+  // 메인 페이지 상단로고 클릭시 맨위로 이동하기!
+  $('.TBlogo a').click(e=>{
+    e.preventDefault();
+    pno = 0;
+    movePg();
+  }); ////////// click /////////
+} ///////// evtFn 함수 ////////
+
  // 최초호출!
  initSet();
 
 //  사용할 함수 내보내기
-export { wheelFn, initSet }
+export { wheelFn, initSet, evtFn }
 
 // } ///////////// autoScroll 함수 ////////// 

@@ -11,6 +11,8 @@ import { Banner } from "../modules/Banner";
 
 // 제이쿼리
 import $ from 'jquery';
+import { Intro } from "../modules/Intro";
+import { Artists } from "../modules/Artists";
 
 export function Main(){
  useEffect(() => {
@@ -33,9 +35,13 @@ return (
         <Banner />
         </section>
         {/* 2-2. 소개 파트 */}
-        <section className="intro-area"></section>
+        <section className="intro-area">
+        <Intro />
+        </section>
         {/* 2-3. 아티스트 파트 */}
-        <section className="ats-area"></section>
+        <section className="ats-area">
+        <Artists />
+        </section>
         {/* 2-4. 앨범 파트 */}
         <section className="album-area"></section>
         {/* 2-5. 오디션 파트 */}

@@ -1,0 +1,13 @@
+/* TheBlack PJ 아티스트 모듈 CSS - intro.css */
+
+/* 리셋, 코아 CSS 불러오기 */
+@import url(./reset.css);
+@import url(./core.css);
+
+/********** 2-2.ats-area **********/
+.ats-area{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
