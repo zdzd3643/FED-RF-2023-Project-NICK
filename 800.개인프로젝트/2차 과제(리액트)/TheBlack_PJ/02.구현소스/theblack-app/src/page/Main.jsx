@@ -7,7 +7,6 @@ import ReactDOM from "react-dom";
 import { wheelFn, initSet } from "../func/smoothScroll23";
 
 // 폰트어썸 불러오기
-import { SwiperVid } from "../plugin/SwiperVid";
 import { Banner } from "../modules/Banner";
 
 // 제이쿼리
