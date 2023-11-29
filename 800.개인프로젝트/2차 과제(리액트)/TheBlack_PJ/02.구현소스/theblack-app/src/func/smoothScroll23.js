@@ -81,7 +81,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
       // 첫페이지번호에 고정!
     } //// else ////
 
-    // console.log('페이지번호:',pno);
+    console.log('페이지번호:',pno);
 
     // 3. 스크롤 이동하기 + 메뉴에 클래스"on"넣기
     movePg();
