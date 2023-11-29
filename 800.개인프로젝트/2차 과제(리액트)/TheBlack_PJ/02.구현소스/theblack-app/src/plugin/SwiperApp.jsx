@@ -28,7 +28,7 @@ const selData = atsData;
 
 // 리스트만들기 함수 ///////////
 const makeList = (data) => {
-  console.log(data);
+  // console.log(data);
   return data.map((v, i) => (
     <SwiperSlide key={i}>
       {/* 프로필 이미지 */}
