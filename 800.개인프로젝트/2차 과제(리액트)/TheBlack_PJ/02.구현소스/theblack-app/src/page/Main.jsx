@@ -4,15 +4,15 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 
 // 자동스크롤 JS 불러오기
-import { wheelFn, initSet } from "../func/smoothScroll23";
+import { wheelFn, initSet, zeroPno } from "../func/smoothScroll23";
 
-// 폰트어썸 불러오기
+// 모듈 불러오기
 import { Banner } from "../modules/Banner";
+import { Artists } from "../modules/Artists";
+import { Intro } from "../modules/Intro";
 
 // 제이쿼리
 import $ from 'jquery';
-import { Intro } from "../modules/Intro";
-import { Artists } from "../modules/Artists";
 
 export function Main(){
  useEffect(() => {
@@ -26,26 +26,33 @@ export function Main(){
   // 초기화 함수 호출
   initSet();
 
+  // 페이지번호 초기화 호출
+  zeroPno();
+
  }, []); ////////// useEffect ////////////
 
 return (
     <main id="main-area" className="site-body">
         {/* 2-1. 뮤비 파트 */}
-        <section className="movie-area">
+        <section id="movie-area" className="main">
         <Banner />
         </section>
         {/* 2-2. 소개 파트 */}
-        <section className="intro-area">
+        <section id="intro-area" className="main">
         <Intro />
         </section>
         {/* 2-3. 아티스트 파트 */}
-        <section className="ats-area">
+        <section id="ats-area" className="main">
         <Artists />
         </section>
         {/* 2-4. 앨범 파트 */}
-        <section className="album-area"></section>
+        <section id="album-area" className="main">
+
+        </section>
         {/* 2-5. 오디션 파트 */}
-        <section className="aud-area"></section>
+        <section id="aud-area" className="main">
+
+        </section>
     </main>
 );
 } ///////// Main 컴포넌트 /////////////

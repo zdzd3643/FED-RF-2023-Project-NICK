@@ -15,7 +15,7 @@ export function Intro(){
   /////////////////////////////////
   // 코드리턴 /////////////////////
   return(
-    <div className="intro-area">
+    <section id="intro-area">
       <div className="intTit">
         <h3>THE</h3>
         <h3>ORGANIZATION</h3>
@@ -32,6 +32,6 @@ export function Intro(){
         <br/>
         <p>더블랙레이블에 오신 것을 환영합니다.</p>
       </div>
-    </div>
+    </section>
   ); //////// 리턴함수 ///////////
 } ////////// Intro 컴포넌트 ///////

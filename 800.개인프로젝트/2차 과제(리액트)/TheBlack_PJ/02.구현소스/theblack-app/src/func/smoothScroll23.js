@@ -8,28 +8,32 @@ window.jQuery = $;
 require('jquery-ui-dist/jquery-ui');
 require('jquery-ui-touch-punch/jquery.ui.touch-punch');
 
-
-// export function autoScroll() 
   /****************************************** 
     대상 변수할당하기
   ******************************************/
   // 전체 페이지번호
   let pno = 0;
+  // 전체 페이지번호 초기화함수
+  const zeroPno = () => {pno=0};
   // 페이지 요소
-  const pg = $(".page");
+  let pg;
   // 전체 페이지개수
-  const pgcnt = pg.length;
+  let pgcnt;
   // console.log("페이지개수:", pgcnt, pg);
   // 광실행금지변수
   let prot = [];
   // 광스크롤금지
   prot[0] = 0;
-  // GNB 메뉴 li
-  const gnb = $(".gnb li");
-  // indic 메뉴 li
-  const indic = $(".indic li");
-  // 각 페이지별 등장요소
-  const minfo = $(".minfo");
+
+  // 요소를 할당한 경우 로딩구역에서 할당
+  $(()=>{
+    // 페이지 요소
+    pg = $(".main");
+    // 전체 페이지개수
+    pgcnt = pg.length;
+
+  }); //////////////// load /////////////
+
 
   /****************************************** 
     이벤트 등록하기
@@ -45,29 +49,6 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   ******************************************/
   // 윈도우 휠이벤트 발생시
   // $(window).on("wheel", wheelFn); -> 제이쿼리 이벤트X
-  window.addEventListener('wheel',wheelFn);
-
-  // 키보드 이벤트발생시 업데이트
-  // 1. Page Up(33) / Up Arrow (38)
-  // 2. Page Down(34) / Down Arrow (40)
-  $(document).keydown((e) => {
-    // 광휠금지
-    if (prot[0]) return;
-    chkCrazy(0);
-
-    // 이전페이지이동
-    if (e.keyCode === 33 || e.keyCode === 38) {
-      pno--;
-      if (pno === -1) pno = 0;
-      movePg();
-    }
-    // 다음페이지이동
-    else if (e.keyCode === 34 || e.keyCode === 40) {
-      pno++;
-      if (pno === pgcnt) pno = pgcnt - 1;
-      movePg();
-    }
-  }); ///////////// keydown ////////////////
 
   // 새로고침시 스크롤위치 캐싱 변경하기(맨위로!)
   $("html,body").animate({ scrollTop: "0px" });
@@ -100,7 +81,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
       // 첫페이지번호에 고정!
     } //// else ////
 
-    // console.log(pno);
+    // console.log('페이지번호:',pno);
 
     // 3. 스크롤 이동하기 + 메뉴에 클래스"on"넣기
     movePg();
@@ -141,24 +122,21 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
  function initSet(){
   // 1. 초기화하기
 
-  // 대상: 이미지 - .imgc
-  $('.imgc').css({
-    transform:'rotate(45deg)',
-    transformOrigin:'-10% -10%',
+  // 대상: 글자 - .intTit
+  $('.intTit').css({
     opacity: 0,
-    transition: '1s ease-in-out'
-  }); /////////// css //////////
-
-  // 대상: 글자 - .txtc a
-  $('.txtc a').css({
-    transform:'rotate(45deg)',
-    transformOrigin:'-100% -100%',
-    opacity: 0,
-    transition: '1s ease-in-out .5s',
+    top:'10vh',
+    transition: 'all .7s ease-out .0s',
     display: 'inline-block'
   }); /////////// css //////////
 
-
+  // 대상: 글자 - .intCont
+  $('.intCont').css({
+    opacity: 0,
+    top:'33vh',
+    transition: 'all 1s ease-out .5s',
+    display: 'inline-block'
+  }); /////////// css //////////
  } /////////// initSet 함수 ///////////////
 
   /***************************************** 
@@ -170,9 +148,20 @@ function actPage(){
 
   // pno가 0 또는 5가 아니면 작동!
   if(pno != 0 || pno != 5){
-    // 대상: 해당순번 .page 아래 .imgc 와 .txtc a
-    $('#main-area').eq(pno).find('.intTit')
+    // 대상: 해당순번 .main 아래 .intTit, intCont
+    $('.main').eq(pno).find('.intTit')
     .css({
+      top:'17vh',
+      opacity: 1
+    }); ///////// css /////////
+  } ///////// if //////////////
+
+  // pno가 0 또는 5가 아니면 작동!
+  if(pno != 0 || pno != 5){
+    // 대상: 해당순번 .main 아래 .intTit, intCont
+    $('.main').eq(pno).find('.intCont')
+    .css({
+      top:'40vh',
       opacity: 1
     }); ///////// css /////////
   } ///////// if //////////////
@@ -191,12 +180,32 @@ function evtFn(){
     pno = 0;
     movePg();
   }); ////////// click /////////
+
+  // 키보드 이벤트발생시 업데이트
+  // 1. Page Up(33) / Up Arrow (38)
+  // 2. Page Down(34) / Down Arrow (40)
+  $(document).keydown((e) => {
+    // 광휠금지
+    if (prot[0]) return;
+    chkCrazy(0);
+
+    // 이전페이지이동
+    if (e.keyCode === 33 || e.keyCode === 38) {
+      pno--;
+      if (pno === -1) pno = 0;
+      movePg();
+    }
+    // 다음페이지이동
+    else if (e.keyCode === 34 || e.keyCode === 40) {
+      pno++;
+      if (pno === pgcnt) pno = pgcnt - 1;
+      movePg();
+    }
+  }); ///////////// keydown ////////////////
+
 } ///////// evtFn 함수 ////////
 
- // 최초호출!
- initSet();
+
 
 //  사용할 함수 내보내기
-export { wheelFn, initSet, evtFn }
-
-// } ///////////// autoScroll 함수 ////////// 
+export { wheelFn, initSet, evtFn, zeroPno }

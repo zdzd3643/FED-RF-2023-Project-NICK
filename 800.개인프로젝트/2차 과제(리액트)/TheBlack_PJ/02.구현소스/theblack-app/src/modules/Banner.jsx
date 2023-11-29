@@ -35,7 +35,7 @@ export function Banner(){
 
     // 2. 대상선정
     // (1) 슬라이드
-    const sldBox = $(tg).parent().siblings(".ats-area");
+    const sldBox = $(tg).parent().siblings(".ats-movie-area");
     // console.log("현재슬라이드:",sldBox);
     // (2) 슬라이드 블릿
     const indic = $(tg).parent().siblings('.indic').find('li');
@@ -113,7 +113,7 @@ export function Banner(){
             />
             {/* 배너 정보 */}
             <div className="mtit">
-              <h2>{v.tit}</h2>
+              <h2>{v.vtit}</h2>
             </div>
           </li>
         ));
@@ -125,7 +125,7 @@ export function Banner(){
 
         <section className="ats-movie">
           {/* 이동슬라이드 */}
-          <ul className="ats-area">{makeList(selData)}</ul>
+          <ul className="ats-movie-area">{makeList(selData)}</ul>
           {
             selData.length > 1 && (
               <>
