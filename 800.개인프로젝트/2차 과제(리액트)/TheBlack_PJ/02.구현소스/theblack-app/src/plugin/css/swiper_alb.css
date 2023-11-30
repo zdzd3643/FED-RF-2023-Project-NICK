@@ -1,30 +1,31 @@
 /* 스와이퍼 앨범 디자인설정 */
 #album-area{
   position: relative;
+  background-color: #000;
   width: 100%;
   height: 100vh;
-  background: #000;
 }
 
 #album-area .swiper{
-  position: absolute;
-  top: 30vh;
- }
+  display: flex;
+}
 
- #album-area .swiper-slide {
-  width: 300px;
-  height: 400px;
-  }
+#album-area .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  padding-top: 300px;
+  padding-left: 10px;
+  width: 30vw;
+}
 
 #album-area .swiper-slide img{
-  width: 100%;
-  object-fit: cover;
   border-radius: 15px;
   display: block;
+  width: 30vw;
 }
 
 #album-area .swiper-pagination-horizontal{
-  bottom: 20vh;
+  bottom: 10vh;
 }
 
 #album-area .swiper-pagination-bullet{

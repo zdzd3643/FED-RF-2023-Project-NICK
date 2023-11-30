@@ -54,13 +54,13 @@ const makeList = (data) => {
       effect={ 'coverflow' }
       grabCursor={ true }
       loop={true}
-      slidesPerView={ '3' }
       centeredSlides={true}
+      slidesPerView={ 'auto' }
       coverflowEffect={{
-        rotate:0,
-        stretch: 3,
-        depth: 100,
-        modifier: 3,
+        rotate:15,
+        stretch: 0,
+        depth: 200,
+        modifier: 2,
         slideShadows:true
       }}
       pagination={true}

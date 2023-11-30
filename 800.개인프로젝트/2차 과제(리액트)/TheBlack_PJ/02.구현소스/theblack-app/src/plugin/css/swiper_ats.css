@@ -6,7 +6,7 @@
   background: #000;
 }
 
-.swiper{
+#ats-area .swiper{
   position: absolute;
   top: 23vh;
   left: 40vw;
@@ -14,7 +14,7 @@
   height: 581px;
  }
 
-.swiper-slide {
+ #ats-area .swiper-slide {
   display: flex;
   border-radius: 15px;
   box-shadow: 4px 4px 3px #333;
@@ -22,7 +22,7 @@
 }
 
 /* 타이틀 및 이름 문구 설정 */
-.ats-title{
+#ats-area .ats-title{
   position: absolute;
   font-size: 80px;
   top: 12vh;
@@ -35,7 +35,7 @@
   z-index: 999;
 }
 
-.ptit{
+#ats-area .ptit{
   position: absolute;
   bottom: 5vh;
   font-size: 35px;
