@@ -9,26 +9,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 0vh;
 } 
 
 .swiper-slide img {
-  width: 500px;
+  width: 380px;
   object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 4px 4px 3px #333;
 } 
+
+.swiper-slide:nth-child(1){
+  top: -10vh;
+  transform: scale(0.8);
+}
+.swiper-slide:nth-child(2){
+  top: 0;
+  transform: scale(1);
+}
+.swiper-slide:nth-child(3){
+  top: -10vh;
+  transform: scale(0.8);
+}
+.swiper-slide:nth-child(4){
+  top: 0;
+  transform: scale(1);
+}
+.swiper-slide:nth-child(5){
+  top: -40%;
+  transform: scale(0.7);
+}
+.swiper-slide:nth-child(6){
+  top: -70%;
+  transform: scale(0.5);
+}
 
 .swiper-button-prev{
   left: 25vw;
   color: #fff;
   font-weight: bold;
+  opacity: 0.7;
 }
 .swiper-button-next{
   right: 25vw;
   color: #fff;
   font-weight: bold;
+  opacity: 0.7;
 }
 
 .swiper-pagination-horizontal{
-  height: 13vh;
+  height: 12vh;
 }
 
 .swiper-pagination-bullet{
@@ -44,12 +74,29 @@
 .swiper-pagination-bullet-active{
   background-color: #fff;
 }
+#ats-area{
+  position: relative;
+}
+
+/* 타이틀 및 이름 문구 설정 */
+.ats-title{
+  position: absolute;
+  font-size: 80px;
+  top: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#fff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  z-index: 999;
+}
 
 .ptit{
   position: absolute;
   display: flex;
   text-align: center;
-  bottom: 20vh;
+  bottom: 14vh;
   font-size: 30px;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

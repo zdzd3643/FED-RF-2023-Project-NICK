@@ -38,8 +38,8 @@ export function Banner(){
     const sldBox = $(tg).parent().siblings(".ats-movie-area");
     // console.log("현재슬라이드:",sldBox);
     // (2) 슬라이드 블릿
-    const indic = $(tg).parent().siblings('.indic').find('li');
-    // console.log('블릿:',indic);
+    const bindic = $(tg).parent().siblings('.bindic').find('li');
+    // console.log('블릿:',bindic);
     // (3) 슬라이드 개수
     const sCnt = sldBox.find('li').length;
     // console.log('슬라이드개수:', sCnt);
@@ -91,7 +91,7 @@ export function Banner(){
       // console.log('슬라이드 순번:',sNum);
 
       // 블릿해당순번 클래스'on'넣기(다른li는 제거)
-      indic.eq(sNum).addClass('on')
+      bindic.eq(sNum).addClass('on')
       .siblings().removeClass('on');
 
     } ////////// goSlide함수 ////////////
@@ -139,7 +139,7 @@ export function Banner(){
                 onClick={goSlide}>
                   <img src="./images/white-arrow.png" alt="" />
                 </div>
-                <ol className="indic">
+                <ol className="bindic">
                   {selData.map((v, i) => (
                 <li className={i == 0 ? "on" : ""} key={i}></li>))}
                   </ol>

@@ -46,6 +46,9 @@ const makeList = (data) => {
 // 리턴코드 /////////////
   return(
     <>
+      <div className="ats-title">
+        <h3>ARTISTS</h3>
+      </div>
       <Swiper 
       slidesPerView={3}
       spaceBetween={700}

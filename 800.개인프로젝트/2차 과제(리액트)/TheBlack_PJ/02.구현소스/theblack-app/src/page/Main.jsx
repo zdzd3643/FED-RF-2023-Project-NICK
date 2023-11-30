@@ -49,12 +49,43 @@ return (
         </section>
         {/* 2-3. 아티스트 파트 */}
         <section id="ats-area" className="main">
-        <SwiperApp />
+        <Artists />
         </section>
         {/* 2-4. 앨범 파트 */}
         <section id="album-area" className="main"></section>
         {/* 2-5. 오디션 파트 */}
         <section id="aud-area" className="main"></section>
+
+        {/* 메인 사이드 인디케이터 */}
+        <nav className="indic">
+            <ul>
+                <li className="on">
+                    <a href="Banner">
+                        <span>배너</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Intro">
+                        <span>인트로</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Artists">
+                        <span>아티스트</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Album">
+                        <span>앨범</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Audition">
+                        <span>오디션</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </main>
 );
 } ///////// Main 컴포넌트 /////////////

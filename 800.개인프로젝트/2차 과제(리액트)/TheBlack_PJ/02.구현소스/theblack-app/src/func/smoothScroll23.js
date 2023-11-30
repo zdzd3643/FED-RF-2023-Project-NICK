@@ -112,8 +112,20 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
         // 애니메이션 후 actPage함수를 호출!
       ); ///// animate //////
 
+      // 해당 선택메뉴에 on 넣기
+      addOn();
+
   } ///////////////// movePg ////////////////
 
+  /////////////////////////////////////////////////////
+  // 사이드 인티케이터 해당 페이지에 'on'넣기 함수//
+  /////////////////////////////////////////////////////
+  // 메뉴클릭시 + 마우스휠 이동시에도 모두 이 함수 호출!
+  const addOn = () => {
+    // 클릭된 메뉴에 class 'on' 넣기
+    $(".indic li").eq(pno).addClass('on')
+    .siblings().removeClass('on');
+  }; //////////// addOn함수 ////////////
 
   /*************************************** 
     함수명 : initSet
@@ -136,7 +148,16 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
     top:'33vh',
     transition: 'all 1s ease-out .5s',
     display: 'inline-block'
+  // 대상: 글자 - .intCont
   }); /////////// css //////////
+
+  $('.ats-title').css({
+    opacity: 0,
+    top:'22vh',
+    transition: 'all 1s ease-out .0s',
+    display: 'inline-block'
+  }); /////////// css //////////
+
  } /////////// initSet 함수 ///////////////
 
   /***************************************** 
@@ -148,7 +169,7 @@ function actPage(){
 
   // pno가 0 또는 5가 아니면 작동!
   if(pno != 0 || pno != 5){
-    // 대상: 해당순번 .main 아래 .intTit, intCont
+    // 대상: 해당순번 .main 아래 .intTit
     $('.main').eq(pno).find('.intTit')
     .css({
       top:'17vh',
@@ -158,10 +179,20 @@ function actPage(){
 
   // pno가 0 또는 5가 아니면 작동!
   if(pno != 0 || pno != 5){
-    // 대상: 해당순번 .main 아래 .intTit, intCont
+    // 대상: 해당순번 .main 아래 .intCont
     $('.main').eq(pno).find('.intCont')
     .css({
       top:'40vh',
+      opacity: 1
+    }); ///////// css /////////
+  } ///////// if //////////////
+
+  // pno가 0 또는 5가 아니면 작동!
+  if(pno != 0 || pno != 5){
+    // 대상: 해당순번 .main 아래 .ats-title
+    $('.main').eq(pno).find('.ats-title')
+    .css({
+      top:'12vh',
       opacity: 1
     }); ///////// css /////////
   } ///////// if //////////////
@@ -173,6 +204,22 @@ function actPage(){
 
 // 이벤트 설정함수 /////////
 function evtFn(){
+
+  /////////////////////////////////////////////
+  // GNB 메뉴 + 사이드 인디케이터 클릭 이동기능 //
+  /////////////////////////////////////////////
+  $('.indic li').click(function(){
+    // 1. 순번변수
+    let idx = $(this).index();
+    // console.log('나야나~!',idx);
+
+    // 2. 순번을 페이지번호에 할당(일치시킴!)
+    pno = idx;
+
+    // 3. 페이지 이동
+    movePg();
+
+  }); ///// click //////////
 
   // 메인 페이지 상단로고 클릭시 맨위로 이동하기!
   $('.TBlogo a').click(e=>{
