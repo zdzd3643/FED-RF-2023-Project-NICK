@@ -1,28 +1,41 @@
-/* 스와이퍼 아티스트 디자인설정 */
-#ats-area{
+/* 스와이퍼 앨범 디자인설정 */
+#album-area{
   position: relative;
   width: 100%;
   height: 100vh;
   background: #000;
 }
 
-.swiper{
+#album-area .swiper{
   position: absolute;
-  top: 23vh;
-  left: 40vw;
-  width: 381px;
-  height: 581px;
+  top: 30vh;
  }
 
-.swiper-slide {
-  display: flex;
+ #album-area .swiper-slide {
+  width: 300px;
+  height: 400px;
+  }
+
+#album-area .swiper-slide img{
+  width: 100%;
+  object-fit: cover;
   border-radius: 15px;
-  box-shadow: 4px 4px 3px #333;
-  rotate: 0deg; 
+  display: block;
 }
 
+#album-area .swiper-pagination-horizontal{
+  bottom: 20vh;
+}
+
+#album-area .swiper-pagination-bullet{
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
 /* 타이틀 및 이름 문구 설정 */
-.ats-title{
+.alb-title{
   position: absolute;
   font-size: 80px;
   top: 12vh;
@@ -35,7 +48,7 @@
   z-index: 999;
 }
 
-.ptit{
+.atit{
   position: absolute;
   bottom: 5vh;
   font-size: 35px;

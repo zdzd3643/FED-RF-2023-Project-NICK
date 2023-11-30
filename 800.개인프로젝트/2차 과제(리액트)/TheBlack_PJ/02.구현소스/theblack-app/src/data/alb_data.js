@@ -2,27 +2,27 @@
 export const albData = [
   {
     ats:"VINCE",
-    isrc:"./images/VINCE_ALBUM.jpg",
+    asrc:"./images/VINCE_ALBUM.jpg",
     alt:"빈스",
-    itit:"VINCE",
+    atit:"VINCE",
   },
   {
   ats:'SOMI',
-  isrc:"./images/SOMI_ALBUM.jpg",
+  asrc:"./images/SOMI_ALBUM.jpg",
   alt:"전소미",
-  itit:"JEON SO MI",
+  atit:"JEON SO MI",
   },
   { 
   ats:'TAEYANG',
-  isrc:"./images/TAEYANG_PF.jpg",
+  asrc:"./images/TAEYANG_PF.jpg",
   alt:"태양",
-  itit:"TAEYANG",
+  atit:"TAEYANG",
   },
   {
   ats:"BRYAN",
-  isrc:"./images/BRYAN_ALBUM.jpg",
+  asrc:"./images/BRYAN_ALBUM.jpg",
   alt:"브라이언",
-  itit:"Bryan Chase",
+  atit:"Bryan Chase",
   },
 
         

@@ -9,9 +9,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
-import "swiper/css/navigation"
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+// 스와이퍼 앨범 css 불러오기
+import "../plugin/css/swiper_alb.css"
+
+import { EffectCoverflow, Pagination, } from 'swiper/modules';
+
+// 아티스트 데이터 불러오기
+import { albData } from "../data/alb_data";
 
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
@@ -26,12 +31,12 @@ const makeList = (data) => {
   // console.log(data);
   return data.map((v, i) => (
     <SwiperSlide key={i}>
-      {/* 프로필 이미지 */}
+      {/* 앨범 이미지 */}
       <img 
       src={v.asrc} 
       alt={v.album} 
-      id="profile"/>
-      {/* 프로필 정보 */}
+      id="album"/>
+      {/* 앨범 정보 */}
       <div className="atit">
         <h2>{v.atit}</h2>
       </div>
@@ -48,33 +53,20 @@ const makeList = (data) => {
       <Swiper 
       effect={ 'coverflow' }
       grabCursor={ true }
-      centeredSlides={ true }
       loop={true}
-      slidesPerView={ 'auto' }
+      slidesPerView={ '3' }
+      centeredSlides={true}
       coverflowEffect={{
         rotate:0,
-        stretch: 0,
+        stretch: 3,
         depth: 100,
-        modifier: 2.5,
+        modifier: 3,
+        slideShadows:true
       }}
-      pagination={{el:'.swiper-pagination',clickable:true}}
-      navigation={{
-        nextEl:'swiper-button-next',
-        prevEl:'swiper-button-prev',
-        clickable: true,
-      }}
-      modules={[EffectCoverflow,Pagination,Navigation]}
-      className="swiper_container">
+      pagination={true}
+      modules={[EffectCoverflow,Pagination]}
+      className="alb_swiper">
       {makeList(selData)}
-      <div className="slider-controler">
-        <div className="swiper-button-prev slider-arrow">
-          <ion-icon name="arrow-back-outline"></ion-icon>
-        </div>
-        <div className="swiper-button-next slider-arrow">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
-        <div className="swiper-pagination"></div>
-      </div>
       </Swiper>
     </>
   );

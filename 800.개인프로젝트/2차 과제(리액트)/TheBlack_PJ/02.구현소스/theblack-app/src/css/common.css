@@ -166,13 +166,6 @@
     cursor: pointer;
 } */
 
-/********** 2-3.album-area **********/
-#album-area{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: cornflowerblue;
-}
 /********** 2-4.aud-area **********/
 #aud-area{
     position: relative;

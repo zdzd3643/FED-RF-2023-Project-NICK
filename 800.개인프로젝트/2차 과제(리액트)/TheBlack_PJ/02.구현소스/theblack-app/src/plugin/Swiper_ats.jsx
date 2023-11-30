@@ -54,7 +54,7 @@ const makeList = (data) => {
       loop={true}
       // 사용 모듈 
       modules={[ EffectCards ]} 
-      className="mySwiper">
+      className="ats_swiper">
       {makeList(selData)}
       </Swiper>
     </>
