@@ -22,17 +22,20 @@ export function GnbHam(){
                 <nav className="glist">
                     <dl>
                         <dt>
-                            <a href="#">Home</a>
+                            <a href="#"
+                            onClick={()=>goPage('Banner')}>Home</a>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
-                            <a href="#">Introduce</a>
+                            <a href="#"
+                            onClick={()=>goPage('IntroSub')}>Introduce</a>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
-                            <a href="#">Artist</a>
+                            <a href="#"
+                            onClick={()=>goPage('ArtistsSub')}>Artist</a>
                         </dt>
                         <dd>
                             <a href="#">TaeYang</a>
@@ -55,12 +58,14 @@ export function GnbHam(){
                     </dl>
                     <dl>
                         <dt>
-                            <a href="#">Album</a>
+                            <a href="#"
+                            onClick={()=>goPage('AlbumSub')}>Album</a>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
-                            <a href="#">Audition</a>
+                            <a href="#"
+                            onClick={()=>goPage('Audition')}>Audition</a>
                         </dt>
                     </dl>
                 </nav>

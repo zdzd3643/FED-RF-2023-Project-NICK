@@ -1,6 +1,7 @@
 // 메인 페이지 JS - index.js
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import ReactDOM, { createRoot } from 'react-dom/client';
+
 // 컨텍스트 API 불러오기
 import { bCon } from './modules/TbContext';
 
@@ -16,8 +17,16 @@ import 'jquery-ui-dist/jquery-ui';
 import './css/common.css';
 
 // 최상위 Root 컴포넌트 ///////
-export default function App(){
+function App(){
   
+  // 후크상태변수 설정 : 페이지변경
+  const [pgName,setPgName] = useState('main');
+
+  // 페이지변경 상태변수 업데이트 함수
+  const chgPgName = (txt) => {
+    setPgName(txt);
+  }; ///////// chgPgName 함수 //////
+
   // 랜더링 후 실행구역 //////////
   useEffect(()=>{
     // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
@@ -42,11 +51,11 @@ export default function App(){
 
   // 리턴코드 ////////////////////
   return(
-    <>
-      <TopArea />
-      <MainArea />
+    <bCon.Provider value={{pgName, chgPgName}}>
+      <TopArea cat={pgName}/>
+      <MainArea page={pgName}/>
       <FooterArea />
-    </>
+    </bCon.Provider>
   )
 
 } //////////////// App 컴포넌트 ///////////////

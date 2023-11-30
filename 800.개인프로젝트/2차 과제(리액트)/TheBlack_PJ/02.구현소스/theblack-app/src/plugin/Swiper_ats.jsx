@@ -52,6 +52,12 @@ const makeList = (data) => {
       effect={'cards'}
       grabCursor={true}
       loop={true}
+      cardsEffect={{
+        rotate:0,
+        depth: 100,
+        modifier: 2,
+        slideShadows:true
+      }}
       // 사용 모듈 
       modules={[ EffectCards ]} 
       className="ats_swiper">

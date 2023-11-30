@@ -1,0 +1,40 @@
+/* TheBlack PJ 오디션 모듈 CSS - aud.css */
+
+/* 리셋, 코아 CSS 불러오기 */
+@import url(./reset.css);
+@import url(./core.css);
+
+/********** 2-4.aud-area **********/
+#aud-area{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.aud-poster{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25vh;
+    width: 420px;
+    height: 650px;
+}
+.aud-poster img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 타이틀 및 이름 문구 설정 */
+.aud-title{
+    position: absolute;
+    font-size: 80px;
+    top: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color:#fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    z-index: 999;
+  }

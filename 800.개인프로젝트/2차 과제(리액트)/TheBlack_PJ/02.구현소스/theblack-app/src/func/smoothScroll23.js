@@ -158,6 +158,20 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
     display: 'inline-block'
   }); /////////// css //////////
 
+  $('.alb-title').css({
+    opacity: 0,
+    top:'22vh',
+    transition: 'all 1s ease-out .0s',
+    display: 'inline-block'
+  }); /////////// css //////////
+
+  $('.aud-title').css({
+    opacity: 0,
+    top:'22vh',
+    transition: 'all 1s ease-out .0s',
+    display: 'inline-block'
+  }); /////////// css //////////
+
  } /////////// initSet 함수 ///////////////
 
   /***************************************** 
@@ -191,6 +205,26 @@ function actPage(){
   if(pno != 0 || pno != 5){
     // 대상: 해당순번 .main 아래 .ats-title
     $('.main').eq(pno).find('.ats-title')
+    .css({
+      top:'12vh',
+      opacity: 1
+    }); ///////// css /////////
+  } ///////// if //////////////
+
+  // pno가 0 또는 5가 아니면 작동!
+  if(pno != 0 || pno != 5){
+    // 대상: 해당순번 .main 아래 .ats-title
+    $('.main').eq(pno).find('.alb-title')
+    .css({
+      top:'12vh',
+      opacity: 1
+    }); ///////// css /////////
+  } ///////// if //////////////
+
+  // pno가 0 또는 5가 아니면 작동!
+  if(pno != 0 || pno != 5){
+    // 대상: 해당순번 .main 아래 .ats-title
+    $('.main').eq(pno).find('.aud-title')
     .css({
       top:'12vh',
       opacity: 1

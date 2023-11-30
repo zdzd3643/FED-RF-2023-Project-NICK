@@ -16,6 +16,7 @@ import { Album } from "../modules/Album";
 
 // 제이쿼리
 import $ from 'jquery';
+import { Audition } from "../modules/Audition";
 
 export function Main(){
  useEffect(() => {
@@ -56,7 +57,9 @@ return (
         <Album />
         </section>
         {/* 2-5. 오디션 파트 */}
-        <section id="aud-area" className="main"></section>
+        <section id="aud-area" className="main">
+        <Audition />
+        </section>
 
         {/* 메인 사이드 인디케이터 */}
         <nav className="indic">
