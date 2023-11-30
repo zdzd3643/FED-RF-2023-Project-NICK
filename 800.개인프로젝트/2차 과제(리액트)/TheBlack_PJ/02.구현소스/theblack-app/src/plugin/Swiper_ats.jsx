@@ -1,4 +1,4 @@
-// 스와이퍼 플러그인 컴포넌트
+// 스와이퍼 아티스트 플러그인 컴포넌트
 
 import React, { useRef, useState } from 'react';
 
@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/effect-cards';
 
-import "../plugin/css/swiper.css";
+import "../plugin/css/swiper_ats.css";
 
 // 아티스트 데이터 불러오기
 import { atsData } from "../data/ats_data";
@@ -21,7 +21,7 @@ import { EffectCards } from "swiper/modules";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
-export function SwiperApp(){
+export function Swiper_ats(){
 
 const selData = atsData;
 

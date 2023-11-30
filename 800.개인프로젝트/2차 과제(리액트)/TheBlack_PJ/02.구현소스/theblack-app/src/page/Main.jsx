@@ -12,10 +12,10 @@ import { wheelFn, initSet, zeroPno, evtFn } from "../func/smoothScroll23";
 import { Banner } from "../modules/Banner";
 import { Artists } from "../modules/Artists";
 import { Intro } from "../modules/Intro";
+import { Album } from "../modules/Album";
 
 // 제이쿼리
 import $ from 'jquery';
-import { SwiperApp } from "../plugin/SwiperApp";
 
 export function Main(){
  useEffect(() => {
@@ -52,7 +52,9 @@ return (
         <Artists />
         </section>
         {/* 2-4. 앨범 파트 */}
-        <section id="album-area" className="main"></section>
+        <section id="album-area" className="main">
+        <Album />
+        </section>
         {/* 2-5. 오디션 파트 */}
         <section id="aud-area" className="main"></section>
 
