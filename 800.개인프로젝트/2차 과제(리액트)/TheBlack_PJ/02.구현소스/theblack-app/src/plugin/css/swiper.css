@@ -1,81 +1,24 @@
 /* 스와이퍼 디자인설정 */
+#ats-area{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+
 .swiper{
-   width: 100%;
-   height: 100vh;
-   background: #000;
+  position: absolute;
+  top: 23vh;
+  left: 40vw;
+  width: 381px;
+  height: 581px;
  }
 
 .swiper-slide {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0vh;
-} 
-
-.swiper-slide img {
-  width: 380px;
-  object-fit: cover;
   border-radius: 15px;
   box-shadow: 4px 4px 3px #333;
-} 
-
-.swiper-slide:nth-child(1){
-  top: -10vh;
-  transform: scale(0.8);
-}
-.swiper-slide:nth-child(2){
-  top: 0;
-  transform: scale(1);
-}
-.swiper-slide:nth-child(3){
-  top: -10vh;
-  transform: scale(0.8);
-}
-.swiper-slide:nth-child(4){
-  top: 0;
-  transform: scale(1);
-}
-.swiper-slide:nth-child(5){
-  top: -40%;
-  transform: scale(0.7);
-}
-.swiper-slide:nth-child(6){
-  top: -70%;
-  transform: scale(0.5);
-}
-
-.swiper-button-prev{
-  left: 25vw;
-  color: #fff;
-  font-weight: bold;
-  opacity: 0.7;
-}
-.swiper-button-next{
-  right: 25vw;
-  color: #fff;
-  font-weight: bold;
-  opacity: 0.7;
-}
-
-.swiper-pagination-horizontal{
-  height: 12vh;
-}
-
-.swiper-pagination-bullet{
-  width: 10px;
-  height: 10px;
-  border: 2px solid #fff;
-  margin: 0 5px;
-  text-shadow: 0 0 2px #000;
-  background-color: rgba( 255, 255, 255, 0.1 );
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active{
-  background-color: #fff;
-}
-#ats-area{
-  position: relative;
+  rotate: 0deg; 
 }
 
 /* 타이틀 및 이름 문구 설정 */
@@ -94,11 +37,11 @@
 
 .ptit{
   position: absolute;
-  display: flex;
-  text-align: center;
-  bottom: 14vh;
-  font-size: 30px;
+  bottom: 5vh;
+  font-size: 35px;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;
+  background-color: #000;
+  opacity: 0.7;
 }

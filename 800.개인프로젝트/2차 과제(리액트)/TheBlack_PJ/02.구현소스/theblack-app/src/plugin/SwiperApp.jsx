@@ -7,8 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/css/effect-cards';
 
 import "../plugin/css/swiper.css";
 
@@ -16,7 +15,7 @@ import "../plugin/css/swiper.css";
 import { atsData } from "../data/ats_data";
 
 // 스와이퍼 모듈 불러오기
-import { Pagination, Navigation } from "swiper/modules";
+import { EffectCards } from "swiper/modules";
 
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
@@ -50,15 +49,11 @@ const makeList = (data) => {
         <h3>ARTISTS</h3>
       </div>
       <Swiper 
-      slidesPerView={3}
-      spaceBetween={700}
-      pagination={{
-        clickable: true,
-      }}
+      effect={'cards'}
+      grabCursor={true}
       loop={true}
-      navigation={true}
       // 사용 모듈 
-      modules={[Pagination, Navigation]} 
+      modules={[ EffectCards ]} 
       className="mySwiper">
       {makeList(selData)}
       </Swiper>
