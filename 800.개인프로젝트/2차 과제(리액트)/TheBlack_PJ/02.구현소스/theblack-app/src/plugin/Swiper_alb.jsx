@@ -58,7 +58,6 @@ const makeList = (data) => {
       slidesPerView={ 'auto' }
       coverflowEffect={{
         rotate:15,
-        stretch: 0,
         depth: 200,
         modifier: 2,
         slideShadows:true

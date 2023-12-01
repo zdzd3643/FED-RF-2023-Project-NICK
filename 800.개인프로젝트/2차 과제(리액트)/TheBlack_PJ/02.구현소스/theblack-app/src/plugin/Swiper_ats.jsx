@@ -39,6 +39,9 @@ const makeList = (data) => {
       <div className="ptit">
         <h2>{v.itit}</h2>
       </div>
+      <button className="ats_btn">
+        Read More
+      </button>
     </SwiperSlide>
   ));
 }; ////////// makeList 함수 //////
@@ -55,7 +58,7 @@ const makeList = (data) => {
       cardsEffect={{
         rotate:0,
         depth: 100,
-        modifier: 2,
+        modifier: 1,
         slideShadows:true
       }}
       // 사용 모듈 
