@@ -10,9 +10,10 @@ export function GnbHam(){
 
     // 메뉴 이동 처리함수 ///
     const goPage = (txt) => {
+        console.log(txt);
         myCon.chgPgName(txt);
         // GNB 박스 숨기기
-        document.querySelector(".ham").click();
+        // document.querySelector(".ham").click();
     }; ///////////// goPage ////////////
 
     // 코드 리턴 /////////////

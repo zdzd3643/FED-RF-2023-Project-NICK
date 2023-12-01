@@ -23,7 +23,7 @@ export function TopArea(){
                 <span></span> <span></span> <span></span>
             </div>
             {/* GNB 컴포넌트 */}
-            <GnbHam />
+            <GnbHam/>
     </header>
     </>
   )

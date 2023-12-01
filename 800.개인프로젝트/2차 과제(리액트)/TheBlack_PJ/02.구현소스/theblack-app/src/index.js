@@ -27,6 +27,10 @@ function App(){
     setPgName(txt);
   }; ///////// chgPgName 함수 //////
 
+  useEffect(()=>{
+    console.log('바뀜!',pgName);
+  },[pgName])
+
   // 랜더링 후 실행구역 //////////
   useEffect(()=>{
     // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
@@ -52,8 +56,8 @@ function App(){
   // 리턴코드 ////////////////////
   return(
     <bCon.Provider value={{pgName, chgPgName}}>
-      <TopArea cat={pgName}/>
-      <MainArea page={pgName}/>
+      <TopArea />
+      <MainArea />
       <FooterArea />
     </bCon.Provider>
   )

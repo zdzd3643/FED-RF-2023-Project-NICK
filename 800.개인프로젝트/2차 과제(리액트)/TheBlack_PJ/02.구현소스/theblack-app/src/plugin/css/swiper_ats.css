@@ -15,12 +15,12 @@
  }
 
  #ats-area .swiper-slide {
-  display: flex;
-  border-radius: 15px;
-  box-shadow: 4px 4px 3px #333;
-  rotate: (var(--rotateY)); 
-  perspective: 0x;
-}
+   display: flex;
+   border-radius: 15px;
+   box-shadow: 4px 4px 3px #333;
+  overflow: visible;
+   transition: width .6s;
+  }
 
 /* 타이틀 및 이름 문구 설정 */
 #ats-area .ats-title{
@@ -61,4 +61,43 @@
   border: none;
   padding: 1rem;
   width: 120px;
+}
+
+
+
+
+.cont-bx{
+  position: absolute;
+  left: 0;
+  display: flex;
+  width: 381px;
+  overflow: hidden;
+  transition: .6s;
+}
+
+.cont-bx.on {
+  width: calc(381px*3) !important;
+  left : -100%;
+}
+.intro-bx{
+  position: relative;
+  width: 381px;
+  height: 581px;
+}
+.intro-bx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.desc-bx{
+  position: absolute;
+  left: 381px;
+  width: calc(381px*2);
+  height: 581px;
+  background-color: #fff;
+  border-radius: 20px;
 }

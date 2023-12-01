@@ -1,6 +1,6 @@
 // 스와이퍼 아티스트 플러그인 컴포넌트
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,9 +25,26 @@ import { EffectCards } from "swiper/modules";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
+
+
+
+///// 컴포넌트 ////////////////
 export function Swiper_ats(){
 
 const selData = atsData;
+
+useEffect(()=>{
+
+  $('.ats_btn').click((e)=>{
+    console.log(e.target);
+    $(e.target).parents('.cont-bx').toggleClass('on');
+  })
+
+},[])
+
+
+
+
 
 // 리스트만들기 함수 ///////////
 const makeList = (data) => {
@@ -35,17 +52,24 @@ const makeList = (data) => {
   return data.map((v, i) => (
     <SwiperSlide key={i}>
       {/* 프로필 이미지 */}
-      <img 
-      src={v.isrc} 
-      alt={v.ats} 
-      id="profile"/>
-      {/* 프로필 정보 */}
-      <div className="ptit">
-        <h2>{v.itit}</h2>
+      <div className="cont-bx">
+        <div className="intro-bx">
+          <img
+          src={v.isrc}
+          alt={v.ats}
+          id="profile"/>
+          {/* 프로필 정보 */}
+          <div className="ptit">
+            <h2>{v.itit}</h2>
+          </div>
+          <button className="ats_btn">
+            Read More
+          </button>
+        </div>
+        <div className="desc-bx">
+        
+        </div>
       </div>
-      <button className="ats_btn">
-        Read More
-      </button>
     </SwiperSlide>
   ));
 }; ////////// makeList 함수 //////

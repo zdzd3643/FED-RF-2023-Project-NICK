@@ -9,6 +9,7 @@ export function IntroSub(){
   
   return(
     <>
+    <h1>인트로야!</h1>
     </>
   );
 } //////////// IntroSub 컴포넌트 //////////////
