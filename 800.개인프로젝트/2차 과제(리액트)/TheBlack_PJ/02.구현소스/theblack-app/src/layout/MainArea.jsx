@@ -1,23 +1,26 @@
 // theblack PJ 메인영역 공통 컴포넌트 
 
-import { IntroSub } from "../page/IntroSub";
-import { Main } from "../page/Main";
-import { MainCont } from "../page/MainCont";
-
-import { useContext } from "react";
-import { bCon } from "../modules/TbContext";
-
-
-
-export function MainArea(){
-  const myCon = useContext(bCon);
-  console.log('메인영역',myCon.pgName);
+// 제이쿼리
+import $ from 'jquery';
+import { IntroSub } from '../page/IntroSub';
+import { MainCont } from '../page/MainCont';
+import { AuditionSub } from '../page/AuditionSub';
+import { ArtistsSub } from '../page/ArtistsSub';
+import { AlbumSub } from '../page/AlbumSub';
+export function MainArea(props){
   return(
     <>
-        <Main />
-        {myCon.pgName=='main'?<MainCont />:
-        myCon.pgName=='IntroSub'?<IntroSub />:
-        <MainCont/>}
+        {
+        // main이 아니면 서브 Fashion이동
+        props.page=='IntroSub'?<IntroSub />:
+        <MainCont /> &&
+        props.page=='ArtistsSub'?<ArtistsSub />:
+        <MainCont /> &&
+        props.page=='AlbumSub'?<AlbumSub />:
+        <MainCont /> &&
+        props.page=='Audition'?<AuditionSub />:
+        <MainCont /> 
+        };
     </>
   );
 } /////////////// MainArea 컴포넌트 ///////////////

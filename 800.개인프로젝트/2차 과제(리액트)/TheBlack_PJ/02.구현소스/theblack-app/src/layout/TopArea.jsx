@@ -1,10 +1,21 @@
 // theblack PJ 상단영역 공통 컴포넌트 
+// GNB 데이터
+import { Link, useNavigate } from "react-router-dom";
+import { GnbHam } from "../modules/HamGnb";
+import { Main } from "../page/MainCont";
+import { memo } from "react";
 
+// 공통 CSS 불러오기
 import '../css/common.css'
-import { GnbHam } from '../modules/HamGnb'
+
+// 컨텍스트 API
+import { bCon } from "../modules/TbContext";
 
 
-export function TopArea(){
+
+
+export const TopArea = memo(({chgPageFn}) => {
+
   return(
     <>
     <header id="top-area" className="site-header">
@@ -27,4 +38,6 @@ export function TopArea(){
     </header>
     </>
   )
-} /////////////// TopArea 컴포넌트 ///////////////
+}) /////////////// TopArea 컴포넌트 ///////////////
+
+

@@ -6,6 +6,7 @@ export function AlbumSub(){
   
   return(
     <>
+    앨범 서브야~!
     </>
   );
 } //////////// AlbumSub 컴포넌트 //////////////

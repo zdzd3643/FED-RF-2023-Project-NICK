@@ -18,18 +18,14 @@ import './css/common.css';
 
 // 최상위 Root 컴포넌트 ///////
 function App(){
-  
-  // 후크상태변수 설정 : 페이지변경
-  const [pgName,setPgName] = useState('main');
 
-  // 페이지변경 상태변수 업데이트 함수
-  const chgPgName = (txt) => {
-    setPgName(txt);
-  }; ///////// chgPgName 함수 //////
+    // 후크상태변수 설정 : 페이지변경
+    const [pgName,setPgName] = useState('main');
 
-  useEffect(()=>{
-    console.log('바뀜!',pgName);
-  },[pgName])
+    // 페이지변경 상태변수 업데이트 함수
+    const chgPgName = (txt) => {
+      setPgName(txt);
+    }; ///////// chgPgName 함수 //////
 
   // 랜더링 후 실행구역 //////////
   useEffect(()=>{
@@ -57,7 +53,7 @@ function App(){
   return(
     <bCon.Provider value={{pgName, chgPgName}}>
       <TopArea />
-      <MainArea />
+      <MainArea page={pgName}/>
       <FooterArea />
     </bCon.Provider>
   )
