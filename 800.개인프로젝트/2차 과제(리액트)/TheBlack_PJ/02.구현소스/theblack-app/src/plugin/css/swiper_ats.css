@@ -18,7 +18,8 @@
   display: flex;
   border-radius: 15px;
   box-shadow: 4px 4px 3px #333;
-  rotate: 0deg; 
+  rotate: (var(--rotateY)); 
+  perspective: 0x;
 }
 
 /* 타이틀 및 이름 문구 설정 */

@@ -9,6 +9,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import 'swiper/css/effect-cards';
 
+// 카드이펙트 불러오기
+// import "../func/cardEffect.js";
+
+// 아티스트 CSS 불러오기
 import "../plugin/css/swiper_ats.css";
 
 // 아티스트 데이터 불러오기
