@@ -33,16 +33,30 @@ export function Swiper_ats(){
 
 const selData = atsData;
 
-useEffect(()=>{
+  // 랜더링 후 실행구역 ////////////
+  useEffect(()=>{
 
-  $('.ats_btn').click((e)=>{
-    console.log(e.target);
-    $(e.target).parents('.cont-bx').toggleClass('on');
-  })
+  // Read More 버튼 클릭시 아티스트 내용창 뜨기
+  $('.ats_Rbtn').click(e=>{
+    $(e.currentTarget).parents('.cont-bx').addClass('on');
+    
+    // Read More 버튼 클릭시 클로즈 버튼 보이기
+    $('.ats_Rbtn').fadeToggle(400);
+    $('.ats_Cbtn').fadeToggle(400);
+    
+  }); /////////// click ////////////
+  
+  // Read More 버튼 클릭시 아티스트 내용창 뜨기
+  $('.ats_Cbtn').click(e=>{
+    $(e.currentTarget).parents().removeClass('on');
+    
+    // Close 버튼 클릭시 클로즈 버튼 숨기기
+    $('.ats_Rbtn').fadeToggle(400);
+    $('.ats_Cbtn').fadeToggle(400);
+    
+  }); /////////// click ////////////
 
-},[])
-
-
+},[]); ///////// useEffect ///////// 
 
 
 
@@ -62,13 +76,14 @@ const makeList = (data) => {
           <div className="ptit">
             <h2>{v.itit}</h2>
           </div>
-          <button className="ats_btn">
-            Read More
-          </button>
+            <button className="ats_Rbtn">
+              Read More
+            </button>
+            <button className="ats_Cbtn">
+              Close
+            </button>
         </div>
-        <div className="desc-bx">
-        
-        </div>
+        <div className="desc-bx"></div>
       </div>
     </SwiperSlide>
   ));
