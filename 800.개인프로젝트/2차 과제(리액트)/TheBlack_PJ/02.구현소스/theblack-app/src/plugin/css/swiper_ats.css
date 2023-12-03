@@ -86,7 +86,7 @@
   display: flex;
   width: 381px;
   overflow: hidden;
-  transition: ease-out .2s;
+  transition: ease-in-out .6s;
 }
 
 .cont-bx.on {
