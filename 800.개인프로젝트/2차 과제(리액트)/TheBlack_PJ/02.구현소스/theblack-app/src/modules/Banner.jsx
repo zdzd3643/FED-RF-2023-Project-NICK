@@ -11,9 +11,9 @@ import { useEffect } from "react";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
-// // 폰트어썸 불러오기
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+// 폰트어썸 불러오기
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 
 // 배너 컴포넌트 //

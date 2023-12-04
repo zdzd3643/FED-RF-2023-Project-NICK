@@ -8,6 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import 'swiper/css/effect-cards';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // 카드이펙트 불러오기
 // import "../func/cardEffect.js";
@@ -19,34 +21,35 @@ import "../plugin/css/swiper_ats.css";
 import { atsData } from "../data/ats_data";
 
 // 스와이퍼 모듈 불러오기
-import { EffectCards } from "swiper/modules";
+import { EffectCards, Pagination, Navigation } from "swiper/modules";
 
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
 
-
-
 ///// 컴포넌트 ////////////////
 export function Swiper_ats(){
+
+const IMG_CNT = 4;
 
 const selData = atsData;
 
   // 랜더링 후 실행구역 ////////////
   useEffect(()=>{
 
-  // Read More 버튼 클릭시 아티스트 내용창 뜨기
+  // Read More 버튼 클릭시 아티스트 내용창 열기
   $('.ats_Rbtn').click(e=>{
     $(e.currentTarget).parents('.cont-bx').addClass('on');
     
     // Read More 버튼 클릭시 클로즈 버튼 보이기
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
+
     
   }); /////////// click ////////////
   
-  // Read More 버튼 클릭시 아티스트 내용창 뜨기
+  // Close 버튼 클릭시 아티스트 내용창 닫기
   $('.ats_Cbtn').click(e=>{
     $(e.currentTarget).parents().removeClass('on');
     
@@ -56,15 +59,24 @@ const selData = atsData;
     
   }); /////////// click ////////////
 
+  // Close 버튼 클릭시 아티스트 내용창 닫기
+  $('.xbtn').click(e=>{
+    $(e.currentTarget).parents().removeClass('on');
+
+    // Close 버튼 클릭시 클로즈 버튼 숨기기
+    $('.ats_Rbtn').fadeToggle(400);
+    $('.ats_Cbtn').fadeToggle(400);
+    
+  }); /////////// click ////////////
+
 },[]); ///////// useEffect ///////// 
-
-
 
 // 리스트만들기 함수 ///////////
 const makeList = (data) => {
   // console.log(data);
+
   return data.map((v, i) => (
-    <SwiperSlide key={i}>
+    <SwiperSlide>
       {/* 프로필 이미지 */}
       <div className="cont-bx">
         <div className="intro-bx">
@@ -83,11 +95,48 @@ const makeList = (data) => {
               Close
             </button>
         </div>
-        <div className="desc-bx"></div>
+        <div className="desc-bx">
+          <div className="dtit">
+          <h2>ABOUT</h2>
+          <h3>{v.dcont}</h3>
+          <div className="xbtn">
+            <img src="./images/xmark-solid.png" alt="x버튼" />    
+          </div>
+          <div className="sns">
+            <a href={v.insta}
+            target='_blank'
+            title="인스타그램으로 이동"
+            className="instagram">
+              <img src="./images/instagram.png" alt="인스타그램 이미지" />
+            </a>
+            <a href={v.youtube}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="youtube">
+            <img src="./images/youtube.png" alt="유튜브이미지" />
+            </a>
+            <a href={v.twitter}
+            target='_blank'
+            title="트위터로 이동"  
+            className="twitter">
+            <img src="./images/twitter.png" 
+            alt="트위터 이미지" />
+            </a>
+          </div>
+          <div className="ats-swiper">
+          <Swiper>
+            <Swiper-Slide>
+              
+            </Swiper-Slide>
+          </Swiper>
+          </div>
+          </div>
+        </div>
       </div>
     </SwiperSlide>
   ));
 }; ////////// makeList 함수 //////
+
 // 리턴코드 /////////////
   return(
     <>
@@ -96,7 +145,6 @@ const makeList = (data) => {
       </div>
       <Swiper 
       effect={'cards'}
-      grabCursor={true}
       loop={true}
       cardsEffect={{
         rotate:0,
@@ -105,8 +153,7 @@ const makeList = (data) => {
         slideShadows:true
       }}
       // 사용 모듈 
-      modules={[ EffectCards ]} 
-      className="ats_swiper">
+      modules={[ EffectCards ]} className="ats_swiper">
       {makeList(selData)}
       </Swiper>
     </>
