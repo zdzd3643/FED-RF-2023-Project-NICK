@@ -20,7 +20,7 @@ export function MainArea(props){
         <MainCont /> &&
         props.page=='Audition'?<AuditionSub />:
         <MainCont /> 
-        };
+        }
     </>
   );
 } /////////////// MainArea 컴포넌트 ///////////////

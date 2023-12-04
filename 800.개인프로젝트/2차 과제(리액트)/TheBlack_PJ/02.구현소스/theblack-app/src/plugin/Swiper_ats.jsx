@@ -31,8 +31,6 @@ import "jquery-ui-dist/jquery-ui";
 ///// 컴포넌트 ////////////////
 export function Swiper_ats(){
 
-const IMG_CNT = 4;
-
 const selData = atsData;
 
   // 랜더링 후 실행구역 ////////////
@@ -41,27 +39,32 @@ const selData = atsData;
   // Read More 버튼 클릭시 아티스트 내용창 열기
   $('.ats_Rbtn').click(e=>{
     $(e.currentTarget).parents('.cont-bx').addClass('on');
-    
+
+
     // Read More 버튼 클릭시 클로즈 버튼 보이기
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
 
-    
   }); /////////// click ////////////
-  
+
+
   // Close 버튼 클릭시 아티스트 내용창 닫기
   $('.ats_Cbtn').click(e=>{
-    $(e.currentTarget).parents().removeClass('on');
-    
+
+
     // Close 버튼 클릭시 클로즈 버튼 숨기기
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
     
   }); /////////// click ////////////
 
+  $('.desc-bx').click(e=>{
+    e.stopPropagation();
+  })
+
   // Close 버튼 클릭시 아티스트 내용창 닫기
   $('.xbtn').click(e=>{
-    $(e.currentTarget).parents().removeClass('on');
+    $(e.currentTarget).parents('.cont-bx').removeClass('on');
 
     // Close 버튼 클릭시 클로즈 버튼 숨기기
     $('.ats_Rbtn').fadeToggle(400);
@@ -75,8 +78,8 @@ const selData = atsData;
 const makeList = (data) => {
   // console.log(data);
 
-  return data.map((v, i) => (
-    <SwiperSlide>
+  return data.map((v,i) => (
+    <SwiperSlide key={i}>
       {/* 프로필 이미지 */}
       <div className="cont-bx">
         <div className="intro-bx">
@@ -96,7 +99,6 @@ const makeList = (data) => {
             </button>
         </div>
         <div className="desc-bx">
-          <div className="dtit">
           <h2>ABOUT</h2>
           <h3>{v.dcont}</h3>
           <div className="xbtn">
@@ -123,16 +125,52 @@ const makeList = (data) => {
             alt="트위터 이미지" />
             </a>
           </div>
-          <div className="ats-swiper">
-          <Swiper>
-            <Swiper-Slide>
-              
-            </Swiper-Slide>
+          <Swiper
+          loop={true}
+          pagination={{
+            type:'fraction',
+            modifier: 3,
+          }}
+          spaceBetween={10}
+          slidesPerView={3}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className='img_swiper'>
+            <SwiperSlide>
+              <a href={v.cont1}
+              target='_blank'
+              title='페이지로 이동'
+              className='ats_cont'>
+                <img src={v.timg1} alt="이미지1" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href={v.cont2}
+              target='_blank'
+              title='페이지로 이동'
+              className='ats_cont'>
+                <img src={v.timg2} alt="이미지1" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href={v.cont3}
+              target='_blank'
+              title='페이지로 이동'
+              className='ats_cont'>
+                <img src={v.timg3} alt="이미지1" />
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href={v.cont4}
+              target='_blank'
+              title='페이지로 이동'
+              className='ats_cont'>
+                <img src={v.timg4} alt="이미지1" />
+              </a>
+            </SwiperSlide>
           </Swiper>
           </div>
           </div>
-        </div>
-      </div>
     </SwiperSlide>
   ));
 }; ////////// makeList 함수 //////
@@ -150,10 +188,11 @@ const makeList = (data) => {
         rotate:0,
         depth: 100,
         modifier: 1,
-        slideShadows:true
+        slideShadows:false,
       }}
       // 사용 모듈 
-      modules={[ EffectCards ]} className="ats_swiper">
+      modules={[ EffectCards ]} 
+      className="ats_swiper">
       {makeList(selData)}
       </Swiper>
     </>
