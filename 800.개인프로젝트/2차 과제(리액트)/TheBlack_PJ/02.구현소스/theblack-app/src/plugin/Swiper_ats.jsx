@@ -50,17 +50,13 @@ const selData = atsData;
 
   // Close 버튼 클릭시 아티스트 내용창 닫기
   $('.ats_Cbtn').click(e=>{
-
+    $(e.currentTarget).parents('.cont-bx').removeClass('on');
 
     // Close 버튼 클릭시 클로즈 버튼 숨기기
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
     
   }); /////////// click ////////////
-
-  $('.desc-bx').click(e=>{
-    e.stopPropagation();
-  })
 
   // Close 버튼 클릭시 아티스트 내용창 닫기
   $('.xbtn').click(e=>{
