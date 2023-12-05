@@ -76,18 +76,18 @@
 }
 .aud-Cont{
     position: absolute;
-    top: 26vh;
+    top: 29vh;
     left: 52%;
     font-size: 18px;
     color:#fff;
-    font-family: NG;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     white-space: nowrap;
 }
 .aud-poster{
     position: absolute;
     left: 26%;
-    top: 25vh;
+    top: 28vh;
     width: 450px;
     height: 630px;
     border: none;

@@ -219,11 +219,11 @@
 .footer-sns {
     position: absolute;
     display: flex;
-    width: 150px;
+    width: 125px;
     left: 50%;
     transform: translateX(-50%);
     gap: 0 30px;
-    padding: 5px;
+    padding: 10px;
 }
 #footer-area address{
     position: absolute;

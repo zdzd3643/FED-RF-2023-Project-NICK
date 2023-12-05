@@ -28,10 +28,8 @@ export function Audition(){
       <iframe 
       src="./images/AUDITION_mv.mp4" 
       alt="오디션 뮤비"
-      muted="muted"
-      loop="loop"
-      autoPlay="autoplay">
-      </iframe>
+      muted="muted" 
+      autoPlay="none" />
     </div>
     <div className="aud-viewBtn">
       VIEW MORE

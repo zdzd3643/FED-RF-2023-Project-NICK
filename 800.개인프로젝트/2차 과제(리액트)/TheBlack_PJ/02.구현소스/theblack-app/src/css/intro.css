@@ -41,7 +41,7 @@
 #introSub-area{
   position: relative;
   width: 100%;
-  height: 195vh;
+  height: 172vh;
   background-color: #000;
 }
 
@@ -84,7 +84,7 @@
 
 .intSub-foundCont{
   position: absolute;
-  top: 62vh;
+  top: 60vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -110,11 +110,11 @@
   color:#fff;
   line-height: 1.6;
   white-space: nowrap;
-  top: 103vh;
+  top: 93vh;
 }
 
 .intSub-services{
-  top: 110vh;
+  top: 97vh;
   position: absolute;
   width: 900px;
   left: 50%;
@@ -130,7 +130,7 @@
 
 .sgubun{
   position: relative;
-  top: 128vh;
+  top: 115vh;
   width: 53vw;
   opacity: 0.5;
 }
@@ -142,7 +142,7 @@
 
 .intSub-creat{
   position: absolute;
-  top: 145vh;
+  top: 125vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;

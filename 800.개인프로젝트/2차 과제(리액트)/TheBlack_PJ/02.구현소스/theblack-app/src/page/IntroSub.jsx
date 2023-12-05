@@ -47,11 +47,10 @@ export function IntroSub(){
         <p>예술적 통념의 한계를 뛰어넘어 대중 예술을 재정의하고</p> <p>혁신을 가져오는 과감한 시도야 말로 우리가 추구하는 가치의 핵심입니다.</p>
         <br/>
         <p>더블랙레이블에 오신 것을 환영합니다.</p>
-        <br /><br />
+        <br />
         <hr className="gubun"/>
       </div>
       <div className="intSub-foundCont">
-      <br /><br />
       <strong>FOUNDER</strong><br /><br />
         <p>TEDDY는 더블랙레이블의 총괄 디렉터로 비전을 제시하고 설계하며 운영하는 총책임자이다.</p>
         <br/>
@@ -61,11 +60,10 @@ export function IntroSub(){
         <p>새롭고 혁신적인 음악을 창조하는 그는 끊임없이 메가 히트곡을 만들어내며 글로벌 팝 뮤직 팬들의 찬사를 이끌어내고있다.</p>
         <p>시대를 앞선 트렌디한 곡들을 프로듀싱한 TEDDY는 K-Pop의 위상이 세계적인 스타덤에 오를 수 있도록 크게 기여한 것은 물론,</p>
         <p> 뮤직비디오 제작에도 본인만의 세련된 감각이 투영된 화제작들을 연이어 선보이며 TEDDY가 곧 장르라는 트렌드를 만들어냈다.</p>
-        <br /><br />
+        <br />
         <hr className="gubun"/> 
       </div>
       <div className="services-cont">
-      <br /><br />
         <div className="services-cont-title">
           <strong>SERVICES</strong>
         </div>
@@ -83,7 +81,7 @@ export function IntroSub(){
             <img src="./images/introSub_img_5.jpg" alt="서비스 이미지5" />
           </div>
         </div>
-        <br /><br />
+        <br />
         <hr className="sgubun"/> 
       </div>
       <div className="intSub-creat">
