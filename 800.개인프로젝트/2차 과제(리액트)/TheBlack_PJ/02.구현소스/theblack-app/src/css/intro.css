@@ -35,3 +35,120 @@
   line-height: 1.7;
   white-space: nowrap;
 }
+
+
+/* 인트로 서브페이지 CSS */
+#introSub-area{
+  position: relative;
+  width: 100%;
+  height: 195vh;
+  background-color: #000;
+}
+
+.intSub-Tit{
+  position: absolute;
+  font-size: 90px;
+  top: 11vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#fff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.intSub-cont strong{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.intSub-cont{
+  position: absolute;
+  top: 26vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 15px;
+  color:#fff;
+  font-family: NG;
+  line-height: 1.6;
+  white-space: nowrap;
+  
+}
+
+.intSub-foundCont strong{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.intSub-foundCont{
+  position: absolute;
+  top: 62vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 15px;
+  color:#fff;
+  font-family: NG;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.gubun{
+  width: 53vw;
+  opacity: 0.5;
+}
+
+.services-cont-title{
+  position: relative;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color:#fff;
+  line-height: 1.6;
+  white-space: nowrap;
+  top: 103vh;
+}
+
+.intSub-services{
+  top: 110vh;
+  position: absolute;
+  width: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.intSub-services img{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sgubun{
+  position: relative;
+  top: 128vh;
+  width: 53vw;
+  opacity: 0.5;
+}
+
+.intSub-creat strong{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.intSub-creat{
+  position: absolute;
+  top: 145vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 15px;
+  color:#fff;
+  font-family: NG;
+  line-height: 1.6;
+  white-space: nowrap;
+}

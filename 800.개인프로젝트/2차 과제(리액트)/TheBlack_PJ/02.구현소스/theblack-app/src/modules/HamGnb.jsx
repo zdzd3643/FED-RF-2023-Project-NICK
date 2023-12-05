@@ -24,19 +24,19 @@ export function GnbHam(){
                     <dl>
                         <dt>
                             <a href="#"
-                            onClick={()=>goPage('Banner')}>Home</a>
+                            onClick={()=>goPage('Banner')}>HOME</a>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
                             <a href="#"
-                            onClick={()=>goPage('IntroSub')}>Introduce</a>
+                            onClick={()=>goPage('IntroSub')}>INTRODUCE</a>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
                             <a href="#"
-                            onClick={()=>goPage('ArtistsSub')}>Artist</a>
+                            onClick={()=>goPage('ArtistsSub')}>ARTIST</a>
                         </dt>
                         <dd>
                             <a href="#">TaeYang</a>
@@ -60,13 +60,13 @@ export function GnbHam(){
                     <dl>
                         <dt>
                             <a href="#"
-                            onClick={()=>goPage('AlbumSub')}>Album</a>
+                            onClick={()=>goPage('AlbumSub')}>VIDEOS</a>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
                             <a href="#"
-                            onClick={()=>goPage('Audition')}>Audition</a>
+                            onClick={()=>goPage('Audition')}>AUDITION</a>
                         </dt>
                     </dl>
                 </nav>

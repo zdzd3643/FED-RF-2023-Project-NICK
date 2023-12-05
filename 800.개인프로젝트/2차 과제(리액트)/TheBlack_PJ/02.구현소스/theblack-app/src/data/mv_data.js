@@ -15,7 +15,7 @@ export const mvData = [
       },
       {
       ats:"ZION-T",
-      vsrc:"./images/ZIONT_MV.mp4",
+      vsrc:"./images/ZIONT_MV_edit.mp4",
       alt:"자이언티",
       vtit:"Zion.T - 선물을 고르며",
       },

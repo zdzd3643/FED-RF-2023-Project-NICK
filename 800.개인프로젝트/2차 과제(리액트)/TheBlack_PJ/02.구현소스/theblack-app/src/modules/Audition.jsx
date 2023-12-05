@@ -18,8 +18,23 @@ export function Audition(){
     <div className="aud-title">
         <h3>AUDTION</h3>
     </div>
-    <div className="aud-poster">
-      <img src="./images/오디션 이미지2.jpg" alt="오디션 포스터" />
+    <div className="aud-audTitle">
+        <h3>THE</h3> 
+        <h3>BLACKLABLE</h3> 
+        <h3>THAILAND</h3>
+        <h3>AUDITION</h3> 
+    </div>
+    <div className="aud-video">
+      <iframe 
+      src="./images/AUDITION_mv.mp4" 
+      alt="오디션 뮤비"
+      muted="muted"
+      loop="loop"
+      autoPlay="autoplay">
+      </iframe>
+    </div>
+    <div className="aud-viewBtn">
+      VIEW MORE
     </div>
     </>
   ) //////// 리턴함수 ///////////

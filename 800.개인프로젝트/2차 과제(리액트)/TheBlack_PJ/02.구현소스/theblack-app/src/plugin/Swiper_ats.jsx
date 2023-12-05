@@ -121,50 +121,49 @@ const makeList = (data) => {
             alt="트위터 이미지" />
             </a>
           </div>
-          <Swiper
-          loop={true}
-          pagination={{
-            type:'fraction',
-            modifier: 3,
-          }}
-          spaceBetween={10}
-          slidesPerView={3}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className='img_swiper'>
-            <SwiperSlide>
-              <a href={v.cont1}
-              target='_blank'
-              title='페이지로 이동'
-              className='ats_cont'>
-                <img src={v.timg1} alt="이미지1" />
-              </a>
-            </SwiperSlide>
-            <SwiperSlide>
-              <a href={v.cont2}
-              target='_blank'
-              title='페이지로 이동'
-              className='ats_cont'>
-                <img src={v.timg2} alt="이미지1" />
-              </a>
-            </SwiperSlide>
-            <SwiperSlide>
-              <a href={v.cont3}
-              target='_blank'
-              title='페이지로 이동'
-              className='ats_cont'>
-                <img src={v.timg3} alt="이미지1" />
-              </a>
-            </SwiperSlide>
-            <SwiperSlide>
-              <a href={v.cont4}
-              target='_blank'
-              title='페이지로 이동'
-              className='ats_cont'>
-                <img src={v.timg4} alt="이미지1" />
-              </a>
-            </SwiperSlide>
-          </Swiper>
+            <Swiper
+            loop={true}
+            pagination={{
+              type:'fraction',
+            }}
+            spaceBetween={10}
+            slidesPerView={'3'}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className='img_swiper'>
+              <SwiperSlide>
+                <a href={v.cont1}
+                target='_blank'
+                title='페이지로 이동'
+                className='ats_cont'>
+                  <img src={v.timg1} alt="이미지1" />
+                </a>
+              </SwiperSlide>
+              <SwiperSlide>
+                <a href={v.cont2}
+                target='_blank'
+                title='페이지로 이동'
+                className='ats_cont'>
+                  <img src={v.timg2} alt="이미지1" />
+                </a>
+              </SwiperSlide>
+              <SwiperSlide>
+                <a href={v.cont3}
+                target='_blank'
+                title='페이지로 이동'
+                className='ats_cont'>
+                  <img src={v.timg3} alt="이미지1" />
+                </a>
+              </SwiperSlide>
+              <SwiperSlide>
+                <a href={v.cont4}
+                target='_blank'
+                title='페이지로 이동'
+                className='ats_cont'>
+                  <img src={v.timg4} alt="이미지1" />
+                </a>
+              </SwiperSlide>
+            </Swiper>
           </div>
           </div>
     </SwiperSlide>

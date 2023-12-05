@@ -138,7 +138,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   $('.intTit').css({
     opacity: 0,
     top:'10vh',
-    transition: 'all .7s ease-out .0s',
+    transition: 'all ease-out 1s',
     display: 'inline-block'
   }); /////////// css //////////
 
@@ -146,7 +146,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   $('.intCont').css({
     opacity: 0,
     top:'33vh',
-    transition: 'all 1s ease-out .5s',
+    transition: 'all ease-out 1s',
     display: 'inline-block'
   // 대상: 글자 - .intCont
   }); /////////// css //////////
@@ -154,21 +154,21 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   $('.ats-title').css({
     opacity: 0,
     top:'22vh',
-    transition: 'all 1s ease-out .0s',
+    transition: 'all ease-out 1s',
     display: 'inline-block'
   }); /////////// css //////////
 
   $('.alb-title').css({
     opacity: 0,
     top:'22vh',
-    transition: 'all 1s ease-out .0s',
+    transition: 'all ease-out 1s',
     display: 'inline-block'
   }); /////////// css //////////
 
   $('.aud-title').css({
     opacity: 0,
     top:'22vh',
-    transition: 'all 1s ease-out .0s',
+    transition: 'all ease-out 1s',
     display: 'inline-block'
   }); /////////// css //////////
 

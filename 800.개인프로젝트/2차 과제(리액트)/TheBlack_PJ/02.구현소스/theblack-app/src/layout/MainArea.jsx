@@ -7,6 +7,7 @@ import { MainCont } from '../page/MainCont';
 import { AuditionSub } from '../page/AuditionSub';
 import { ArtistsSub } from '../page/ArtistsSub';
 import { AlbumSub } from '../page/AlbumSub';
+
 export function MainArea(props){
   return(
     <>

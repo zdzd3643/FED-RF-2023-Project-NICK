@@ -17,7 +17,6 @@
  #ats-area .swiper-slide {
    display: flex;
    border-radius: 15px;
-   box-shadow: 4px 4px 3px #333;
    overflow: visible !important;
    transition: width .6s;
    perspective: 1000px;
@@ -149,11 +148,11 @@
   position: absolute;
   font-size: 18px;
   top: 100px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: NG;
   font-weight: normal;
   left: 5%;
   right: 5%;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 .desc-bx .sns {
@@ -169,13 +168,19 @@
   width: 100%;
 }
 
+.img_container{
+  position: absolute;
+  width: 100%;
+  height: 95%;
+}
+
 .img_swiper{
   position: absolute;
   left: 5%;
   right: 5%;
   width: 90%;
-  height: 22%;
-  top: 42vh;
+  height: 23%;
+  top: 43vh;
 }
 
 .swiper-pagination-fraction{
@@ -204,4 +209,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }

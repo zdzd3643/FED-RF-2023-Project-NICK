@@ -18,6 +18,7 @@ import { Audition } from "../modules/Audition";
 import $ from 'jquery';
 
 export function MainCont(){
+// 메인 페이지일때만 자동스크롤 기능 적용함!
  useEffect(() => {
 
   // 스크롤바 없애기
@@ -34,6 +35,21 @@ export function MainCont(){
 
   // 페이지번호 초기화 호출
   zeroPno();
+
+  // 컴포넌트 소멸자
+  return(()=>{
+    console.log('난 소멸했어~!');
+
+    // 이 페이지에서만 필요했던 자동스크롤 이벤트 해제!
+    window.removeEventListener('wheel',wheelFn);
+    $('html,body').css({overflow:'visible'});
+
+    // 메인 페이지에만 사용되는 로고클릭시 상단이동 이벤트 해제
+    // 제이쿼리로 특정요소에 걸어준경우 해제는 off(이벤트명)
+    $('.gnb li').off('click');
+    $(document).off('keydown');
+
+  }); //////////// 소멸자 return //////////
 
  }, []); ////////// useEffect ////////////
 

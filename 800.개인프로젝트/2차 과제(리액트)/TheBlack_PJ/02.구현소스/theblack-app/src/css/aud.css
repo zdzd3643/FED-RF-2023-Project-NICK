@@ -12,17 +12,18 @@
     background-color: #000;
 }
 
-.aud-poster{
+.aud-video{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    top: 25vh;
-    width: 420px;
-    height: 650px;
+    top: 28vh;
+    width: 845px;
+    height: 475px;
+    border: none;
 }
-.aud-poster img{
+.aud-video iframe{
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 /* 타이틀 및 이름 문구 설정 */
@@ -38,3 +39,78 @@
     line-height: 1;
     z-index: 999;
   }
+
+.aud-audTitle{
+    position: absolute;
+    font-size: 90px;
+    top:27vh;
+    left: 15%;
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    z-index: 999;
+}
+
+.aud-viewBtn{
+    position: absolute;
+    left: 15%;
+    top: 77vh;
+    width: 170px;
+    text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
+    background-color: #fff;
+    color: #000000;
+    opacity: 0.9;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+
+/* 오디션 서브페이지 CSS */
+#aud-Sub-area{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+.aud-Cont{
+    position: absolute;
+    top: 26vh;
+    left: 52%;
+    font-size: 18px;
+    color:#fff;
+    font-family: NG;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+.aud-poster{
+    position: absolute;
+    left: 26%;
+    top: 25vh;
+    width: 450px;
+    height: 630px;
+    border: none;
+}
+.aud-poster img{
+    width: 100%;
+    height: 100%;
+}
+
+.aud-applyBtn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90vh;
+    width: 130px;
+    text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
+    background-color: transform;
+    color: #000000;
+    opacity: .8;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 15px;
+}
