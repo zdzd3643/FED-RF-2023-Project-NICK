@@ -90,7 +90,7 @@ function evtFne(){
   $('.TBlogo a').click(e=>{
     e.preventDefault();
     pno = 0;
-    movePg();
+    movePge();
   }); ////////// click /////////
 } ///////////// evtFn /////////////
 

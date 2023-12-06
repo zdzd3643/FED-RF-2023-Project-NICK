@@ -46,3 +46,5 @@ export function AuditionSub(){
     </section>
   );
 } //////////// AuditionSub 컴포넌트 //////////////
+
+export default AuditionSub;

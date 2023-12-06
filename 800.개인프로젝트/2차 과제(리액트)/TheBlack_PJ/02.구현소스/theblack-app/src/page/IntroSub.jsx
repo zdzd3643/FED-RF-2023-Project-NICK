@@ -105,3 +105,5 @@ export function IntroSub(){
     </section>
   );
 } //////////// IntroSub 컴포넌트 //////////////
+
+export default IntroSub;

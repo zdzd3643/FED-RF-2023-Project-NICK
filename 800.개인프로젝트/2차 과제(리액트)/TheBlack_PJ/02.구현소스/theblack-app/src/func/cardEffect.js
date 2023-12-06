@@ -30,4 +30,3 @@
 
   // element.style.setProperty("--rotateX", offsetY + "deg");
   // element.style.setProperty("--rotateY", offsetX + "deg");
-}

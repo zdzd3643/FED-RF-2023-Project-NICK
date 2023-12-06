@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import "../css/common.css";
 
 // 자동스크롤 JS 불러오기
-import { wheelFn, initSet, zeroPno, evtFn } from "../func/smoothScroll23";
+import { wheelFn, initSet, zeroPno, evtFn, movePg } from "../func/smoothScroll23";
 
 // 모듈 불러오기
 import { Banner } from "../modules/Banner";
@@ -29,6 +29,9 @@ export function MainCont(){
 
   // 메뉴+인디케이터 이벤트 기능설정함수 호출 ///
   evtFn();
+
+  // 메뉴+인디케이터 이벤트 기능설정함수 호출 ///
+  movePg();
 
   // 초기화 함수 호출
   initSet();
@@ -108,4 +111,6 @@ return (
         </nav>
     </main>
 );
-} ///////// Main 컴포넌트 /////////////
+} ///////// MainCont 컴포넌트 /////////////
+
+export default MainCont;

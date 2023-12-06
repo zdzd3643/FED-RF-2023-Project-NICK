@@ -289,4 +289,4 @@ function evtFn(){
 
 
 //  사용할 함수 내보내기
-export { wheelFn, initSet, evtFn, zeroPno }
+export { wheelFn, initSet, movePg, evtFn, zeroPno }

@@ -10,3 +10,5 @@ export function ArtistsSub(){
     </>
   );
 } //////////// ArtistSub 컴포넌트 //////////////
+
+export default ArtistsSub;

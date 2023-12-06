@@ -25,15 +25,16 @@ export function Audition(){
         <h3>AUDITION</h3> 
     </div>
     <div className="aud-video">
-      <iframe 
-      src="./images/AUDITION_mv.mp4" 
-      alt="오디션 뮤비"
-      muted="muted" 
-      autoPlay="none" />
+      <video 
+        src="./images/AUDITION_mv.mp4"
+        width="1250" height="703" 
+        muted="muted"
+        controls="1">
+      </video>
     </div>
     <div className="aud-viewBtn">
       VIEW MORE
-    </div>
+    </div>  
     </>
   ) //////// 리턴함수 ///////////
 } ////////// artists 컴포넌트 ///////

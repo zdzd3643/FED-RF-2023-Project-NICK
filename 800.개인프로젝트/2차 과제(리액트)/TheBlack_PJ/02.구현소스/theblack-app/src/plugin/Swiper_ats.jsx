@@ -107,7 +107,12 @@ const makeList = (data) => {
             className="instagram">
               <img src="./images/instagram.png" alt="인스타그램 이미지" />
             </a>
-            
+            <a href={v.youtube}
+            target='_blank'
+            title="유튜브로 이동"
+            className="youtube">
+              <img src="./images/youtube.png" alt="유튜브 이미지" />
+            </a>
             <a href={v.twitter}
             target='_blank'
             title="트위터로 이동"  
