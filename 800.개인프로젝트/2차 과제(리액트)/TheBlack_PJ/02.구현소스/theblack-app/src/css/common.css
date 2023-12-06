@@ -132,6 +132,9 @@
 .glist a{
     color: #fff;
 }
+.glist .ats_word{
+    color: #fff;
+}
 /* 메뉴별박스 */
 .glist dl{
     width: 300px;
