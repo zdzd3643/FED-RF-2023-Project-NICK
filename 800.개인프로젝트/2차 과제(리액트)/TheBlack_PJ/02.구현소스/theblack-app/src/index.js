@@ -27,7 +27,7 @@ function App() {
     // 리턴코드 ////////////////////
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-        {/* <BrowserRouter> */}
+        {/* <BrowserRouter>  */}
             <Routes>
                 {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
                 <Route path="/" element={<Layout />}>
