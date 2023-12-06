@@ -13,10 +13,14 @@ import "./css/common.css";
 import { Layout } from "./layout/Layout";
 import { MainCont } from "./page/MainCont";
 import { AlbumSub } from "./page/AlbumSub";
-import { ArtistsDetail } from "./page/ArtistsDetail";
-import { ArtistsSub } from "./page/ArtistsSub";
 import { AuditionSub } from "./page/AuditionSub";
 import { IntroSub } from "./page/IntroSub";
+import { TAEYANG } from "./page/TAEYANG";
+import JEONSOMI from "./page/JEONSOMI";
+import ZionT from "./page/ZionT";
+import BryanChase from "./page/BryanChase";
+import PARKBOGUM from "./page/PARKBOGUM";
+import LEEJONGWON from "./page/LEEJONGWON";
 
 // 최상위 Root 컴포넌트 ///////
 function App() {
@@ -31,10 +35,14 @@ function App() {
           -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
                     <Route index element={<MainCont />} />
                     <Route path="AlbumSub" element={<AlbumSub />} />
-                    <Route path="ArtistsDetail" element={<ArtistsDetail />} />
-                    <Route path="ArtistsSub" element={<ArtistsSub />} />
                     <Route path="AuditionSub" element={<AuditionSub />} />
                     <Route path="IntroSub" element={<IntroSub />} />
+                    <Route path="TAEYANG" element={<TAEYANG />} />
+                    <Route path="JEONSOMI" element={<JEONSOMI />} />
+                    <Route path="ZionT" element={<ZionT />} />
+                    <Route path="BryanChase" element={<BryanChase />} />
+                    <Route path="PARKBOGUM" element={<PARKBOGUM />} />
+                    <Route path="LEEJONGWON" element={<LEEJONGWON />} />
                 </Route>
             </Routes>
         </BrowserRouter>

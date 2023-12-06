@@ -214,17 +214,61 @@
 
 /******************* 아티스트 디테일 CSS *******************/
 
-#ats-Detail-area{
+#ats-Detail-area1{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 260vh;
   background: #000;
+}
+
+#ats-Detail-area2{
+  position: relative;
+  width: 100%;
+  height: 390vh;
+  background: #000;
+}
+#ats-Detail-area3{
+  position: relative;
+  width: 100%;
+  height: 300vh;
+  background: #000;
+}
+#ats-Detail-area4{
+  position: relative;
+  width: 100%;
+  height: 260vh;
+  background: #000;
+}
+#ats-Detail-area5{
+  position: relative;
+  width: 100%;
+  height: 230vh;
+  background: #000;
+}
+#ats-Detail-area6{
+  position: relative;
+  width: 100%;
+  height: 230vh;
+  background: #000;
+}
+
+.detail-container{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1000px;
+}
+
+.detail-cont{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .detail-title{
   position: absolute;
-  font-size: 80px;
-  top: 12vh;
+  font-size: 60px;
+  top: 10vh;
   left: 50%;
   transform: translateX(-50%);
   color:#fff;
@@ -232,4 +276,161 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
   z-index: 999;
+}
+
+.detail-profile{
+  margin-left: 2vw;
+  position: absolute;
+  top: 22vh;
+  width: 460px;
+}
+
+.detail-profile img{
+  width: 100%;
+  height: 100%;
+}
+
+.detail-name{
+  position: absolute;
+  left: 29vw;
+  top: 20vh;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-name h2{
+  font-size: 45px;
+}
+.detail-name h3{
+  font-size: 30px;
+}
+
+.detail-sns{
+  position: absolute;
+  width: 210px;
+  display: flex;
+  left: 40vw;
+  top: 21vh;
+  gap: 0 50px;
+}
+.detail-sns1{
+  position: absolute;
+  width: 210px;
+  display: flex;
+  left: 40vw;
+  top: 27vh;
+  gap: 0 50px;
+}
+
+.detail-sns img{
+  width: 100%;
+}
+
+.detail-sns1 img{
+  width: 100%;
+}
+.detail-career{
+  position: absolute;
+  top: 34vh;
+  left: 29vw;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.detail-gubun{
+  position: relative;
+  top: 100vh;
+  width: 53vw;
+  opacity: 0.5;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.detail-swiper{
+  position: absolute;
+  top: 115vh;
+  width: 1000px;
+  height: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.detail-slide img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; 
+}
+
+.detail-gallery{
+  position: absolute;
+  color: #fff;
+  font-size: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 105vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-gubun2{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 163vh;
+  width: 53vw;
+  opacity: 0.5;
+}
+
+.detail-video{
+  position: absolute;
+  color: #fff;
+  font-size: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 170vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail-video-cont{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 1500px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 152vh;
+}
+
+.detail-video-cont>div{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 27vh;
+  aspect-ratio: 513/288;
+  padding: 30px;
+  padding-bottom: 50px;
+  width: 450px;
+}
+
+.detail-video-cont>div aside{
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.detail-video-cont img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.detail-video-grid-first{
+  grid-column: 1/2;
+  grid-row: 1/2;
 }

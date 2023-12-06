@@ -61,22 +61,22 @@ export function GnbHam(){
                             </div>
                         </dt>
                         <dd>
-                            <Link to='/ArtistsDetail'>TaeYang</Link>
+                            <Link to='/TAEYANG'>TAEYANG</Link>
                         </dd>
                         <dd>
-                            <Link to='/ArtistsDetail'>Jeon Somi</Link>
+                            <Link to='/JEONSOMI'>JEON SOMI</Link>
                         </dd>
                         <dd>
-                            <Link to='/ArtistsDetail'>Zion.T</Link>
+                            <Link to='/ZionT'>Zion.T</Link>
                         </dd>
                         <dd>
-                            <Link to='/ArtistsDetail'>Bryan Chase</Link>
+                            <Link to='/BryanChase'>Bryan Chase</Link>
                         </dd>
                         <dd>
-                            <Link to='/ArtistsDetail'>Park Bo Gum</Link>
+                            <Link to='/PARKBOGUM'>PARK BOGUM</Link>
                         </dd>
                         <dd>
-                            <Link to='/ArtistsDetail'>Lee Jong Won</Link>
+                            <Link to='/LEEJONGWON'>LEE JONGWON</Link>
                         </dd>
                     </dl>
                     <dl>
