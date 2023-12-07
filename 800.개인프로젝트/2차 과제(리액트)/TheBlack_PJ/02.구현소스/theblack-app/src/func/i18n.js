@@ -1,37 +1,39 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import detector from "i18next-browser-languagedetector";
 
-const availaleLanguages = ['ko', 'en', 'ja', 'ch']
-const option ={
-  order:['navigator', 'htmlTag', 'path', 'subdomail'],
-  checkWhitelist:true
-}
+import TranslationKo from "../language/ko/translation.ko.json"
+import TranslationEn from "../language/en/translation.en.json"
+import TranslationJa from "../language/ja/translation.ja.json"
+import TranslationCh from "../language/ch/translation.ch.json"
+
+const resource = {
+   en:{
+     translations: TranslationEn
+   },
+   ko:{
+     translations:TranslationKo
+   },
+   ja:{
+     translations:TranslationJa
+   },
+   ch:{
+     translations:TranslationCh
+   },
+ }
 
 i18n
-  .use(detector)
   .use(initReactI18next)
   .init({
-    whitelist:availaleLanguages,
+    resources:resource,
+    lng: "ko",
+    fallbackLng: "ko",
     debug: true,
-    fallbackLng: "en",
-    interpolation : {
-      escapeValue: false,
-    },
-    resources: {
-       ko:"ko",
-       en:"en",
-       ja:"ja",
-       ch:"ch" 
-    },
-    detection:option,
-    defaultNS: "translation",
-    ns: "translation",
-    saveMissing: true,
+    defaultNS: "translations",
+    ns: "translations",
     keySeparator: false,
-    react: {
-      useSuspense: false,
-    },
+    interpolation : {
+      escapeValue: false
+    }
   });
 
 export default i18n;

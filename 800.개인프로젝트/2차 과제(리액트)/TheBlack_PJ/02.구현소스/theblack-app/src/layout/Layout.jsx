@@ -15,7 +15,7 @@ import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
 export function Layout() {
-  
+
     // 처음 로딩시 스크롤 상단이동 //////
     useLayoutEffect(()=>{
       window.scrollTo(0,0);

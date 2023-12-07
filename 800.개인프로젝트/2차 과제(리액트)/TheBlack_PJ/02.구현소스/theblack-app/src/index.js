@@ -2,7 +2,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import './index.css'
-import './func/i18n';
 
 import { HashRouter, Route, Routes } from "react-router-dom";
 
@@ -23,6 +22,7 @@ import ZionT from "./page/ZionT";
 import BryanChase from "./page/BryanChase";
 import PARKBOGUM from "./page/PARKBOGUM";
 import LEEJONGWON from "./page/LEEJONGWON";
+import { Language } from "./modules/Language";
 
 // 최상위 Root 컴포넌트 ///////
 function App() {

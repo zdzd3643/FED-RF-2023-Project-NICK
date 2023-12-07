@@ -4,7 +4,8 @@ import React, {useEffect, } from 'react'
 
 // 언어번역 
 import '../func/i18n';
-import i18n from "../func/i18n";
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
 
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
@@ -13,6 +14,8 @@ import "jquery-ui-dist/jquery-ui";
 import "../css/common.css";
 
 export function Language(props){
+    const clickHandler = (e)=> {
+    i18next.changeLanguage(e.target.value)}
 
     // 랜더링 후 실행구역 //////////
     useEffect(() => {
@@ -37,18 +40,16 @@ export function Language(props){
     // 코드 리턴 /////////////
     return (
         <>
-        <div className="lang_container">
-            <select onChange={props.onChange}
-            className="langbox">
-                    <option value={'ko'}>KOR</option>
-                    <option value={'en'}>ENG</option>
-                    <option value={'ja'}>JPN</option>
-                    <option value={'ch'}>CHI</option>
+    <select onChange={(e)=> clickHandler(e)}
+    className="langbox">
+            <option value='ko'>KOR</option>
+            <option value='en'>ENG</option>
+            <option value='ja'>JPN</option>
+            <option value='ch'>CHI</option>
             </select>
             <div className="lang_cbtn">
                 <img src="./images/xmark-solid.png" alt="닫기버튼" />
             </div>
-        </div>
         </>
     );
 } //////////// Language 컴포넌트 ////////////
