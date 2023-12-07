@@ -46,7 +46,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
       .animate({
           scrollTop: 
           $(window).height() * pno + "px",
-        }, 1700,"easeInOutQuint",actPagee
+        }, 700,"easeInOutQuint",actPagee
         // 애니메이션 후 actPage함수를 호출!
       ); ///// animate //////
 
@@ -61,8 +61,8 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
 
   $('.intSub-cont').css({
     opacity: 0,
-    top:'15vh',
-    transition: 'all 1s ease-out .0s',
+    top:'10vh',
+    transition: 'all ease-out 1s',
     display: 'inline-block'
   }); /////////// css //////////
 
@@ -78,7 +78,7 @@ function actPagee(){
   console.log('액숀~!!!', pno);
 
     // 대상: 해당순번 .main 아래 .ats-title
-    $('#introSub-area').eq(pno).find('.intSub-cont').css({
+    $('.intSub-cont').css({
       top:'25vh',
       opacity: 1
     }); ///////// css /////////
