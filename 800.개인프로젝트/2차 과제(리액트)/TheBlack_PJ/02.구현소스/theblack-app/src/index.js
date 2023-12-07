@@ -26,8 +26,8 @@ import LEEJONGWON from "./page/LEEJONGWON";
 function App() {
     // 리턴코드 ////////////////////
     return (
-        // <HashRouter>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        // <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter>
             {/* <BrowserRouter>  */}
             <Routes>
                 {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
@@ -47,8 +47,8 @@ function App() {
                     <Route path="LEEJONGWON" element={<LEEJONGWON />} />
                 </Route>
             </Routes>
-        </BrowserRouter> 
-        // </HashRouter>
+            {/* </BrowserRouter>  */}
+            </HashRouter>
     );
 } //////////////// App 컴포넌트 ///////////////
 
