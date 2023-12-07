@@ -9,6 +9,7 @@ import '../css/common.css'
 // 컨텍스트 API
 import { bCon } from "../modules/TbContext";
 import { useCallback } from "react";
+import { Language } from "../modules/Language";
 
 /******************************************************* 
   [ 리액트 라우터와 연결하여 사용되는 라우터 컴포넌트 ]
@@ -53,8 +54,8 @@ export function TopArea(){
     {/* 1.  상단영역 */}
     <header id="top-area" className="site-header">
             {/* 1-1. 언어 아이콘 */}
-            <div className="gicon">
-                <img src="https://theblacklabel.com/wp-content/themes/TBL_theme/assets/images/global.png" alt="아이콘"/>
+            <div className="langicon">
+                <img src="./images/global.png" alt="아이콘"/>
             </div>
             {/* 1-2. 더블랙 메인로고 */}
             <div className="TBlogo">
@@ -68,6 +69,8 @@ export function TopArea(){
             </div>
             {/* GNB 컴포넌트 */}
             <GnbHam chgPageFn={chgPage} />
+            {/* 언어 컴포넌트 */}
+            <Language />
     </header>
     </bCon.Provider>
   )

@@ -168,7 +168,7 @@
   width: 100%;
 }
 
-.ats-more{
+.ats-more1{
   position: absolute;
   color: #000;
   left: 78%;
@@ -179,9 +179,138 @@
   cursor: pointer;
   padding: 1rem;
   width: 110px;
-  border: 2px solid #000000b6;
+  border: 2px solid #000000a9;
   background-color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ats-more1:hover{
+  background-color: #000000;
+  /* color: #fff; */
+}
+
+.ats-more1:hover a{
+  color: #fff;
+}
+.ats-more2{
+  position: absolute;
+  color: #000;
+  left: 78%;
+  top: 35vh;
+  font-size: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 110px;
+  border: 2px solid #000000a9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ats-more2:hover{
+  background-color: #000000;
+  /* color: #fff; */
+}
+
+.ats-more2:hover a{
+  color: #fff;
+}
+.ats-more3{
+  position: absolute;
+  color: #000;
+  left: 78%;
+  top: 35vh;
+  font-size: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 110px;
+  border: 2px solid #000000a9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ats-more3:hover{
+  background-color: #000000;
+  /* color: #fff; */
+}
+
+.ats-more3:hover a{
+  color: #fff;
+}
+.ats-more4{
+  position: absolute;
+  color: #000;
+  left: 78%;
+  top: 35vh;
+  font-size: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 110px;
+  border: 2px solid #000000a9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ats-more4:hover{
+  background-color: #000000;
+  /* color: #fff; */
+}
+
+.ats-more4:hover a{
+  color: #fff;
+}
+.ats-more5{
+  position: absolute;
+  color: #000;
+  left: 78%;
+  top: 35vh;
+  font-size: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 110px;
+  border: 2px solid #000000a9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ats-more5:hover{
+  background-color: #000000;
+  /* color: #fff; */
+}
+
+.ats-more5:hover a{
+  color: #fff;
+}
+.ats-more6{
+  position: absolute;
+  color: #000;
+  left: 78%;
+  top: 35vh;
+  font-size: 15px;
+  border-radius: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 110px;
+  border: 2px solid #000000a9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ats-more6:hover{
+  background-color: #000000;
+  /* color: #fff; */
+}
+
+.ats-more6:hover a{
+  color: #fff;
 }
 
 .img_container{

@@ -5,6 +5,8 @@ import { bCon } from "../modules/TbContext";
 import { useEffect, useCallback, useLayoutEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+import "../css/common.css";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";

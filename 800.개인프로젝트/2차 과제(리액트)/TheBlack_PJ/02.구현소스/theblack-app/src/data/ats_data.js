@@ -18,6 +18,7 @@ export const atsData = [
     cont2:"https://www.youtube.com/watch?v=H0Ugx2a_-tw",
     cont3:"https://www.youtube.com/watch?v=H8kqPkEXP_E",
     cont4:"https://www.youtube.com/watch?v=tg2uF3R_Ozo",
+    link:"JEONSOMI"
   },
     { 
     ats:'TAEYANG',
@@ -36,6 +37,7 @@ export const atsData = [
     cont2:"https://www.youtube.com/watch?v=NFnAuiklEug&list=PLvdEQOT_E6yLGNbvYv_Q8o7QZKej_o7TN&index=2",
     cont3:"https://www.youtube.com/watch?v=cXCBiF67jLM&list=PLvdEQOT_E6yLGNbvYv_Q8o7QZKej_o7TN&index=3",
     cont4:"https://www.youtube.com/watch?v=iT80YVtJe24",
+    link:"TAEYANG"
     },
     {
     ats:"ZION-T",
@@ -53,6 +55,7 @@ export const atsData = [
     cont2:"https://www.youtube.com/watch?v=ctAmUvoDkXE",
     cont3:"https://www.youtube.com/watch?v=nqMYG2Riq54",
     cont4:"https://www.youtube.com/watch?v=I-hw1AkqFro",
+    link:"ZionT"
     },
     {
     ats:"BRYAN",
@@ -69,6 +72,7 @@ export const atsData = [
     cont2:"https://www.youtube.com/watch?v=8hXZQU3bKjA&list=PLvdEQOT_E6yLxCr63E56v9PHFwd35X6Fa&index=4",
     cont3:"https://www.youtube.com/watch?v=SgLaGCudIMc&list=PLvdEQOT_E6yLxCr63E56v9PHFwd35X6Fa&index=2",
     cont4:"https://www.youtube.com/watch?v=LnYZztpS2r0&list=PLvdEQOT_E6yLxCr63E56v9PHFwd35X6Fa&index=11",
+    link:"BryanChase"
     },
     {
     ats:"BOGUM",
@@ -87,6 +91,7 @@ export const atsData = [
     cont2:"https://www.youtube.com/watch?app=desktop&v=C_x1GsSCQMc",
     cont3:"https://www.youtube.com/watch?app=desktop&v=lDDqyGUU2D8",
     cont4:"https://www.youtube.com/watch?v=4jKCYLVEmDg",
+    link:"BARKBOGUM"
     },
     {
       ats:"JONGWON",
@@ -103,6 +108,7 @@ export const atsData = [
       cont2:"https://www.youtube.com/watch?v=2iUgQ7l7nuc",
       cont3:"https://www.youtube.com/watch?v=tvLN51KA5DY",
       cont4:"https://www.youtube.com/watch?v=--IGhu2OiHQ",
+      link:"LEEJONGWON"
       },
           
   ] ///////// atsData ////////////

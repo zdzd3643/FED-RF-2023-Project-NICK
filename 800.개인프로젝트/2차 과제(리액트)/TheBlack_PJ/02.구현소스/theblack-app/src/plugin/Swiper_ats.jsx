@@ -26,6 +26,7 @@ import { EffectCards, Pagination, Navigation } from "swiper/modules";
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Link } from 'react-router-dom';
 
 
 ///// 컴포넌트 ////////////////
@@ -68,11 +69,6 @@ const selData = atsData;
     
   }); /////////// click ////////////
 
-  $('.ats-more').mouseover(e=>{
-    $(e.currentTarget).css({
-      BackgroundColr:"#000"
-    })
-  })
 },[]); ///////// useEffect ///////// 
 
 // 리스트만들기 함수 ///////////
@@ -126,8 +122,8 @@ const makeList = (data) => {
             alt="트위터 이미지" />
             </a>
           </div>
-          <button className="ats-more">
-            Detail More
+          <button className="ats-more1">
+            <Link to={v.link}>Detail More</Link>
           </button>
             <Swiper
             loop={true}
