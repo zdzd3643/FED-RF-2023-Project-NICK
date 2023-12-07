@@ -2,11 +2,19 @@
 
 // 인트로 모듈 CSS
 import "../css/intro.css";
+import i18n from "../language/i18n.js";
+import { useTranslation } from "react-i18next";
 
-import { useEffect } from "react";
 
 // 인트로 컴포넌트 /////
 export function Intro(){
+  
+  const {t} = useTranslation();
+  const onChangeLang = () => {
+    i18n.language === "ko"
+      ? i18n.changeLanguage("en")
+      : i18n.changeLanguage("ko");
+  };
 
   /////////////////////////////////
   // 코드리턴 /////////////////////
@@ -19,6 +27,10 @@ export function Intro(){
       <div className="intCont">
         <p>모든 것은 어둠에서 시작됩니다.</p>
         <br/>
+        <p>{t("testText")}</p>
+        <button onClick={() => onChangeLang()}>
+          언어변경
+        </button>
         <p>그 어떠한 색과 빛도 존재하지 않는 상태에서</p>
         <p>우리의 크리에이티브에 대한 여정은 시작됩니다.</p>
         <br />

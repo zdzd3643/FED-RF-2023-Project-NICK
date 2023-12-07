@@ -1,6 +1,6 @@
 // 스와이퍼 앨범 플러그인 컴포넌트
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,9 +20,6 @@ import { videoData } from "../data/video_data.js";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
-// 앨범 페이지 컨텐츠 컴포넌트
-
-const selData = videoData;
 
 // makeList 함수 만들기 ///////
 const makeList = (data) => {

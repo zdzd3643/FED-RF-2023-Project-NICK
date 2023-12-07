@@ -11,46 +11,56 @@ import "../css/common.css";
 export function Language() {
     // 랜더링 후 실행구역 //////////
     useEffect(() => {
-        // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
-        $(".langicon").click((e) => {
-            // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
-            $(".langbox").fadeToggle(300);
+    // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
+    $(".langicon").click((e) => {
+        $(".langbox").slideDown(300);
+        $(e.currentTarget).fadeOut(300);
 
-            // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
-            $(e.currentTarget).toggleClass("on");
-            // e.target과 e.currentTarget은 다르다!
-            // 후자가 햄버거 버튼 자신임!
-            // console.log(e.currentTarget)
-        }); ////////// click ///////////
+    }); ////////// click ///////////
+
+    // Close 버튼 클릭시 아티스트 내용창 닫기
+    $('.lang_cbtn').click((e)=>{
+        $(".langbox").slideUp(300);
+        $('.langicon').fadeIn(300);
+    
+  }); /////////// click ////////////
+
     }, []); //////////// useEffect ///////////
 
     // 코드 리턴 /////////////
     return (
         <>
-            <div className="langbox">
-                <nav className="langlist">
+            <select className="langbox">
+                {/* <nav className="langlist">
                     <dl>
                         <dt>
-                            KOR
+                            <option value='ko'>KOR</option>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
-                            ENG
+                        <option value='en'>ENG</option>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
-                            JPN
+                        <option value='ja'>JPN</option>
                         </dt>
                     </dl>
                     <dl>
                         <dt>
-                            CHI
+                        <option value='ch'>CHI</option>
                         </dt>
                     </dl>
-                </nav>
-            </div>
+                </nav> */}
+                    <option value='ko'>KOR</option>
+                    <option value='en'>ENG</option>
+                    <option value='ja'>JPN</option>
+                    <option value='ch'>CHI</option>
+                <div className="lang_cbtn">
+                    <img src="./images/xmark-solid.png" alt="닫기버튼" />
+                </div>
+            </select>
         </>
     );
 } //////////// Language 컴포넌트 ////////////
