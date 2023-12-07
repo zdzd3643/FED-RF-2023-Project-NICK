@@ -11,7 +11,6 @@ import "jquery-ui-dist/jquery-ui";
 
 export function GnbHam(){
 
-
     // 랜더링 후 실행구역 //////////
     useEffect(()=>{
         // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기

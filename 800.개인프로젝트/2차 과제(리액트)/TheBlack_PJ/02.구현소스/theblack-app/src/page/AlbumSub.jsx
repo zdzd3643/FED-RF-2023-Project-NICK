@@ -30,7 +30,7 @@ const makeList = (data) => {
 
   return data.map((v,i) => (
 
-    <section className="video-cont" key={i}>
+    <section id="video-cont" key={i}>
       <div className="video-grid-first">
         <a href={v.mlink1}
             target='_blank'

@@ -14,12 +14,12 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   // 전체 페이지번호
   let pno = 0;
   // 전체 페이지번호 초기화함수
-  const zeroPnoe = () => {pno=0};
+  const zeroPnoSub = () => {pno=0};
   // 페이지 요소
   let pg;
   // 전체 페이지개수
   let pgcnt;
-  // console.log("페이지개수:", pgcnt, pg);
+  // console.log("페이지개수:", pgcnt, pg, pno);
   // 광실행금지변수
   let prot = [];
   // 광스크롤금지
@@ -28,71 +28,83 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   // 요소를 할당한 경우 로딩구역에서 할당
   $(()=>{
     // 페이지 요소
-    pg = $("#introSub-area");
+    pg = $(".sub");
     // 전체 페이지개수
     pgcnt = pg.length;
 
   }); //////////////// load /////////////
 
 
-  /******************************************** 
-    함수명: movePg
-    기능: 페이지이동 애니메이션
-    ********************************************/
-  function movePge() {
-    // 대상: html,body -> 두개를 모두 잡아야 공통적으로 적용됨!
-    $("html,body")
-      .stop()
-      .animate({
-          scrollTop: 
-          $(window).height() * pno + "px",
-        }, 700,"easeInOutQuint",actPagee
-        // 애니메이션 후 actPage함수를 호출!
-      ); ///// animate //////
+  /****************************************** 
+    이벤트 등록하기
+    ->>> 리액트에서 제이쿼리로 이벤트설정시
+    리액트와 충돌되는 문제가 생길 수 있다
+    예컨데 현재 휠이벤트는 설정되지만
+    휠델타값이 안찍힘! -> 해결은?
+    순수한 JS 로 이벤트를 설정한다!
+    왜? 제이쿼리로 이벤트를 설정하면
+    제이쿼리 나름의 객체가 생성되어 처리되므로
+    이것을 단순화하여 이벤트를 걸면 휠델타값이
+    처리된다! 
+  ******************************************/
+  // 윈도우 휠이벤트 발생시
+  // $(window).on("wheel", wheelFn); -> 제이쿼리 이벤트X
 
-  } ///////////////// movePg ////////////////
+  // 새로고침시 스크롤위치 캐싱 변경하기(맨위로!)
+  $("html,body").animate({ scrollTop: "0px" });
+
+    console.log('페이지번호:',pno);
+
 
   /*************************************** 
     함수명 : initSet
     기능 : 등장요소 처음상태 셋팅
   ***************************************/
- function initSete(){
+ function initSetSub(){
   // 1. 초기화하기
 
   $('.intSub-cont').css({
     opacity: 0,
-    top:'10vh',
+    top:'24vh',
     transition: 'all ease-out 1s',
     display: 'inline-block'
   }); /////////// css //////////
 
- } /////////// initSete 함수 ///////////////
-
- if(pno==0) initSete();
+ } /////////// initSet 함수 ///////////////
 
   /***************************************** 
   함수명: actPage
   기능: 페이지 도착후 등장 애니메이션
  *****************************************/
-function actPagee(){
+function actPageSub(){
   console.log('액숀~!!!', pno);
 
-    // 대상: 해당순번 .main 아래 .ats-title
-    $('.intSub-cont').css({
-      top:'25vh',
-      opacity: 1
-    }); ///////// css /////////
+  //////////////// 서브 페이지(act) //////////////
+  // 대상: 해당순번 .sub 아래 .ats-title
+
+  $('.sub').find('.intSub-cont').css({
+    top:'50vh',
+    opacity: 1,
+  }); ///////// css /////////
+
+  // 첫페이지일때 등장요소 초기화!
+  if(pno==0) initSetSub();
+
 } ///////// actPage 함수 //////////////////
 
 // 이벤트 설정함수 /////////
-function evtFne(){
+function evtFnSub(){
+
   // 메인 페이지 상단로고 클릭시 맨위로 이동하기!
   $('.TBlogo a').click(e=>{
     e.preventDefault();
     pno = 0;
-    movePge();
+    movePg();
   }); ////////// click /////////
-} ///////////// evtFn /////////////
+
+} ///////// evtFn 함수 ////////
+
+
 
 //  사용할 함수 내보내기
-export { initSete, actPagee, movePge, zeroPnoe, evtFne }
+export { initSetSub, evtFnSub, zeroPnoSub, actPageSub }

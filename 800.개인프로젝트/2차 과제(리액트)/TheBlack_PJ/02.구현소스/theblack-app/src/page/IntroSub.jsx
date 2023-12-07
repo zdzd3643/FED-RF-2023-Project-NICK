@@ -3,34 +3,31 @@
 // 제이쿼리
 import $ from 'jquery';
 
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 
 import "../css/intro.css"
 
 // 자동스크롤 JS 불러오기
-import { initSete, actPagee, movePge, zeroPnoe, evtFne } from "../func/ats_Scroll23";
+import { actPageSub, evtFnSub, initSetSub, zeroPnoSub } from '../func/SubScroll.js';
 
 export function IntroSub(){
 
-  useEffect(()=>{
+  useLayoutEffect(()=>{
 
     // 초기화 함수 호출
-    initSete();
+    initSetSub();
 
-    // 액션 함수 호출
-    actPagee();
-
-    // 페이지 이동 호출
-    movePge();
 
     // 전체 페이지 초기화함수
-    zeroPnoe();
+    zeroPnoSub();
 
     // 이벤트 호출 함수
-    evtFne();
+    evtFnSub();
 
+    // 이벤트 액션함수
+    actPageSub();
 
-  }, []);
+  }); ///////// useEffect /////////
   
   return(
     <section id="introSub-area">

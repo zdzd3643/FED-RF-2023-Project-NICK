@@ -19,7 +19,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   let pg;
   // 전체 페이지개수
   let pgcnt;
-  // console.log("페이지개수:", pgcnt, pg);
+  // console.log("페이지개수:", pgcnt, pg, pno);
   // 광실행금지변수
   let prot = [];
   // 광스크롤금지
@@ -143,13 +143,13 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   }); /////////// css //////////
 
   // 대상: 글자 - .intCont
-  $('.intCont').css({
-    opacity: 0,
-    top:'33vh',
-    transition: 'all ease-out 1s',
-    display: 'inline-block'
-  // 대상: 글자 - .intCont
-  }); /////////// css //////////
+    $('.intCont').css({
+      opacity: 0,
+      top:'33vh',
+      transition: 'all ease-out 1s',
+      display: 'inline-block'
+    // 대상: 글자 - .intCont
+    }); /////////// css //////////
 
   $('.ats-title').css({
     opacity: 0,
@@ -172,6 +172,9 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
     display: 'inline-block'
   }); /////////// css //////////
 
+
+  //////////////// 서브 페이지(init) //////////////
+
  } /////////// initSet 함수 ///////////////
 
   /***************************************** 
@@ -179,57 +182,47 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   기능: 페이지 도착후 등장 애니메이션
  *****************************************/
 function actPage(){
-  // console.log('액숀~!!!', pno);
+  console.log('액숀~!!!', pno);
 
   // pno가 0 또는 5가 아니면 작동!
-  if(pno != 0 || pno != 5){
     // 대상: 해당순번 .main 아래 .intTit
     $('.main').eq(pno).find('.intTit')
     .css({
       top:'17vh',
       opacity: 1
     }); ///////// css /////////
-  } ///////// if //////////////
 
   // pno가 0 또는 5가 아니면 작동!
-  if(pno != 0 || pno != 5){
     // 대상: 해당순번 .main 아래 .intCont
     $('.main').eq(pno).find('.intCont')
     .css({
       top:'40vh',
       opacity: 1
     }); ///////// css /////////
-  } ///////// if //////////////
 
   // pno가 0 또는 5가 아니면 작동!
-  if(pno != 0 || pno != 5){
     // 대상: 해당순번 .main 아래 .ats-title
     $('.main').eq(pno).find('.ats-title')
     .css({
       top:'12vh',
       opacity: 1
     }); ///////// css /////////
-  } ///////// if //////////////
 
   // pno가 0 또는 5가 아니면 작동!
-  if(pno != 0 || pno != 5){
     // 대상: 해당순번 .main 아래 .ats-title
     $('.main').eq(pno).find('.alb-title')
     .css({
       top:'12vh',
       opacity: 1
     }); ///////// css /////////
-  } ///////// if //////////////
 
   // pno가 0 또는 5가 아니면 작동!
-  if(pno != 0 || pno != 5){
     // 대상: 해당순번 .main 아래 .ats-title
     $('.main').eq(pno).find('.aud-title')
     .css({
       top:'12vh',
       opacity: 1
     }); ///////// css /////////
-  } ///////// if //////////////
 
   // 첫페이지일때 등장요소 초기화!
   if(pno==0) initSet();
@@ -289,4 +282,4 @@ function evtFn(){
 
 
 //  사용할 함수 내보내기
-export { wheelFn, initSet, movePg, evtFn, zeroPno }
+export { wheelFn, initSet, movePg, evtFn, zeroPno, actPage }
