@@ -22,11 +22,25 @@ import { detailData } from "../data/detail_data.js";
 // 스와이퍼 앨범 css 불러오기
 import "../plugin/css/swiper_alb.css"
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Language } from '../modules/Language.jsx';
 
 export function JEONSOMI(){
+  const { t } = useTranslation();
+
+  const clickHandler = (e)=> {
+    i18next.changeLanguage(e.target.value);
+    e.preventDefault();
+  }
+
 
   const selData = detailData;
 
@@ -65,25 +79,25 @@ export function JEONSOMI(){
                   </div>
                   <div className="detail-career">
                     <h2>ALBUM</h2>
-                    <p>2023 | GAME PLAN</p>
-                    <p>2021 | XOXO</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DUMB DUMB</p>
+                    <p>{t("2023 | GAME PLAN")}</p>
+                    <p>{t("2021 | XOXO")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("DUMB DUMB")}</p>
                     <br />
                     <h2>PERFORMANCE</h2>
-                    <p>2023 | Kpop Overpass 뮤직 콘서트</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SO WONDERFUL FESTIVAL</p> 
-                    <p>2022 | MAMA AWARDS</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MOKKOJI 콘서트</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KAMP 콘서트</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LALAPA K 콘서트</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36회 골든디스크 어워즈</p>  
+                    <p>{t("2023 | Kpop Overpass 뮤직 콘서트")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p> 
+                    <p>{t("2022 | MAMA AWARDS")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("MOKKOJI 콘서트")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("KAMP 콘서트")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("LALAPA K 콘서트")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("36회 골든디스크 어워즈")}</p>  
                     <br />
                     <h2>ADVERTISING</h2>
-                    <p>2023 | 노스페이스</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRADA</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;라코스테</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;컨버스</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;삼성 갤럭시</p> 
+                    <p>{t("2023 | 노스페이스")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("PRADA")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("라코스테")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("컨버스")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("삼성 갤럭시")}</p> 
                   </div>
                   <div className="detail-gubun">
                     <hr />
@@ -232,6 +246,7 @@ export function JEONSOMI(){
   // 리턴코드 ////////////////  
   return(
       <section id="ats-Detail-area2">
+        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );

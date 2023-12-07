@@ -28,9 +28,21 @@ import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 import { Link } from 'react-router-dom';
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+import { Language } from '../modules/Language';
 
 ///// 컴포넌트 ////////////////
 export function Swiper_ats(){
+const { t } = useTranslation();
+
+const clickHandler = (e)=> {
+  i18next.changeLanguage(e.target.value);
+  e.preventDefault();
+  }
 
 const selData = atsData;
 
@@ -79,6 +91,7 @@ const makeList = (data) => {
     <SwiperSlide key={i}>
       {/* 프로필 이미지 */}
       <div className="cont-bx">
+      <Language onChange={(e)=> clickHandler(e)} />
         <div className="intro-bx">
           <img
           src={v.isrc}

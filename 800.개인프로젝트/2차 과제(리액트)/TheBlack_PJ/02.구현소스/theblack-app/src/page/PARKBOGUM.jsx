@@ -22,11 +22,24 @@ import { detailData } from "../data/detail_data.js";
 // 스와이퍼 앨범 css 불러오기
 import "../plugin/css/swiper_alb.css"
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Language } from '../modules/Language.jsx';
 
 export function PARKBOGUM(){
+  const { t } = useTranslation();
+
+  const clickHandler = (e)=> {
+    i18next.changeLanguage(e.target.value);
+    e.preventDefault();
+  }
 
   const selData = detailData;
 
@@ -65,18 +78,18 @@ export function PARKBOGUM(){
                   </div>
                   <div className="detail-career">
                     <h2>DRAMA</h2>
-                    <p>2024 | Nexflix 폭싹 속았수다</p>
-                    <p>2020 | tvN 청춘기록</p>
-                    <p>2018 | tvN 남자친구</p>
+                    <p>{t("2024 | Nexflix 폭싹 속았수다")}</p>
+                    <p>{t("2020 | tvN 청춘기록")}</p>
+                    <p>{t("2018 | tvN 남자친구")}</p>
                     <br />
                     <h2>MOVIE</h2>
-                    <p>2021 | 서복</p>
-                    <p>2020 | 원더랜드</p>
+                    <p>{t("2021 | 서복")}</p>
+                    <p>{t("2020 | 원더랜드")}</p>
                     <br />
                     <h2>ADVERTISING</h2>
-                    <p>2023 | 로레알</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에이스침대</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이더</p> 
+                    <p>{t("2023 | 로레알")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("에이스침대")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("아이더")}</p> 
                   </div>
                   <div className="detail-gubun">
                     <hr />
@@ -169,7 +182,8 @@ export function PARKBOGUM(){
 
   // 리턴코드 ////////////////  
   return(
-      <section id="ats-Detail-area1">
+      <section id="ats-Detail-area5">
+        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );

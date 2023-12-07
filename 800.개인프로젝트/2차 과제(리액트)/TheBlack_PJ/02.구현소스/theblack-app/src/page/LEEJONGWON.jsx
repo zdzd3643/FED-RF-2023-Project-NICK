@@ -22,11 +22,24 @@ import { detailData } from "../data/detail_data.js";
 // 스와이퍼 앨범 css 불러오기
 import "../plugin/css/swiper_alb.css"
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Language } from '../modules/Language.jsx';
 
 export function LEEJONGWON(){
+  const { t } = useTranslation();
+
+  const clickHandler = (e)=> {
+    i18next.changeLanguage(e.target.value);
+    e.preventDefault();
+  }
 
   const selData = detailData;
 
@@ -65,14 +78,14 @@ export function LEEJONGWON(){
                   </div>
                   <div className="detail-career">
                     <h2>DRAMA</h2>
-                    <p>미정 | (미정) 나쁜 기억 지우개</p>
-                    <p>2024 | MBC 밤에 피는 꽃</p>
-                    <p>2022 | MBC 금수저</p>
+                    <p>{t("미정 | (미정) 나쁜 기억 지우개")}</p>
+                    <p>"2024 | {t("MBC 밤에 피는 꽃")}</p>
+                    <p>"2022 | {t("MBC 금수저")}</p>
                     <br />
                     <h2>MOVIE</h2>
-                    <p>2020 | 인유어드림</p>
-                    <p>2019 | 니나 내나</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사회인</p> 
+                    <p>"2020 | {t("인유어드림")}</p>
+                    <p>"2019 | {t("니나 내나")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("사회인")}</p> 
                     <br />
                   </div>
                   <div className="detail-gubun">
@@ -166,7 +179,8 @@ export function LEEJONGWON(){
 
   // 리턴코드 ////////////////  
   return(
-      <section id="ats-Detail-area1">
+      <section id="ats-Detail-area6">
+        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );

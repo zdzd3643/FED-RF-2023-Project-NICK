@@ -22,18 +22,31 @@ import { detailData } from "../data/detail_data.js";
 // 스와이퍼 앨범 css 불러오기
 import "../plugin/css/swiper_alb.css"
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Language } from '../modules/Language.jsx';
 
 export function TAEYANG(){
+  const { t } = useTranslation();
+
+  const clickHandler = (e)=> {
+    i18next.changeLanguage(e.target.value);
+    e.preventDefault();
+  }
 
   const selData = detailData;
 
   const makeList = (data) => {
     // console.log(data);
     return data.map((v, i) => (
-            <div className='detail-container' key={i}>
+          <div className='detail-container' key={i}> 
                 <div className="detail-title">
                   <h3>{v.ats1}</h3>
                 </div>
@@ -65,22 +78,22 @@ export function TAEYANG(){
                   </div>
                   <div className="detail-career">
                     <h2>ALBUM</h2>
-                    <p>2023 | Down to Earth</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIBE(feat.Jimin of BTS)</p> 
-                    <p>2022 | 봄여름가을겨울</p>
+                    <p>{t("2023 | Down to Earth")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("VIBE(feat.Jimin of BTS)")}</p> 
+                    <p>{t("2022 | 봄여름가을겨울")}</p>
                     <br />
                     <h2>PERFORMANCE</h2>
-                    <p>2023 | Rapbeat Festival</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUMMER SONIC (도쿄&오사카, 일본)</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우드스탁 뮤직 앤 아트페어</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seen Festival(베트남)</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SO WONDERFUL FESTIVAL</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울 재즈페스티벌</p>  
+                    <p>{t("2023 | Rapbeat Festival")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우드스탁 뮤직 앤 아트페어")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("Seen Festival(베트남)")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("서울 재즈페스티벌")}</p>  
                     <br />
-                    <h2>ADVERTISING</h2>
-                    <p>2023 | 지방시</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;버드와이저</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;룰루레몬</p> 
+                    <h2>{t("ADVERTISING")}</h2>
+                    <p>{t("2023 | 지방시")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("버드와이저")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("룰루레몬")}</p> 
                   </div>
                   <div className="detail-gubun">
                     <hr />
@@ -163,6 +176,7 @@ export function TAEYANG(){
   // 리턴코드 ////////////////  
   return(
       <section id="ats-Detail-area1">
+        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );

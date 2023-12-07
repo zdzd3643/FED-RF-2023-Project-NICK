@@ -13,7 +13,7 @@ import "jquery-ui-dist/jquery-ui";
 
 import "../css/common.css";
 
-export function Language(props){
+export function Language(){
     const clickHandler = (e)=> {
     i18next.changeLanguage(e.target.value)}
 
@@ -40,16 +40,17 @@ export function Language(props){
     // 코드 리턴 /////////////
     return (
         <>
-    <select onChange={(e)=> clickHandler(e)}
-    className="langbox">
+        <select 
+            onChange={(e)=> clickHandler(e)}
+            className="langbox">
             <option value='ko'>KOR</option>
             <option value='en'>ENG</option>
             <option value='ja'>JPN</option>
             <option value='ch'>CHI</option>
-            </select>
-            <div className="lang_cbtn">
-                <img src="./images/xmark-solid.png" alt="닫기버튼" />
-            </div>
+        </select>
+        <div className="lang_cbtn">
+        <img src="./images/xmark-solid.png" alt="닫기버튼" />
+        </div>
         </>
     );
 } //////////// Language 컴포넌트 ////////////

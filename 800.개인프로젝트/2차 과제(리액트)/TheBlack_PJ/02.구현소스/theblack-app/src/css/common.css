@@ -206,6 +206,7 @@
     width: 10px;
     height: 15px;
     color: #000;
+    z-index: 9999;
   }
 
 .lang_cbtn img{
@@ -213,13 +214,6 @@
     height: 100%;
 }
 
-#intro-area>.langbox{
-    z-index: 9999;
-}
-
-#introSub-area>.langbox{
-    z-index: 9999;
-}
 
 /********************** 상단영역 끝  ************************/
 

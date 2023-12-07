@@ -22,11 +22,25 @@ import { detailData } from "../data/detail_data.js";
 // 스와이퍼 앨범 css 불러오기
 import "../plugin/css/swiper_alb.css"
 
+// TAEYANG 상세 페이지 컨텐츠 컴포넌트
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Language } from '../modules/Language.jsx';
 
 export function BryanChase(){
+  const { t } = useTranslation();
+
+  const clickHandler = (e)=> {
+    i18next.changeLanguage(e.target.value);
+    e.preventDefault();
+  }
 
   const selData = detailData;
 
@@ -65,12 +79,12 @@ export function BryanChase(){
                   </div>
                   <div className="detail-career">
                     <h2>ALBUM</h2>
-                    <p>2023 | Restart It(feat. Okasian)(Extended Ver.)</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2U</p> 
+                    <p>{t("2023 | Restart It(feat. Okasian)(Extended Ver.)")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("2U")}</p> 
                     <br />
                     <h2>PERFORMANCE</h2>
-                    <p>2023 | 2023 제7회 대한민국 청년의 날 콘서트</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAPBEAT 2023 - 과천</p>  
+                    <p>{t("2023 | 2023 제7회 대한민국 청년의 날 콘서트")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("RAPBEAT 2023 - 과천")}</p>  
                     <br />
                   </div>
                   <div className="detail-gubun">
@@ -154,6 +168,7 @@ export function BryanChase(){
   // 리턴코드 ////////////////  
   return(
       <section id="ats-Detail-area4">
+        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );

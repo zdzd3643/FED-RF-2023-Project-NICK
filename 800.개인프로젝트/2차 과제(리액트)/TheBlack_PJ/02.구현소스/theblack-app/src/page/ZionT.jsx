@@ -22,11 +22,24 @@ import { detailData } from "../data/detail_data.js";
 // 스와이퍼 앨범 css 불러오기
 import "../plugin/css/swiper_alb.css"
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Language } from '../modules/Language.jsx';
 
 export function ZionT(){
+  const { t } = useTranslation();
+
+  const clickHandler = (e)=> {
+    i18next.changeLanguage(e.target.value);
+    e.preventDefault();
+  }
 
   const selData = detailData;
 
@@ -65,17 +78,17 @@ export function ZionT(){
                   </div>
                   <div className="detail-career">
                     <h2>ALBUM</h2>
-                    <p>2023 | Zip</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WORLD STOP TURNING (Feat. Warren Hue)</p> 
-                    <p>2021 | 선물을 고르며</p>
+                    <p>{t("2023 | Zip")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("WORLD STOP TURNING (Feat. Warren Hue)")}</p> 
+                    <p>{t("2021 | 선물을 고르며")}</p>
                     <br />
                     <h2>PERFORMANCE</h2>
-                    <p>2024 | 2024 메모리즈 - 자이언티＆원슈타인 - 수원</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우리금융그룹 '우리 모모콘'</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;피크타임페스티벌 - 천안</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAPBEAT 2023 - 과천</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023 한탄강 지오 페스티벌 - 포천</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023 여름잠 뮤직페스티벌 - 춘천</p>  
+                    <p>{t("2024 | 2024 메모리즈 - 자이언티＆원슈타인 - 수원")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우리금융그룹 '우리 모모콘'")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("피크타임페스티벌 - 천안")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("RAPBEAT 2023 - 과천")}</p> 
+                    <p>2023 | {t("한탄강 지오 페스티벌 - 포천")}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("여름잠 뮤직페스티벌 - 춘천")}</p>  
                     <br />
                   </div>
                   <div className="detail-gubun">
@@ -181,6 +194,7 @@ export function ZionT(){
   // 리턴코드 ////////////////  
   return(
       <section id="ats-Detail-area3">
+        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );
