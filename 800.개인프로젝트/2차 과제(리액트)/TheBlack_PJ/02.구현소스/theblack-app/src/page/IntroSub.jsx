@@ -2,9 +2,6 @@
 
 import "../css/intro.css"
 
-// 데이터 모듈 불러오기 : 제이슨
-import data_lang from '../data/data_lang.json'; 
-console.log(data_lang);
 
 export function IntroSub(){
 

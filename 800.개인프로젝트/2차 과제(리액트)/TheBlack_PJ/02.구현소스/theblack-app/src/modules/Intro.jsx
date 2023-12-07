@@ -2,19 +2,10 @@
 
 // 인트로 모듈 CSS
 import "../css/intro.css";
-import i18n from "../language/i18n.js";
-import { useTranslation } from "react-i18next";
 
 
 // 인트로 컴포넌트 /////
 export function Intro(){
-  
-  const {t} = useTranslation();
-  const onChangeLang = () => {
-    i18n.language === "ko"
-      ? i18n.changeLanguage("en")
-      : i18n.changeLanguage("ko");
-  };
 
   /////////////////////////////////
   // 코드리턴 /////////////////////

@@ -5,6 +5,10 @@ import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// 언어번역 
+import i18n from "../language/i18n.js";
+import { useTranslation } from "react-i18next";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow"
@@ -19,6 +23,17 @@ import { videoData } from "../data/video_data.js";
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+
+
+const selData = videoData;
+
+const {t} = useTranslation();
+const onChangeLang = () => {
+  i18n.language === "ko"
+    ? i18n.changeLanguage("en")
+    : i18n.changeLanguage("ko");
+};
+
 
 
 // makeList 함수 만들기 ///////
@@ -36,7 +51,8 @@ const makeList = (data) => {
             <img src={v.mv1} alt="비디오 이미지" />
         </a>
         <aside>
-        <h3>{v.mtit1}</h3>
+        <h3>{t('비디오')}</h3>
+        <button onClick={() => onChangeLang()}>언어변경</button>
         </aside>
       </div>
       <div>
