@@ -2,6 +2,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import '../src/language/i18n';
+
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 // 제이쿼리

@@ -2,8 +2,6 @@
 
 import "../css/aud.css";
 
-import { useEffect } from "react";
-
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
