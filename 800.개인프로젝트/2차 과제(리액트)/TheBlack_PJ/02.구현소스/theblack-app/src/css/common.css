@@ -171,14 +171,14 @@
 
 .langbox{
     position: fixed;
-    width: 110px;
-    height: 10vh;
+    width: 100px;
+    height: 7vh;
     background-color: #fff;
     opacity: 0.7;
     display: none;
     border: none;
-    left: 0;
-    top: 0;
+    left: 1vw;
+    top: 1vw;
     text-align: center;
 }
 
@@ -192,20 +192,20 @@
     opacity: 0.7;
 }
 
+
 .lang_cbtn{
     display: none;
     position: absolute;
-    left: 6vw;
-    top: 0;
+    left: 5.2vw;
+    top: 0.9vw;
     border-radius: 20px;
     opacity: 0.9;
     cursor: pointer;
     border: none;
     padding: 5px;
-    width: 11px;
+    width: 10px;
     height: 15px;
     color: #000;
-    
   }
 
 .lang_cbtn img{

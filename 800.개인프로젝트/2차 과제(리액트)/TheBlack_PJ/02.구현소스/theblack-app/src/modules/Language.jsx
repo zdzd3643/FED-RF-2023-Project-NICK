@@ -1,6 +1,10 @@
 // TheBlck 햄버거 GNB 컴포넌트
 
-import { useEffect,} from "react";
+import React, {useEffect, } from 'react'
+
+// 언어번역 
+import '../func/i18n';
+import i18n from "../func/i18n";
 
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
@@ -8,7 +12,8 @@ import "jquery-ui-dist/jquery-ui";
 
 import "../css/common.css";
 
-export function Language() {
+export function Language(props){
+
     // 랜더링 후 실행구역 //////////
     useEffect(() => {
     // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
@@ -33,11 +38,12 @@ export function Language() {
     return (
         <>
         <div className="lang_container">
-            <select className="langbox">
-                    <option value='ko'>KOR</option>
-                    <option value='en'>ENG</option>
-                    <option value='ja'>JPN</option>
-                    <option value='ch'>CHI</option>
+            <select onChange={props.onChange}
+            className="langbox">
+                    <option value={'ko'}>KOR</option>
+                    <option value={'en'}>ENG</option>
+                    <option value={'ja'}>JPN</option>
+                    <option value={'ch'}>CHI</option>
             </select>
             <div className="lang_cbtn">
                 <img src="./images/xmark-solid.png" alt="닫기버튼" />

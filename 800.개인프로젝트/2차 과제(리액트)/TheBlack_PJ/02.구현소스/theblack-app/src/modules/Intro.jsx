@@ -1,49 +1,34 @@
 // TheBlack 인트로 컴포넌트
+import React from "react";
+import { Language } from "../modules/Language"
 
 // 인트로 모듈 CSS
 import "../css/intro.css";
-
-import "../css/common.css"
+import "../css/common.css";
 
 // 언어번역 
-import '../language/i18n';
 
-import i18n from "../language/i18n";
+
+import il8next from "i18next"
 import { useTranslation, Trans } from "react-i18next";
-
-const lngs = {
-  ko: { nativeName: 'KOREA'},
-  en: { nativeName: 'ENGLISH'},
-  ja: { nativeName: 'JAPAN'},
-  ch: { nativeName: 'CHINA'}
-}
+import { useNavigate } from "react-router-dom";
 
 
 // 인트로 컴포넌트 /////
 export function Intro(){
-  const { t, i18n } = useTranslation();
 
+  const { t } = useTranslation();
+  const handleClick=(e)=>{
+    il8next.changeLanguage(e.target.value)
+  }
   /////////////////////////////////
   // 코드리턴 /////////////////////
   return(
     <section id="intro-area">
-      {Object.keys(lngs).map((lng) => (
-      <select
-      key={lng} 
-      style={{ 
-        fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal', 
-        top:"15vh",
-        position:"absolute",
-        left:"5vw",
-        width:"50px",
-        height:"50px"}} 
-      onClick={() => i18n.changeLanguage(lng)}
-      > {lngs[lng].nativeName}
-      </select>
-      ))}
+      <Language onChange={(e)=> handleClick(e)}/>
       <div className="intTit">
-        <h3><Trans i18nKey="모든 것은 어둠에서 시작됩니다." /></h3>
-        <h3>{t('그 어떠한 색과 빛도 존재하지 않는 상태에서')}</h3>
+      <h3>{t("모든 것은 어둠에서 시작됩니다.")}</h3>
+      <h3>{t('그 어떠한 색과 빛도 존재하지 않는 상태에서')}</h3>
       </div>
       <div className="intCont">
         <p>모든 것은 어둠에서 시작됩니다.</p>

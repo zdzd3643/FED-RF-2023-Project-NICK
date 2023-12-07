@@ -1,8 +1,8 @@
 // 메인 페이지 JS - index.js
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import '../src/language/i18n';
+import './index.css'
+import './func/i18n';
 
 import { HashRouter, Route, Routes } from "react-router-dom";
 
