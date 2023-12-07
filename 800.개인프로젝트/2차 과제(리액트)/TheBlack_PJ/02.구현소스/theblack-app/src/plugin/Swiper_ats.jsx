@@ -68,6 +68,11 @@ const selData = atsData;
     
   }); /////////// click ////////////
 
+  $('.ats-more').mouseover(e=>{
+    $(e.currentTarget).css({
+      BackgroundColr:"#000"
+    })
+  })
 },[]); ///////// useEffect ///////// 
 
 // 리스트만들기 함수 ///////////
