@@ -9,7 +9,8 @@
 #ats-area .ats_swiper{
   position: absolute;
   top: 23vh;
-  left: 40vw;
+  left: 50%;
+  transform: translateX(-50%);
   width: 381px;
   height: 581px;
  }

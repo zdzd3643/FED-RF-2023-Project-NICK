@@ -9,6 +9,8 @@ import { bCon } from "../modules/TbContext";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useCallback, useLayoutEffect } from "react";
 
+// 공통 미디어쿼리 불러오기
+import "../css/media.css";
 
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";

@@ -1,0 +1,77 @@
+/* THE BLACK PJ - 공통 미디어쿼리 */
+
+
+
+@media screen and (max-width: 1380px) {
+    /* #ats-area .intro-bx{
+        width: 224px;
+        height: 341px;
+        right: 10vw;
+    }
+    #ats-area .desc-bx{
+        width: 448px;
+        height: 682px;
+    } */
+    .cont-bx.on{
+        width: 200px;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .intTit h3 {
+        font-size: 50px;
+        position: relative;
+        top: 10vh;  
+    }
+    .intCont p{
+        font-size: 15px;
+    }
+  }
+@media screen and (max-width: 530px) {
+    .mtit h2{
+        font-size: 15px;
+    }
+    .TBham{
+        position: absolute;
+        top: 2.7vh;
+        right: 5vw;
+        width: 25px;
+        cursor: pointer;
+        z-index: 999999;
+    }
+    .TBham span:nth-child(2) {
+        top: 10px;
+    }
+    .TBham span:nth-child(3) {
+        top: 20px;
+    }
+    .TBlogo{
+        width: 200px;
+    }
+    .langicon{
+        top: 2.5vh;
+        width: 30px;
+    }
+    .intTit h3 {
+        position: relative;
+        font-size: 35px;
+        top: 13vh;
+    }
+    .intCont p{
+        font-size: 12px;
+
+    }
+    #ats-area .ats-title h3{
+        font-size: 50px;
+    }
+
+    .ats_swiper .swiper-slide{
+        width: 150px;
+    }
+  }
+
+@media screen and (max-width: 310px) {
+    .mtit h2{
+        font-size: 12px;
+    }
+  }
