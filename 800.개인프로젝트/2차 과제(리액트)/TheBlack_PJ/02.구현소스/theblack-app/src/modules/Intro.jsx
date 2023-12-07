@@ -20,27 +20,30 @@ const lngs = {
 
 
 // 인트로 컴포넌트 /////
-const { t, i18n } = useTranslation();
-
 export function Intro(){
+  const { t, i18n } = useTranslation();
 
   /////////////////////////////////
   // 코드리턴 /////////////////////
   return(
     <section id="intro-area">
       {Object.keys(lngs).map((lng) => (
-      <button 
+      <select
       key={lng} 
       style={{ 
-        fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} 
-      type="submit" 
+        fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal', 
+        top:"15vh",
+        position:"absolute",
+        left:"5vw",
+        width:"50px",
+        height:"50px"}} 
       onClick={() => i18n.changeLanguage(lng)}
       > {lngs[lng].nativeName}
-      </button>
+      </select>
       ))}
       <div className="intTit">
-        <h3><Trans i18nKey="description.tit1" /></h3>
-        <h3>{t('description.tit2')}</h3>
+        <h3><Trans i18nKey="모든 것은 어둠에서 시작됩니다." /></h3>
+        <h3>{t('그 어떠한 색과 빛도 존재하지 않는 상태에서')}</h3>
       </div>
       <div className="intCont">
         <p>모든 것은 어둠에서 시작됩니다.</p>
