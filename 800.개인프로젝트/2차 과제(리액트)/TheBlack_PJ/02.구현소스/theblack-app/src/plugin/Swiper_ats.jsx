@@ -121,6 +121,9 @@ const makeList = (data) => {
             alt="트위터 이미지" />
             </a>
           </div>
+          <button className="ats-more">
+            <h4>READ MORE</h4>
+          </button>
             <Swiper
             loop={true}
             pagination={{

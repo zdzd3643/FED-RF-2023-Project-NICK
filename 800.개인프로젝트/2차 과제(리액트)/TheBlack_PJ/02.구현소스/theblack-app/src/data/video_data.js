@@ -40,7 +40,7 @@ export const videoData = [
       mtit16:"JEON SOMI (전소미) - 'DUMB DUMB' M/V",
       mtit17:"JEON SOMI (전소미) - 'What You Waiting For' M/V",
       mtit18:"JEON SOMI (전소미) - 'BIRTHDAY' M/V",
-      mtit19:"Zion.T - '멋지게 인사하는 법(Hello Tutorial) (feat. 슬기 of Red Velvet)' M/V",
+      mtit19:"Zion.T - '멋지게 인사하는 법(Hello Tutorial) M/V",
       mtit20:"Zion.T - 'Uh Huh + Sleep Talk (feat. Oh Hyuk)' (THE FILM)",
       mlink1:"https://www.youtube.com/watch?v=YsaKuPX2ypg",
       mlink2:"https://www.youtube.com/watch?v=IHavi-uNnVw",

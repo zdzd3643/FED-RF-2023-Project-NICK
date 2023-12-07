@@ -1,34 +1,9 @@
 // 인트로 페이지 컨텐츠 컴포넌트
 
-// 제이쿼리
-import $ from 'jquery';
-
-import { useEffect, useLayoutEffect } from "react";
-
 import "../css/intro.css"
-
-// 자동스크롤 JS 불러오기
-import { actPageSub, evtFnSub, initSetSub, zeroPnoSub } from '../func/SubScroll.js';
 
 export function IntroSub(){
 
-  useLayoutEffect(()=>{
-
-    // 초기화 함수 호출
-    initSetSub();
-
-
-    // 전체 페이지 초기화함수
-    zeroPnoSub();
-
-    // 이벤트 호출 함수
-    evtFnSub();
-
-    // 이벤트 액션함수
-    actPageSub();
-
-  }); ///////// useEffect /////////
-  
   return(
     <section id="introSub-area">
       <div className="intSub-Tit">
