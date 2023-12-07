@@ -122,7 +122,7 @@ const makeList = (data) => {
             </a>
           </div>
           <button className="ats-more">
-            <h4>READ MORE</h4>
+            Detail More
           </button>
             <Swiper
             loop={true}
