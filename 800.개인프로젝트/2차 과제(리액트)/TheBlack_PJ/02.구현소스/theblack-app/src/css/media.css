@@ -3,19 +3,17 @@
 
 
 @media screen and (max-width: 1540px) {
-    .aud-video{
+    #aud-area .aud-video{
         position: relative;
-        /* position: relative; */
-        /* position: absolute; */
-        left: 100%;
         top: 28vh;
         border: none;
     }
     
-    .aud-video video {
+    #aud-area .aud-video video {
         position: absolute;
-        /* position: absolute; */
-
+        width: 70%;
+        left: 30%;
+        transform: translateX(-50%);
     }
     .aud-title{
         position: relative;
@@ -33,14 +31,14 @@
     .aud-audTitle h3{
         position: relative;
         font-size: 50px;
-        top:13vh;
+        top:12vh;
         color:#fff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.2;
         z-index: 999;
     }
     
-    .aud-viewBtn{
+    #aud-area .aud-viewBtn{
         position: absolute;
         left: 15%;
         top: 68vh;
@@ -98,6 +96,27 @@
   }
 
 @media screen and (max-width: 1000px) {
+  #aud-area .aud-video{
+    position: relative;
+    top: 20vh;
+    border: none;
+  }
+
+#aud-area .aud-video video {
+    position: absolute;
+    width: 40%;
+    left: 20%;
+    transform: translateX(-50%);
+}
+.aud-audTitle h3{
+  position: relative;
+  font-size: 40px;
+  top:10vh;
+  color:#fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  z-index: 999;
+}
     #album-area .swiper-coverflow {
         position: relative;
         top: 10vh;
@@ -199,9 +218,79 @@
       #introSub-area .intSub-services img{
         width: 100%;
       }
+      #aud-Sub-area{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+    }
+    
+    .aud-container{
+        position: relative;
+        top: 27vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+    }
+    #aud-Sub-area .aud-Cont{
+        position: absolute;
+        font-size: 18px;
+        color:#fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        white-space: nowrap;
+        box-sizing: border-box;
+        margin-left: 1vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70vh;
+    }
+    #aud-Sub-area .aud-poster{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;  
+    }
+    #aud-Sub-area .aud-poster img{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .cont #aud-Sub-area{
+      position: relative;
+      width: 100%;
+      height: 170vh;
+      background-color: #000;
+    }
+    #aud-area .aud-viewBtn{
+      position: absolute;
+      left: 15%;
+      top: 60vh;
+      width: 167px;
+      text-align: center;
+      font-size: 30px;
+      white-space: nowrap;
+      background-color: #fff;
+      color: #000000;
+      opacity: 0.9;
+      cursor: pointer;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border: none;
+  }
   }
 
 @media screen and (max-width: 700px) {
+  #aud-area .aud-video{
+    position: relative;
+    top: 10vh;
+    border: none;
+    left: 25%;
+  }
+
+#aud-area .aud-video video {
+    position: absolute;
+    width: 50%;
+}
     .intTit h3 {
         font-size: 50px;
         position: relative;
@@ -382,11 +471,82 @@
       .aud-title h3{
         font-size: 50px;
       }
+      
       #alb-Sub-area .aud-title{
         top: 15vh;
       }
+      #aud-Sub-area .aud-Cont{
+        position: absolute;
+        font-size: 14px;
+        color:#fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        white-space: nowrap;
+        box-sizing: border-box;
+        margin-left: 1vw;
+        left: 50%;
+        top: 70vh;
+        transform: translateX(-50%);
+    }
+    .cont #aud-Sub-area{
+      position: relative;
+      width: 100%;
+      height: 160vh;
+      background-color: #000;
+    }
+    #aud-Sub-area .aud-poster{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;  
+    }
+    #aud-Sub-area .aud-poster img{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .aud-audTitle h3{
+      position: relative;
+      font-size: 50px;
+      top:35vh;
+      color:#fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.2;
+      z-index: 999;
+      left: 20%;
+      text-align: center;
+  }
+  
+  #aud-area .aud-viewBtn{
+      position: absolute;
+      top: 90vh;
+      width: 177px;
+      text-align: center;
+      transform: translateX(-50%);
+      left: 47%;
+      white-space: nowrap;
+      background-color: #fff;
+      color: #000000;
+      opacity: 0.9;
+      cursor: pointer;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border: none;
+  }
   }
 @media screen and (max-width: 530px) {
+  #aud-area .aud-video{
+    position: relative;
+    top: 10vh;
+    border: none;
+    left: 55%;
+    transform: translateX(-25%);
+  }
+
+#aud-area .aud-video video {
+    position: absolute;
+    width: 40%;
+
+}
     .mtit h2{
         font-size: 15px;
     }
@@ -461,6 +621,31 @@
         top: 0;
         left: 0;
       }
+      .aud-audTitle h3{
+        position: relative;
+        font-size: 35px;
+        top:35vh;
+        color:#fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.2;
+        z-index: 999;
+        left: 20%;
+        text-align: center;
+    }
+    
+    #aud-area .aud-viewBtn{
+        position: absolute;
+        top: 83vh;
+        text-align: center;
+        left: 44%;
+        white-space: nowrap;
+        background-color: #fff;
+        color: #000000;
+        opacity: 0.9;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+    }
       
   }
 

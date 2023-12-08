@@ -41,8 +41,8 @@ export function Language(){
     return (
         <div className="lang_Container">
         <select 
-        onChange={(e)=> clickHandler(e)}
-        className="langbox">
+        className="langbox"
+        onChange={(e)=> clickHandler(e)}>
             <option value='ko'>KOR</option>
             <option value='en'>ENG</option>
             <option value='ja'>JPN</option>
