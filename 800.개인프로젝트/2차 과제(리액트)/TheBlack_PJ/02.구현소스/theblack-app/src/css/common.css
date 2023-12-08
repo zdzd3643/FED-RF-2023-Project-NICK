@@ -168,14 +168,6 @@
     border: none;
 }
 
-.lang_Container{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    left: 0;
-}
-
 
 .langbox{
     position: absolute;
@@ -207,7 +199,7 @@
 .lang_cbtn{
     position: absolute;
     display: none;
-    left: 8vw;
+    left: 5.2vw;
     top: 0.9vw;
     border-radius: 20px;
     opacity: 0.9;

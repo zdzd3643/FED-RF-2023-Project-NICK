@@ -62,7 +62,6 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
     // 광휠금지
     if (prot[0]) return;
     chkCrazy(0);
-    e.preventDefault();
     // console.log("휠~~~~~~!");
 
     // 1.휠방향 알아내기
@@ -81,7 +80,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
       // 첫페이지번호에 고정!
     } //// else ////
 
-    console.log('페이지번호:',pno);
+    // console.log('페이지번호:',pno);
 
     // 3. 스크롤 이동하기 + 메뉴에 클래스"on"넣기
     movePg();
@@ -182,7 +181,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
   기능: 페이지 도착후 등장 애니메이션
  *****************************************/
 function actPage(){
-  console.log('액숀~!!!', pno);
+  // console.log('액숀~!!!', pno);
 
   // pno가 0 또는 5가 아니면 작동!
     // 대상: 해당순번 .main 아래 .intTit
@@ -250,7 +249,6 @@ function evtFn(){
 
   // 메인 페이지 상단로고 클릭시 맨위로 이동하기!
   $('.TBlogo a').click(e=>{
-    e.preventDefault();
     pno = 0;
     movePg();
   }); ////////// click /////////
