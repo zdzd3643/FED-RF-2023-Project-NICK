@@ -47,10 +47,10 @@ export function Language(){
             <option value='en'>ENG</option>
             <option value='ja'>JPN</option>
             <option value='ch'>CHI</option>
+        </select>
         <div className="lang_cbtn">
         <img src="./images/xmark-solid.png" alt="닫기버튼" />
         </div>
-        </select>
         </div>
     );
 } //////////// Language 컴포넌트 ////////////

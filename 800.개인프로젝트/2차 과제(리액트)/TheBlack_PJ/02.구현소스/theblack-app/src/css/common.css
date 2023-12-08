@@ -168,6 +168,10 @@
     border: none;
 }
 
+.lang_Container{
+    position: absolute;
+    width: 100px;
+}
 
 .langbox{
     position: absolute;
@@ -199,22 +203,22 @@
 .lang_cbtn{
     position: absolute;
     display: none;
-    left: 5.2vw;
+    left: 6.2vw;
     top: 0.9vw;
-    border-radius: 20px;
     opacity: 0.9;
     cursor: pointer;
     border: none;
-    padding: 5px;
     width: 10px;
     height: 15px;
-    color: #000;
     z-index: 9999;
   }
 
 .lang_cbtn img{
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
 }
 
 
