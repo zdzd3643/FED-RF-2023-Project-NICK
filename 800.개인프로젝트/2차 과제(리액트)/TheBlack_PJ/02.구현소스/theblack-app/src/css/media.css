@@ -63,6 +63,38 @@
     .cont-bx.on{
         width: 200px;
     }
+    #video-cont{
+      position: absolute;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      max-width: 1500px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    #alb-Sub-area #video-cont>div{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 27vh;
+      aspect-ratio: 513/288;
+      padding: 30px;
+      padding-bottom: 50px;
+      width: 300px;
+    }
+    
+    #alb-Sub-area #video-cont>div aside{
+      color: #fff;
+      font-size: 13px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    #alb-Sub-area .video-grid-first{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
   }
 
 @media screen and (max-width: 1000px) {
@@ -91,7 +123,7 @@
         line-height: 1;
       }
       .intSub-Tit h3{
-        position: absolute;
+        position: relative;
         font-size: 50px;
         top: 5vh;
         left: 50%;
@@ -102,17 +134,70 @@
         line-height: 1;
         white-space: nowrap;
       }
-      .intSub-foundCont {
+      
+      .intSub-cont strong{
         position: relative;
-        top: 25vh;
-        left: 25%;
+        left: 0;
+        top: 0;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      
+      #introSub-area .intSub-cont{
+        position: relative;
+        top: 26vh;
+        left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        font-size: 9px;
+        font-size: 12px;
         color:#fff;
         font-family: NG;
-        line-height: 1;
+        line-height: 1.6;
         white-space: nowrap;
+        
+      }
+      
+      #introSub-area .intSub-foundCont strong{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      
+      #introSub-area .intSub-foundCont{
+        position: relative;
+        top: 30vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 12px;
+        color:#fff;
+        font-family: NG;
+        line-height: 1.6;
+        white-space: nowrap;
+      }
+      
+      .gubun{
+        width: 53vw;
+        opacity: 0.5;
+      }
+      
+      #introSub-area .services-cont-title{
+        position: absolute;
+        font-size: 5x;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color:#fff;
+        line-height: 1.6;
+        white-space: nowrap;
+        top: 90vh;
+      }
+      #introSub-area .intSub-services{
+        width: 650px;
+      }
+
+      #introSub-area .intSub-services img{
+        width: 100%;
       }
   }
 
@@ -152,6 +237,153 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1;
         left: 3vw;
+      }
+      .intSub-Tit h3{
+        position: relative;
+        font-size: 50px;
+        top: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        color:#fff;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      
+      .intSub-cont strong{
+        position: relative;
+        left: 0;
+        top: 0;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      
+      #introSub-area .intSub-cont{
+        position: relative;
+        top: 26vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 12px;
+        color:#fff;
+        font-family: NG;
+        line-height: 1.6;
+        white-space: nowrap;
+        
+      }
+      
+      #introSub-area .intSub-foundCont strong{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      
+      #introSub-area .intSub-foundCont{
+        position: relative;
+        top: 30vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 9px;
+        color:#fff;
+        font-family: NG;
+        line-height: 1.6;
+        white-space: nowrap;
+      }
+      
+      .gubun{
+        width: 53vw;
+        opacity: 0.5;
+      }
+      
+      #introSub-area .services-cont-title{
+        position: absolute;
+        font-size: 5x;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color:#fff;
+        line-height: 1.6;
+        white-space: nowrap;
+        top: 90vh;
+      }
+      #introSub-area .intSub-services{
+        width: 480px;
+      }
+
+      #introSub-area .intSub-services img{
+        width: 100%;
+      }
+      #alb-Sub-area #video-cont{
+      position: absolute;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      max-width: 1500px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    #alb-Sub-area #video-cont>div{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 27vh;
+      aspect-ratio: 513/288;
+      padding: 30px;
+      padding-bottom: 50px;
+      width: 300px;
+    }
+    
+    #alb-Sub-area #video-cont>div aside{
+      color: #fff;
+      font-size: 13px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    #alb-Sub-area .video-grid-first{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }#video-cont{
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        max-width: 1500px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      #alb-Sub-area #video-cont>div{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 27vh;
+        aspect-ratio: 513/288;
+        padding: 15px;
+        padding-bottom: 50px;
+        width: 250px;
+      }
+      
+      #alb-Sub-area #video-cont>div aside{
+        color: #fff;
+        font-size: 13px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 10px;
+      }
+      
+      #alb-Sub-area .video-grid-first{
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+
+      .aud-title h3{
+        font-size: 50px;
+      }
+      #alb-Sub-area .aud-title{
+        top: 15vh;
       }
   }
 @media screen and (max-width: 530px) {
@@ -212,6 +444,24 @@
         line-height: 1;
         left: 3vw;
       }
+      .intSub-Tit h3{
+        position: relative;
+        font-size: 30px;
+        top: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        color:#fff;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      #introSub-area .insSub-cont {
+        font-size: 5px;
+        top: 0;
+        left: 0;
+      }
+      
   }
 
 @media screen and (max-width: 310px) {

@@ -1,10 +1,10 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import TranslationKo from "../language/ko/translation.ko.json"
-import TranslationEn from "../language/en/translation.en.json"
-import TranslationJa from "../language/ja/translation.ja.json"
-import TranslationCh from "../language/ch/translation.ch.json"
+import TranslationKo from "../lang/ko/translation.ko.json"
+import TranslationEn from "../lang/en/translation.en.json"
+import TranslationJa from "../lang/ja/translation.ja.json"
+import TranslationCh from "../lang/ch/translation.ch.json"
 
 const resource = {
    en:{
