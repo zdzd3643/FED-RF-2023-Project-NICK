@@ -62,7 +62,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
     // 광휠금지
     if (prot[0]) return;
     chkCrazy(0);
-
+    e.preventDefault();
     // console.log("휠~~~~~~!");
 
     // 1.휠방향 알아내기
@@ -258,10 +258,13 @@ function evtFn(){
   // 키보드 이벤트발생시 업데이트
   // 1. Page Up(33) / Up Arrow (38)
   // 2. Page Down(34) / Down Arrow (40)
+  
   $(document).keydown((e) => {
     // 광휠금지
     if (prot[0]) return;
     chkCrazy(0);
+
+    e.preventDefault();
 
     // 이전페이지이동
     if (e.keyCode === 33 || e.keyCode === 38) {

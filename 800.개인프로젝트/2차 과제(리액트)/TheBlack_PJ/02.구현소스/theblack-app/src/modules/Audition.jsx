@@ -7,6 +7,7 @@ import { useEffect } from "react";
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+import { Link } from "react-router-dom";
 
 // 아티스트 컴포넌트
 export function Audition(){
@@ -33,7 +34,7 @@ export function Audition(){
       </video>
     </div>
     <div className="aud-viewBtn">
-      VIEW MORE
+    <Link to="/AuditionSub">VIEW MORE</Link>
     </div>  
     </>
   ) //////// 리턴함수 ///////////

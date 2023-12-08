@@ -19,6 +19,8 @@ export function GnbHam() {
             // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
             $(".gbox").fadeToggle(300);
 
+            e.preventDefault();
+
             // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
             $(e.currentTarget).toggleClass("on");
             // e.target과 e.currentTarget은 다르다!

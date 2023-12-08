@@ -39,10 +39,10 @@ export function Language(){
 
     // 코드 리턴 /////////////
     return (
-        <>
+        <div className="lang_Container">
         <select 
-            onChange={(e)=> clickHandler(e)}
-            className="langbox">
+        onChange={(e)=> clickHandler(e)}
+        className="langbox">
             <option value='ko'>KOR</option>
             <option value='en'>ENG</option>
             <option value='ja'>JPN</option>
@@ -51,6 +51,6 @@ export function Language(){
         <div className="lang_cbtn">
         <img src="./images/xmark-solid.png" alt="닫기버튼" />
         </div>
-        </>
+        </div>
     );
 } //////////// Language 컴포넌트 ////////////
