@@ -171,7 +171,7 @@
 .langbox{
     position: fixed;
     width: 100px;
-    height: 7vh;
+    height: 5vh;
     background-color: #fff;
     opacity: 0.7;
     display: none;
@@ -180,6 +180,9 @@
     top: 1vw;
     text-align: center;
     z-index: -999;
+    font-size: 17px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 3px #272727;
 }
 
 .langbox::after{
