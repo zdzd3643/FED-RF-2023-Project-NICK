@@ -28,29 +28,30 @@ function App() {
     // 리턴코드 ////////////////////
     return (
         // <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <HashRouter>
-            {/* <BrowserRouter>  */}
-            <Routes>
-                {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
-                <Route path="/" element={<Layout />}>
-                    {/* 하위 라우트 셋팅 
-          - path대신 index만 쓰면 첫페이지로 로딩함! 
-          -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
-                    <Route index element={<MainCont />} />
-                    <Route path="AlbumSub" element={<AlbumSub />} />
-                    <Route path="AuditionSub" element={<AuditionSub />} />
-                    <Route path="IntroSub" element={<IntroSub />} />
-                    <Route path="TAEYANG" element={<TAEYANG />} />
-                    <Route path="JEONSOMI" element={<JEONSOMI />} />
-                    <Route path="ZionT" element={<ZionT />} />
-                    <Route path="BryanChase" element={<BryanChase />} />
-                    <Route path="PARKBOGUM" element={<PARKBOGUM />} />
-                    <Route path="LEEJONGWON" element={<LEEJONGWON />} />
-                </Route>
-            </Routes>
-            {/* </BrowserRouter>  */}
-            </HashRouter>
+        // {/* <BrowserRouter>  */}
+
+    <HashRouter>
+    <Routes>
+        {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
+        <Route path="/" element={<Layout />}>
+            {/* 하위 라우트 셋팅 
+    - path대신 index만 쓰면 첫페이지로 로딩함! 
+    -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
+            <Route index element={<MainCont />} />
+            <Route path="AlbumSub" element={<AlbumSub />} />
+            <Route path="AuditionSub" element={<AuditionSub />} />
+            <Route path="IntroSub" element={<IntroSub />} />
+            <Route path="TAEYANG" element={<TAEYANG />} />
+            <Route path="JEONSOMI" element={<JEONSOMI />} />
+            <Route path="ZionT" element={<ZionT />} />
+            <Route path="BryanChase" element={<BryanChase />} />
+            <Route path="PARKBOGUM" element={<PARKBOGUM />} />
+            <Route path="LEEJONGWON" element={<LEEJONGWON />} />
+        </Route>
+    </Routes>
+    </HashRouter>
     );
+    // </BrowserRouter> 
 } //////////////// App 컴포넌트 ///////////////
 
 // 출력하기 ///////
