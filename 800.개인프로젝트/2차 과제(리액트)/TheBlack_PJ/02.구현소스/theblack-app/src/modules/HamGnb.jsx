@@ -25,16 +25,17 @@ export function GnbHam() {
             // 후자가 햄버거 버튼 자신임!
             // console.log(e.currentTarget)
         }); ////////// click ///////////
-    }, []); //////////// useEffect ///////////
 
-    // 처음 로딩시 스크롤 상단이동 //////
+    }, []); //////////// useEffect ///////////
+    
+
     useLayoutEffect(() => {
-        window.scrollTo(0, 0);
 
         $(".glist a").click((e) => {
             $(".gbox").hide();
             $(".TBham").removeClass("on");
-        });
+            });
+
     }); ///// useLayoutEffect //////////
 
     // 코드 리턴 /////////////
@@ -44,7 +45,9 @@ export function GnbHam() {
                 <nav className="glist">
                     <dl>
                         <dt>
-                            <Link to="/">HOME</Link>
+                            <div className="hbtn">
+                            <Link to="/HOME">HOME</Link>
+                            </div>
                         </dt>
                     </dl>
                     <dl>

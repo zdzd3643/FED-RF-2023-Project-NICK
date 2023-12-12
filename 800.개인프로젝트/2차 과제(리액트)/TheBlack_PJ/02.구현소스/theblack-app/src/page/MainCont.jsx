@@ -1,11 +1,11 @@
 // 메인 페이지 컨텐츠 컴포넌트
 
-import React, { useEffect } from "react";
+import React, { useEffect,} from "react";
 
 import "../css/common.css";
 
 // 자동스크롤 JS 불러오기
-import { wheelFn, initSet, zeroPno, evtFn, movePg } from "../func/smoothScroll23";
+import { wheelFn,initSet, zeroPno, evtFn, movePg } from "../func/smoothScroll23";
 
 // 모듈 불러오기
 import { Banner } from "../modules/Banner";
@@ -39,6 +39,10 @@ export function MainCont(){
   // 페이지번호 초기화 호출
   zeroPno();
 
+  
+
+
+
   // 컴포넌트 소멸자
   return(()=>{
     console.log('난 소멸했어~!');
@@ -55,6 +59,7 @@ export function MainCont(){
   }); //////////// 소멸자 return //////////
 
  }, []); ////////// useEffect ////////////
+
 
 return (
     <main id="main-area" className="site-body">

@@ -22,6 +22,8 @@ import ZionT from "./page/ZionT";
 import BryanChase from "./page/BryanChase";
 import PARKBOGUM from "./page/PARKBOGUM";
 import LEEJONGWON from "./page/LEEJONGWON";
+import ScrollToTop from "./modules/ScrollToTop";
+import { Banner } from "./modules/Banner";
 
 // 최상위 Root 컴포넌트 ///////
 function App() {
@@ -31,6 +33,7 @@ function App() {
         // {/* <BrowserRouter>  */}
 
     <HashRouter>
+    <ScrollToTop />
     <Routes>
         {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
         <Route path="/" element={<Layout />}>
@@ -38,6 +41,7 @@ function App() {
     - path대신 index만 쓰면 첫페이지로 로딩함! 
     -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
             <Route index element={<MainCont />} />
+            <Route path="HOME" element={<MainCont />} />
             <Route path="AlbumSub" element={<AlbumSub />} />
             <Route path="AuditionSub" element={<AuditionSub />} />
             <Route path="IntroSub" element={<IntroSub />} />

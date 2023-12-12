@@ -4,6 +4,7 @@
 
 // 제이쿼리 호출
 import $ from 'jquery';
+import ScrollToTop from '../modules/ScrollToTop';
 window.jQuery = $;
 require('jquery-ui-dist/jquery-ui');
 require('jquery-ui-touch-punch/jquery.ui.touch-punch');
@@ -251,6 +252,12 @@ function evtFn(){
   $('.TBlogo a').click(e=>{
     pno = 0;
     movePg();
+  }); ////////// click /////////
+
+  // 메인 페이지 상단로고 클릭시 맨위로 이동하기!
+  $('.hbtn a').click(e=>{
+  pno = 0;
+  movePg();
   }); ////////// click /////////
 
   // 키보드 이벤트발생시 업데이트
