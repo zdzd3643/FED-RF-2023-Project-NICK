@@ -19,9 +19,6 @@ function loadFn() {
   // 로딩확인
   console.log("로딩완료!");
 
-  // 부드러운 스크롤 적용 /////////////////
-  startSS();
-
   // grid 교체 함수 ///////////////////
 
   const slist = qsa(".sList ol li")

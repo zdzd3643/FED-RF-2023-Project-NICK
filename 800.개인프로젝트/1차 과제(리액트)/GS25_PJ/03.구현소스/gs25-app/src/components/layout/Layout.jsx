@@ -8,16 +8,13 @@ import { TopArea } from "./TopArea";
 import "../func/smoothScroll.js"
 
 // 메인 js 불러오기
-import "../func/main.js"
+// import "../func/main.js"
 
-// 서브 js 불러오기
-import "../func/sub.js"
+// // 서브 js 불러오기
+// import "../func/sub.js"
 
 // 링크 아이콘 불러오기
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-
-// 파비콘 불러오기
-import "./images/favicon-96x96.png"
 
 // 메인 CSS 불러오기
 import "../css/common.css"
@@ -26,7 +23,7 @@ import "../css/common.css"
 import "../css/main.css"
 
 // 서브 CSS 불러오기
-import "../css/sub.css"
+// import "../css/sub.css"
 
 // 미디어쿼리 CSS 불러오기
 import "../css/media.css"

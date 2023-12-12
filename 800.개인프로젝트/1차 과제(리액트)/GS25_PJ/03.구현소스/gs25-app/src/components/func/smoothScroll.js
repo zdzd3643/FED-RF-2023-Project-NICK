@@ -1,12 +1,12 @@
 // GS25 PJ 부드러운스크롤 JS - smoothScroll.js
 
-function startSS(){
+export function startSS(){
     new SmoothScroll(document, 100, 12)
 }
 
 let pos;
 
-function SmoothScroll(target, speed, smooth) {
+export function SmoothScroll(target, speed, smooth) {
     if (target === document)
         target = (document.scrollingElement ||
             document.documentElement ||

@@ -7,20 +7,20 @@ export function TopArea() {
     return (
         <>
             <div id="header">
-                <header class="header inbox">
+                <header className="header inbox">
                     {/* <!-- 파트박스 3개 --> */}
-                    <div class="partbox col-2">
+                    <div className="partbox col-2">
                         {/* <!-- 1-1-1. 메인로고 --> */}
-                        <h1 class="header__logo">
+                        <h1 className="header__logo">
                             <img
-                                src="../01.자료수집/gs25_누끼파일.png"
+                                src="./images/gs25_누끼파일.png"
                                 alt="GS25로고"
                             />
                         </h1>
                     </div>
-                    <div class="partbox col-8">
+                    <div className="partbox col-8">
                         {/* <!-- 1-1-2. GNB메뉴 --> */}
-                        <nav class="gnb">
+                        <nav className="gnb">
                             <ul>
                                 <li>
                                     <a href="#">GS25소개</a>
@@ -28,7 +28,7 @@ export function TopArea() {
                                 <li>
                                     <a href="#">상품</a>
                                     {/* <!-- 서브메뉴 --> */}
-                                    <div class="sub-menu">
+                                    <div className="sub-menu">
                                         <ol>
                                             <li>
                                                 <a href="#">간편식</a>
@@ -50,7 +50,7 @@ export function TopArea() {
                                 </li>
                                 <li>
                                     <a href="#">행사</a>
-                                    <div class="sub-menu">
+                                    <div className="sub-menu">
                                         <ol>
                                             <li>
                                                 <a href="#">1+1</a>
@@ -69,7 +69,7 @@ export function TopArea() {
                                 </li>
                                 <li>
                                     <a href="#">이벤트</a>
-                                    <div class="sub-menu">
+                                    <div className="sub-menu">
                                         <ol>
                                             <li>
                                                 <a href="#">진행중 이벤트</a>
@@ -88,7 +88,7 @@ export function TopArea() {
                                 </li>
                                 <li>
                                     <a href="#">서비스</a>
-                                    <div class="sub-menu">
+                                    <div className="sub-menu">
                                         <ol>
                                             <li>
                                                 <a href="#">멤버십</a>
@@ -117,9 +117,9 @@ export function TopArea() {
                             </ul>
                         </nav>
                     </div>
-                    <div class="partbox col-2">
+                    <div className="partbox col-2">
                         {/* <!-- 1-1-3. 탑메뉴 --> */}
-                        <nav class="top-menu">
+                        <nav className="top-menu">
                             <ul>
                                 <li>
                                     <a href="#">로그인</a>

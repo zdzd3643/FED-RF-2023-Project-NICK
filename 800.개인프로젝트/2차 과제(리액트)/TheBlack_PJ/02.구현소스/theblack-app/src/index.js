@@ -3,6 +3,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import './index.css'
 
+// 파비콘 불러오기
+import "./images/favicon-96x96.png"
+
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 // 제이쿼리
