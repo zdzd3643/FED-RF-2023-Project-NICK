@@ -1,6 +1,5 @@
 // TheBlack 인트로 컴포넌트
 import React from "react";
-import { Language } from "../modules/Language"
 
 // 인트로 모듈 CSS
 import "../css/intro.css";
@@ -9,7 +8,6 @@ import "../css/common.css";
 // 언어번역 
 
 import '../func/i18n';
-import i18next from "../func/i18n"
 import { useTranslation } from "react-i18next";
 
 
@@ -17,16 +15,10 @@ import { useTranslation } from "react-i18next";
 export function Intro(){
   const { t } = useTranslation();
 
-  const clickHandler = (e)=> {
-    i18next.changeLanguage(e.target.value);
-    e.preventDefault();
-  }
-
   /////////////////////////////////
   // 코드리턴 /////////////////////
   return(
     <section id="intro-Container">
-      <Language onChange={(e)=> clickHandler(e)} /> 
       <div className="intTit">
       <h3>{t("THE")}</h3>
       <h3>{t('ORGANIZATION')}</h3>

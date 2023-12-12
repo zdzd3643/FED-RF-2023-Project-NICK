@@ -1,24 +1,16 @@
 // 인트로 페이지 컨텐츠 컴포넌트
-import { Language } from "../modules/Language"
 import "../css/intro.css"
 
 // 언어번역 
 
 import '../func/i18n';
-import i18next from "../func/i18n"
 import { useTranslation } from "react-i18next";
 
 export function IntroSub(){
   const { t } = useTranslation();
 
-  const clickHandler = (e)=> {
-    i18next.changeLanguage(e.target.value);
-    e.preventDefault();
-  }
-
   return(
     <section id="introSub-area">
-      <Language onChange={(e)=> clickHandler(e)} />
       <div className="intSub-Tit">
         <h3>THE ORGANIZATION</h3>
       </div>

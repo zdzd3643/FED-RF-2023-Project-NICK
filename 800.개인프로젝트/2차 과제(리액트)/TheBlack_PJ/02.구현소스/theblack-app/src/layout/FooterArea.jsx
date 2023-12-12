@@ -2,7 +2,15 @@
 
 import '../css/common.css'
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 export function FooterArea(){
+  const { t } = useTranslation();
+  
   return(
     <footer id="footer-area" className="main">
       <div className="footer-sns">
@@ -27,9 +35,9 @@ export function FooterArea(){
         </a>
       </div>
         <address>
-            Copyright ⓒ THEBLACKLABEL All Rights Reserved.<br/>
-            일반문의 info@theblacklabel.com | 오디션문의 audition@theblacklabel.com <br/>
-            대표 : 박홍준(Teddy)<br/>
+            {t("Copyright ⓒ THEBLACKLABEL All Rights Reserved.")}<br/>
+            {t("일반문의 info@theblacklabel.com")} | {t("오디션문의 audition@theblacklabel.com")} <br/>
+            {t("대표 : 박홍준(Teddy)")}<br/>
         </address>
     </footer>
   )

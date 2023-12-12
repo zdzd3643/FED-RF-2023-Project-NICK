@@ -26,21 +26,14 @@ import "../plugin/css/swiper_alb.css"
 // 언어번역 
 
 import '../func/i18n';
-import i18next from "../func/i18n"
 import { useTranslation } from "react-i18next";
 
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
-import { Language } from '../modules/Language.jsx';
 
 export function BryanChase(){
   const { t } = useTranslation();
-
-  const clickHandler = (e)=> {
-    i18next.changeLanguage(e.target.value);
-    e.preventDefault();
-  }
 
   const selData = detailData;
 
@@ -168,7 +161,6 @@ export function BryanChase(){
   // 리턴코드 ////////////////  
   return(
       <section id="ats-Detail-area4">
-        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );

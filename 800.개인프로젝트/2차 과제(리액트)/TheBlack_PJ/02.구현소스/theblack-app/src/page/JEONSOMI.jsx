@@ -31,16 +31,9 @@ import { useTranslation } from "react-i18next";
 // 제이쿼리 + 제이쿼리UI
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
-import { Language } from '../modules/Language.jsx';
 
 export function JEONSOMI(){
   const { t } = useTranslation();
-
-  const clickHandler = (e)=> {
-    i18next.changeLanguage(e.target.value);
-    e.preventDefault();
-  }
-
 
   const selData = detailData;
 
@@ -246,7 +239,6 @@ export function JEONSOMI(){
   // 리턴코드 ////////////////  
   return(
       <section id="ats-Detail-area2">
-        <Language onChange={(e)=> clickHandler(e)} />
         {makeList(selData)}
       </section>
   );

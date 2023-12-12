@@ -6,7 +6,14 @@ import "../css/aud.css";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 export function AuditionSub(){
+  const { t } = useTranslation();
 
   // 리턴코드 ////////////////
   
@@ -17,26 +24,26 @@ export function AuditionSub(){
     </div>
     <div className="aud-container">
       <div className="aud-Cont">
-      <big><b>THEBLACKLABEL X CP Group (THEBLACKSEA)</b></big><br />
-      <big><b>Thailand Audition</b></big>
+      <big><b>{t("THEBLACKLABEL X CP Group (THEBLACKSEA)")}</b></big><br />
+      <big><b>{t("Thailand Audition")}</b></big>
       <br /><br />
-          <p><small>■</small> Category</p>
-          <p>- Vocal / Rap / Dance</p>
+          <p><small>■</small> {t("Category")}</p>
+          <p>- {t("Vocal / Rap / Dance")}</p>
           <br/>
-          <p><small>■</small> Eligibility</p>
-          <p>Female & Male / Minimum 13 years old</p>
+          <p><small>■</small> {t("Eligibility")}</p>
+          <p>{t("Female & Male / Minimum 13 years old")}</p>
           <br />
-          <p><small>■</small> Reward</p>
-          <p>2month trainee experience at THEBLACKLABEL </p><p>with post-evaluation to become a trainee at the label.</p>
+          <p><small>■</small> {t("Reward")}</p>
+          <p>{t("2month trainee experience at THEBLACKLABEL")}</p><p>{t("with post-evaluation to become a trainee at the label.")}</p>
           <br />
-          <p><small>■</small> How to Apply</p>
-          <p>- 1st. Submit Personal Information</p>
-          <p>(Name / Date of Birth / Height / Weight, etc)</p>
-          <p>- 2nd. Attach photo(s) and video(s)</p>
-          <p>- 3rd. Submit to audition@theblackseaofficial.com</p>
+          <p><small>■</small> {t("How to Apply")}</p>
+          <p>{t("- 1st. Submit Personal Information")}</p>
+          <p>{t("(Name / Date of Birth / Height / Weight, etc)")}</p>
+          <p>{t("- 2nd. Attach photo(s) and video(s)")}</p>
+          <p>{t("- 3rd. Submit to audition@theblackseaofficial.com")}</p>
           <br />
-          <p><small>■</small> Submission Period</p>
-          <p>April 18th 2023 -  June 7th 2023</p>
+          <p><small>■</small> {t("Submission Period")}</p>
+          <p>{t("April 18th 2023 - June 7th 2023")}</p>
       </div>
       <div className="aud-poster">
         <img src="./images/오디션 이미지2.jpg"

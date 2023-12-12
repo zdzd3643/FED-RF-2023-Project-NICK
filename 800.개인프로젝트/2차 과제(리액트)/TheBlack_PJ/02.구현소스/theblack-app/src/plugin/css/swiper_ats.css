@@ -43,13 +43,14 @@
 
 #ats-area .ptit{
   position: absolute;
-  bottom: 5vh;
-  font-size: 35px;
+  bottom: 7vh;
+  font-size: 40px;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;
-  background-color: #000;
-  opacity: 0.7;
+  background-color: #2c2c2cb7;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .ats_Rbtn{
