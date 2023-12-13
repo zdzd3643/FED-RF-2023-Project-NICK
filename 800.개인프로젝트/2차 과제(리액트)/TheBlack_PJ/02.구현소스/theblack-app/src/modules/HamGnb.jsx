@@ -46,7 +46,7 @@ export function GnbHam() {
                     <dl>
                         <dt>
                             <div className="hbtn">
-                            <Link to="/HOME">HOME</Link>
+                            <Link to="/">HOME</Link>
                             </div>
                         </dt>
                     </dl>
