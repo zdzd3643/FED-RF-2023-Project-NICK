@@ -99,6 +99,7 @@
   position: absolute;
   width: calc(385px*3) !important;
   left : -100%;
+  pointer-events: none;
 }
 .intro-bx{
   position: relative;

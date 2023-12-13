@@ -60,7 +60,8 @@ const makeList = (data) => {
         rotate:15,
         depth: 200,
         modifier: 2,
-        slideShadows:false
+        slideShadows:false,
+        loopAdditionalSlides : 1
       }}
       pagination={true}
       modules={[EffectCoverflow,Pagination]}

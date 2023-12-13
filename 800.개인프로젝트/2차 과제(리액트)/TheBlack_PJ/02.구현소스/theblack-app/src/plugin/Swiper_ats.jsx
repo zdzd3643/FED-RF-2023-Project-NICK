@@ -46,7 +46,6 @@ const selData = atsData;
   $('.ats_Rbtn').click(e=>{
     $(e.currentTarget).parents('.cont-bx').addClass('on');
 
-
     // Read More 버튼 클릭시 클로즈 버튼 보이기
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
@@ -193,6 +192,8 @@ const makeList = (data) => {
         depth: 100,
         modifier: 1,
         slideShadows:false,
+        loopAdditionalSlides : 1,
+        allowtouchmove: false,
       }}
       // 사용 모듈 
       modules={[ EffectCards ]} 
