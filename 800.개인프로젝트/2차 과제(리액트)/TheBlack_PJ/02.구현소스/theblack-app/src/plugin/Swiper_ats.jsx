@@ -196,6 +196,13 @@ const makeList = (data) => {
         slideShadows:false,
         loopAdditionalSlides : 1,
       }}
+      // onClick={(swiper) => {
+      //   swiper.allowTouchMove = false;
+      //   swiper.unsetGrabCursor();
+      // }}
+      // onSlideChange={(swiper) => {
+      //   swiper.allowTouchMove = true;
+      // }}
       // 사용 모듈 
       className="ats_swiper">
       {makeList(selData)}
