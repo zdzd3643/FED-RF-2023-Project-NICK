@@ -37,6 +37,8 @@ import { useTranslation } from "react-i18next";
 export function Swiper_ats(){
 const { t } = useTranslation();
 
+const swRef = useRef(null);
+
 const selData = atsData;
 
   // 랜더링 후 실행구역 ////////////
@@ -50,6 +52,8 @@ const selData = atsData;
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
 
+    swRef.current.swiper.disable();
+
   }); /////////// click ////////////
 
 
@@ -61,6 +65,8 @@ const selData = atsData;
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
     
+    swRef.current.swiper.enable();
+    
   }); /////////// click ////////////
 
   // Close 버튼 클릭시 아티스트 내용창 닫기
@@ -70,6 +76,8 @@ const selData = atsData;
     // Close 버튼 클릭시 클로즈 버튼 숨기기
     $('.ats_Rbtn').fadeToggle(400);
     $('.ats_Cbtn').fadeToggle(400);
+    
+    swRef.current.swiper.enable();
     
   }); /////////// click ////////////
 
@@ -185,6 +193,7 @@ const makeList = (data) => {
         <h3>ARTISTS</h3>
       </div>
       <Swiper 
+      ref={swRef}
       effect={'cards'}
       grabCursor={true}
       modules={[ EffectCards ]} 
