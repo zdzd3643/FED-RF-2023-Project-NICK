@@ -186,6 +186,8 @@ const makeList = (data) => {
       </div>
       <Swiper 
       effect={'cards'}
+      grabCursor={true}
+      modules={[ EffectCards ]} 
       loop={true}
       cardsEffect={{
         rotate:0,
@@ -193,10 +195,8 @@ const makeList = (data) => {
         modifier: 1,
         slideShadows:false,
         loopAdditionalSlides : 1,
-        allowtouchmove: false,
       }}
       // 사용 모듈 
-      modules={[ EffectCards ]} 
       className="ats_swiper">
       {makeList(selData)}
       </Swiper>
