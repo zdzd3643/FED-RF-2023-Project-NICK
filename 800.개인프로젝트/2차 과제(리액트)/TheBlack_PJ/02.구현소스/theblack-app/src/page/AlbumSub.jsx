@@ -17,11 +17,18 @@ import { videoData } from "../data/video_data.js";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 const selData = videoData;
 
 // makeList 함수 만들기 ///////
 const makeList = (data) => {
   // console.log(data);
+  const { t } = useTranslation();
 
   return data.map((v,i) => (
 
