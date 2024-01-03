@@ -25,7 +25,7 @@ export const atsData = [
     isrc:"./images/TAEYANG_PF.jpg",
     alt:"태양",
     itit:"TAEYANG",
-    dcont:"'빅뱅'의 메인보컬 및 댄서로 빅뱅의 올라운더로 활약하고 있으며, 2008년부터 솔로활동을 병행하였다. 가창력과 춤, 솔로 뮤지션으로서의 커리어, 모두 아이돌 중 최정상급이라는 평가를 받는 인물이자  아이돌이라는 틀의 한계를 넘은  음악성과 보컬, 춤 실력을 가졌다고 평가받는 뮤지션이라고 평가받고 있다. ",
+    dcont:"'빅뱅'의 메인보컬 및 댄서로 빅뱅의 올라운더로 활약하고 있으며, 2008년부터 솔로활동을 병행하였다. 가창력과 춤, 솔로 뮤지션으로서의 커리어, 모두 아이돌 중 최정상급이라는 평가를 받는 인물이자  아이돌이라는 틀의 한계를 넘은  음악성과 보컬, 춤 실력을 가졌다고 평가받는 뮤지션이라고 평가받고 있다.",
     insta:"https://www.instagram.com/__youngbae__/",
     youtube:"https://www.youtube.com/@TAEYANG_Official",
     twitter:"https://twitter.com/Realtaeyang",

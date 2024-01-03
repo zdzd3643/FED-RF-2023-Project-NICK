@@ -16,8 +16,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 
+// 언어번역 
+
+import '../func/i18n';
+import i18next from "../func/i18n"
+import { useTranslation } from "react-i18next";
+
 // 배너 컴포넌트 //
 export function Banner(){
+  const { t } = useTranslation();
 
     // 1. 변수설정
     // (0) 애니시간
@@ -113,7 +120,7 @@ export function Banner(){
             />
             {/* 배너 정보 */}
             <div className="mtit">
-              <h2>{v.vtit}</h2>
+              <h2>{t(v.vtit)}</h2>
             </div>
           </li>
         ));

@@ -11,13 +11,13 @@ export const mvData = [
       ats:'TAEYANG',
       vsrc:"./images/TAEYANG_MV.mp4",
       alt:"태양",
-      vtit:"TAEYANG - 나의 마음에",
+      vtit:"TAEYANG - in my heart",
       },
       {
       ats:"ZION-T",
       vsrc:"./images/ZIONT_MV_edit.mp4",
       alt:"자이언티",
-      vtit:"Zion.T - 선물을 고르며",
+      vtit:"Zion.T - Choosing a gift",
       },
       {
       ats:"BRYAN",

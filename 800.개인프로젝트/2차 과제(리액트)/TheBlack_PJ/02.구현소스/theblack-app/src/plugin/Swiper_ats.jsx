@@ -98,7 +98,7 @@ const makeList = (data) => {
           id="profile"/>
           {/* 프로필 정보 */}
           <div className="ptit">
-            <h2>{v.itit}</h2>
+            <h2>{t(v.itit)}</h2>
           </div>
             <button className="ats_Rbtn">
               Read More
@@ -108,8 +108,8 @@ const makeList = (data) => {
             </button>
         </div>
         <div className="desc-bx">
-          <h2>ABOUT</h2>
-          <h3>{v.dcont}</h3>
+          <h2>{t("ABOUT")}</h2>
+          <h3>{t(v.dcont)}</h3>
           <div className="xbtn">
             <img src="./images/xmark-solid.png" alt="x버튼" />    
           </div>
