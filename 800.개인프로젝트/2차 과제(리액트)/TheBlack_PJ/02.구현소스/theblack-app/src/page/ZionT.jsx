@@ -42,15 +42,15 @@ export function ZionT(){
     return data.map((v, i) => (
             <div className='detail-container' key={i}>
                 <div className="detail-title">
-                  <h3>{v.ats3}</h3>
+                  <h3>{t(v.ats3)}</h3>
                 </div>
                 <div className="detail-profile">
                   <img src={v.isrc3} alt="프로필 이미지" />  
                 </div>
                 <div className="detail-cont">
                   <div className="detail-name">
-                    <h2>{v.alt3}</h2>
-                    <h3>{v.itit3}</h3>
+                    <h2>{t(v.alt3)}</h2>
+                    <h3>{t(v.itit3)}</h3>
                   </div>
                   <div className="detail-sns">
                     <a href={v.insta3}
@@ -71,12 +71,12 @@ export function ZionT(){
                     </a>
                   </div>
                   <div className="detail-career">
-                    <h2>ALBUM</h2>
+                    <h2>{t("ALBUM")}</h2>
                     <p>{t("2023 | Zip")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("WORLD STOP TURNING (Feat. Warren Hue)")}</p> 
                     <p>{t("2021 | 선물을 고르며")}</p>
                     <br />
-                    <h2>PERFORMANCE</h2>
+                    <h2>{t("PERFORMANCE")}</h2>
                     <p>{t("2024 | 2024 메모리즈 - 자이언티＆원슈타인 - 수원")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우리금융그룹 '우리 모모콘'")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("피크타임페스티벌 - 천안")}</p> 
@@ -132,7 +132,7 @@ export function ZionT(){
                         <img src={v.mv1} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit1}</h3>
+                        <h3>{t(v.mtit1)}</h3>
                         </aside>
                       </div>
                           <div>
@@ -143,7 +143,7 @@ export function ZionT(){
                         <img src={v.mv8} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit8}</h3>
+                        <h3>{t(v.mtit8)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -154,7 +154,7 @@ export function ZionT(){
                         <img src={v.mv14} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit14}</h3>
+                        <h3>{t(v.mtit14)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -165,7 +165,7 @@ export function ZionT(){
                         <img src={v.mv19} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit19}</h3>
+                        <h3>{t(v.mtit19)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -176,7 +176,7 @@ export function ZionT(){
                         <img src={v.mv20} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit20}</h3>
+                        <h3>{t(v.mtit20)}</h3>
                         </aside>
                       </div>
                     </div>      

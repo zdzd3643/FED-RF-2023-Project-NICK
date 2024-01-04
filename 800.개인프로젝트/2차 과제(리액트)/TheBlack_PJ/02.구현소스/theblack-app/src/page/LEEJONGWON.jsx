@@ -42,15 +42,15 @@ export function LEEJONGWON(){
     return data.map((v, i) => (
             <div className='detail-container' key={i}>
                 <div className="detail-title">
-                  <h3>{v.ats6}</h3>
+                  <h3>{t(v.ats6)}</h3>
                 </div>
                 <div className="detail-profile">
                   <img src={v.isrc6} alt="프로필 이미지" />  
                 </div>
                 <div className="detail-cont">
                   <div className="detail-name">
-                    <h2>{v.alt6}</h2>
-                    <h3>{v.itit6}</h3>
+                    <h2>{t(v.alt6)}</h2>
+                    <h3>{t(v.itit6)}</h3>
                   </div>
                   <div className="detail-sns">
                     <a href={v.insta6}
@@ -71,12 +71,12 @@ export function LEEJONGWON(){
                     </a>
                   </div>
                   <div className="detail-career">
-                    <h2>DRAMA</h2>
+                    <h2>{t("DRAMA")}</h2>
                     <p>{t("미정 | (미정) 나쁜 기억 지우개")}</p>
                     <p>"2024 | {t("MBC 밤에 피는 꽃")}</p>
                     <p>"2022 | {t("MBC 금수저")}</p>
                     <br />
-                    <h2>MOVIE</h2>
+                    <h2>{t("MOVIE")}</h2>
                     <p>"2020 | {t("인유어드림")}</p>
                     <p>"2019 | {t("니나 내나")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("사회인")}</p> 
@@ -129,7 +129,7 @@ export function LEEJONGWON(){
                         <img src={v.mv25} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit25}</h3>
+                        <h3>{t(v.mtit25)}</h3>
                         </aside>
                       </div>
                           <div>
@@ -140,7 +140,7 @@ export function LEEJONGWON(){
                         <img src={v.mv26} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit26}</h3>
+                        <h3>{t(v.mtit26)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -151,7 +151,7 @@ export function LEEJONGWON(){
                         <img src={v.mv27} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit27}</h3>
+                        <h3>{t(v.mtit27)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -162,7 +162,7 @@ export function LEEJONGWON(){
                         <img src={v.mv28} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit28}</h3>
+                        <h3>{t(v.mtit28)}</h3>
                         </aside>
                       </div>
                     </div>      

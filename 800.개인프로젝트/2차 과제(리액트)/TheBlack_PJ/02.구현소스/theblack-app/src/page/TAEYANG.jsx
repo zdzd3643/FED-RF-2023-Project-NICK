@@ -42,15 +42,15 @@ export function TAEYANG(){
     return data.map((v, i) => (
           <div className='detail-container' key={i}> 
                 <div className="detail-title">
-                  <h3>{v.ats1}</h3>
+                  <h3>{t(v.ats1)}</h3>
                 </div>
                 <div className="detail-profile">
                   <img src={v.isrc1} alt="프로필 이미지" />  
                 </div>
                 <div className="detail-cont">
                   <div className="detail-name">
-                    <h2>{v.alt1}</h2>
-                    <h3>{v.itit1}</h3>
+                    <h2>{t(v.alt1)}</h2>
+                    <h3>{t(v.itit1)}</h3>
                   </div>
                   <div className="detail-sns">
                     <a href={v.insta1}
@@ -71,12 +71,12 @@ export function TAEYANG(){
                     </a>
                   </div>
                   <div className="detail-career">
-                    <h2>ALBUM</h2>
+                    <h2>{t("ALBUM")}</h2>
                     <p>{t("2023 | Down to Earth")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("VIBE(feat.Jimin of BTS)")}</p> 
                     <p>{t("2022 | 봄여름가을겨울")}</p>
                     <br />
-                    <h2>PERFORMANCE</h2>
+                    <h2>{t("PERFORMANCE")}</h2>
                     <p>{t("2023 | Rapbeat Festival")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우드스탁 뮤직 앤 아트페어")}</p> 
@@ -93,7 +93,7 @@ export function TAEYANG(){
                     <hr />
                   </div>
                   <div className="detail-gallery">
-                  <h2>GALLERY</h2>
+                  <h2>{t("GALLERY")}</h2>
                   </div>
                     <Swiper
                       loop={true}
@@ -125,7 +125,7 @@ export function TAEYANG(){
                       <hr />  
                     </div>
                     <div className="detail-video">
-                      <h2>VIDEOS</h2>
+                      <h2>{t("VIDEOS")}</h2>
                     </div>
                     <div className="detail-video-cont">
                     <div className="detail-video-grid-first">
@@ -136,7 +136,7 @@ export function TAEYANG(){
                         <img src={v.mv9} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit9}</h3>
+                        <h3>{t(v.mtit9)}</h3>
                         </aside>
                       </div>
                           <div>
@@ -147,7 +147,7 @@ export function TAEYANG(){
                         <img src={v.mv10} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit10}</h3>
+                        <h3>{t(v.mtit10)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -158,7 +158,7 @@ export function TAEYANG(){
                         <img src={v.mv11} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit11}</h3>
+                        <h3>{t(v.mtit11)}</h3>
                         </aside>
                       </div>
                     </div>      

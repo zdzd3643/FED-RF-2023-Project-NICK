@@ -253,6 +253,94 @@ const makeList = (data) => {
           <h3>{t(v.mtit20)}</h3>
           </aside>
         </div>
+        <div>
+        <a href={v.mlink21}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv21} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit21)}</h3>
+          </aside>
+        </div>
+        <div>
+        <a href={v.mlink22}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv22} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit22)}</h3>
+          </aside>
+        </div>
+        <div>
+        <a href={v.mlink23}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv23} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit23)}</h3>
+          </aside>
+        </div>
+        <div>
+        <a href={v.mlink24}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv24} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit24)}</h3>
+          </aside>
+        </div>
+        <div>
+        <a href={v.mlink25}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv25} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit25)}</h3>
+          </aside>
+        </div>
+        <div>
+        <a href={v.mlink26}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv26} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit26)}</h3>
+          </aside>
+        </div>
+        <div>
+        <a href={v.mlink27}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv27} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit27)}</h3>
+          </aside>
+        </div>
+        <div>
+        <a href={v.mlink28}
+            target='_blank'
+            title="유튜브로 이동" 
+            className="video-youtube">
+          <img src={v.mv28} alt="비디오 이미지" />
+        </a>
+          <aside>
+          <h3>{t(v.mtit28)}</h3>
+          </aside>
+        </div>
     </section>
 
   )); ////////// data ////////

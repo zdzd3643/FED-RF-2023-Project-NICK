@@ -42,15 +42,15 @@ export function BryanChase(){
     return data.map((v, i) => (
             <div className='detail-container' key={i}>
                 <div className="detail-title">
-                  <h3>{v.ats4}</h3>
+                  <h3>{t(v.ats4)}</h3>
                 </div>
                 <div className="detail-profile">
                   <img src={v.isrc4} alt="프로필 이미지" />  
                 </div>
                 <div className="detail-cont">
                   <div className="detail-name">
-                    <h2>{v.alt4}</h2>
-                    <h3>{v.itit4}</h3>
+                    <h2>{t(v.alt4)}</h2>
+                    <h3>{t(v.itit4)}</h3>
                   </div>
                   <div className="detail-sns1">
                     <a href={v.insta4}
@@ -71,11 +71,11 @@ export function BryanChase(){
                     </a>
                   </div>
                   <div className="detail-career">
-                    <h2>ALBUM</h2>
+                    <h2>{t("ALBUM")}</h2>
                     <p>{t("2023 | Restart It(feat. Okasian)(Extended Ver.)")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("2U")}</p> 
                     <br />
-                    <h2>PERFORMANCE</h2>
+                    <h2>{t("PERFORMANCE")}</h2>
                     <p>{t("2023 | 2023 제7회 대한민국 청년의 날 콘서트")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("RAPBEAT 2023 - 과천")}</p>  
                     <br />
@@ -127,7 +127,7 @@ export function BryanChase(){
                         <img src={v.mv2} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit2}</h3>
+                        <h3>{t(v.mtit2)}</h3>
                         </aside>
                       </div>
                           <div>
@@ -138,7 +138,7 @@ export function BryanChase(){
                         <img src={v.mv6} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit6}</h3>
+                        <h3>{t(v.mtit6)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -149,7 +149,7 @@ export function BryanChase(){
                         <img src={v.mv7} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit7}</h3>
+                        <h3>{t(v.mtit7)}</h3>
                         </aside>
                       </div>
                     </div>      

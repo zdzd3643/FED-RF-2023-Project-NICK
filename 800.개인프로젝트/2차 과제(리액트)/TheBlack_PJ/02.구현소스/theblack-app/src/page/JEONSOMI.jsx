@@ -42,15 +42,15 @@ export function JEONSOMI(){
     return data.map((v, i) => (
             <div className='detail-container' key={i}>
                 <div className="detail-title">
-                  <h3>{v.ats2}</h3>
+                  <h3>{t(v.ats2)}</h3>
                 </div>
                 <div className="detail-profile">
                   <img src={v.isrc2} alt="프로필 이미지" />  
                 </div>
                 <div className="detail-cont">
                   <div className="detail-name">
-                    <h2>{v.alt2}</h2>
-                    <h3>{v.itit2}</h3>
+                    <h2>{t(v.alt2)}</h2>
+                    <h3>{t(v.itit2)}</h3>
                   </div>
                   <div className="detail-sns">
                     <a href={v.insta2}
@@ -71,12 +71,12 @@ export function JEONSOMI(){
                     </a>
                   </div>
                   <div className="detail-career">
-                    <h2>ALBUM</h2>
+                    <h2>{t("ALBUM")}</h2>
                     <p>{t("2023 | GAME PLAN")}</p>
                     <p>{t("2021 | XOXO")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("DUMB DUMB")}</p>
                     <br />
-                    <h2>PERFORMANCE</h2>
+                    <h2>{t("PERFORMANCE")}</h2>
                     <p>{t("2023 | Kpop Overpass 뮤직 콘서트")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p> 
                     <p>{t("2022 | MAMA AWARDS")}</p>
@@ -85,7 +85,7 @@ export function JEONSOMI(){
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("LALAPA K 콘서트")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("36회 골든디스크 어워즈")}</p>  
                     <br />
-                    <h2>ADVERTISING</h2>
+                    <h2>{t("ADVERTISING")}</h2>
                     <p>{t("2023 | 노스페이스")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("PRADA")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("라코스테")}</p> 
@@ -139,7 +139,7 @@ export function JEONSOMI(){
                       <img src={v.mv3} alt="비디오 이미지" />
                     </a>
                     <aside>
-                    <h3>{v.mtit3}</h3>
+                    <h3>{t(v.mtit3)}</h3>
                     </aside>
                     </div>
                     <div>
@@ -150,7 +150,7 @@ export function JEONSOMI(){
                   <img src={v.mv4} alt="비디오 이미지" />
                 </a>
                   <aside>
-                  <h3>{v.mtit4}</h3>
+                  <h3>{t(v.mtit4)}</h3>
                   </aside>
                 </div>
                 <div>
@@ -161,7 +161,7 @@ export function JEONSOMI(){
                   <img src={v.mv5} alt="비디오 이미지" />
                 </a>
                   <aside>
-                  <h3>{v.mtit5}</h3>
+                  <h3>{t(v.mtit5)}</h3>
                   </aside>
                 </div>
                 <div>
@@ -172,7 +172,7 @@ export function JEONSOMI(){
           <img src={v.mv12} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit12}</h3>
+          <h3>{t(v.mtit12)}</h3>
           </aside>
         </div>
         <div>
@@ -183,7 +183,7 @@ export function JEONSOMI(){
           <img src={v.mv13} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit13}</h3>
+          <h3>{t(v.mtit13)}</h3>
           </aside>
         </div>
         <div>
@@ -194,7 +194,7 @@ export function JEONSOMI(){
           <img src={v.mv15} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit15}</h3>
+          <h3>{t(v.mtit15)}</h3>
           </aside>
         </div>
         <div>
@@ -205,7 +205,7 @@ export function JEONSOMI(){
           <img src={v.mv16} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit16}</h3>
+          <h3>{t(v.mtit16)}</h3>
           </aside>
         </div>
         <div>
@@ -216,7 +216,7 @@ export function JEONSOMI(){
           <img src={v.mv17} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit17}</h3>
+          <h3>{t(v.mtit17)}</h3>
           </aside>
         </div>
         <div>
@@ -227,7 +227,7 @@ export function JEONSOMI(){
           <img src={v.mv18} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit18}</h3>
+          <h3>{t(v.mtit18)}</h3>
           </aside>
         </div>
                     </div>      

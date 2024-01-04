@@ -42,15 +42,15 @@ export function PARKBOGUM(){
     return data.map((v, i) => (
             <div className='detail-container' key={i}>
                 <div className="detail-title">
-                  <h3>{v.ats5}</h3>
+                  <h3>{t(v.ats5)}</h3>
                 </div>
                 <div className="detail-profile">
                   <img src={v.isrc5} alt="프로필 이미지" />  
                 </div>
                 <div className="detail-cont">
                   <div className="detail-name">
-                    <h2>{v.alt5}</h2>
-                    <h3>{v.itit5}</h3>
+                    <h2>{t(v.alt5)}</h2>
+                    <h3>{t(v.itit5)}</h3>
                   </div>
                   <div className="detail-sns">
                     <a href={v.insta5}
@@ -71,16 +71,16 @@ export function PARKBOGUM(){
                     </a>
                   </div>
                   <div className="detail-career">
-                    <h2>DRAMA</h2>
+                    <h2>{t("DRAMA")}</h2>
                     <p>{t("2024 | Nexflix 폭싹 속았수다")}</p>
                     <p>{t("2020 | tvN 청춘기록")}</p>
                     <p>{t("2018 | tvN 남자친구")}</p>
                     <br />
-                    <h2>MOVIE</h2>
+                    <h2>{t("MOVIE")}</h2>
                     <p>{t("2021 | 서복")}</p>
                     <p>{t("2020 | 원더랜드")}</p>
                     <br />
-                    <h2>ADVERTISING</h2>
+                    <h2>{t("ADVERTISING")}</h2>
                     <p>{t("2023 | 로레알")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("에이스침대")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("아이더")}</p> 
@@ -132,7 +132,7 @@ export function PARKBOGUM(){
                         <img src={v.mv21} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit21}</h3>
+                        <h3>{t(v.mtit21)}</h3>
                         </aside>
                       </div>
                           <div>
@@ -143,7 +143,7 @@ export function PARKBOGUM(){
                         <img src={v.mv22} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit22}</h3>
+                        <h3>{t(v.mtit22)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -154,7 +154,7 @@ export function PARKBOGUM(){
                         <img src={v.mv23} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit23}</h3>
+                        <h3>{t(v.mtit23)}</h3>
                         </aside>
                       </div>
                       <div>
@@ -165,7 +165,7 @@ export function PARKBOGUM(){
                         <img src={v.mv24} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{v.mtit24}</h3>
+                        <h3>{t(v.mtit24)}</h3>
                         </aside>
                       </div>
                     </div>      
