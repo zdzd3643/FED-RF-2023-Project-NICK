@@ -20,7 +20,7 @@ export function AuditionSub(){
   return(
     <section id="aud-Sub-area">
     <div className="aud-title">
-        <h3>AUDTION</h3>
+        <h3>{t("AUDITION")}</h3>
     </div>
     <div className="aud-container">
       <div className="aud-Cont">

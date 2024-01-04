@@ -41,7 +41,7 @@ const makeList = (data) => {
             <img src={v.mv1} alt="비디오 이미지" />
         </a>
         <aside>
-        <h3>{v.mtit1}</h3>
+        <h3>{t(v.mtit1)}</h3>
         </aside>
       </div>
       <div>
@@ -52,7 +52,7 @@ const makeList = (data) => {
             <img src={v.mv2} alt="비디오 이미지" />
         </a>
         <aside>
-        <h3>{v.mtit2}</h3>
+        <h3>{t(v.mtit2)}</h3>
         </aside>
       </div>
         <div>
@@ -63,7 +63,7 @@ const makeList = (data) => {
           <img src={v.mv3} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit3}</h3>
+          <h3>{t(v.mtit3)}</h3>
           </aside>
         </div>
         <div>
@@ -74,7 +74,7 @@ const makeList = (data) => {
           <img src={v.mv4} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit4}</h3>
+          <h3>{t(v.mtit4)}</h3>
           </aside>
         </div>
         <div>
@@ -85,7 +85,7 @@ const makeList = (data) => {
           <img src={v.mv5} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit5}</h3>
+          <h3>{t(v.mtit5)}</h3>
           </aside>
         </div>
         <div>
@@ -96,7 +96,7 @@ const makeList = (data) => {
           <img src={v.mv6} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit6}</h3>
+          <h3>{t(v.mtit6)}</h3>
           </aside>
         </div>
         <div>
@@ -107,7 +107,7 @@ const makeList = (data) => {
           <img src={v.mv7} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit7}</h3>
+          <h3>{t(v.mtit7)}</h3>
           </aside>
         </div>
         <div>
@@ -118,7 +118,7 @@ const makeList = (data) => {
           <img src={v.mv8} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit8}</h3>
+          <h3>{t(v.mtit8)}</h3>
           </aside>
         </div>
         <div>
@@ -129,7 +129,7 @@ const makeList = (data) => {
           <img src={v.mv9} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit9}</h3>
+          <h3>{t(v.mtit9)}</h3>
           </aside>
         </div>
         <div>
@@ -140,7 +140,7 @@ const makeList = (data) => {
           <img src={v.mv10} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit10}</h3>
+          <h3>{t(v.mtit10)}</h3>
           </aside>
         </div>
         <div>
@@ -151,7 +151,7 @@ const makeList = (data) => {
           <img src={v.mv11} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit11}</h3>
+          <h3>{t(v.mtit11)}</h3>
           </aside>
         </div>
         <div>
@@ -162,7 +162,7 @@ const makeList = (data) => {
           <img src={v.mv12} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit12}</h3>
+          <h3>{t(v.mtit12)}</h3>
           </aside>
         </div>
         <div>
@@ -173,7 +173,7 @@ const makeList = (data) => {
           <img src={v.mv13} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit13}</h3>
+          <h3>{t(v.mtit13)}</h3>
           </aside>
         </div>
         <div>
@@ -184,7 +184,7 @@ const makeList = (data) => {
           <img src={v.mv14} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit14}</h3>
+          <h3>{t(v.mtit14)}</h3>
           </aside>
         </div>
         <div>
@@ -195,7 +195,7 @@ const makeList = (data) => {
           <img src={v.mv15} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit15}</h3>
+          <h3>{t(v.mtit15)}</h3>
           </aside>
         </div>
         <div>
@@ -206,7 +206,7 @@ const makeList = (data) => {
           <img src={v.mv16} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit16}</h3>
+          <h3>{t(v.mtit16)}</h3>
           </aside>
         </div>
         <div>
@@ -217,7 +217,7 @@ const makeList = (data) => {
           <img src={v.mv17} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit17}</h3>
+          <h3>{t(v.mtit17)}</h3>
           </aside>
         </div>
         <div>
@@ -228,7 +228,7 @@ const makeList = (data) => {
           <img src={v.mv18} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit18}</h3>
+          <h3>{t(v.mtit18)}</h3>
           </aside>
         </div>
         <div>
@@ -239,7 +239,7 @@ const makeList = (data) => {
           <img src={v.mv19} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit19}</h3>
+          <h3>{t(v.mtit19)}</h3>
           </aside>
         </div>
         <div>
@@ -250,7 +250,7 @@ const makeList = (data) => {
           <img src={v.mv20} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{v.mtit20}</h3>
+          <h3>{t(v.mtit20)}</h3>
           </aside>
         </div>
     </section>
@@ -259,12 +259,13 @@ const makeList = (data) => {
 } ///////// makeList /////////
 
 export function AlbumSub(){
+  const { t } = useTranslation();
 
   // 리턴코드 ////////////////
   return(
     <section id="alb-Sub-area">
       <div className="aud-title">
-        <h3>VIDEOS</h3>
+        <h3>{t("VIDEOS")}</h3>
       </div>
       <div className="video-body">
       {makeList(selData)}
