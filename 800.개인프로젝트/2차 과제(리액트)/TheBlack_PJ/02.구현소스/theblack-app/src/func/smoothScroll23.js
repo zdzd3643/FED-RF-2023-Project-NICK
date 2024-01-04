@@ -269,8 +269,6 @@ function evtFn(){
     if (prot[0]) return;
     chkCrazy(0);
 
-    e.preventDefault();
-
     // 이전페이지이동
     if (e.keyCode === 33 || e.keyCode === 38) {
       pno--;
