@@ -52,18 +52,47 @@ export function IntroSub(){
         <div className="services-cont-title">
           <strong>SERVICES</strong>
         </div>
-        <div className="intSub-services">
+        <div className="intSub-services-cont">
           <div className="intSub-services1">
-            <img src="./images/introSub_img_0.jpg" alt="서비스 이미지0" />
-            <img src="./images/introSub_img_1.jpg" alt="서비스 이미지1" />
+            <div>
+              <h3>{t("아티스트 트레이닝")}</h3>
+              <br />
+              <h4>{t("연습생 오디션 진행 및 선발")}</h4>
+            </div>
+
+            <div>
+              <h3>{t("크리에이티브 디렉션")}</h3>
+              <br />
+              <h4>{t("아티스트 데뷔부터 앨범 기획까지 아트컨셉 및")}</h4>
+              <h4>{t("크리에이티브 디렉션 제시")}</h4>
+            </div>
+
+            <div>
+              <h3>{t("아티스트 매니지먼트")}</h3>
+              <br />
+              <h4>{t("미디어 및 언론홍보")}</h4>
+              <h4>{t("마케팅 / 투어 / 브랜드 계약")}</h4>
+            </div>
           </div>
+
           <div className="intSub-services2">
-            <img src="./images/introSub_img_2.jpg" alt="서비스 이미지2" />
-            <img src="./images/introSub_img_3.jpg" alt="서비스 이미지3" />
-          </div>
-          <div className="intSub-services3">
-            <img src="./images/introSub_img_4.jpg" alt="서비스 이미지4" />
-            <img src="./images/introSub_img_5.jpg" alt="서비스 이미지5" />
+            <div>
+              <h3>{t("음악 프로듀싱")}</h3>
+              <br />
+              <h4>{t("작사 / 작곡 / 편곡")}</h4>
+            </div>
+
+            <div1>
+              <h3>{t("음반 제작")}</h3>
+              <br />
+              <h4>{t("앨범 / 프로모션 / 굿즈 기획 및 제작")}</h4>
+            </div1>
+
+            <div2>
+              <h3>{t("에이전시")}</h3>
+              <br />
+              <h4>{t("파트너 및 제 3자를 위한 컨텐츠 제작")}</h4>
+            </div2>
           </div>
         </div>
         <br />
