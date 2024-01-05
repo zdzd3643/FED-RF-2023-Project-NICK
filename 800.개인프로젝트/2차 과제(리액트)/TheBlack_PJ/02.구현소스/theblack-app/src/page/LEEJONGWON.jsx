@@ -129,7 +129,8 @@ export function LEEJONGWON(){
                         <img src={v.mv25} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit25)}</h3>
+                        <h3>{t(v.mtit25).split("^")[0]}</h3>
+                        <h3>{t(v.mtit25).split("^")[1]}</h3>
                         </aside>
                       </div>
                           <div>
@@ -140,7 +141,8 @@ export function LEEJONGWON(){
                         <img src={v.mv26} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit26)}</h3>
+                        <h3>{t(v.mtit26).split("^")[0]}</h3>
+                        <h3>{t(v.mtit26).split("^")[1]}</h3>
                         </aside>
                       </div>
                       <div>
@@ -151,7 +153,8 @@ export function LEEJONGWON(){
                         <img src={v.mv27} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit27)}</h3>
+                        <h3>{t(v.mtit27).split("^")[0]}</h3>
+                        <h3>{t(v.mtit27).split("^")[1]}</h3>
                         </aside>
                       </div>
                       <div>
@@ -162,7 +165,8 @@ export function LEEJONGWON(){
                         <img src={v.mv28} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit28)}</h3>
+                        <h3>{t(v.mtit28).split("^")[0]}</h3>
+                        <h3>{t(v.mtit28).split("^")[1]}</h3>
                         </aside>
                       </div>
                     </div>      

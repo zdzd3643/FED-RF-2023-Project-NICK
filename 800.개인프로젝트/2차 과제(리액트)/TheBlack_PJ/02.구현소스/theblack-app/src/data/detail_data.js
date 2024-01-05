@@ -159,7 +159,7 @@ export const detailData = [
         mtit24:"박보검x이승철 - 내가많이사랑해요 MV 가사버전 공개",
         mtit25:"[SOME] 더한섬닷컴 X 배우 이종원의 겨울 고백",
         mtit26:"드라마 '금수저'의 주역! 배우 이종원의 일상 최초 공개!",
-        mtit27:"[금수저] 면접관앞에서 뽑내는 이종원의 유창한 불어 실력!",
+        mtit27:"[금수저] 면접관앞에서 뽐내는 이종원의 유창한 불어 실력!",
         mtit28:"솔직히 이런 남사친 하나만 둬도 인생 반은 성공함 [엑스엑스(XX)]",
         mlink1:"https://www.youtube.com/watch?v=YsaKuPX2ypg",
         mlink2:"https://www.youtube.com/watch?v=IHavi-uNnVw",

@@ -136,7 +136,8 @@ export function TAEYANG(){
                         <img src={v.mv9} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit9)}</h3>
+                        <h3>{t(v.mtit9).split("^")[0]}</h3>
+                        <h3>{t(v.mtit9).split("^")[1]}</h3>
                         </aside>
                       </div>
                           <div>

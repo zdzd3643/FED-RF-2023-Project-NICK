@@ -127,7 +127,8 @@ export function BryanChase(){
                         <img src={v.mv2} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit2)}</h3>
+                        <h3>{t(v.mtit2).split("^")[0]}</h3>
+                        <h3>{t(v.mtit2).split("^")[1]}</h3>
                         </aside>
                       </div>
                           <div>
@@ -149,7 +150,8 @@ export function BryanChase(){
                         <img src={v.mv7} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit7)}</h3>
+                        <h3>{t(v.mtit7).split("^")[0]}</h3>
+                        <h3>{t(v.mtit7).split("^")[1]}</h3>
                         </aside>
                       </div>
                     </div>      

@@ -154,7 +154,8 @@ export function PARKBOGUM(){
                         <img src={v.mv23} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit23)}</h3>
+                        <h3>{t(v.mtit23).split("^")[0]}</h3>
+                        <h3>{t(v.mtit23).split("^")[1]}</h3>
                         </aside>
                       </div>
                       <div>
@@ -165,7 +166,8 @@ export function PARKBOGUM(){
                         <img src={v.mv24} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit24)}</h3>
+                        <h3>{t(v.mtit24).split("^")[0]}</h3>
+                        <h3>{t(v.mtit24).split("^")[1]}</h3>
                         </aside>
                       </div>
                     </div>      

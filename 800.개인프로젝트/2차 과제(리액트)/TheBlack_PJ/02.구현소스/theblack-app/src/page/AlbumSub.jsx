@@ -28,7 +28,7 @@ const selData = videoData;
 // makeList 함수 만들기 ///////
 const makeList = (data) => {
   // console.log(data);
-  const { t } = useTranslation();
+  const { t , i18n } = useTranslation();
 
   return data.map((v,i) => (
 
@@ -52,7 +52,8 @@ const makeList = (data) => {
             <img src={v.mv2} alt="비디오 이미지" />
         </a>
         <aside>
-        <h3>{t(v.mtit2)}</h3>
+        <h3>{t(v.mtit2).split("^")[0]}</h3>
+        <h3>{t(v.mtit2).split("^")[1]}</h3>
         </aside>
       </div>
         <div>
@@ -107,7 +108,8 @@ const makeList = (data) => {
           <img src={v.mv7} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit7)}</h3>
+          <h3>{t(v.mtit7).split("^")[0]}</h3>
+          <h3>{t(v.mtit7).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -129,7 +131,8 @@ const makeList = (data) => {
           <img src={v.mv9} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit9)}</h3>
+          <h3>{t(v.mtit9).split("^")[0]}</h3>
+          <h3>{t(v.mtit9).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -283,7 +286,8 @@ const makeList = (data) => {
           <img src={v.mv23} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit23)}</h3>
+          <h3>{t(v.mtit23).split("^")[0]}</h3>
+          <h3>{t(v.mtit23).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -294,7 +298,8 @@ const makeList = (data) => {
           <img src={v.mv24} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit24)}</h3>
+          <h3>{t(v.mtit24).split("^")[0]}</h3>
+          <h3>{t(v.mtit24).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -316,7 +321,8 @@ const makeList = (data) => {
           <img src={v.mv26} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit26)}</h3>
+          <h3>{t(v.mtit26).split("^")[0]}</h3>
+          <h3>{t(v.mtit26).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -327,7 +333,8 @@ const makeList = (data) => {
           <img src={v.mv27} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit27)}</h3>
+          <h3>{t(v.mtit27).split("^")[0]}</h3>
+          <h3>{t(v.mtit27).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -338,7 +345,8 @@ const makeList = (data) => {
           <img src={v.mv28} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit28)}</h3>
+          <h3>{t(v.mtit28).split("^")[0]}</h3>
+          <h3>{t(v.mtit28).split("^")[1]}</h3>
           </aside>
         </div>
     </section>
@@ -347,13 +355,12 @@ const makeList = (data) => {
 } ///////// makeList /////////
 
 export function AlbumSub(){
-  const { t } = useTranslation();
 
   // 리턴코드 ////////////////
   return(
     <section id="alb-Sub-area">
       <div className="aud-title">
-        <h3>{t("VIDEOS")}</h3>
+        <h3>VIDEOS</h3>
       </div>
       <div className="video-body">
       {makeList(selData)}
