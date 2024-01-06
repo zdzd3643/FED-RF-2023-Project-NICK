@@ -127,7 +127,6 @@
   position: absolute;
   display: flex;
   color: #fff;
-  gap: 0 50px;
   text-align: center;
 }
 
@@ -143,12 +142,10 @@ white-space: nowrap;
 }
 
 .intSub-services2{
-  padding-left: 30px;
   top: 14vh;
   position: absolute;
   display: flex;
   color: #fff;
-  gap: 0 95px;
   text-align: center;
 }
 
@@ -162,6 +159,7 @@ white-space: nowrap;
   font-weight: normal;
   white-space: nowrap;
   }
+
 
 .sgubun{
   position: relative;
