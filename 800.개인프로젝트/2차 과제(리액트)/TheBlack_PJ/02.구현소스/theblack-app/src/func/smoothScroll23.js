@@ -2,6 +2,7 @@
 
 // 로딩구역없이 함수로 구현함! /////
 
+
 // 제이쿼리 호출
 import $ from 'jquery';
 import ScrollToTop from '../modules/ScrollToTop';
@@ -199,6 +200,7 @@ function actPage(){
       top:'40vh',
       opacity: 1
     }); ///////// css /////////
+
 
   // pno가 0 또는 5가 아니면 작동!
     // 대상: 해당순번 .main 아래 .ats-title

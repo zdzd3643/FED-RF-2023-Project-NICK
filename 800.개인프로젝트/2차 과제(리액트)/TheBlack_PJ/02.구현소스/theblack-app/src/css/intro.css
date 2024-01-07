@@ -116,7 +116,7 @@
 .intSub-services-cont{
   position: absolute;
   top: 125vh;
-  width: 800px;
+  width: 900px;
   height: 200px;
   transform: translateX(-50%);
   left: 50%;
@@ -125,28 +125,27 @@
 
 .intSub-services1{
   position: absolute;
-  display: flex;
   color: #fff;
   text-align: center;
 }
 
 .intSub-services1 h3{
-font-size: 22px;
-white-space: nowrap;
+  font-size: 22px;
+  white-space: nowrap;
 }
 
 .intSub-services1 h4{
-font-size: 15px;
-font-weight: normal;
-white-space: nowrap;
+  font-size: 15px;
+  font-weight: normal;
+  white-space: nowrap;
 }
 
 .intSub-services2{
-  top: 14vh;
   position: absolute;
-  display: flex;
   color: #fff;
   text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .intSub-services2 h3{
@@ -159,6 +158,84 @@ white-space: nowrap;
   font-weight: normal;
   white-space: nowrap;
   }
+
+  .intSub-services3{
+    right: 0;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+  }
+
+  .intSub-services3 h3{
+    font-size: 22px;
+    white-space: nowrap;
+    }
+  
+  .intSub-services3 h4{
+    font-size: 15px;
+    font-weight: normal;
+    white-space: nowrap;
+    }
+  
+  .intSub-services4{
+    transform: translateX(-50%);
+    left: 50%;
+    top: 14vh;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+  }
+
+  .intSub-services4 h3{
+    font-size: 22px;
+    white-space: nowrap;
+    }
+  
+  .intSub-services4 h4{
+    font-size: 15px;
+    font-weight: normal;
+    white-space: nowrap;
+    }
+
+  .intSub-services5{
+    top: 14vh;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .intSub-services5 h3{
+    font-size: 22px;
+    white-space: nowrap;
+    }
+  
+  .intSub-services5 h4{
+    font-size: 15px;
+    font-weight: normal;
+    white-space: nowrap;
+    }
+
+  .intSub-services6{
+    top: 14vh;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .intSub-services6 h3{
+    font-size: 22px;
+    white-space: nowrap;
+    }
+  
+  .intSub-services6 h4{
+    font-size: 15px;
+    font-weight: normal;
+    white-space: nowrap;
+    }
 
 
 .sgubun{
