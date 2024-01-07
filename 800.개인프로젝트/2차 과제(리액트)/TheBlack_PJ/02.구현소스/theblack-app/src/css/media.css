@@ -9,8 +9,8 @@
     
     #aud-area .aud-video video {
         position: absolute;
-        width: 70%;
-        left: 30%;
+        width: 60%;
+        left: 25%;
         transform: translateX(-50%);
     }
     .aud-title{
@@ -26,10 +26,14 @@
         z-index: 999;
       }
     
+      #aud-area .aud-audTitle{
+        left: 20%;
+      }
+
     .aud-audTitle h3{
         position: relative;
         font-size: 50px;
-        top:12vh;
+        top:16vh;
         color:#fff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.2;
@@ -38,11 +42,11 @@
     
     #aud-area .aud-viewBtn{
         position: absolute;
-        left: 15%;
-        top: 68vh;
-        width: 167px;
+        left: 20vw;
+        top: 72vh;
+        width: 130px;
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
         white-space: nowrap;
         background-color: #fff;
         color: #000000;
@@ -56,60 +60,6 @@
   }
 
 @media screen and (max-width: 1380px) {
-  #ats-area .ats_swiper{
-    position: absolute;
-    top: 40vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 263px;
-    height: 401px;
-   }
-  
-   #ats-area .swiper-slide {
-     display: flex;
-     border-radius: 15px;
-     overflow: visible !important;
-     transition: width .6s;
-     perspective: 1000px;
-    }
-
-    #ats-area .intro-bx{
-      position: relative;
-      width: 263px;
-      height: 401px;
-    }
-    #ats-area .intro-bx img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 13px;
-    }
-    #ats-area .desc-bx{
-      position: absolute;
-      left: 200px;
-      width: calc(200px*2);
-      height: 581px;
-      background-color: #fff;
-      border-radius: 20px;
-    }
-
-  .swiper-slide .cont-bx{
-    position: absolute;
-    left: 0;
-    display: flex;
-    width: 200px;
-    overflow: hidden;
-    transition: ease-in-out .6s;
-  }
-  
-  .swiper-slide .cont-bx.on {
-    position: absolute;
-    width: calc(200px*3) !important;
-    left : -25%;
-  }
 
     #video-cont{
       position: absolute;
@@ -144,8 +94,7 @@
       grid-row: 1/2;
     }
   }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   #aud-area .aud-video{
     position: relative;
     top: 20vh;
@@ -161,12 +110,32 @@
 .aud-audTitle h3{
   position: relative;
   font-size: 40px;
-  top:10vh;
+  top:15vh;
   color:#fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.2;
   z-index: 999;
 }
+
+#aud-area .aud-viewBtn{
+    position: absolute;
+    left: 20vw;
+    top: 67vh;
+    width: 130px;
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap;
+    background-color: #fff;
+    color: #000000;
+    opacity: 0.9;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+
+  }
+
+@media screen and (max-width: 1000px) {
     #album-area .swiper-coverflow {
         position: relative;
         top: 10vh;
@@ -203,7 +172,7 @@
         line-height: 1;
         white-space: nowrap;
       }
-      
+
       .intSub-cont strong{
         position: relative;
         left: 0;
@@ -249,25 +218,180 @@
         opacity: 0.5;
       }
       
-      #introSub-area .services-cont-title{
+      #introSub-area .services-cont-title {
         position: absolute;
         font-size: 5x;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        color:#fff;
+        color: #fff;
         line-height: 1.6;
         white-space: nowrap;
-        top: 90vh;
-      }
-      #introSub-area .intSub-services{
-        width: 650px;
+        top: 109vh;
       }
 
-      #introSub-area .intSub-services img{
-        width: 100%;
+      #introSub-area .intSub-services-cont{
+        position: absolute;
+        top: 110vh;
+        width: 600px;
+        height: 200px;
+        transform: translateX(-50%);
+        left: 50%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
+      
+      .intSub-services1{
+        top: 5vh;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+      }
+      
+      #introSub-area .intSub-services1 h3{
+        font-size: 15px;
+        white-space: nowrap;
+      }
+      
+      #introSub-area .intSub-services1 h4{
+        font-size: 11px;
+        font-weight: normal;
+        white-space: nowrap;
+      }
+      
+      .intSub-services2{
+        top: 5vh;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      #introSub-area .intSub-services2 h3{
+        font-size: 15px;
+        white-space: nowrap;
+        }
+      
+      #introSub-area .intSub-services2 h4{
+        font-size: 11px;
+        font-weight: normal;
+        white-space: nowrap;
+        }
+      
+        .intSub-services3{
+          top: 5vh;
+          right: 0;
+          position: absolute;
+          color: #fff;
+          text-align: center;
+        }
+      
+        #introSub-area .intSub-services3 h3{
+          font-size: 15px;
+          white-space: nowrap;
+          }
+        
+        #introSub-area .intSub-services3 h4{
+          font-size: 11px;
+          font-weight: normal;
+          white-space: nowrap;
+          }
+        
+        .intSub-services4{
+          transform: translateX(-50%);
+          left: 50%;
+          top: 14vh;
+          position: absolute;
+          color: #fff;
+          text-align: center;
+        }
+      
+        #introSub-area .intSub-services4 h3{
+          font-size: 15px;
+          white-space: nowrap;
+          }
+        
+        #introSub-area .intSub-services4 h4{
+          font-size: 11px;
+          font-weight: normal;
+          white-space: nowrap;
+          }
+      
+        .intSub-services5{
+          top: 14vh;
+          position: absolute;
+          color: #fff;
+          text-align: center;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      
+        #introSub-area .intSub-services5 h3{
+          font-size: 15px;
+          white-space: nowrap;
+          }
+        
+        #introSub-area .intSub-services5 h4{
+          font-size: 11px;
+          font-weight: normal;
+          white-space: nowrap;
+          }
+      
+        .intSub-services6{
+          top: 14vh;
+          position: absolute;
+          color: #fff;
+          text-align: center;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      
+        #introSub-area .intSub-services6 h3{
+          font-size: 15px;
+          white-space: nowrap;
+          }
+        
+        #introSub-area .intSub-services6 h4{
+          font-size: 11px;
+          font-weight: normal;
+          white-space: nowrap;
+          }
+      
+      
+        #introSub-area .sgubun{
+        position: relative;
+        top: 59vh;
+        width: 53%;
+        opacity: 0.5;
+      }
+      
+      .intSub-creat strong{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      
+      #introSub-area .intSub-creat{
+        position: absolute;
+        top: 142vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 15px;
+        color:#fff;
+        font-family: NG;
+        line-height: 1.6;
+        white-space: nowrap;
+      }
+
+      .cont #introSub-area{
+        position: relative;
+        width: 100%;
+        height: 195vh;
+        background-color: #000;
+      }
+
+
       #aud-Sub-area{
         position: relative;
         width: 100%;
@@ -312,13 +436,46 @@
       height: 170vh;
       background-color: #000;
     }
-    #aud-area .aud-viewBtn{
+  }
+
+  @media screen and (max-width: 850px) {
+    #aud-area .aud-video{
+      position: relative;
+      top: 20vh;
+      border: none;
+    }
+  
+  #aud-area .aud-video video {
+      left: 0;
       position: absolute;
-      left: 15%;
-      top: 60vh;
-      width: 167px;
+      width: 54%;
+      height: 54%;
+      object-fit: cover;
+  }
+
+  #aud-area .aud-audTitle{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+    .aud-audTitle h3{
+      position: relative;
+      font-size: 50px;
+      top:27vh;
+      color:#fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.2;
+      z-index: 999;
       text-align: center;
-      font-size: 30px;
+  }
+  
+  #aud-area .aud-viewBtn{
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      top: 85vh;
+      width: 177px;
+      text-align: center;
       white-space: nowrap;
       background-color: #fff;
       color: #000000;
@@ -327,20 +484,12 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       border: none;
   }
+  .aud-title h3{
+    font-size: 50px;
   }
+}
 
 @media screen and (max-width: 700px) {
-  #aud-area .aud-video{
-    position: relative;
-    top: 10vh;
-    border: none;
-    left: 25%;
-  }
-
-#aud-area .aud-video video {
-    position: absolute;
-    width: 50%;
-}
     .intTit h3 {
       top: -5vh;
       font-size: 60px;
@@ -448,7 +597,7 @@
       }
       
       .gubun{
-        width: 53vw;
+        width: 53%;
         opacity: 0.5;
       }
       
@@ -534,10 +683,6 @@
         grid-column: 1/2;
         grid-row: 1/2;
       }
-
-      .aud-title h3{
-        font-size: 50px;
-      }
       
       #alb-Sub-area .aud-title{
         top: 15vh;
@@ -572,47 +717,56 @@
         width: 100%;
         height: 100%;
     }
-    .aud-audTitle h3{
-      position: relative;
-      font-size: 50px;
-      top:35vh;
-      color:#fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.2;
-      z-index: 999;
-      left: 20%;
-      text-align: center;
-  }
-  
-  #aud-area .aud-viewBtn{
-      position: absolute;
-      top: 90vh;
-      width: 177px;
-      text-align: center;
-      transform: translateX(-50%);
-      left: 47%;
-      white-space: nowrap;
-      background-color: #fff;
-      color: #000000;
-      opacity: 0.9;
-      cursor: pointer;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      border: none;
-  }
   }
 @media screen and (max-width: 530px) {
   #aud-area .aud-video{
     position: relative;
-    top: 10vh;
+    top: 20vh;
     border: none;
-    left: 55%;
-    transform: translateX(-25%);
   }
 
 #aud-area .aud-video video {
+    left: 0;
     position: absolute;
-    width: 40%;
+    width: 35%;
+    height: 45%;
+    object-fit: cover;
+}
 
+#aud-area .aud-audTitle{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+  .aud-audTitle h3{
+    position: relative;
+    font-size: 35px;
+    top:23vh;
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    z-index: 999;
+    text-align: center;
+    padding: 15px;
+}
+
+#aud-area .aud-viewBtn{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 85vh;
+    width: 130px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    color: #000000;
+    opacity: 0.9;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+.aud-title h3{
+  font-size: 40px;
 }
     .mtit h2{
         font-size: 15px;
@@ -715,32 +869,7 @@
         top: 0;
         left: 0;
       }
-      .aud-audTitle h3{
-        position: relative;
-        font-size: 35px;
-        top:35vh;
-        color:#fff;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.2;
-        z-index: 999;
-        left: 20%;
-        text-align: center;
-    }
     
-    #aud-area .aud-viewBtn{
-        position: absolute;
-        top: 83vh;
-        text-align: center;
-        left: 44%;
-        white-space: nowrap;
-        background-color: #fff;
-        color: #000000;
-        opacity: 0.9;
-        cursor: pointer;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        border: none;
-    }
-      
   }
 
   @media screen and (max-width: 400px) {
@@ -823,4 +952,5 @@
     .mtit h2{
         font-size: 12px;
     }
+    
   }
