@@ -50,9 +50,8 @@ export function JEONSOMI(){
                 <div className="detail-cont">
                   <div className="detail-name">
                     <h2>{t(v.alt2)}</h2>
-                    <h3>{t(v.itit2)}</h3>
                   </div>
-                  <div className="detail-sns">
+                  <div className="detail-sns1">
                     <a href={v.insta2}
                       target='_blank'
                       title="인스타그램으로 이동">
@@ -80,9 +79,7 @@ export function JEONSOMI(){
                     <p>{t("2023 | Kpop Overpass 뮤직 콘서트")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p> 
                     <p>{t("2022 | MAMA AWARDS")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("MOKKOJI 콘서트")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("KAMP 콘서트")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("LALAPA K 콘서트")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("36회 골든디스크 어워즈")}</p>  
                     <br />
                     <h2>{t("ADVERTISING")}</h2>
@@ -99,8 +96,8 @@ export function JEONSOMI(){
                   <h2>GALLERY</h2>
                   </div>
                     <Swiper
+                      slidesPerView={2}
                       loop={true}
-                      slidesPerView={ 3 }
                       navigation={true}
                       modules={[Navigation]}
                       spaceBetween={50}
@@ -139,7 +136,8 @@ export function JEONSOMI(){
                       <img src={v.mv3} alt="비디오 이미지" />
                     </a>
                     <aside>
-                    <h3>{t(v.mtit3)}</h3>
+                    <h3>{t(v.mtit3).split("^")[0]}</h3>
+                    <h3>{t(v.mtit3).split("^")[1]}</h3>
                     </aside>
                     </div>
                     <div>

@@ -50,9 +50,8 @@ export function TAEYANG(){
                 <div className="detail-cont">
                   <div className="detail-name">
                     <h2>{t(v.alt1)}</h2>
-                    <h3>{t(v.itit1)}</h3>
                   </div>
-                  <div className="detail-sns">
+                  <div className="detail-sns1">
                     <a href={v.insta1}
                       target='_blank'
                       title="인스타그램으로 이동">
@@ -78,8 +77,10 @@ export function TAEYANG(){
                     <br />
                     <h2>{t("PERFORMANCE")}</h2>
                     <p>{t("2023 | Rapbeat Festival")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우드스탁 뮤직 앤 아트페어")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[0]}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[1]}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우드스탁 뮤직 앤 아트페어").split("^")[0]}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우드스탁 뮤직 앤 아트페어").split("^")[1]}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("Seen Festival(베트남)")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("서울 재즈페스티벌")}</p>  
@@ -138,6 +139,7 @@ export function TAEYANG(){
                         <aside>
                         <h3>{t(v.mtit9).split("^")[0]}</h3>
                         <h3>{t(v.mtit9).split("^")[1]}</h3>
+                        <h3>{t(v.mtit9).split("^")[2]}</h3>
                         </aside>
                       </div>
                           <div>

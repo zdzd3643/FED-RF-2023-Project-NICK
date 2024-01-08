@@ -41,7 +41,8 @@ const makeList = (data) => {
             <img src={v.mv1} alt="비디오 이미지" />
         </a>
         <aside>
-        <h3>{t(v.mtit1)}</h3>
+        <h3>{t(v.mtit1).split("^")[0]}</h3>
+        <h3>{t(v.mtit1).split("^")[1]}</h3>
         </aside>
       </div>
       <div>
@@ -253,7 +254,8 @@ const makeList = (data) => {
           <img src={v.mv20} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit20)}</h3>
+          <h3>{t(v.mtit20).split("^")[0]}</h3>
+          <h3>{t(v.mtit20).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -310,7 +312,8 @@ const makeList = (data) => {
           <img src={v.mv25} alt="비디오 이미지" />
         </a>
           <aside>
-          <h3>{t(v.mtit25)}</h3>
+          <h3>{t(v.mtit25).split("^")[0]}</h3>
+          <h3>{t(v.mtit25).split("^")[1]}</h3>
           </aside>
         </div>
         <div>
@@ -323,6 +326,7 @@ const makeList = (data) => {
           <aside>
           <h3>{t(v.mtit26).split("^")[0]}</h3>
           <h3>{t(v.mtit26).split("^")[1]}</h3>
+          <h3>{t(v.mtit26).split("^")[2]}</h3>
           </aside>
         </div>
         <div>

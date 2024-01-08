@@ -50,9 +50,8 @@ export function ZionT(){
                 <div className="detail-cont">
                   <div className="detail-name">
                     <h2>{t(v.alt3)}</h2>
-                    <h3>{t(v.itit3)}</h3>
                   </div>
-                  <div className="detail-sns">
+                  <div className="detail-sns1">
                     <a href={v.insta3}
                       target='_blank'
                       title="인스타그램으로 이동">
@@ -73,16 +72,22 @@ export function ZionT(){
                   <div className="detail-career">
                     <h2>{t("ALBUM")}</h2>
                     <p>{t("2023 | Zip")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("WORLD STOP TURNING (Feat. Warren Hue)")}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("WORLD STOP TURNING (Feat. Warren Hue)").split("^")[0]}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("WORLD STOP TURNING (Feat. Warren Hue)").split("^")[1]}</p> 
                     <p>{t("2021 | 선물을 고르며")}</p>
                     <br />
                     <h2>{t("PERFORMANCE")}</h2>
-                    <p>{t("2024 | 2024 메모리즈 - 자이언티＆원슈타인 - 수원")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우리금융그룹 '우리 모모콘'")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("피크타임페스티벌 - 천안")}</p> 
+                    <p>{t("2024 | 2024 메모리즈 - 자이언티＆원슈타인 - 수원").split("^")[0]}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("2024 | 2024 메모리즈 - 자이언티＆원슈타인 - 수원").split("^")[1]}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우리금융그룹 '우리 모모콘'").split("^")[0]}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우리금융그룹 '우리 모모콘'").split("^")[1]}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("피크타임페스티벌 - 천안").split("^")[0]}</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("피크타임페스티벌 - 천안").split("^")[1]}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("RAPBEAT 2023 - 과천")}</p> 
-                    <p>2023 | {t("한탄강 지오 페스티벌 - 포천")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("여름잠 뮤직페스티벌 - 춘천")}</p>  
+                    <p>2023 |   {t("한탄강 지오 페스티벌 - 포천").split("^")[0]}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("한탄강 지오 페스티벌 - 포천").split("^")[1]}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("여름잠 뮤직페스티벌 - 춘천").split("^")[0]}</p>  
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("여름잠 뮤직페스티벌 - 춘천").split("^")[1]}</p>  
                     <br />
                   </div>
                   <div className="detail-gubun">
@@ -132,7 +137,8 @@ export function ZionT(){
                         <img src={v.mv1} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit1)}</h3>
+                        <h3>{t(v.mtit1).split("^")[0]}</h3>
+                        <h3>{t(v.mtit1).split("^")[1]}</h3>
                         </aside>
                       </div>
                           <div>
@@ -165,7 +171,8 @@ export function ZionT(){
                         <img src={v.mv19} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit19)}</h3>
+                        <h3>{t(v.mtit19).split("^")[0]}</h3>
+                        <h3>{t(v.mtit19).split("^")[1]}</h3>
                         </aside>
                       </div>
                       <div>
@@ -176,7 +183,8 @@ export function ZionT(){
                         <img src={v.mv20} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit20)}</h3>
+                        <h3>{t(v.mtit20).split("^")[0]}</h3>
+                        <h3>{t(v.mtit20).split("^")[1]}</h3>
                         </aside>
                       </div>
                     </div>      

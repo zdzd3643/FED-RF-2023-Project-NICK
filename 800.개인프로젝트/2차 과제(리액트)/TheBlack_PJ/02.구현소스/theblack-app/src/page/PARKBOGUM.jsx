@@ -50,9 +50,8 @@ export function PARKBOGUM(){
                 <div className="detail-cont">
                   <div className="detail-name">
                     <h2>{t(v.alt5)}</h2>
-                    <h3>{t(v.itit5)}</h3>
                   </div>
-                  <div className="detail-sns">
+                  <div className="detail-sns1">
                     <a href={v.insta5}
                       target='_blank'
                       title="인스타그램으로 이동">
@@ -132,7 +131,8 @@ export function PARKBOGUM(){
                         <img src={v.mv21} alt="비디오 이미지" />
                       </a>
                         <aside>
-                        <h3>{t(v.mtit21)}</h3>
+                        <h3>{t(v.mtit21).split("^")[0]}</h3>
+                        <h3>{t(v.mtit21).split("^")[1]}</h3>
                         </aside>
                       </div>
                           <div>
@@ -168,6 +168,7 @@ export function PARKBOGUM(){
                         <aside>
                         <h3>{t(v.mtit24).split("^")[0]}</h3>
                         <h3>{t(v.mtit24).split("^")[1]}</h3>
+                        <h3>{t(v.mtit24).split("^")[2]}</h3>
                         </aside>
                       </div>
                     </div>      

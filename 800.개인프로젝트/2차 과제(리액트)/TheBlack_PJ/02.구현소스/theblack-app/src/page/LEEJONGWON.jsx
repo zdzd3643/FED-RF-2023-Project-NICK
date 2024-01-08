@@ -50,9 +50,8 @@ export function LEEJONGWON(){
                 <div className="detail-cont">
                   <div className="detail-name">
                     <h2>{t(v.alt6)}</h2>
-                    <h3>{t(v.itit6)}</h3>
                   </div>
-                  <div className="detail-sns">
+                  <div className="detail-sns1">
                     <a href={v.insta6}
                       target='_blank'
                       title="인스타그램으로 이동">

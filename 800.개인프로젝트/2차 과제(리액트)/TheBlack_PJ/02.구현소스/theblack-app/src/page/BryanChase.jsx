@@ -50,7 +50,6 @@ export function BryanChase(){
                 <div className="detail-cont">
                   <div className="detail-name">
                     <h2>{t(v.alt4)}</h2>
-                    <h3>{t(v.itit4)}</h3>
                   </div>
                   <div className="detail-sns1">
                     <a href={v.insta4}
@@ -72,11 +71,13 @@ export function BryanChase(){
                   </div>
                   <div className="detail-career">
                     <h2>{t("ALBUM")}</h2>
-                    <p>{t("2023 | Restart It(feat. Okasian)(Extended Ver.)")}</p>
+                    <p>2023 | {t("Restart It(feat. Okasian)(Extended Ver.)").split("^")[0]}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("Restart It(feat. Okasian)(Extended Ver.)").split("^")[1]}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("2U")}</p> 
                     <br />
                     <h2>{t("PERFORMANCE")}</h2>
-                    <p>{t("2023 | 2023 제7회 대한민국 청년의 날 콘서트")}</p>
+                    <p>2023 | {t("2023 제7회 대한민국 청년의 날 콘서트").split("^")[0]}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("2023 제7회 대한민국 청년의 날 콘서트").split("^")[1]}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("RAPBEAT 2023 - 과천")}</p>  
                     <br />
                   </div>

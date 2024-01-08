@@ -246,55 +246,56 @@
   border-radius: 10px;
 }
 
-/******************* 아티스트 디테일 CSS *******************/
+/******************* 아티스트 서브 CSS *******************/
 
 #ats-Detail-area1{
   position: relative;
   width: 100%;
-  height: 260vh;
+  height: 270vh;
   background: #000;
 }
 
 #ats-Detail-area2{
   position: relative;
   width: 100%;
-  height: 380vh;
+  height: 390vh;
   background: #000;
 }
 #ats-Detail-area3{
   position: relative;
   width: 100%;
-  height: 300vh;
+  height: 310vh;
   background: #000;
 }
 #ats-Detail-area4{
   position: relative;
   width: 100%;
-  height: 260vh;
+  height: 270vh;
   background: #000;
 }
 #ats-Detail-area5{
   position: relative;
   width: 100%;
-  height: 260vh;
+  height: 270vh;
   background: #000;
 }
 #ats-Detail-area6{
   position: relative;
   width: 100%;
-  height: 260vh;
+  height: 270vh;
   background: #000;
 }
 
 .detail-container{
-  position: relative;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 1000px;
+  width: 850px;
+  top: 0;
 }
 
 .detail-cont{
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -313,10 +314,9 @@
 }
 
 .detail-profile{
-  margin-left: 2vw;
   position: absolute;
   top: 22vh;
-  width: 460px;
+  width: 400px;
 }
 
 .detail-profile img{
@@ -326,10 +326,11 @@
 
 .detail-name{
   position: absolute;
-  left: 29vw;
+  left: 54%;
   top: 20vh;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
 }
 
 .detail-name h2{
@@ -339,20 +340,12 @@
   font-size: 30px;
 }
 
-.detail-sns{
-  position: absolute;
-  width: 210px;
-  display: flex;
-  left: 40vw;
-  top: 27vh;
-  gap: 0 50px;
-}
 .detail-sns1{
   position: absolute;
-  width: 210px;
+  width: 190px;
   display: flex;
-  left: 40vw;
-  top: 27vh;
+  left: 54%;
+  top: 28vh;
   gap: 0 50px;
 }
 
@@ -366,7 +359,7 @@
 .detail-career{
   position: absolute;
   top: 34vh;
-  left: 29vw;
+  left: 54%;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -386,7 +379,7 @@
 .detail-swiper{
   position: absolute;
   top: 115vh;
-  width: 1000px;
+  width: 950px;
   height: 400px;
   left: 50%;
   transform: translateX(-50%);
@@ -412,7 +405,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 163vh;
+  top: 166vh;
   width: 53vw;
   opacity: 0.5;
 }
@@ -445,7 +438,7 @@
   aspect-ratio: 513/288;
   padding: 30px;
   padding-bottom: 50px;
-  width: 450px;
+  width: 400px;
 }
 
 .detail-video-cont>div aside{

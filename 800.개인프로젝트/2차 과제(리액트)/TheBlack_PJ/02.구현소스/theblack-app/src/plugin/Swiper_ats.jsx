@@ -113,7 +113,7 @@ const makeList = (data) => {
           <div className="xbtn">
             <img src="./images/xmark-solid.png" alt="x버튼" />    
           </div>
-          <div className="sns">
+          <div className="sns1">
             <a href={v.insta}
             target='_blank'
             title="인스타그램으로 이동"
