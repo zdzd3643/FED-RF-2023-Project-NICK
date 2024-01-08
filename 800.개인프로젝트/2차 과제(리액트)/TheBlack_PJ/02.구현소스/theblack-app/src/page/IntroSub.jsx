@@ -23,7 +23,8 @@ export function IntroSub(){
         <br />
         <p>{t('이상과 상상에 생기를 불어넣는 작업,')}</p> 
         <p>{t('재능의 원석을 발견하여 영감을 불어넣는 과정,')}</p>
-        <p>{t('예술적 통념의 한계를 뛰어넘어 대중 예술을 재정의하고')}</p> 
+        <p>{t('예술적 통념의 한계를 뛰어넘어 대중 예술을 재정의하고').split("^")[0]}</p> 
+        <p>{t('예술적 통념의 한계를 뛰어넘어 대중 예술을 재정의하고').split("^")[1]}</p> 
         <p>{t('혁신을 가져오는 과감한 시도야 말로 우리가 추구하는 가치의 핵심입니다.').split("^")[0]}</p>
         <p>{t('혁신을 가져오는 과감한 시도야 말로 우리가 추구하는 가치의 핵심입니다.').split("^")[1]}</p>
         <br/>
@@ -32,6 +33,7 @@ export function IntroSub(){
         <hr className="gubun"/>
       </div>
       <div className="intSub-foundCont">
+      <br />
       <strong>FOUNDER</strong><br /><br />
         <p>{t("TEDDY는 더블랙레이블의 총괄 디렉터로")}</p>
         <p>{t("비전을 제시하고 설계하며 운영하는 총책임자이다.")}</p>
@@ -51,50 +53,49 @@ export function IntroSub(){
         <hr className="gubun"/> 
       </div>
       <div className="services-cont">
-        <div className="services-cont-title">
-          <strong>SERVICES</strong>
-        </div>
-        <div className="intSub-services-cont">
-            <div className="intSub-services1">
-                <h3>{t("아티스트 트레이닝")}</h3>
-                <br />
-                <h4>{t("연습생 오디션 진행 및 선발")}</h4>
-              <div className="intSub-services4">
-                <h3>{t("음악 프로듀싱")}</h3>
-                <br />
-                <h4>{t("작사 / 작곡 / 편곡")}</h4>
-              </div>
+          <strong>SERVICES</strong><br /><br />
+          <div className="intSub-services-cont">
+            <div>
+              <h3>{t("아티스트 트레이닝")}</h3>
+              <br />
+              <h4>{t("연습생 오디션 진행 및 선발")}</h4>
             </div>
-            <div className="intSub-services2">
+            <div>
               <h3>{t("크리에이티브 디렉션")}</h3>
               <br />
               <h4>{t("아티스트 데뷔부터 앨범 기획까지 아트컨셉 및").split("^")[0]}</h4>
               <h4>{t("아티스트 데뷔부터 앨범 기획까지 아트컨셉 및").split("^")[1]}</h4>
               <h4>{t("크리에이티브 디렉션 제시")}</h4>
-              <div className="intSub-services5">
+            </div>
+            <div>
+              <h3>{t("아티스트 매니지먼트")}</h3>
+              <br />
+              <h4>{t("미디어 및 언론홍보")}</h4>
+              <h4>{t("마케팅 / 투어 / 브랜드 계약")}</h4>
+            </div>
+            <div>
+                <h3>{t("음악 프로듀싱")}</h3>
+                <br />
+                <h4>{t("작사 / 작곡 / 편곡")}</h4>
+            </div>
+            <div>
               <h3>{t("음반 제작")}</h3>
               <br />
               <h4>{t("앨범 / 프로모션 / 굿즈 기획 및 제작").split("^")[0]}</h4>
               <h4>{t("앨범 / 프로모션 / 굿즈 기획 및 제작").split("^")[1]}</h4>
             </div>
-            </div>
-            <div className="intSub-services3">
-              <h3>{t("아티스트 매니지먼트")}</h3>
-              <br />
-              <h4>{t("미디어 및 언론홍보")}</h4>
-              <h4>{t("마케팅 / 투어 / 브랜드 계약")}</h4>
-              <div className="intSub-services6">
+            <div>
               <h3>{t("에이전시")}</h3>
               <br />
               <h4>{t("파트너 및 제 3자를 위한 컨텐츠 제작").split("^")[0]}</h4>
               <h4>{t("파트너 및 제 3자를 위한 컨텐츠 제작").split("^")[1]}</h4>
             </div>
-            </div>
         </div>
-        <br />
-        <hr className="sgubun"/> 
-      </div>
+        </div>
       <div className="intSub-creat">
+      <br />
+      <hr className="gubun"/> 
+      <br />
       <strong>CREATIVES</strong><br /><br />
         <p>{t("TEDDY(크리에이티브 총괄)")}</p>
         <p>{t("KUSH(프로듀서 / 작사가)")}</p>
@@ -110,8 +111,8 @@ export function IntroSub(){
         <p>{t("MJ (사업 전략 & 개발 / A&R)")}</p>
         <p>{t("RYU (아티스트 전략)")}</p>
         <p>{t("ENGINEER TEAM")}</p>
-        
       </div>
+      <br />
     </section>
   );
 } //////////// IntroSub 컴포넌트 //////////////

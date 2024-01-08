@@ -172,14 +172,6 @@
         line-height: 1;
         white-space: nowrap;
       }
-
-      .intSub-cont strong{
-        position: relative;
-        left: 0;
-        top: 0;
-        font-size: 15px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-      }
       
       #introSub-area .intSub-cont{
         position: relative;
@@ -195,14 +187,9 @@
         
       }
       
-      #introSub-area .intSub-foundCont strong{
-        font-size: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-      }
-      
       #introSub-area .intSub-foundCont{
         position: relative;
-        top: 30vh;
+        top: 28vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -217,163 +204,62 @@
         width: 53vw;
         opacity: 0.5;
       }
-      
+
+      #introSub-area .services-cont{
+        position: relative;
+        top: 32vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 12px;
+        color:#fff;
+        font-family: NG;
+        line-height: 1.6;
+        white-space: nowrap;
+      }
+
       #introSub-area .services-cont-title {
         position: absolute;
-        font-size: 5x;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 5px;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
         color: #fff;
         line-height: 1.6;
         white-space: nowrap;
-        top: 109vh;
       }
 
       #introSub-area .intSub-services-cont{
         position: absolute;
-        top: 110vh;
-        width: 600px;
-        height: 200px;
-        transform: translateX(-50%);
-        left: 50%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0 50px;
       }
       
-      .intSub-services1{
-        top: 5vh;
-        position: absolute;
-        color: #fff;
-        text-align: center;
-      }
-      
-      #introSub-area .intSub-services1 h3{
-        font-size: 15px;
-        white-space: nowrap;
-      }
-      
-      #introSub-area .intSub-services1 h4{
-        font-size: 11px;
-        font-weight: normal;
-        white-space: nowrap;
-      }
-      
-      .intSub-services2{
-        top: 5vh;
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      
-      #introSub-area .intSub-services2 h3{
-        font-size: 15px;
-        white-space: nowrap;
-        }
-      
-      #introSub-area .intSub-services2 h4{
-        font-size: 11px;
-        font-weight: normal;
-        white-space: nowrap;
-        }
-      
-        .intSub-services3{
-          top: 5vh;
-          right: 0;
-          position: absolute;
-          color: #fff;
-          text-align: center;
-        }
-      
-        #introSub-area .intSub-services3 h3{
-          font-size: 15px;
-          white-space: nowrap;
-          }
-        
-        #introSub-area .intSub-services3 h4{
-          font-size: 11px;
-          font-weight: normal;
-          white-space: nowrap;
-          }
-        
-        .intSub-services4{
-          transform: translateX(-50%);
-          left: 50%;
-          top: 14vh;
-          position: absolute;
-          color: #fff;
-          text-align: center;
-        }
-      
-        #introSub-area .intSub-services4 h3{
-          font-size: 15px;
-          white-space: nowrap;
-          }
-        
-        #introSub-area .intSub-services4 h4{
-          font-size: 11px;
-          font-weight: normal;
-          white-space: nowrap;
-          }
-      
-        .intSub-services5{
-          top: 14vh;
-          position: absolute;
-          color: #fff;
-          text-align: center;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      
-        #introSub-area .intSub-services5 h3{
-          font-size: 15px;
-          white-space: nowrap;
-          }
-        
-        #introSub-area .intSub-services5 h4{
-          font-size: 11px;
-          font-weight: normal;
-          white-space: nowrap;
-          }
-      
-        .intSub-services6{
-          top: 14vh;
-          position: absolute;
-          color: #fff;
-          text-align: center;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      
-        #introSub-area .intSub-services6 h3{
-          font-size: 15px;
-          white-space: nowrap;
-          }
-        
-        #introSub-area .intSub-services6 h4{
-          font-size: 11px;
-          font-weight: normal;
-          white-space: nowrap;
-          }
-      
-      
-        #introSub-area .sgubun{
+      #introSub-area .intSub-services-cont>div{
+        top: 4vh;
         position: relative;
-        top: 59vh;
-        width: 53%;
-        opacity: 0.5;
+        left: 50%;
+        transform: translateX(-50%);
+        aspect-ratio: 532/370;
+        color: #fff;
+        font-weight: normal;
+        width: 250px;
       }
       
-      .intSub-creat strong{
-        font-size: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      #introSub-area .intSub-services-cont>div h3{
+        white-space: nowrap;
+        font-size: 18px;
+      }
+      #introSub-area .intSub-services-cont>div h4{
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 5px;
       }
       
       #introSub-area .intSub-creat{
-        position: absolute;
-        top: 142vh;
+        position: relative;
+        top: 83vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -387,7 +273,7 @@
       .cont #introSub-area{
         position: relative;
         width: 100%;
-        height: 195vh;
+        height: 250vh;
         background-color: #000;
       }
 
@@ -556,14 +442,6 @@
         white-space: nowrap;
       }
       
-      .intSub-cont strong{
-        position: relative;
-        left: 0;
-        top: 0;
-        font-size: 15px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-      }
-      
       #introSub-area .intSub-cont{
         position: relative;
         top: 26vh;
@@ -578,18 +456,13 @@
         
       }
       
-      #introSub-area .intSub-foundCont strong{
-        font-size: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-      }
-      
       #introSub-area .intSub-foundCont{
         position: relative;
-        top: 30vh;
+        top: 28vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        font-size: 9px;
+        font-size: 12px;
         color:#fff;
         font-family: NG;
         line-height: 1.6;
@@ -600,26 +473,68 @@
         width: 53%;
         opacity: 0.5;
       }
-      
-      #introSub-area .services-cont-title{
-        position: absolute;
-        font-size: 5x;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      #introSub-area .services-cont{
+        position: relative;
+        top: 103vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
         color:#fff;
+        font-family: NG;
         line-height: 1.6;
         white-space: nowrap;
-        top: 90vh;
       }
-      #introSub-area .intSub-services{
-        width: 480px;
+      
+      #introSub-area .intSub-services-cont{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
       }
 
-      #introSub-area .intSub-services img{
-        width: 100%;
+      #introSub-area .intSub-services-cont>div{
+        top: 4vh;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        aspect-ratio: 532/350;
+        color: #fff;
+        font-weight: normal;
+        width: 250px;
       }
+      
+      #introSub-area .intSub-services-cont>div h3{
+        white-space: nowrap;
+        font-size: 18px;
+        
+      }
+      #introSub-area .intSub-services-cont>div h4{
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 5px;
+      }
+
+
+
+      #introSub-area .intSub-creat{
+        position: absolute;
+        top: 160vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 15px;
+        color:#fff;
+        font-family: NG;
+        line-height: 1.6;
+        white-space: nowrap;
+      }
+
+      .cont #introSub-area{
+        position: relative;
+        width: 100%;
+        height: 210vh;
+        background-color: #000;
+      }
+
       #alb-Sub-area #video-cont{
       position: absolute;
       display: grid;
@@ -651,7 +566,9 @@
     #alb-Sub-area .video-grid-first{
       grid-column: 1/2;
       grid-row: 1/2;
-    }#video-cont{
+    }
+    
+    #video-cont{
         position: absolute;
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -719,6 +636,142 @@
     }
   }
 @media screen and (max-width: 530px) {
+  .intSub-Tit h3{
+    position: relative;
+    font-size: 30px;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color:#fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  
+  #introSub-area .intSub-cont{
+    position: relative;
+    top: 22vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 11px;
+    color:#fff;
+    font-family: NG;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  #introSub-area .intSub-cont p{
+    padding: 7px;
+  }
+  
+  #introSub-area .intSub-foundCont{
+    position: relative;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 10px;
+    color:#fff;
+    font-family: NG;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+  
+  .gubun{
+    width: 53%;
+    opacity: 0.5;
+  }
+
+  #introSub-area .intSub-foundCont p{
+    padding: 7px;
+  }
+  
+  #introSub-area .services-cont{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 122vh;
+    text-align: center;
+  }
+  
+  #introSub-area .services-cont-title{
+    position: absolute;
+    font-size: 5x;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color:#fff;
+    line-height: 1.6;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  #introSub-area .intSub-services-cont{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 0 5px;
+    font-weight: normal;
+    line-height: 1.5;
+    justify-content: center;
+  }
+
+  #introSub-area .intSub-services-cont>div{
+    top: 4vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    aspect-ratio: 532/350;
+    color: #fff;
+    font-weight: normal;
+    width: 250px;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  #introSub-area .intSub-services-cont>div h3{
+    white-space: nowrap;
+    font-size: 15px;
+    
+  }
+  #introSub-area .intSub-services-cont>div h4{
+    white-space: nowrap;
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  #introSub-area .intSub-creat{
+    position: absolute;
+    top: 230vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 15px;
+    color:#fff;
+    font-family: NG;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  #introSub-area .intSub-creat p{
+    font-size: 11px;
+  }
+
+  .cont #introSub-area{
+    position: relative;
+    width: 100%;
+    height: 280vh;
+    background-color: #000;
+  }
+
   #aud-area .aud-video{
     position: relative;
     top: 20vh;
@@ -851,23 +904,6 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1;
         left: 3vw;
-      }
-      .intSub-Tit h3{
-        position: relative;
-        font-size: 30px;
-        top: 5vh;
-        left: 50%;
-        transform: translateX(-50%);
-        color:#fff;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1;
-        white-space: nowrap;
-      }
-      #introSub-area .insSub-cont {
-        font-size: 5px;
-        top: 0;
-        left: 0;
       }
     
   }

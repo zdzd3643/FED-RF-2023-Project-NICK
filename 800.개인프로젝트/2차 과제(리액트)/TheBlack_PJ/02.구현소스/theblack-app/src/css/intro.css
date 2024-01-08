@@ -41,7 +41,7 @@
 #introSub-area{
   position: relative;
   width: 100%;
-  height: 215vh;
+  height: 235vh;
   background-color: #000;
 }
 
@@ -74,7 +74,10 @@
   font-family: NG;
   line-height: 1.6;
   white-space: nowrap;
-  
+}
+
+.intSub-cont p{
+  padding: 5px;
 }
 
 .intSub-foundCont strong{
@@ -84,7 +87,7 @@
 
 .intSub-foundCont{
   position: absolute;
-  top: 75vh;
+  top: 80vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -95,157 +98,60 @@
   white-space: nowrap;
 }
 
+.intSub-foundCont p{
+  padding: 5px;
+}
+
 .gubun{
   width: 53vw;
   opacity: 0.5;
 }
 
-.services-cont-title{
-  position: relative;
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.services-cont{
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 145vh;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.services-cont strong{
+  font-size: 20px;
   color:#fff;
-  line-height: 1.6;
-  white-space: nowrap;
-  top: 128vh;
 }
 
 .intSub-services-cont{
   position: absolute;
-  top: 130vh;
-  width: 900px;
-  height: 200px;
-  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   left: 50%;
+  max-width: 1500px;
+  transform: translateX(-50%);
+  top: 5vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.intSub-services1{
-  top: 5vh;
-  position: absolute;
-  color: #fff;
-  text-align: center;
-}
-
-.intSub-services1 h3{
-  font-size: 22px;
-  white-space: nowrap;
-}
-
-.intSub-services1 h4{
-  font-size: 15px;
+  gap: 0 50px;
   font-weight: normal;
-  white-space: nowrap;
 }
 
-.intSub-services2{
-  top: 5vh;
-  position: absolute;
-  color: #fff;
-  text-align: center;
+.intSub-services-cont>div{
+  top: 2vh;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
+  aspect-ratio: 532/400;
+  color: #fff;
+  font-weight: normal;
+  width: 250px;
 }
 
-.intSub-services2 h3{
-  font-size: 22px;
+.intSub-services-cont>div h3{
   white-space: nowrap;
-  }
-
-.intSub-services2 h4{
+  font-size: 20px;
+}
+.intSub-services-cont>div h4{
+  white-space: nowrap;
   font-size: 15px;
-  font-weight: normal;
-  white-space: nowrap;
-  }
-
-  .intSub-services3{
-    top: 5vh;
-    right: 0;
-    position: absolute;
-    color: #fff;
-    text-align: center;
-  }
-
-  .intSub-services3 h3{
-    font-size: 22px;
-    white-space: nowrap;
-    }
-  
-  .intSub-services3 h4{
-    font-size: 15px;
-    font-weight: normal;
-    white-space: nowrap;
-    }
-  
-  .intSub-services4{
-    transform: translateX(-50%);
-    left: 50%;
-    top: 14vh;
-    position: absolute;
-    color: #fff;
-    text-align: center;
-  }
-
-  .intSub-services4 h3{
-    font-size: 22px;
-    white-space: nowrap;
-    }
-  
-  .intSub-services4 h4{
-    font-size: 15px;
-    font-weight: normal;
-    white-space: nowrap;
-    }
-
-  .intSub-services5{
-    top: 14vh;
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .intSub-services5 h3{
-    font-size: 22px;
-    white-space: nowrap;
-    }
-  
-  .intSub-services5 h4{
-    font-size: 15px;
-    font-weight: normal;
-    white-space: nowrap;
-    }
-
-  .intSub-services6{
-    top: 14vh;
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .intSub-services6 h3{
-    font-size: 22px;
-    white-space: nowrap;
-    }
-  
-  .intSub-services6 h4{
-    font-size: 15px;
-    font-weight: normal;
-    white-space: nowrap;
-    }
-
-
-.sgubun{
-  position: relative;
-  top: 154vh;
-  width: 53vw;
-  opacity: 0.5;
+  padding: 5px;
 }
 
 .intSub-creat strong{
@@ -255,7 +161,7 @@
 
 .intSub-creat{
   position: absolute;
-  top: 162vh;
+  top: 182vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
