@@ -55,13 +55,43 @@ const makeList = (data) => {
       grabCursor={ true }
       loop={true}
       centeredSlides={true}
-      slidesPerView={ 'auto' }
+      breakpoints={{
+        1001:{
+          slidesPerView:'auto'
+        },
+        720:{
+          slidesPerView:2,
+          coverflowEffect:{
+            rotate:15,
+            depth: 200,
+            modifier: 2,
+            loopAdditionalSlides : 2
+          }},
+        530:{
+          slidesPerView:2,
+          coverflowEffect:{
+            rotate:15,
+            depth: 200,
+            modifier: 2,
+            loopAdditionalSlides : 2
+          }
+        },
+        300:{
+          slidesPerView:1,
+          coverflowEffect:{
+            rotate:15,
+            depth: 200,
+            modifier: 2,
+            loopAdditionalSlides : 2
+          }
+        }
+      }}
       coverflowEffect={{
         rotate:15,
         depth: 200,
         modifier: 2,
         slideShadows:false,
-        loopAdditionalSlides : 1
+        loopAdditionalSlides : 2
       }}
       pagination={true}
       modules={[EffectCoverflow,Pagination]}

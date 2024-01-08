@@ -96,7 +96,16 @@ export function JEONSOMI(){
                   <h2>GALLERY</h2>
                   </div>
                     <Swiper
-                      slidesPerView={2}
+                      breakpoints={{
+                        530:{
+                          slidesPerView:3,
+                          spaceBetween:30
+                        },
+                        300:{
+                          slidesPerView:2,
+                          spaceBetween:50
+                        },
+                      }}
                       loop={true}
                       navigation={true}
                       modules={[Navigation]}

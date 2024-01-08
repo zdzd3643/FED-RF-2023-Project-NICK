@@ -43,7 +43,7 @@ export const atsData = [
     ats:"ZION-T",
     isrc:"./images/ZIONT_PF.jpg",
     alt:"자이언티",
-    itit:"Zion-T",
+    itit:"Zion.T",
     dcont:"바람이 새는 듯 날카롭고 쿨한 특유의 목소리가 일품인 보컬로 잔잔한 R&B나 빠른 비트의 노래에도 잘 어울리는 마법의 목소리를 가졌다. 힙합 뿐만 아니라 가요계 통틀어서도 음색이 매력적으로 평가받는 가수 중 한명으로 꼽히지만 쿨한 음색과는 반대로 대부분의 노래들이 따스한 느낌의 가사, 비트로 이루어져 있다.",
     insta:"https://www.instagram.com/ziont/",
     twitter:"https://twitter.com/skinnyred",

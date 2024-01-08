@@ -30,7 +30,6 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1;
-        z-index: 999;
       }
     
       #aud-area .aud-audTitle{
@@ -44,7 +43,6 @@
         color:#fff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.2;
-        z-index: 999;
     }
     
     #aud-area .aud-viewBtn{
@@ -62,11 +60,156 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border: none;
     }
-    
-    
   }
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1380px){
+   
+  #ats-area .card{
+    width: 381px;
+    height: 581px;
+    perspective: 1100px;
+  }
+
+  #ats-area .cardFlip{
+    transform: rotateY(180deg);
+  }
+
+  #ats-area .swiper-cards{
+    overflow: hidden;
+  } 
+
+  #ats-area .cont-bx {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    overflow: visible;
+}
+
+#ats-area .intro-bx {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#ats-area .xbtn{
+  display: none;
+  position: absolute;
+  right: 5%;
+  width: 20px;
+  height: 28px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#ats-area .xbtn1{
+  display: block;
+  position: absolute;
+  right: 5%;
+  width: 20px;
+  height: 28px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#ats-area .desc-bx{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  left: 0;
+  transform: rotateY(180deg);
+  }
+
+  #ats-area .ats_Rbtn{
+  display: none;
+  }
+
+  #ats-area .ats_Fbtn {
+    display: block;
+    position: absolute;
+    background-color: rgba(87, 86, 86, 0.7);
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40vh;
+    font-size: 15px;
+    border-radius: 20px;
+    opacity: 0.9;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    width: 120px;
+  }
+
+  #ats-area .desc-bx h3 {
+    position: absolute;
+    font-size: 13px;
+    top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    left: 5%;
+    right: 5%;
+    line-height: 2;
+  }
+
+  #ats-area .desc-bx .sns {
+    position: absolute;
+    display: flex;
+    top: 39vh;
+    width: 140px;
+    left: 7%;
+    gap: 0 20px;
+}
+
+#ats-area .ats-more1 {
+  position: absolute;
+  color: #000;
+  left: 73%;
+  top: 38.5vh;
+  font-size: 11px;
+  border-radius: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 80px;
+  border: 2px solid #000000a9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+#ats-area .img_swiper {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  width: 85%;
+  height: 31%;
+  top: 45vh;
+}
+
+#ats-area .swiper-pagination-fraction {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11%;
+  height: 11%;
+  background-color: #0f0f0f53;
+  font-size: 16px;
+  top: 18vh;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#ats-area .swiper-slide {
+  border-radius: 15px;
+  overflow: visible;
+  transition: width .6s;
+  perspective: 1001px;
+}
 
     #video-cont{
       position: absolute;
@@ -347,30 +490,31 @@
   background: #000;
 }
 
-    #album-area .swiper-coverflow {
-        position: relative;
-        top: 10vh;
-        left: 50%;
-        width: 400px;
-      }
+#album-area .swiper-coverflow{
+  top: 3vh;
+}
+
       #album-area .swiper-coverflow img{
         width: 100%;
         height: 100%;
       }
-      .alb-title {
+      #album-area .alb-title {
         position: absolute;
-        left: 5vw;
-        top: 10vh;
+        top: 2vh;
       }
 
       .alb-title h3{
         position: relative;
         font-size: 70px;
-        top: 12vh;
         color:#fff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1;
       }
+
+      #album-area .atit{
+        font-size: 4vw;
+      }
+
       .intSub-Tit h3{
         position: relative;
         font-size: 50px;
@@ -569,7 +713,6 @@
       color:#fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.2;
-      z-index: 999;
       text-align: center;
   }
   
@@ -653,7 +796,6 @@
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
-  z-index: 999;
 }
 
 .detail-container .detail-name {
@@ -828,15 +970,6 @@
       padding: 5px;
       font-size: 18px;
     }
-    .atit h2{
-        font-size: 20px;
-    }
-    #album-area .swiper-coverflow {
-        position: relative;
-        top: 10vh;
-        left: 50%;
-        width: 300px;
-      }
       #album-area .swiper-coverflow img{
         width: 100%;
         height: 100%;
@@ -1068,8 +1201,167 @@
         width: 100%;
         height: 100%;
     }
+    .alb-title h3{
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 70px;
+      top: 0;
+    }
+    #album-area .swiper-coverflow{
+      top: 3vh;
+    }
+    #album-area .atit{
+      font-size: 5vw;
+    }
+
   }
 @media screen and (max-width: 530px) {
+  #ats-area .card{
+    width: 381px;
+    height: 581px;
+    perspective: 1100px;
+  }
+
+  #ats-area .cardFlip{
+    transform: rotateY(180deg);
+  }
+
+  #ats-area .swiper-cards{
+    overflow: hidden;
+  } 
+
+  #ats-area .cont-bx {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    overflow: visible;
+}
+
+#ats-area .intro-bx {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#ats-area .xbtn{
+  display: none;
+  position: absolute;
+  right: 5%;
+  width: 20px;
+  height: 28px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#ats-area .xbtn1{
+  display: block;
+  position: absolute;
+  right: 5%;
+  width: 20px;
+  height: 28px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#ats-area .desc-bx{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  left: 0;
+  transform: rotateY(180deg);
+  }
+
+  #ats-area .ats_Rbtn{
+  display: none;
+  }
+
+  #ats-area .ats_Fbtn {
+    display: block;
+    position: absolute;
+    background-color: rgba(87, 86, 86, 0.7);
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30vh;
+    font-size: 15px;
+    border-radius: 20px;
+    opacity: 0.9;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    width: 120px;
+  }
+
+  #ats-area .desc-bx h3 {
+    position: absolute;
+    font-size: 13px;
+    top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    left: 5%;
+    right: 5%;
+    line-height: 2;
+  }
+
+  #ats-area .desc-bx .sns {
+    position: absolute;
+    display: flex;
+    top: 39vh;
+    width: 140px;
+    left: 7%;
+    gap: 0 20px;
+}
+
+#ats-area .ats-more1 {
+  position: absolute;
+  color: #000;
+  left: 73%;
+  top: 38.5vh;
+  font-size: 11px;
+  border-radius: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 80px;
+  border: 2px solid #000000a9;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+#ats-area .img_swiper {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  width: 85%;
+  height: 31%;
+  top: 45vh;
+}
+
+#ats-area .swiper-pagination-fraction {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11%;
+  height: 11%;
+  background-color: #0f0f0f53;
+  font-size: 16px;
+  top: 18vh;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#ats-area .swiper-slide {
+  border-radius: 15px;
+  overflow: visible;
+  transition: width .6s;
+  perspective: 1001px;
+}
   #ats-Detail-area1 .detail-container{
     position: absolute;
     left: 50%;
@@ -1129,12 +1421,11 @@
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
-  z-index: 999;
 }
 
 .detail-container .detail-name {
   position: absolute;
-  left: 20%;
+  left: 0;
   top: 58vh;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1149,7 +1440,7 @@
   position: absolute;
   width: 110px;
   display: flex;
-  left: 20%;
+  left: 0;
   top: 64vh;
   gap: 0 20px;
 }
@@ -1157,7 +1448,7 @@
 .detail-container .detail-career {
   position: absolute;
   top: 70vh;
-  left: -17%;
+  left: 0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -1167,7 +1458,7 @@
 
 .detail-container .detail-gubun {
   position: relative;
-  top: 113vh;
+  top: 115vh;
   width: 53vw;
   opacity: 0.5;
   left: 50%;
@@ -1180,18 +1471,17 @@
   font-size: 30px;
   left: 50%;
   transform: translateX(-50%);
-  top: 115vh;
+  top: 118vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .detail-container .detail-swiper {
   position: absolute;
-  top: 122vh;
-  width: 450px;
-  height: 195px;
+  top: 127vh;
+  width: 300px;
+  height: 150px;
   left: 50%;
   transform: translateX(-50%);
-  slidesPerviews: 3
 }
 
 .detail-container .detail-gubun2 {
@@ -1246,38 +1536,38 @@
 .cont #ats-Detail-area1{
   position: relative;
   width: 100%;
-  height: 190vh;
+  height: 250vh;
   background: #000;
 }
 
 .cont #ats-Detail-area2{
   position: relative;
   width: 100%;
-  height: 400vh;
+  height: 390vh;
   background: #000;
 }
 .cont #ats-Detail-area3{
   position: relative;
   width: 100%;
-  height: 215vh;
+  height: 290vh;
   background: #000;
 }
 .cont #ats-Detail-area4{
   position: relative;
   width: 100%;
-  height: 190vh;
+  height: 250vh;
   background: #000;
 }
 .cont #ats-Detail-area5{
   position: relative;
   width: 100%;
-  height: 190vh;
+  height: 270vh;
   background: #000;
 }
 .cont #ats-Detail-area6{
   position: relative;
   width: 100%;
-  height: 190vh;
+  height: 270vh;
   background: #000;
 }
   .intSub-Tit h3{
@@ -1453,7 +1743,6 @@
     color:#fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.2;
-    z-index: 999;
     text-align: center;
     padding: 15px;
 }
@@ -1583,24 +1872,37 @@ background-color: #000;
     .ats_swiper .swiper-slide{
         width: 150px;
     }
-    .atit h2{
-        font-size: 15px;
+    #album-area .alb-title {
+      position: absolute;
     }
-    .alb-title {
-        position: absolute;
-        left: 5vw;
-        top: 10vh;
-      }
+
+    .cont #ats-area .ats_swiper {
+      position: absolute;
+      top: 23vh;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 450px;
+    }
       .alb-title h3{
         position: relative;
-        font-size: 40px;
-        top: 18vh;
+        font-size: 55px;
+        top: 2vh;
         color:#fff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1;
-        left: 3vw;
       }
     
+      #album-area .swiper{
+        top: -2vh;
+        width: 90%;
+      }
+
+      #album-area .atit{
+        font-size: 7vw;
+      }
+
+
   }
 
   @media screen and (max-width: 400px) {

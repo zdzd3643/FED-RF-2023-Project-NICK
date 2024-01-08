@@ -98,7 +98,16 @@ export function ZionT(){
                   </div>
                     <Swiper
                       loop={true}
-                      slidesPerView={ 3 }
+                      breakpoints={{
+                        530:{
+                          slidesPerView:3,
+                          spaceBetween:30
+                        },
+                        300:{
+                          slidesPerView:2,
+                          spaceBetween:50
+                        },
+                      }}
                       navigation={true}
                       modules={[Navigation]}
                       spaceBetween={50}

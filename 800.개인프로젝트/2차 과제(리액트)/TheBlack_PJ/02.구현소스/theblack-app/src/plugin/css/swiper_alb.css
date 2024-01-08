@@ -47,13 +47,12 @@
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
-  z-index: 999;
 }
 
 .atit{
   position: absolute;
   bottom: 4vh;
-  font-size: 40px;
+  font-size: 2vw;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;

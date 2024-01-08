@@ -119,7 +119,7 @@
     right: -30px;
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    z-index: 1;
+    z-index: 9999;
 }
 .glist a{
     color: #fff;
