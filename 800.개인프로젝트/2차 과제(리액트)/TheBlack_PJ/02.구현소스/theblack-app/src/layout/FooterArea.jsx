@@ -36,7 +36,10 @@ export function FooterArea(){
       </div>
         <address>
             {t("Copyright ⓒ THEBLACKLABEL All Rights Reserved.")}<br/>
-            {t("일반문의 info@theblacklabel.com")} | {t("오디션문의 audition@theblacklabel.com")} <br/>
+            {t("일반문의 info@theblacklabel.com | 오디션문의 audition@theblacklabel.com").split("^")[0]}
+ 
+            {t("일반문의 info@theblacklabel.com | 오디션문의 audition@theblacklabel.com").split("^")[1]} 
+            <br/>
             {t("대표 : 박홍준(Teddy)")}<br/>
         </address>
     </footer>

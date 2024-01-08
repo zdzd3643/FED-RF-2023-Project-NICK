@@ -125,8 +125,7 @@
 
 
     "Copyright ⓒ THEBLACKLABEL All Rights Reserved.":"Copyright ⓒ THEBLACKLABEL All Rights Reserved.",
-    "일반문의 info@theblacklabel.com":"일반문의 info@theblacklabel.com",
-    "오디션문의 audition@theblacklabel.com":"오디션문의 audition@theblacklabel.com",
+    "일반문의 info@theblacklabel.com | 오디션문의 audition@theblacklabel.com":"일반문의 info@theblacklabel.com | ^오디션문의 audition@theblacklabel.com",
     "대표 : 박홍준(Teddy)":"대표 : 박홍준(Teddy)",
 
 

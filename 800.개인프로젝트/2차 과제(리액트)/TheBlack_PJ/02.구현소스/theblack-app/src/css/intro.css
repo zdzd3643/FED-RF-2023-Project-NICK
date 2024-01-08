@@ -41,7 +41,7 @@
 #introSub-area{
   position: relative;
   width: 100%;
-  height: 235vh;
+  height: 280vh;
   background-color: #000;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .intSub-cont{
-  position: absolute;
+  position: relative;
   top: 26vh;
   left: 50%;
   transform: translateX(-50%);
@@ -86,14 +86,14 @@
 }
 
 .intSub-foundCont{
-  position: absolute;
-  top: 80vh;
+  position: relative;
+  top: 30vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   font-size: 15px;
   color:#fff;
-  font-family: NG;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   white-space: nowrap;
 }
@@ -108,12 +108,17 @@
 }
 
 .services-cont{
-  position: absolute;
+  position: relative;
+  top: 35vh;
   left: 50%;
   transform: translateX(-50%);
-  top: 145vh;
   text-align: center;
+  font-size: 15px;
+  color:#fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  white-space: nowrap;
+  max-width: 1000px;
 }
 .services-cont strong{
   font-size: 20px;
@@ -121,27 +126,23 @@
 }
 
 .intSub-services-cont{
-  position: absolute;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   left: 50%;
-  max-width: 1500px;
   transform: translateX(-50%);
   top: 5vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   gap: 0 50px;
-  font-weight: normal;
+  height: 100px;
 }
 
 .intSub-services-cont>div{
-  top: 2vh;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   aspect-ratio: 532/400;
   color: #fff;
   font-weight: normal;
-  width: 250px;
 }
 
 .intSub-services-cont>div h3{
@@ -160,14 +161,14 @@
 }
 
 .intSub-creat{
-  position: absolute;
-  top: 182vh;
+  position: relative;
+  top: 74vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   font-size: 15px;
   color:#fff;
-  font-family: NG;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   white-space: nowrap;
 }
