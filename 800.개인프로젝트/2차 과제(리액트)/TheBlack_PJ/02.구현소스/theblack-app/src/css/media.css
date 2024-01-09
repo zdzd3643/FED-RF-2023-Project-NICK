@@ -4,7 +4,7 @@
   .cont #alb-Sub-area{
     position: relative;
     width: 100%;
-    height: 725vh;
+    height: 730vh;
     background-color: #000;
   }
 
@@ -246,7 +246,7 @@
     .cont #alb-Sub-area{
       position: relative;
       width: 100%;
-      height: 490vh;
+      height: 520vh;
       background-color: #000;
     }
   }
@@ -445,7 +445,7 @@
 
 .detail-container .detail-video-cont>div aside {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;
   text-align: center;
@@ -639,13 +639,6 @@
         background-color: #000;
       }
 
-
-      #aud-Sub-area{
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background-color: #000;
-    }
     
     .aud-container{
         position: relative;
@@ -681,7 +674,7 @@
     .cont #aud-Sub-area{
       position: relative;
       width: 100%;
-      height: 170vh;
+      height: 175vh;
       background-color: #000;
     }
   }
@@ -901,7 +894,7 @@
 
 .detail-container .detail-video-cont>div aside {
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;
   text-align: center;
@@ -1167,7 +1160,7 @@
       .cont #alb-Sub-area{
         position: relative;
         width: 100%;
-        height: 805vh;
+        height: 820vh;
         background-color: #000;
       }
 
@@ -1542,7 +1535,7 @@
 
 .detail-container .detail-video-cont>div aside {
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;
   text-align: center;
@@ -1729,7 +1722,7 @@
   .cont #alb-Sub-area{
     position: relative;
     width: 100%;
-    height: 830vh;
+    height: 840vh;
     background-color: #000;
   }
 
