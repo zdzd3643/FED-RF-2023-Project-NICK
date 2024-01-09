@@ -1298,10 +1298,19 @@
     width: 120px;
   }
 
+  #ats-area .desc-bx h2 {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
   #ats-area .desc-bx h3 {
     position: absolute;
-    font-size: 13px;
-    top: 100px;
+    font-size: 11px;
+    top: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     left: 5%;
@@ -1312,28 +1321,35 @@
   #ats-area .desc-bx .sns {
     position: absolute;
     display: flex;
-    top: 39vh;
-    width: 140px;
+    top: 30vh;
+    width: 110px;
     left: 7%;
     gap: 0 20px;
 }
 
 #ats-area .ats-more1 {
-  position: absolute;
+  position: relative;
   color: #000;
-  left: 73%;
-  top: 38.5vh;
-  font-size: 11px;
+  left: 65%;
+  top: 29.5vh;
+  font-size: 10px;
   border-radius: 20px;
   opacity: 0.9;
   cursor: pointer;
-  padding: 1rem;
-  width: 80px;
+  width: 75px;
   border: 2px solid #000000a9;
   background-color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;
+  height: 30px;
 }
+
+#ats-area .ats-more1 a{
+  position: absolute;
+  top: 0.7vh;
+  left: 14%;
+}
+
 
 #ats-area .img_swiper {
   position: absolute;
@@ -1341,7 +1357,7 @@
   right: 5%;
   width: 85%;
   height: 31%;
-  top: 45vh;
+  top: 35vh;
 }
 
 #ats-area .swiper-pagination-fraction {
