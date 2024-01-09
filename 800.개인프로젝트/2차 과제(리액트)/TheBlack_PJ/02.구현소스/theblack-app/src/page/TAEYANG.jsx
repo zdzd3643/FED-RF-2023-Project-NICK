@@ -79,8 +79,6 @@ export function TAEYANG(){
                     <p>{t("2023 | Rapbeat Festival")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[0]}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[1]}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우드스탁 뮤직 앤 아트페어").split("^")[0]}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("우드스탁 뮤직 앤 아트페어").split("^")[1]}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("Seen Festival(베트남)")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("서울 재즈페스티벌")}</p>  
