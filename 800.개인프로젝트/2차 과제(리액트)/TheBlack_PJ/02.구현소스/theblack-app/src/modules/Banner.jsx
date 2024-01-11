@@ -11,15 +11,10 @@ import { useEffect } from "react";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
-// 폰트어썸 불러오기
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
-
 
 // 언어번역 
 
 import '../func/i18n';
-import i18next from "../func/i18n"
 import { useTranslation } from "react-i18next";
 
 // 배너 컴포넌트 //
@@ -51,6 +46,75 @@ export function Banner(){
     const sCnt = sldBox.find('li').length;
     // console.log('슬라이드개수:', sCnt);
 
+    // 커버
+    const cover = $(".cover");
+    // 블릿
+    const indic = $(".bindic li");
+      console.log(indic);
+    // 드래그 기능넣기
+    sldBox.draggable({ axis: "x" });
+
+    // 드래그가 끝났을때 슬라이드 위치
+    sldBox.on("dragstop",()=>{
+      // 광드래그 막기 커버
+    cover.show();
+
+      // 비교를 위한 윈도우 가로값
+    let winW = $(window).width();
+    // 현재 슬라이드 left값
+    let pos = sldBox.offset().left;
+    // 이동차이수 = 슬라이드위치값(양수) - 윈도우가로값
+    let diff = Math.abs(pos) - winW;
+    // 결과해석: 양수->왼쪽으로 이동/음수->오른쪽으로 이동
+
+    // 기준값 : 화면크기를 기준한 부분
+    let gap = winW / 10;
+    // console.log("드래그 멈춤!", pos, winW, diff);
+
+    // 왼쪽으로 이동하기 ///////////////
+    if (diff > gap) {
+      sldBox.animate({ left: "-200%" }, 800, "easeOutQuint", () => {
+        // 맨앞li 맨뒤로 이동
+        sldBox
+          .append(sldBox.find("li").first())
+          // left값 -100%(처음값)
+          .css({ left: "-100%" });
+        // 커버제거
+        cover.hide();
+      });
+      sNum++;
+      if(sNum>=sCnt) sNum=0;
+      console.log('슬라이드 순번:',sNum);
+    }
+    // 오른쪽으로 이동하기 //////////////
+    else if (diff < -gap) {
+      sldBox.animate({ left: "0%" }, 800, "easeOutQuint", () => {
+        // 맨뒤li 맨앞으로 이동
+        sldBox
+          .prepend(sldBox.find("li").last())
+          // left값 -100%(처음값)
+          .css({ left: "-100%" });
+        // 커버제거
+        cover.hide();
+      });
+      // 슬라이드순번 감소(0보다 작으면 끝번호)
+    sNum--;
+      if(sNum<0) sNum = sCnt-1;
+      console.log('슬라이드 순번:',sNum);
+    }
+    // 제자리로 ////
+    else {
+      sldBox.animate({ left: "-100%" }, 300, "easeOutQuint", () => {
+        // 커버제거
+        cover.hide();
+      });
+    }
+
+    bindic.eq(sNum).addClass('on')
+    .siblings().removeClass('on');
+
+  }); /////////// dragstop /////////
+
     // 3. 이벤트 설정 및 기능구현
     // 3-1. 이동버튼 클릭시
 
@@ -69,26 +133,26 @@ export function Banner(){
       if(isR){
           // 슬라이드가 왼쪽으로 이동함
           // left값이 -100%
-          sldBox.animate({ left: "-100%" }, A_TM, A_ES,
+          sldBox.animate({ left: "-200%" }, A_TM, A_ES,
           () => { // 콜백함수(애니후)
               // 맨앞li 맨뒤로 이동
               sldBox.append(sldBox.find('li').first())
               // 동시에 left값은 0으로 초기화함!
-              .css({left:'0'});
+              .css({left:'-100%'});
           });
           // 슬라이드 순번 증가(끝번호보다 크면 0)
           sNum++;
           if(sNum>=sCnt) sNum=0;
       } ////////// if ///////////
 
-      // 2-2. 왼쪽버튼
+      // 2F-2. 왼쪽버튼
       else{
           // 맨뒤li 맨앞으로 이동
           sldBox.prepend(sldBox.find('li').last())
           // left값 -100%
-          .css({left:'-100%'})
+          .css({left:'-200%'})
           // left값을 0으로 애니메이션
-          .animate({left:'0'},A_TM, A_ES);
+          .animate({left:'-100%'},A_TM, A_ES);
 
           // 슬라이드순번 감소(0보다 작으면 끝번호)
           sNum--;
@@ -102,6 +166,8 @@ export function Banner(){
       .siblings().removeClass('on');
 
     } ////////// goSlide함수 ////////////
+
+    
 
       // 선택데이터
       const selData = mvData;
@@ -148,11 +214,16 @@ export function Banner(){
                 </div>
                 <ol className="bindic">
                   {selData.map((v, i) => (
-                <li className={i == 0 ? "on" : ""} key={i}></li>))}
-                  </ol>
+                <li className={i == 0 ? "on" : ""} key={i}></li>
+                ))}
+                </ol>
+                <div className="cover"></div>
               </>
               )
               }
       </section>
+      
       ); ///////// return //////////
+
+
 } /////////// Banner 컴포넌트 //////////

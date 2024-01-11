@@ -256,12 +256,6 @@ function evtFn(){
     movePg();
   }); ////////// click /////////
 
-  // 메인 페이지 상단로고 클릭시 맨위로 이동하기!
-  $('.hbtn a').click(e=>{
-  pno = 0;
-  movePg();
-  }); ////////// click /////////
-
   // 키보드 이벤트발생시 업데이트
   // 1. Page Up(33) / Up Arrow (38)
   // 2. Page Down(34) / Down Arrow (40)
