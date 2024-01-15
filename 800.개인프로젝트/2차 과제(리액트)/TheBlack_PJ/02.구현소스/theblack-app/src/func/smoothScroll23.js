@@ -68,7 +68,7 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
 
     // 1.휠방향 알아내기
     let delta = e.wheelDelta;
-    // console.log(delta);
+    console.log(delta);
 
     // 2. 방향에 따른 페이지번호 증감
     if (delta < 0) {
@@ -81,6 +81,42 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
       if (pno === -1) pno = 0;
       // 첫페이지번호에 고정!
     } //// else ////
+
+    // console.log('페이지번호:',pno);
+
+    // 3. 스크롤 이동하기 + 메뉴에 클래스"on"넣기
+    movePg();
+  } /////////////// wheelFn 함수 ///////////////
+  
+  function dragFn(e) {
+    // 광휠금지
+    if (prot[0]) return;
+    chkCrazy(0);
+    // console.log("휠~~~~~~!");
+
+    var startY, endY;
+    $('.main').on('touchstart', function(e){
+      startY = e.originalEvent.changedTouches[0].screenY;
+    });
+    
+    console.log(startY);
+
+    $('.main').on('touchend', function(e){
+      endY = e.originalEvent.changedTouches[0].clientY;
+
+      if(startY > 50){
+        pno++;
+        if (pno === pgcnt) pno = pgcnt - 1;
+        // 마지막 페이지번호에 고정!
+      } 
+  
+      else {
+        pno--;
+        if (pno === -1) pno = 0;
+        // 첫페이지번호에 고정!
+      }
+    });
+
 
     // console.log('페이지번호:',pno);
 
@@ -284,4 +320,4 @@ function evtFn(){
 
 
 //  사용할 함수 내보내기
-export { wheelFn, initSet, movePg, evtFn, zeroPno, actPage }
+export { wheelFn, initSet, movePg, evtFn, zeroPno, actPage, dragFn }

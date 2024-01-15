@@ -5,7 +5,7 @@ import React, { useEffect,} from "react";
 import "../css/common.css";
 
 // 자동스크롤 JS 불러오기
-import { wheelFn,initSet, evtFn } from "../func/smoothScroll23";
+import { wheelFn,initSet, evtFn, dragFn } from "../func/smoothScroll23";
 import { dragBanner } from "../func/drag_banner";
 
 // 모듈 불러오기
@@ -34,8 +34,8 @@ export function MainCont(){
   // 초기화 함수 호출
   initSet();
   
-    // 드래그배너 호출
-    // dragBanner();
+// 드래그배너 호출
+    // dragFn();
 
 
   // 컴포넌트 소멸자
