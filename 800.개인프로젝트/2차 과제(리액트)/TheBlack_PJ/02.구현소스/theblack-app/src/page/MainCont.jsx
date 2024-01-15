@@ -35,7 +35,7 @@ export function MainCont(){
   initSet();
   
 // 드래그배너 호출
-    // dragFn();
+    dragFn();
 
 
   // 컴포넌트 소멸자

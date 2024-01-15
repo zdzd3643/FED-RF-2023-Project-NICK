@@ -94,29 +94,36 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
     chkCrazy(0);
     // console.log("휠~~~~~~!");
 
-    var startY, endY;
-    $('.main').on('touchstart', function(e){
-      startY = e.originalEvent.changedTouches[0].screenY;
-    });
-    
-    console.log(startY);
+    // 1. 모바일 이벤트 등록하기 /////////////////
+    window.addEventListener('touchstart',touchStart);
+    window.addEventListener('touchend',touchEnd);
 
-    $('.main').on('touchend', function(e){
-      endY = e.originalEvent.changedTouches[0].clientY;
+    // 2. 모바일 이벤트 함수 만들기 //////////////
+    let pos_start = 0, pos_end = 0;
 
-      if(startY > 50){
-        pno++;
-        if (pno === pgcnt) pno = pgcnt - 1;
-        // 마지막 페이지번호에 고정!
-      } 
-  
-      else {
-        pno--;
-        if (pno === -1) pno = 0;
-        // 첫페이지번호에 고정!
-      }
-    });
+    // 2-1. 터치시작 이벤트 호출 함수 ///////////////////
+    function touchStart(e){
+      pos_start = e.touches[0].screenY; 
+    } ////////////// mobileFn 함수 //////////////
 
+    function touchEnd(e){
+      pos_end = e.changedTouches[0].screenY;
+
+      let result = pos_start - pos_end
+
+      if(result==0) return 0;
+
+    }
+    if (pgcnt < 0) {
+      pno++;
+      if (pno === pgcnt) pno = pgcnt - 1;
+      // 마지막 페이지번호에 고정!
+    } //// if /////
+    else {
+      pno--;
+      if (pno === -1) pno = 0;
+      // 첫페이지번호에 고정!
+    } //// else ////
 
     // console.log('페이지번호:',pno);
 
