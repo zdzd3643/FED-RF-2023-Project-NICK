@@ -1,10 +1,11 @@
 /* THE BLACK PJ - 공통 미디어쿼리 */
 
 @media screen and (max-width: 1540px) {
-  .cont #alb-Sub-area{
+
+  #alb-Sub-area{
     position: relative;
     width: 100%;
-    height: 730vh;
+    height: 680vh;
     background-color: #000;
   }
 
@@ -243,14 +244,14 @@
       grid-column: 1/2;
       grid-row: 1/2;
     }
-    .cont #alb-Sub-area{
+    #alb-Sub-area{
       position: relative;
       width: 100%;
       height: 520vh;
       background-color: #000;
     }
   }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px){
   #aud-area .aud-video{
     position: relative;
     top: 20vh;
@@ -571,6 +572,7 @@
         font-family: NG;
         line-height: 1.6;
         white-space: nowrap;
+        max-width: 530px;
       }
 
       #introSub-area .services-cont-title {
@@ -585,22 +587,22 @@
       }
 
       #introSub-area .intSub-services-cont{
-        position: absolute;
+        position: relative;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 0 50px;
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+        top: 5vh;
+        grid-gap: 30px;
       }
       
       #introSub-area .intSub-services-cont>div{
-        top: 4vh;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        aspect-ratio: 532/370;
+        text-align: center;
         color: #fff;
         font-weight: normal;
-        width: 250px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
       }
       
       #introSub-area .intSub-services-cont>div h3{
@@ -615,7 +617,7 @@
       
       #introSub-area .intSub-creat{
         position: relative;
-        top: 90vh;
+        top: 36vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -626,14 +628,7 @@
         white-space: nowrap;
       }
 
-      .cont #introSub-area{
-        position: relative;
-        width: 100%;
-        height: 260vh;
-        background-color: #000;
-      }
-
-      .cont #introSub-area{
+      #introSub-area{
         position: relative;
         width: 100%;
         background-color: #000;
@@ -1026,62 +1021,10 @@
         width: 53%;
         opacity: 0.5;
       }
-
-      #introSub-area .services-cont{
-        position: relative;
-        top: 32vh;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        font-size: 12px;
-        color:#fff;
-        font-family: NG;
-        line-height: 1.6;
-        white-space: nowrap;
-      }
-
-      #introSub-area .services-cont-title {
-        position: absolute;
-        font-size: 5px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        color: #fff;
-        line-height: 1.6;
-        white-space: nowrap;
-      }
-
-      #introSub-area .intSub-services-cont{
-        position: absolute;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 0 10px;
-      }
-      
-      #introSub-area .intSub-services-cont>div{
-        top: 4vh;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        aspect-ratio: 532/370;
-        color: #fff;
-        font-weight: normal;
-        width: 250px;
-      }
-      
-      #introSub-area .intSub-services-cont>div h3{
-        white-space: nowrap;
-        font-size: 18px;
-      }
-      #introSub-area .intSub-services-cont>div h4{
-        white-space: nowrap;
-        font-size: 13px;
-        padding: 5px;
-      }
       
       #introSub-area .intSub-creat{
         position: relative;
-        top: 90vh;
+        top: 36vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -1092,10 +1035,9 @@
         white-space: nowrap;
       }
 
-      .cont #introSub-area{
+      #introSub-area{
         position: relative;
         width: 100%;
-        height: 260vh;
         background-color: #000;
       }
 
@@ -1157,7 +1099,7 @@
         top: 15vh;
       }
 
-      .cont #alb-Sub-area{
+      #alb-Sub-area{
         position: relative;
         width: 100%;
         height: 820vh;
@@ -1642,32 +1584,37 @@
     font-family: NG;
     line-height: 1.6;
     white-space: nowrap;
+    max-width: 530px;
   }
-  
-  #introSub-area .services-cont-title{
+
+  #introSub-area .services-cont-title {
     position: absolute;
-    font-size: 5x;
+    font-size: 5px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color:#fff;
+    color: #fff;
+    line-height: 1.6;
+    white-space: nowrap;
   }
 
   #introSub-area .intSub-services-cont{
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    gap: 0 5px;
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+    justify-items: center;
+    top: 5vh;
+    grid-gap: 50px;
   }
-
+  
   #introSub-area .intSub-services-cont>div{
-    top: 4vh;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    aspect-ratio: 532/350;
+    text-align: center;
     color: #fff;
-    width: 250px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
   }
   
   #introSub-area .intSub-services-cont>div h3{
@@ -1683,7 +1630,7 @@
 
   #introSub-area .intSub-creat{
     position: relative;
-    top: 145vh;
+    top: 39vh;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -1701,7 +1648,7 @@
   .cont #introSub-area{
     position: relative;
     width: 100%;
-    height: 305vh;
+    height: 295vh;
     background-color: #000;
   }
   #footer-area {
@@ -1719,7 +1666,7 @@
     padding: 5px;
   }
 
-  .cont #alb-Sub-area{
+  #alb-Sub-area{
     position: relative;
     width: 100%;
     height: 840vh;

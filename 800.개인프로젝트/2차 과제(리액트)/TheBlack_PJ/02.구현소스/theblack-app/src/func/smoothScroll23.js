@@ -88,48 +88,120 @@ require('jquery-ui-touch-punch/jquery.ui.touch-punch');
     movePg();
   } /////////////// wheelFn 함수 ///////////////
   
-  function dragFn(e) {
-    // 광휠금지
-    if (prot[0]) return;
-    chkCrazy(0);
-    // console.log("휠~~~~~~!");
+  function dragFn(e){
+  $("#top-area, .indic").on("touchstart touchend", function (e) {
+    e.stopPropagation();
+}); /////////// 터치이벤트 버블링 막기 ///////////
 
-    // 1. 모바일 이벤트 등록하기 /////////////////
-    window.addEventListener('touchstart',touchStart);
-    window.addEventListener('touchend',touchEnd);
+/* 
+    [ 자동스크롤 모바일 구현하기 ]
 
-    // 2. 모바일 이벤트 함수 만들기 //////////////
-    let pos_start = 0, pos_end = 0;
+    1. 모바일 이벤트 처리 : 터치스크린에서 사용하는 이벤트 종류
+        1) touchstart - 손가락이 화면에 닿을때 발생
+        2) touchend - 손가락이 화면에서 떨어질때 발생
+        3) touchmove - 손가락이 화면에 닿은채로 움직일때 발생
 
-    // 2-1. 터치시작 이벤트 호출 함수 ///////////////////
-    function touchStart(e){
-      pos_start = e.touches[0].screenY; 
-    } ////////////// mobileFn 함수 //////////////
+    2. 화면터치(클릭) 이벤트 관련 위치값 종류
+        1) screenX, screenY : 디바이스 화면을 기준한 x,y좌표
+        2) clientX, clientY : 브라우저 화면을 기준한 x,y좌표
+                            (단, 스크롤 미포함)
+        3) pageX, pageY : 스크롤을 포함한 브라우저화면 기준 x,y좌표
 
-    function touchEnd(e){
-      pos_end = e.changedTouches[0].screenY;
+        ※ 모바일 터치스크린 기준으로 위치값은 screenX, screenY를 사용!
 
-      let result = pos_start - pos_end
+    3. 터치(스와이프)방향 알아내기
+    - 원리: 처음 터치한 위치에서 나중 터치가 끝난위치를 뺀다.
+        작은수 - 큰수 = 음수
+        큰수 - 작은수 = 양수
+    이런 결과로 볼때 스크롤방향과 매칭해 보면
+        음수가 나오면 아랫쪽방향 스와이프 -> 스크롤휠 위로
+        양수가 나오면 윗쪽방향 스와이프 -> 스크롤휠 아래로
+*/
 
-      if(result==0) return 0;
+//// 터치방향을 위한 변수 ///
+let tcd1, tcd2;
+// tcd1 - 처음 터치된 Y축 위치값
+// tcd2 - 나중 터치끝날때 Y축 위치값
 
-    }
-    if (pgcnt < 0) {
-      pno++;
-      if (pno === pgcnt) pno = pgcnt - 1;
-      // 마지막 페이지번호에 고정!
-    } //// if /////
-    else {
-      pno--;
-      if (pno === -1) pno = 0;
-      // 첫페이지번호에 고정!
-    } //// else ////
+//// 1. 터치 시작시 화면 터치위치값 변수에 넣기 ///
+// 대상: document
+// 사용위치속성: screenY (페이지 이동이 Y축 이므로!)
+$(document).on("touchstart", function (e) { // e-이벤트전달변수
 
-    // console.log('페이지번호:',pno);
+  // 모바일 터치 위치값 변수에 할당하기
+  tcd1 = e.originalEvent.touches[0].screenY;
+  //console.log("터치시작:" + tcd1);
 
-    // 3. 스크롤 이동하기 + 메뉴에 클래스"on"넣기
-    movePg();
-  } /////////////// wheelFn 함수 ///////////////
+  // originalEvent - 모바일 이벤트 관리 객체
+  // touches[0] - 최초발생 이벤트 수집 컬렉션
+  // changedTouches[0] - 동일이벤트가 변경된 경우 수집 컬렉션
+  // screenY - 스크린 Y축 좌표값
+
+}); /////////// touchstart 이벤트함수 /////////////
+
+//// 2. 터치 끝날때 화면 터치위치값 변수에 넣기 ///
+// 대상: document
+// 사용위치속성: screenY (페이지 이동이 Y축 이므로!)
+$(document).on("touchend", function (e) { // e-이벤트전달변수
+
+  // 1. 모바일 터치 위치값 변수에 할당하기
+  tcd2 = e.originalEvent.changedTouches[0].screenY;
+  //console.log("터치끝:" + tcd2);
+
+  // 2. 방향판별하기(델타변수)
+  let beta = tcd1 - tcd2;
+  //console.log("차이:" + beta);
+
+  ////////////////////////////////////////////////
+  ////// 여기서 부터는 마우스 휠 코드와 동일함!//////
+  // 단, 양수/음수의 의미는 다르다!
+
+  //////////////////////////////////////////////
+  // 3. 스와이프 방향에 따라 페이지번호 증감하기!//
+  //////////////////////////////////////////////
+
+          if (beta > 0) {
+            pno++;
+            if (pno === pgcnt) pno = pgcnt - 1;
+            // 마지막 페이지번호에 고정!
+          } //// if /////
+          else {
+            pno--;
+            if (pno === -1) pno = 0;
+            // 첫페이지번호에 고정!
+        } //// else ////
+
+      //console.log("페이지번호:" + pno);
+
+      //////////////////////////////////////////////
+      // 3. 이동할 페이지(.page)의 위치값 알아내기 ///
+      //////////////////////////////////////////////
+
+      // 방법: .page의 순서로 위치를 알아냄!
+      // let pos = $(".page").eq(pno).offset().top;
+      // offset().top 은 현재 선택요소의 top위치값
+
+      ////////////////////////////////////////////////////
+      // 새로운 페이지 위치값 : 윈도우 높이값 * 페이지순번 //
+      let pos = $(window).height() * pno;
+      ///////////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+        // 4. 실제 이동위치로 스크롤 애니메이션 하기 ////
+        //////////////////////////////////////////////
+
+        $("html,body").stop().animate({
+          scrollTop: pos + "px"
+      }, 1200, "easeOutQuint");
+
+
+      //console.log("이동위치:" + pos);
+
+      // 3. 스크롤 이동하기 + 메뉴에 클래스"on"넣기
+      movePg();
+
+  }); /////////// touchend 이벤트함수 /////////////
+} /////////////// dragFn 함수 /////////////
 
   /******************************************** 
     함수명: chkCrazy
