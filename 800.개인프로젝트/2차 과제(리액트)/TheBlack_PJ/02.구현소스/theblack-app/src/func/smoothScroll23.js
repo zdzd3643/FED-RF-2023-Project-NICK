@@ -130,7 +130,7 @@ $(document).on("touchstart", function (e) { // e-이벤트전달변수
 
   // 모바일 터치 위치값 변수에 할당하기
   tcd1 = e.originalEvent.touches[0].screenY;
-  //console.log("터치시작:" + tcd1);
+  // console.log("터치시작:" + tcd1);
 
   // originalEvent - 모바일 이벤트 관리 객체
   // touches[0] - 최초발생 이벤트 수집 컬렉션
@@ -144,9 +144,15 @@ $(document).on("touchstart", function (e) { // e-이벤트전달변수
 // 사용위치속성: screenY (페이지 이동이 Y축 이므로!)
 $(document).on("touchend", function (e) { // e-이벤트전달변수
 
+  ////// 광스크롤막기 /////////////
+    // 광휠금지
+    if (prot[0]) return;
+    chkCrazy(0);
+    // console.log("휠~~~~~~!");
+
   // 1. 모바일 터치 위치값 변수에 할당하기
   tcd2 = e.originalEvent.changedTouches[0].screenY;
-  //console.log("터치끝:" + tcd2);
+  console.log("터치끝:" + tcd2);
 
   // 2. 방향판별하기(델타변수)
   let beta = tcd1 - tcd2;
@@ -160,26 +166,26 @@ $(document).on("touchend", function (e) { // e-이벤트전달변수
   // 3. 스와이프 방향에 따라 페이지번호 증감하기!//
   //////////////////////////////////////////////
 
-          if (beta > 0) {
-            pno++;
-            if (pno === pgcnt) pno = pgcnt - 1;
-            // 마지막 페이지번호에 고정!
-          } //// if /////
-          else {
-            pno--;
-            if (pno === -1) pno = 0;
-            // 첫페이지번호에 고정!
-        } //// else ////
+      if (beta > 0) { // 양수면 윗방향 스와이프(다음페이지)
+        pno++;
+        if (pno === pgcnt) pno = pgcnt - 1;
+        // 마지막 페이지번호에 고정!
+      } //// if /////
+      else { // 음수면 아랫방향 스와이프(이전페이지)
+        pno--;
+        if (pno === -1) pno = 0;
+        // 첫페이지번호에 고정!
+    } //// else ////
 
-      //console.log("페이지번호:" + pno);
+  //console.log("페이지번호:" + pno);
 
-      //////////////////////////////////////////////
-      // 3. 이동할 페이지(.page)의 위치값 알아내기 ///
-      //////////////////////////////////////////////
+  //////////////////////////////////////////////
+  // 3. 이동할 페이지(.page)의 위치값 알아내기 ///
+  //////////////////////////////////////////////
 
-      // 방법: .page의 순서로 위치를 알아냄!
-      // let pos = $(".page").eq(pno).offset().top;
-      // offset().top 은 현재 선택요소의 top위치값
+  // 방법: .page의 순서로 위치를 알아냄!
+  // let pos = $(".page").eq(pno).offset().top;
+  // offset().top 은 현재 선택요소의 top위치값
 
       ////////////////////////////////////////////////////
       // 새로운 페이지 위치값 : 윈도우 높이값 * 페이지순번 //
