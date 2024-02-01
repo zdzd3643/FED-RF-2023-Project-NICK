@@ -4,6 +4,7 @@
 import { bCon } from "../modules/TbContext";
 import { useEffect, useCallback, useLayoutEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { evtFn, movePg } from "../func/smoothScroll23";
 
 import "../css/common.css";
 

@@ -33,13 +33,6 @@ import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
 export function JEONSOMI(){
-  let vh = 0;
-  
-  useEffect(() => {
-      // 모바일 네비게이션바 없애기
-      vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }, [])
   const { t } = useTranslation();
 
   const selData = detailData;

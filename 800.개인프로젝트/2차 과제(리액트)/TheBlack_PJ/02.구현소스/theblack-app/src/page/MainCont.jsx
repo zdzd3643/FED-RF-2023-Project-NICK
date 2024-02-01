@@ -20,18 +20,11 @@ import $ from 'jquery';
 
 export function MainCont(){
 
-let vh = 0;
-
 // 메인 페이지일때만 자동스크롤 기능 적용함!
  useEffect(() => {
 
   // 스크롤바 없애기
   $('html,body').css({overflow:'hidden'});
-
-  // 모바일 네비게이션바 없애기
-    vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  
 
   // 자동스크롤 호출
   window.addEventListener('wheel',wheelFn);
