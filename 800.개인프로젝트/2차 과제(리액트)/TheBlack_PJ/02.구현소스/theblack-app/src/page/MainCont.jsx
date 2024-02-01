@@ -33,9 +33,9 @@ export function MainCont(){
 
   // 초기화 함수 호출
   initSet();
-  
-// 드래그배너 호출
-    dragFn();
+
+  dragFn();
+
 
 
   // 컴포넌트 소멸자
@@ -50,6 +50,8 @@ export function MainCont(){
     // 제이쿼리로 특정요소에 걸어준경우 해제는 off(이벤트명)
     $('.gnb li').off('click');
     $(document).off('keydown');
+    $(document).off('touchstart touchend');
+
 
   }); //////////// 소멸자 return //////////
 
