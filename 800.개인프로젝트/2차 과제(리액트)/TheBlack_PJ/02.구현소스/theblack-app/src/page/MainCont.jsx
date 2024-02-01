@@ -34,13 +34,14 @@ export function MainCont(){
   // 초기화 함수 호출
   initSet();
 
+  // 드래그 함수 호출   
   dragFn();
 
 
 
   // 컴포넌트 소멸자
   return(()=>{
-    console.log('난 소멸했어~!');
+    console.log('소멸했어');
 
     // 이 페이지에서만 필요했던 자동스크롤 이벤트 해제!
     window.removeEventListener('wheel',wheelFn);
