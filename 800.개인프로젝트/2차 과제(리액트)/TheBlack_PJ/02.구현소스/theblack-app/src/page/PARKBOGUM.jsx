@@ -44,6 +44,7 @@ export function PARKBOGUM(){
                 <div className="detail-title">
                   <h3>{t(v.ats5)}</h3>
                 </div>
+                <div className="ats-flex">
                 <div className="detail-profile">
                   <img src={v.isrc5} alt="프로필 이미지" />  
                 </div>
@@ -83,6 +84,8 @@ export function PARKBOGUM(){
                     <p>{t("2023 | 로레알")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("에이스침대")}</p> 
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("아이더")}</p> 
+                  </div>
+                  </div>
                   </div>
                   <div className="detail-gubun">
                     <hr />
@@ -182,7 +185,6 @@ export function PARKBOGUM(){
                       </div>
                     </div>      
                 </div>   
-          </div>
     ))
     } /////////// makeList 함수 ///////////
 

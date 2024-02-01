@@ -44,51 +44,54 @@ export function JEONSOMI(){
                 <div className="detail-title">
                   <h3>{t(v.ats2)}</h3>
                 </div>
-                <div className="detail-profile">
-                  <img src={v.isrc2} alt="프로필 이미지" />  
+                <div className="ats-flex">
+                  <div className="detail-profile">
+                    <img src={v.isrc2} alt="프로필 이미지" />
+                  </div>
+                  <div className="detail-cont">
+                    <div className="detail-name">
+                      <h2>{t(v.alt2)}</h2>
+                    </div>
+                    <div className="detail-sns1">
+                      <a href={v.insta2}
+                        target='_blank'
+                        title="인스타그램으로 이동">
+                          <img src="./images/insta_img_white-remove.png" alt="인스타그램 이미지" />
+                      </a>
+                      <a href={v.youtube2}
+                        target='_blank'
+                        title="유튜브로 이동">
+                          <img src="./images/youtube_img_white-remove.png" alt="유튜브 이미지" />
+                      </a>
+                      <a href={v.twitter2}
+                        target='_blank'
+                        title="트위터로 이동">
+                        <img src="./images/twitter_img_white-remove.png"
+                        alt="트위터 이미지" />
+                      </a>
+                    </div>
+                    <div className="detail-career">
+                      <h2>{t("ALBUM")}</h2>
+                      <p>{t("2023 | GAME PLAN")}</p>
+                      <p>{t("2021 | XOXO")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("DUMB DUMB")}</p>
+                      <br />
+                      <h2>{t("PERFORMANCE")}</h2>
+                      <p>{t("2023 | Kpop Overpass 뮤직 콘서트")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p>
+                      <p>{t("2022 | MAMA AWARDS")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("KAMP 콘서트")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("36회 골든디스크 어워즈")}</p>
+                      <br />
+                      <h2>{t("ADVERTISING")}</h2>
+                      <p>{t("2023 | 노스페이스")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("PRADA")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("라코스테")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("컨버스")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("삼성 갤럭시")}</p>
+                    </div>
                 </div>
-                <div className="detail-cont">
-                  <div className="detail-name">
-                    <h2>{t(v.alt2)}</h2>
-                  </div>
-                  <div className="detail-sns1">
-                    <a href={v.insta2}
-                      target='_blank'
-                      title="인스타그램으로 이동">
-                        <img src="./images/insta_img_white-remove.png" alt="인스타그램 이미지" />
-                    </a>
-                    <a href={v.youtube2}
-                      target='_blank'
-                      title="유튜브로 이동">
-                        <img src="./images/youtube_img_white-remove.png" alt="유튜브 이미지" />
-                    </a>
-                    <a href={v.twitter2}
-                      target='_blank'
-                      title="트위터로 이동">
-                      <img src="./images/twitter_img_white-remove.png" 
-                      alt="트위터 이미지" />
-                    </a>
-                  </div>
-                  <div className="detail-career">
-                    <h2>{t("ALBUM")}</h2>
-                    <p>{t("2023 | GAME PLAN")}</p>
-                    <p>{t("2021 | XOXO")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("DUMB DUMB")}</p>
-                    <br />
-                    <h2>{t("PERFORMANCE")}</h2>
-                    <p>{t("2023 | Kpop Overpass 뮤직 콘서트")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p> 
-                    <p>{t("2022 | MAMA AWARDS")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("KAMP 콘서트")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("36회 골든디스크 어워즈")}</p>  
-                    <br />
-                    <h2>{t("ADVERTISING")}</h2>
-                    <p>{t("2023 | 노스페이스")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("PRADA")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("라코스테")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("컨버스")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("삼성 갤럭시")}</p> 
-                  </div>
+                </div>
                   <div className="detail-gubun">
                     <hr />
                   </div>
@@ -237,9 +240,9 @@ export function JEONSOMI(){
           <h3>{t(v.mtit18)}</h3>
           </aside>
         </div>
-                    </div>      
-                </div>   
-          </div>
+        </div>      
+    </div>   
+ 
     ))
     } /////////// makeList 함수 ///////////
 

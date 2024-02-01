@@ -33,7 +33,7 @@
 }
 
 .arrow{
-    position: absolute;
+    position: relative;
     top: 47.5vh;
     transform: translateY(-50%);
     width: 70px;

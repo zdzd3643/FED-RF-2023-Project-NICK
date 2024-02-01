@@ -44,6 +44,7 @@ export function LEEJONGWON(){
                 <div className="detail-title">
                   <h3>{t(v.ats6)}</h3>
                 </div>
+                <div className="ats-flex">
                 <div className="detail-profile">
                   <img src={v.isrc6} alt="프로필 이미지" />  
                 </div>
@@ -80,6 +81,8 @@ export function LEEJONGWON(){
                     <p>"2019 | {t("니나 내나")}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("사회인")}</p> 
                     <br />
+                  </div>
+                  </div>
                   </div>
                   <div className="detail-gubun">
                     <hr />
@@ -179,7 +182,6 @@ export function LEEJONGWON(){
                       </div>
                     </div>      
                 </div>   
-          </div>
     ))
     } /////////// makeList 함수 ///////////
 

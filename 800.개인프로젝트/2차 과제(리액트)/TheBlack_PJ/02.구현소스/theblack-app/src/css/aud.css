@@ -8,28 +8,13 @@
 #aud-area{
     position: relative;
     width: 100%;
-    height: 100vh;
     background-color: #000;
-}
-
-.aud-video{
-    position: absolute;
-    left: 50%;
-    top: 28vh;
-    width: 845px;
-    height: 475px;
-    border: none;
-}
-
-.aud-video video {
-    width: 100%;
-    height: 100%;
-    border: none;
+    height: 100vh;
 }
 
 /* 타이틀 및 이름 문구 설정 */
 .aud-title{
-    position: absolute;
+    position: relative;
     font-size: 80px;
     top: 12vh;
     left: 50%;
@@ -40,20 +25,39 @@
     line-height: 1;
   }
 
+.aud-video{
+    position: relative;
+    border: none;
+}
+
+.aud-video video {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.aud-flex {
+    position: relative;
+    display: flex;
+    top:23vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 990px;
+    gap: 0 30px;
+}
+
+
 .aud-audTitle{
-    position: absolute;
-    font-size: 90px;
-    top:27vh;
-    left: 15%;
+    position: relative;
+    font-size: 70px;
     color:#fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.2;
 }
 
 .aud-viewBtn{
-    position: absolute;
-    left: 15%;
-    top: 77vh;
+    margin-top: 5vh;
+    position: relative;
     width: 170px;
     text-align: center;
     font-size: 30px;
@@ -70,36 +74,34 @@
 #aud-Sub-area{
     position: relative;
     width: 100%;
-    height: 105vh;
     background-color: #000;
 }
 
 .aud-container{
     position: relative;
-    top: 27vh;
+    display: flex;
+    margin-top: 25vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 400px;
+    width: 1000px;
 }
 .aud-Cont{
-    position: absolute;
+    position: relative;
     font-size: 18px;
     color:#fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     white-space: nowrap;
     box-sizing: border-box;
-    margin-left: 1vw;
-    left: 50%;
+    bottom: 5vh;
 }
 .aud-poster{
-    position: absolute;
-    right: 50%;
-    width: 100%;  
-    margin-right: 1vw;  
-}
-.aud-poster img{
+    position: relative;
     box-sizing: border-box;
-    width: 100%;
+    bottom: 5vh;
+}
+
+.aud-poster img{
+    width: 80%;
     height: 100%;
 }

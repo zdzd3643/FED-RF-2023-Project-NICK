@@ -23,6 +23,10 @@ export function AuditionSub(){
         <h3>{t("AUDITION")}</h3>
     </div>
     <div className="aud-container">
+      <div className="aud-poster">
+        <img src="./images/오디션 이미지2.jpg"
+        alt="오디션 포스터 이미지" />
+      </div>
       <div className="aud-Cont">
       <big><b>{t("THEBLACKLABEL X CP Group (THEBLACKSEA)")}</b></big><br />
       <big><b>{t("Thailand Audition")}</b></big>
@@ -44,10 +48,6 @@ export function AuditionSub(){
           <br />
           <p><small>■</small> {t("Submission Period")}</p>
           <p>{t("April 18th 2023 - June 7th 2023")}</p>
-      </div>
-      <div className="aud-poster">
-        <img src="./images/오디션 이미지2.jpg"
-        alt="오디션 포스터 이미지" />
       </div>
     </div>
     </section>

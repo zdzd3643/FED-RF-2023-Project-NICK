@@ -283,57 +283,54 @@
 #ats-Detail-area1{
   position: relative;
   width: 100%;
-  height: 270vh;
-  background: #000;
+  background-color: #000;
 }
 
 #ats-Detail-area2{
   position: relative;
   width: 100%;
-  height: 390vh;
-  background: #000;
+  background-color: #000;
 }
 #ats-Detail-area3{
   position: relative;
   width: 100%;
-  height: 310vh;
-  background: #000;
+  background-color: #000;
 }
 #ats-Detail-area4{
   position: relative;
   width: 100%;
-  height: 270vh;
-  background: #000;
+  background-color: #000;
 }
 #ats-Detail-area5{
   position: relative;
   width: 100%;
-  height: 270vh;
-  background: #000;
+  background-color: #000;
 }
 #ats-Detail-area6{
   position: relative;
   width: 100%;
-  height: 270vh;
-  background: #000;
+  background-color: #000;
 }
 
 .detail-container{
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 850px;
-  top: 0;
+}
+
+.ats-flex{
+  display: flex;
+  margin-top: 15vh;
 }
 
 .detail-cont{
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+
 }
 
 .detail-title{
-  position: absolute;
+  position: relative;
   font-size: 60px;
   top: 10vh;
   left: 50%;
@@ -346,8 +343,7 @@
 }
 
 .detail-profile{
-  position: absolute;
-  top: 22vh;
+  position: relative;
   width: 400px;
 }
 
@@ -357,9 +353,8 @@
 }
 
 .detail-name{
-  position: absolute;
-  left: 54%;
-  top: 20vh;
+  position: relative;
+  left: 15%;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   white-space: nowrap;
@@ -373,11 +368,10 @@
 }
 
 .detail-sns1{
-  position: absolute;
+  position: relative;
   width: 190px;
   display: flex;
-  left: 54%;
-  top: 28vh;
+  left: 15%;
   gap: 0 50px;
 }
 
@@ -389,9 +383,8 @@
   width: 100%;
 }
 .detail-career{
-  position: absolute;
-  top: 34vh;
-  left: 54%;
+  position: relative;
+  left: 15%;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -400,8 +393,8 @@
 }
 
 .detail-gubun{
+  margin-top: 10vh;
   position: relative;
-  top: 100vh;
   width: 53vw;
   opacity: 0.5;
   left: 50%;
@@ -409,8 +402,8 @@
 }
 
 .detail-swiper{
-  position: absolute;
-  top: 115vh;
+  margin-top: 2vh;
+  position: relative;
   width: 950px;
   height: 400px;
   left: 50%;
@@ -424,53 +417,48 @@
 }
 
 .detail-gallery{
-  position: absolute;
+  margin-top: 5vh;
+  position: relative;
   color: #fff;
   font-size: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 105vh;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .detail-gubun2{
+  margin-top: 10vh;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 166vh;
   width: 53vw;
   opacity: 0.5;
 }
 
 .detail-video{
-  position: absolute;
+  margin-top: 5vh;
+  position: relative;
   color: #fff;
   font-size: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 170vh;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .detail-video-cont{
-  position: absolute;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 1500px;
   left: 50%;
   transform: translateX(-50%);
-  top: 152vh;
 }
 
 .detail-video-cont>div{
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 27vh;
+  margin-top: 2vh;
   aspect-ratio: 513/288;
   padding: 30px;
   padding-bottom: 50px;
-  width: 400px;
+  width: 360px;
 }
 
 .detail-video-cont>div aside{

@@ -44,6 +44,7 @@ export function BryanChase(){
                 <div className="detail-title">
                   <h3>{t(v.ats4)}</h3>
                 </div>
+                <div className="ats-flex">
                 <div className="detail-profile">
                   <img src={v.isrc4} alt="프로필 이미지" />  
                 </div>
@@ -80,6 +81,8 @@ export function BryanChase(){
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("2023 제7회 대한민국 청년의 날 콘서트").split("^")[1]}</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("RAPBEAT 2023 - 과천")}</p>  
                     <br />
+                  </div>
+                  </div>
                   </div>
                   <div className="detail-gubun">
                     <hr />
@@ -165,8 +168,7 @@ export function BryanChase(){
                         </aside>
                       </div>
                     </div>      
-                  </div>   
-              </div>   
+                  </div>    
     ))
     } /////////// makeList 함수 ///////////
 

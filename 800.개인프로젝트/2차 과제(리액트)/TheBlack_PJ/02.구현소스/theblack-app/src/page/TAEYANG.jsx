@@ -40,54 +40,57 @@ export function TAEYANG(){
   const makeList = (data) => {
     // console.log(data);
     return data.map((v, i) => (
-          <div className='detail-container' key={i}> 
-                <div className="detail-title">
-                  <h3>{t(v.ats1)}</h3>
+      <div className='detail-container' key={i}> 
+        <div className="detail-title">
+          <h3>{t(v.ats1)}</h3>
+        </div>
+              <div className="ats-flex">
+                  <div className="detail-profile">
+                    <img src={v.isrc1} alt="프로필 이미지" />
+                  </div>
+                  <div className="detail-cont">
+                    <div className="detail-name">
+                      <h2>{t(v.alt1)}</h2>
+                    </div>
+                    <div className="detail-sns1">
+                      <a href={v.insta1}
+                        target='_blank'
+                        title="인스타그램으로 이동">
+                          <img src="./images/insta_img_white-remove.png" alt="인스타그램 이미지" />
+                      </a>
+                      <a href={v.youtube1}
+                        target='_blank'
+                        title="유튜브로 이동">
+                          <img src="./images/youtube_img_white-remove.png" alt="유튜브 이미지" />
+                      </a>
+                      <a href={v.twitter1}
+                        target='_blank'
+                        title="트위터로 이동">
+                        <img src="./images/twitter_img_white-remove.png"
+                        alt="트위터 이미지" />
+                      </a>
+                    </div>
+                    <div className="detail-career">
+                      <h2>{t("ALBUM")}</h2>
+                      <p>{t("2023 | Down to Earth")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("VIBE(feat.Jimin of BTS)")}</p>
+                      <p>{t("2022 | 봄여름가을겨울")}</p>
+                      <br />
+                      <h2>{t("PERFORMANCE")}</h2>
+                      <p>{t("2023 | Rapbeat Festival")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[0]}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[1]}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("Seen Festival(베트남)")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("서울 재즈페스티벌")}</p>
+                      <br />
+                      <h2>{t("ADVERTISING")}</h2>
+                      <p>{t("2023 | 지방시")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("버드와이저")}</p>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("룰루레몬")}</p>
+                    </div>
                 </div>
-                <div className="detail-profile">
-                  <img src={v.isrc1} alt="프로필 이미지" />  
-                </div>
-                <div className="detail-cont">
-                  <div className="detail-name">
-                    <h2>{t(v.alt1)}</h2>
-                  </div>
-                  <div className="detail-sns1">
-                    <a href={v.insta1}
-                      target='_blank'
-                      title="인스타그램으로 이동">
-                        <img src="./images/insta_img_white-remove.png" alt="인스타그램 이미지" />
-                    </a>
-                    <a href={v.youtube1}
-                      target='_blank'
-                      title="유튜브로 이동">
-                        <img src="./images/youtube_img_white-remove.png" alt="유튜브 이미지" />
-                    </a>
-                    <a href={v.twitter1}
-                      target='_blank'
-                      title="트위터로 이동">
-                      <img src="./images/twitter_img_white-remove.png" 
-                      alt="트위터 이미지" />
-                    </a>
-                  </div>
-                  <div className="detail-career">
-                    <h2>{t("ALBUM")}</h2>
-                    <p>{t("2023 | Down to Earth")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("VIBE(feat.Jimin of BTS)")}</p> 
-                    <p>{t("2022 | 봄여름가을겨울")}</p>
-                    <br />
-                    <h2>{t("PERFORMANCE")}</h2>
-                    <p>{t("2023 | Rapbeat Festival")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[0]}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SUMMER SONIC (도쿄&오사카, 일본)").split("^")[1]}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("Seen Festival(베트남)")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("SO WONDERFUL FESTIVAL")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("서울 재즈페스티벌")}</p>  
-                    <br />
-                    <h2>{t("ADVERTISING")}</h2>
-                    <p>{t("2023 | 지방시")}</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("버드와이저")}</p> 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("룰루레몬")}</p> 
-                  </div>
+              </div>
                   <div className="detail-gubun">
                     <hr />
                   </div>
@@ -172,8 +175,7 @@ export function TAEYANG(){
                         </aside>
                       </div>
                     </div>      
-                </div>   
-          </div>
+              </div> 
     ))
     } /////////// makeList 함수 ///////////
 

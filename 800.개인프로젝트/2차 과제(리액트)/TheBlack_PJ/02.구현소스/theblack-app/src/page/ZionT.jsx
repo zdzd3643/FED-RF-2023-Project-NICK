@@ -44,6 +44,7 @@ export function ZionT(){
                 <div className="detail-title">
                   <h3>{t(v.ats3)}</h3>
                 </div>
+                <div className="ats-flex">
                 <div className="detail-profile">
                   <img src={v.isrc3} alt="프로필 이미지" />  
                 </div>
@@ -89,6 +90,8 @@ export function ZionT(){
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("여름잠 뮤직페스티벌 - 춘천").split("^")[0]}</p>  
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("여름잠 뮤직페스티벌 - 춘천").split("^")[1]}</p>  
                     <br />
+                  </div>
+                  </div>
                   </div>
                   <div className="detail-gubun">
                     <hr />
@@ -198,7 +201,7 @@ export function ZionT(){
                       </div>
                     </div>      
                   </div>   
-              </div>   
+             
     ))
     } /////////// makeList 함수 ///////////
 

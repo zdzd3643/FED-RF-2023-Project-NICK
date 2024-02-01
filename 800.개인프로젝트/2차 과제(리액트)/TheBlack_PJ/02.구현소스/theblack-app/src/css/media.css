@@ -1,68 +1,5 @@
 /* THE BLACK PJ - 공통 미디어쿼리 */
 
-@media screen and (max-width: 1540px) {
-
-  #alb-Sub-area{
-    position: relative;
-    width: 100%;
-    height: 680vh;
-    background-color: #000;
-  }
-
-    #aud-area .aud-video{
-        position: relative;
-        top: 28vh;
-        border: none;
-    }
-    
-    #aud-area .aud-video video {
-        position: absolute;
-        width: 60%;
-        left: 25%;
-        transform: translateX(-50%);
-    }
-    .aud-title{
-        position: relative;
-        font-size: 80px;
-        top: 12vh;
-        left: 50%;
-        transform: translateX(-50%);
-        color:#fff;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1;
-      }
-    
-      #aud-area .aud-audTitle{
-        left: 20%;
-      }
-
-    .aud-audTitle h3{
-        position: relative;
-        font-size: 50px;
-        top:16vh;
-        color:#fff;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.2;
-    }
-    
-    #aud-area .aud-viewBtn{
-        position: absolute;
-        left: 20vw;
-        top: 72vh;
-        width: 130px;
-        text-align: center;
-        font-size: 20px;
-        white-space: nowrap;
-        background-color: #fff;
-        color: #000000;
-        opacity: 0.9;
-        cursor: pointer;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        border: none;
-    }
-  }
-
 @media screen and (max-width: 1380px){
    
   #ats-area .card{
@@ -212,144 +149,61 @@
   perspective: 1001px;
 }
 
-    #video-cont{
-      position: absolute;
+    #alb-Sub-area #video-cont{
+      position: relative;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       max-width: 1500px;
       left: 50%;
       transform: translateX(-50%);
+      margin-top: 27vh;
     }
     
     #alb-Sub-area #video-cont>div{
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-      top: 27vh;
       aspect-ratio: 513/288;
       padding: 30px;
       padding-bottom: 50px;
-      width: 300px;
+      width: 400px;
     }
-    
-    #alb-Sub-area #video-cont>div aside{
-      color: #fff;
-      font-size: 13px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      margin-top: 10px;
-    }
-    
-    #alb-Sub-area .video-grid-first{
-      grid-column: 1/2;
-      grid-row: 1/2;
-    }
-    #alb-Sub-area{
-      position: relative;
-      width: 100%;
-      height: 520vh;
-      background-color: #000;
-    }
-  }
-@media screen and (max-width: 1150px){
-  #aud-area .aud-video{
-    position: relative;
-    top: 20vh;
-    border: none;
-  }
-
-#aud-area .aud-video video {
-    position: absolute;
-    width: 40%;
-    left: 20%;
-    transform: translateX(-50%);
-}
-.aud-audTitle h3{
-  position: relative;
-  font-size: 40px;
-  top:15vh;
-  color:#fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.2;
-  z-index: 999;
-}
-
-#aud-area .aud-viewBtn{
-    position: absolute;
-    left: 20vw;
-    top: 67vh;
-    width: 130px;
-    text-align: center;
-    font-size: 20px;
-    white-space: nowrap;
-    background-color: #fff;
-    color: #000000;
-    opacity: 0.9;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: none;
-}
-
   }
 
 @media screen and (max-width: 1000px) {
 
   #ats-Detail-area1 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 550px;
-    top: 0;
   }
   #ats-Detail-area2 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 550px;
-    top: 0;
   }
   #ats-Detail-area3 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 550px;
-    top: 0;
   }
   #ats-Detail-area4 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 550px;
-    top: 0;
   }
   #ats-Detail-area5 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 550px;
-    top: 0;
   }
   #ats-Detail-area6 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 550px;
-    top: 0;
   }
 
 .detail-container .detail-profile {
-    position: absolute;
-    top: 22vh;
-    width: 250px;
+  position: relative;
+  width: 300px;
 }
 
-.detail-container .detail-name {
-  position: absolute;
-  left: 54%;
-  top: 21vh;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
+.detail-profile img{
+  width: 100%;
+  height: 100%;
+}
+
+.ats-flex{
+  display: flex;
+  margin-top: 20vh;
 }
 
 .detail-container .detail-name h2{
@@ -357,138 +211,30 @@
 }
 
 .detail-container .detail-sns1 {
-  position: absolute;
   width: 135px;
-  display: flex;
-  left: 54%;
-  top: 27vh;
   gap: 0 30px;
 }
 
 .detail-container .detail-career {
-  position: absolute;
-  top: 32vh;
-  left: 54%;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
   font-size: 15px;
-  white-space: nowrap;
-}
-
-.detail-container .detail-gubun {
-  position: relative;
-  top: 80vh;
-  width: 53vw;
-  opacity: 0.5;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .detail-container .detail-gallery {
-  position: absolute;
-  color: #fff;
   font-size: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 85vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .detail-container .detail-swiper {
-  position: absolute;
-  top: 100vh;
   width: 650px;
   height: 281px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.detail-container .detail-gubun2 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 138vh;
-  width: 53vw;
-  opacity: 0.5;
-}
-
-.detail-container .detail-video {
-  position: absolute;
-  color: #fff;
-  font-size: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 144vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.detail-container .detail-video-cont {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 1500px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 126vh;
 }
 
 .detail-container .detail-video-cont>div {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 27vh;
-  aspect-ratio: 513/288;
-  padding: 30px;
-  padding-bottom: 50px;
-  width: 290px;
+  width: 230px;
+  padding: 20px;
 }
 
 .detail-container .detail-video-cont>div aside {
-  color: #fff;
   font-size: 14px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.cont #ats-Detail-area1{
-  position: relative;
-  width: 100%;
-  height: 225vh;
-  background: #000;
-}
-
-.cont #ats-Detail-area2{
-  position: relative;
-  width: 100%;
-  height: 315vh;
-  background: #000;
-}
-.cont #ats-Detail-area3{
-  position: relative;
-  width: 100%;
-  height: 265vh;
-  background: #000;
-}
-.cont #ats-Detail-area4{
-  position: relative;
-  width: 100%;
-  height: 225vh;
-  background: #000;
-}
-.cont #ats-Detail-area5{
-  position: relative;
-  width: 100%;
-  height: 225vh;
-  background: #000;
-}
-.cont #ats-Detail-area6{
-  position: relative;
-  width: 100%;
-  height: 225vh;
-  background: #000;
 }
 
 #album-area .swiper-coverflow{
@@ -617,7 +363,8 @@
       
       #introSub-area .intSub-creat{
         position: relative;
-        top: 36vh;
+        margin-top: 40vh;
+        bottom: 2vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -628,171 +375,109 @@
         white-space: nowrap;
       }
 
-      #introSub-area{
+      #alb-Sub-area #video-cont{
         position: relative;
-        width: 100%;
-        background-color: #000;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 1500px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 27vh;
+      }
+      
+      #alb-Sub-area #video-cont>div{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        aspect-ratio: 513/288;
+        padding: 15px;
+        padding-bottom: 50px;
+        width: 300px;
       }
 
-    
-    .aud-container{
-        position: relative;
-        top: 27vh;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 400px;
+  #aud-Sub-area .aud-container{
+    position: relative;
+    display: flex;
+    margin-top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
     }
     #aud-Sub-area .aud-Cont{
-        position: absolute;
-        font-size: 18px;
-        color:#fff;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        white-space: nowrap;
-        box-sizing: border-box;
-        margin-left: 1vw;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 70vh;
+      position: relative;
+      font-size: 13px;
+      color:#fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      white-space: nowrap;
+      box-sizing: border-box;
+      bottom: 5vh;
     }
     #aud-Sub-area .aud-poster{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;  
-    }
-    #aud-Sub-area .aud-poster img{
+        position: relative;
         box-sizing: border-box;
-        width: 100%;
-        height: 100%;
+        bottom: 5vh;
     }
-    .cont #aud-Sub-area{
-      position: relative;
-      width: 100%;
-      height: 175vh;
-      background-color: #000;
-    }
-  }
-
-  @media screen and (max-width: 850px) {
-    #aud-area .aud-video{
-      position: relative;
-      top: 20vh;
-      border: none;
+    .aud-title h3{
+      font-size: 50px;
     }
   
   #aud-area .aud-video video {
-      left: 0;
-      position: absolute;
-      width: 54%;
-      height: 54%;
-      object-fit: cover;
+      width: 100%;
+      height: 100%;
   }
 
-  #aud-area .aud-audTitle{
+  #aud-area .aud-flex {
+    top: 20vh;
+    display: block;
     left: 50%;
     transform: translateX(-50%);
-  }
+    width: 500px;
+}
 
-    .aud-audTitle h3{
+#aud-area .aud-audTitle h3{
       position: relative;
-      font-size: 50px;
-      top:27vh;
+      font-size: 40px;
       color:#fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.2;
       text-align: center;
   }
-  
+
   #aud-area .aud-viewBtn{
-      left: 50%;
-      transform: translateX(-50%);
-      position: absolute;
-      top: 85vh;
-      width: 177px;
-      text-align: center;
-      white-space: nowrap;
-      background-color: #fff;
-      color: #000000;
-      opacity: 0.9;
-      cursor: pointer;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      border: none;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .aud-title h3{
-    font-size: 50px;
+  
   }
-}
 
 @media screen and (max-width: 700px) {
   #ats-Detail-area1 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 400px;
-    top: 0;
   }
   #ats-Detail-area2 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 400px;
-    top: 0;
   }
   #ats-Detail-area3 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 400px;
-    top: 0;
   }
   #ats-Detail-area4 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 400px;
-    top: 0;
   }
   #ats-Detail-area5 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 400px;
-    top: 0;
   }
   #ats-Detail-area6 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     width: 400px;
-    top: 0;
   }
 
 .detail-container .detail-profile {
-    position: absolute;
-    top: 20vh;
     width: 200px;
+    height: 300px;
 }
 
 .detail-container .detail-title {
-  position: absolute;
   font-size: 40px;
-  top: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
-}
-
-.detail-container .detail-name {
-  position: absolute;
-  left: 54%;
-  top: 19vh;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
 }
 
 .detail-container .detail-name h2{
@@ -800,139 +485,31 @@
 }
 
 .detail-container .detail-sns1 {
-  position: absolute;
   width: 110px;
-  display: flex;
-  left: 54%;
-  top: 24vh;
   gap: 0 20px;
 }
 
 .detail-container .detail-career {
-  position: absolute;
-  top: 28vh;
-  left: 54%;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
   font-size: 13px;
-  white-space: nowrap;
-}
-
-.detail-container .detail-gubun {
-  position: relative;
-  top: 73vh;
-  width: 53vw;
-  opacity: 0.5;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.detail-container .detail-gallery {
-  position: absolute;
-  color: #fff;
-  font-size: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 77vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .detail-container .detail-swiper {
-  position: absolute;
-  top: 90vh;
   width: 450px;
   height: 195px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.detail-container .detail-gubun2 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 118vh;
-  width: 53vw;
-  opacity: 0.5;
-}
-
-.detail-container .detail-video {
-  position: absolute;
-  color: #fff;
-  font-size: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 124vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.detail-container .detail-video-cont {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 1500px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 105vh;
+.detail-container .detail-video-cont{
+  grid-template-columns: repeat(1,1fr);
 }
 
 .detail-container .detail-video-cont>div {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 27vh;
-  aspect-ratio: 513/288;
-  padding: 30px;
-  padding-bottom: 50px;
-  width: 200px;
+  width: 350px;
 }
 
 .detail-container .detail-video-cont>div aside {
-  color: #fff;
   font-size: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
-  text-align: center;
-  margin-top: 10px;
 }
 
-.cont #ats-Detail-area1{
-  position: relative;
-  width: 100%;
-  height: 190vh;
-  background: #000;
-}
-
-.cont #ats-Detail-area2{
-  position: relative;
-  width: 100%;
-  height: 260vh;
-  background: #000;
-}
-.cont #ats-Detail-area3{
-  position: relative;
-  width: 100%;
-  height: 215vh;
-  background: #000;
-}
-.cont #ats-Detail-area4{
-  position: relative;
-  width: 100%;
-  height: 190vh;
-  background: #000;
-}
-.cont #ats-Detail-area5{
-  position: relative;
-  width: 100%;
-  height: 190vh;
-  background: #000;
-}
-.cont #ats-Detail-area6{
-  position: relative;
-  width: 100%;
-  height: 190vh;
-  background: #000;
-}
     .intTit h3 {
       top: -5vh;
       font-size: 60px;
@@ -1024,7 +601,8 @@
       
       #introSub-area .intSub-creat{
         position: relative;
-        top: 36vh;
+        margin-top: 40vh;
+        bottom: 2vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -1042,21 +620,21 @@
       }
 
       #alb-Sub-area #video-cont{
-      position: absolute;
+      position: relative;
       display: grid;
       grid-template-columns: repeat(1,1fr);
       max-width: 1500px;
       left: 50%;
       transform: translateX(-50%);
+      margin-top: 20vh;
     }
     
     #alb-Sub-area #video-cont>div{
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-      top: 27vh;
       aspect-ratio: 513/288;
-      padding: 30px;
+      padding: 15px;
       padding-bottom: 50px;
       width: 300px;
     }
@@ -1073,64 +651,23 @@
       grid-column: 1/2;
       grid-row: 1/2;
     }
-    
-    #video-cont{
-        position: absolute;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        max-width: 1500px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      
-      #alb-Sub-area #video-cont>div{
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 27vh;
-        aspect-ratio: 513/288;
-        padding: 15px;
-        padding-bottom: 50px;
-        width: 250px;
-      }
       
       
-      #alb-Sub-area .aud-title{
+      .aud-title{
         top: 15vh;
       }
-
-      #alb-Sub-area{
-        position: relative;
-        width: 100%;
-        height: 820vh;
-        background-color: #000;
-      }
+      
+      #aud-Sub-area .aud-container{
+        display: block;
+        width: 400px;
+        }
 
       #aud-Sub-area .aud-Cont{
-        position: absolute;
+        margin-top: 10px;
         font-size: 14px;
-        color:#fff;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        white-space: nowrap;
-        box-sizing: border-box;
-        margin-left: 1vw;
-        left: 50%;
-        top: 70vh;
-        transform: translateX(-50%);
+        text-align: center;
     }
-    .cont #aud-Sub-area{
-      position: relative;
-      width: 100%;
-      height: 160vh;
-      background-color: #000;
-    }
-    #aud-Sub-area .aud-poster{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;  
-    }
+
     #aud-Sub-area .aud-poster img{
         box-sizing: border-box;
         width: 100%;
@@ -1313,214 +850,112 @@
   transition: width .6s;
   perspective: 1001px;
 }
+
   #ats-Detail-area1 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    top: 0;
+    width: 300px;
   }
   #ats-Detail-area2 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    top: 0;
+    width: 300px;
   }
   #ats-Detail-area3 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    top: 0;
+    width: 300px;
   }
   #ats-Detail-area4 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    top: 0;
+    width: 300px;
   }
   #ats-Detail-area5 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    top: 0;
+    width: 300px;
   }
   #ats-Detail-area6 .detail-container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    top: 0;
+    width: 300px;
+  }
+
+  .detail-container .ats-flex{
+    display: block;
   }
 
 .detail-container .detail-profile {
-    position: absolute;
-    top: 20vh;
-    width: 200px;
+    margin-top: 10vh;
+    width: 300px;
+}
+
+.detail-container .detail-profile img {
+  width: 100%;
+  height: 130%;
+}
+
+.detail-cont{
+  position: relative;
+  margin-top: 15vh;
 }
 
 .detail-container .detail-title {
-  position: absolute;
-  font-size: 40px;
-  top: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
+  font-size: 50px;
 }
 
 .detail-container .detail-name {
-  position: absolute;
   left: 0;
-  top: 58vh;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
 }
 
+
 .detail-container .detail-name h2{
-  font-size: 25px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .detail-container .detail-sns1 {
-  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2vh;
   width: 110px;
-  display: flex;
-  left: 0;
-  top: 64vh;
   gap: 0 20px;
 }
 
 .detail-container .detail-career {
-  position: absolute;
-  top: 70vh;
-  left: 0;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
+  margin-top: 5vh;
   font-size: 13px;
-  white-space: nowrap;
-}
-
-.detail-container .detail-gubun {
-  position: relative;
-  top: 115vh;
-  width: 53vw;
-  opacity: 0.5;
+  width: 150px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .detail-container .detail-gallery {
-  position: absolute;
-  color: #fff;
-  font-size: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 118vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
 }
 
 .detail-container .detail-swiper {
-  position: absolute;
-  top: 127vh;
   width: 300px;
-  height: 150px;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 170px;
 }
 
-.detail-container .detail-gubun2 {
+.swiper-wrapper {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 150vh;
-  width: 53vw;
-  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  box-sizing: content-box;
 }
 
 .detail-container .detail-video {
-  position: absolute;
-  color: #fff;
-  font-size: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 155vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
 }
 
 .detail-container .detail-video-cont {
-  position: absolute;
-  display: grid;
   grid-template-columns: repeat(1,1fr);
-  max-width: 1500px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 133vh;
 }
 
 .detail-container .detail-video-cont>div {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 27vh;
-  aspect-ratio: 513/288;
-  padding: 30px;
-  padding-bottom: 50px;
-  width: 200px;
+  width: 250px;
+  padding: 20px;
 }
 
 .detail-container .detail-video-cont>div aside {
-  color: #fff;
   font-size: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  white-space: nowrap;
-  text-align: center;
-  margin-top: 10px;
 }
 
-.cont #ats-Detail-area1{
-  position: relative;
-  width: 100%;
-  height: 250vh;
-  background: #000;
-}
-
-.cont #ats-Detail-area2{
-  position: relative;
-  width: 100%;
-  height: 390vh;
-  background: #000;
-}
-.cont #ats-Detail-area3{
-  position: relative;
-  width: 100%;
-  height: 290vh;
-  background: #000;
-}
-.cont #ats-Detail-area4{
-  position: relative;
-  width: 100%;
-  height: 250vh;
-  background: #000;
-}
-.cont #ats-Detail-area5{
-  position: relative;
-  width: 100%;
-  height: 270vh;
-  background: #000;
-}
-.cont #ats-Detail-area6{
-  position: relative;
-  width: 100%;
-  height: 270vh;
-  background: #000;
-}
   .intSub-Tit h3{
     position: relative;
     font-size: 30px;
@@ -1630,7 +1065,8 @@
 
   #introSub-area .intSub-creat{
     position: relative;
-    top: 39vh;
+    margin-top: 40vh;
+    bottom: 2vh;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -1645,12 +1081,6 @@
     font-size: 11px;
   }
 
-  .cont #introSub-area{
-    position: relative;
-    width: 100%;
-    height: 295vh;
-    background-color: #000;
-  }
   #footer-area {
     position: relative;
     background-color: #333;
@@ -1666,25 +1096,18 @@
     padding: 5px;
   }
 
-  #alb-Sub-area{
-    position: relative;
-    width: 100%;
-    height: 840vh;
-    background-color: #000;
-  }
-
-  #aud-area .aud-video{
-    position: relative;
-    top: 20vh;
-    border: none;
-  }
-
 #aud-area .aud-video video {
-    left: 0;
-    position: absolute;
-    width: 35%;
-    height: 45%;
-    object-fit: cover;
+  margin-top: 5vh;
+  width: 100%;
+  height: 100%;
+}
+
+#aud-area .aud-flex {
+  top: 20vh;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
 }
 
 #aud-area .aud-audTitle{
@@ -1692,66 +1115,41 @@
   transform: translateX(-50%);
 }
 
-  .aud-audTitle h3{
-    position: relative;
-    font-size: 35px;
-    top:23vh;
-    color:#fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.2;
-    text-align: center;
-    padding: 15px;
+#aud-area .aud-audTitle h3{
+  position: relative;
+  font-size: 40px;
+  color:#fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  text-align: center;
 }
 
 #aud-area .aud-viewBtn{
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 85vh;
-    width: 130px;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #fff;
-    color: #000000;
-    opacity: 0.9;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: none;
+left: 50%;
+transform: translateX(-50%);
 }
 .aud-title h3{
   font-size: 40px;
 }
 
-#aud-Sub-area .aud-Cont{
-  position: absolute;
-  font-size: 11px;
-  color:#fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-left: 1vw;
-  left: 50%;
-  top: 45vh;
-  transform: translateX(-50%);
+#aud-Sub-area .aud-container{
+  display: block;
+  width: 300px;
+  }
+
+  #aud-Sub-area .aud-Cont{
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
 }
 .cont #aud-Sub-area{
 position: relative;
 width: 100%;
-height: 125vh;
 background-color: #000;
 }
 
-#aud-Sub-area .aud-container {
-  position: relative;
-  top: 27vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-}
-
 #aud-Sub-area .aud-poster{
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 70%;  
