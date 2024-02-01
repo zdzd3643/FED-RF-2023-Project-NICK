@@ -13,6 +13,13 @@ import i18next from "../func/i18n"
 import { useTranslation } from "react-i18next";
 
 export function AuditionSub(){
+  let vh = 0;
+  
+  useEffect(() => {
+      // 모바일 네비게이션바 없애기
+      vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }, [])
   const { t } = useTranslation();
 
   // 리턴코드 ////////////////

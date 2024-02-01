@@ -1,4 +1,5 @@
 // 인트로 페이지 컨텐츠 컴포넌트
+import { useEffect } from "react";
 import "../css/intro.css"
 
 // 언어번역 
@@ -7,6 +8,14 @@ import '../func/i18n';
 import { useTranslation } from "react-i18next";
 
 export function IntroSub(){
+  let vh = 0;
+
+  useEffect(() => {
+      // 모바일 네비게이션바 없애기
+      vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }, [])
+
   const { t } = useTranslation();
 
   return(
