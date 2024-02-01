@@ -10,6 +10,11 @@ main.cont{
     min-height: calc(100vh - 80px - 120px);
 }
 
+html,
+body {
+    height: 100%;
+}
+
 /************* 1. 상단영역 *************/
 #top-area{
     position: fixed;

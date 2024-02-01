@@ -688,6 +688,9 @@
 
   }
 @media screen and (max-width: 530px) {
+  .module{
+    height: calc(var(--var, 1vh) * 100);
+  }
   #ats-area .card{
     width: 381px;
     height: 581px;
