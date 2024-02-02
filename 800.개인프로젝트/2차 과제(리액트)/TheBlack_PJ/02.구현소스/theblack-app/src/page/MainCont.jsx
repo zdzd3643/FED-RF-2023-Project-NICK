@@ -26,6 +26,9 @@ export function MainCont(){
   // 스크롤바 없애기
   $('html,body').css({overflow:'hidden'});
 
+  // 카톡인앱브라우저 네비게이션&하단바 고정 적용
+  $('html,body').css({height:'100%'})   
+
   // 자동스크롤 호출
   window.addEventListener('wheel',wheelFn);
 
@@ -46,6 +49,9 @@ export function MainCont(){
     // 이 페이지에서만 필요했던 자동스크롤 이벤트 해제!
     window.removeEventListener('wheel',wheelFn);
     $('html,body').css({overflow:'visible'});
+    // 카톡인앱브라우저 네비게이션&하단바 고정 해제
+    $('html,body').css({height:'100%'}) 
+
 
     // 메인 페이지에만 사용되는 로고클릭시 상단이동 이벤트 해제
     // 제이쿼리로 특정요소에 걸어준경우 해제는 off(이벤트명)
